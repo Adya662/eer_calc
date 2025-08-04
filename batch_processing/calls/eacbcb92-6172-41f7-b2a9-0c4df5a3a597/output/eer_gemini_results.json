@@ -1,0 +1,233 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 15,
+      "total_entities": 22,
+      "percentage": 68.18
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 22,
+    "gtothesis_entities": 21,
+    "unique_ref_entities": 14,
+    "unique_gt_entities": 14
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 2,
+      "PRODUCT": 10,
+      "DATE": 5
+    },
+    "gtothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 2,
+      "DATE": 5,
+      "PRODUCT": 9
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Jack & Jones Junior",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Jack & Jones Junior",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Relaxed-Fit Mid-Rise Joggers",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Relaxed-Fit Mid-Rise Joggers",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Jack & Jones Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "25 June",
+      "type": "DATE",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from \u092e\u093f\u0902\u0924\u094d\u0930\u093e,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "gtothesis": "Hey, I am Ray from Myntra here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Ray",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        }
+      ],
+      "missed": [
+        "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "rey"
+      ]
+    },
+    {
+      "index": 1,
+      "reference": "Got it! How can I help you today?",
+      "gtothesis": "English please.",
+      "ref_entities": [
+        {
+          "text": "today",
+          "type": "DATE"
+        },
+        {
+          "text": "today",
+          "type": "DATE"
+        },
+        {
+          "text": "today",
+          "type": "DATE"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "today"
+      ]
+    },
+    {
+      "index": 4,
+      "reference": "I can see that your order GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers has already been delivered on yesterday Do you need any further assistance regarding this order",
+      "gtothesis": "Please give me a moment to fetch your products.",
+      "ref_entities": [
+        {
+          "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "yesterday",
+          "type": "DATE"
+        },
+        {
+          "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "gap boys camouflage printed relaxed-fit mid-rise joggers",
+        "yesterday"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "DATE",
+    "LANGUAGE",
+    "ORGANIZATION",
+    "PERSON",
+    "PRODUCT"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

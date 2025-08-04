@@ -1,0 +1,184 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 7,
+      "total_entities": 11,
+      "percentage": 63.64
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 11,
+    "gtothesis_entities": 10,
+    "unique_ref_entities": 4,
+    "unique_gt_entities": 4
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORG": 5,
+      "LANGUAGE": 4
+    },
+    "gtothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 4
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORG",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from \u092e\u093f\u0902\u0924\u094d\u0930\u093e,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "gtothesis": "Ray from Myntra here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Ray",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Ray",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        }
+      ],
+      "missed": [
+        "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "rey"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "LANGUAGE",
+    "ORG",
+    "PERSON"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

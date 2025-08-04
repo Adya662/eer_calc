@@ -1,0 +1,187 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 7,
+      "total_entities": 18,
+      "percentage": 38.89
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 18,
+    "gtothesis_entities": 16,
+    "unique_ref_entities": 10,
+    "unique_gt_entities": 10
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 10,
+      "MONEY": 4,
+      "LANGUAGE": 1
+    },
+    "gtothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 9,
+      "MONEY": 4
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "ElevateNow",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "blood test",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "four hundred ninety-nine Rupees",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "one thousand seven hundred ninety-nine Rupees",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u0948\u0902 \u0938\u092e\u091d\u0924\u0940 \u0939\u0942\u0901 \u0915\u093f \u0906\u092a \u0915\u0941\u091b \u0914\u0930 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902\u0964",
+      "type": "LANGUAGE",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Minal Jani?",
+      "gtothesis": "Hello, this is Priya from Elevate Now. Am I speaking with Minal Jani? I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Minal Jani",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Minal Jani",
+          "type": "PERSON"
+        }
+      ],
+      "missed": [
+        "elevatenow"
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "gtothesis": "The Nano plan includes a blood test, a consultation with an obesity specialist doctor, and a session with a senior health coach. These offerings are designed to uncover the root causes of weight gain and create a personalized weight loss road map. Would you like me to explain how these can help you achieve your weight loss goals?",
+      "ref_entities": [
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "nano plan"
+      ]
+    },
+    {
+      "index": 3,
+      "reference": "The Nano Plan includes a blood test, a consultation with an obesity specialist doctor, and a session with a senior health coach. These offerings are designed to uncover the root causes of weight gain and create a personalized weight loss roadmap. Would you like me to explain how these can help you achieve your weight loss goals?",
+      "gtothesis": "Absolutely. The Nano plan is designed to fit into your lifestyle. It focuses on understanding the root causes of weight gain and provides personalized guidance that doesn't solely rely on exercise. Our health coach will help you make lifestyle choices that align with your schedule and needs. Would you like to know more about how this plan can work for you?",
+      "ref_entities": [
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "blood test",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "nano plan",
+        "blood test"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "MONEY",
+    "PERSON",
+    "ORGANIZATION",
+    "PRODUCT",
+    "LANGUAGE"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

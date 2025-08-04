@@ -1,0 +1,163 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 6,
+      "total_entities": 15,
+      "percentage": 40.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 15,
+    "gtothesis_entities": 13,
+    "unique_ref_entities": 9,
+    "unique_gt_entities": 7
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 4,
+      "PRODUCT": 2,
+      "DATE": 3
+    },
+    "gtothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 4,
+      "DATE": 3
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Regular Fit Round-Neck T-shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Cotton Dungaree Shorts",
+      "type": "PRODUCT",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from \u092e\u093f\u0902\u0924\u094d\u0930\u093e,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "gtothesis": "I am Rey from Myntra here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        }
+      ],
+      "missed": [
+        "\u092e\u093f\u0902\u0924\u094d\u0930\u093e"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "DATE",
+    "PERSON",
+    "ORGANIZATION",
+    "PRODUCT",
+    "LANGUAGE"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

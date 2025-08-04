@@ -1,0 +1,248 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 21,
+      "total_entities": 25,
+      "percentage": 84.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 25,
+    "gtothesis_entities": 21,
+    "unique_ref_entities": 14,
+    "unique_gt_entities": 9
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 13,
+      "DATE": 4,
+      "TIME": 2
+    },
+    "gtothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 3,
+      "LANGUAGE": 4,
+      "DATE": 1,
+      "PRODUCT": 10,
+      "TIME": 1
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Istyle Can Top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Istyle Can Top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Istyle Can Top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Istyle Can Top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Istyle Can Top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "tomorrow",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "today",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "today",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "10:44 AM",
+      "type": "TIME",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from \u092e\u093f\u0902\u0924\u094d\u0930\u093e,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "gtothesis": "Hey, I am Rey from Myntra here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        }
+      ],
+      "missed": [
+        "\u092e\u093f\u0902\u0924\u094d\u0930\u093e"
+      ]
+    },
+    {
+      "index": 1,
+      "reference": "Great! How can I help you today?",
+      "gtothesis": "Great. How can I help you today?",
+      "ref_entities": [
+        {
+          "text": "today",
+          "type": "DATE"
+        },
+        {
+          "text": "today",
+          "type": "DATE"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "today"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "DATE",
+    "LANGUAGE",
+    "PRODUCT",
+    "ORG",
+    "PERSON",
+    "TIME"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

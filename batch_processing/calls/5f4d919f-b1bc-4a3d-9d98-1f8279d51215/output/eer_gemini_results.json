@@ -1,0 +1,199 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 10,
+      "total_entities": 13,
+      "percentage": 76.92
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 13,
+    "gtothesis_entities": 14,
+    "unique_ref_entities": 6,
+    "unique_gt_entities": 5
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 9,
+      "MONEY": 1
+    },
+    "gtothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 10,
+      "MONEY": 1
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "ElevateNow",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Pearl Biju?",
+      "gtothesis": "Hello, this is Priya from Elevate Now. Am I speaking with Pearl Biju? I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Pearl Biju",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Pearl Biju",
+          "type": "PERSON"
+        }
+      ],
+      "missed": [
+        "elevatenow"
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "gtothesis": "Absolutely. Based on your BMI of 44.08, it seems your body may be dealing with some metabolic challenges like liver function issues or thyroid imbalance, which can make weight loss difficult. The Nano plan is designed to specifically address these issues and create a personalized road map for sustainable weight loss. Would you like to discuss a plan tailored to your needs?",
+      "ref_entities": [
+        {
+          "text": "Nano",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "nano"
+      ]
+    },
+    {
+      "index": 3,
+      "reference": "Absolutely! Based on your BMI of 44.08, it seems your body may be dealing with some metabolic challenges, like liver function issues or thyroid imbalance, which can make weight loss difficult. The Nano Plan is designed to specifically address these issues and create a personalized roadmap for sustainable weight loss. Would you like to discuss a plan tailored to your needs?",
+      "gtothesis": "Could you share if you have any past experiences with other weight loss programs? Understanding this can help me explain how the Nano plan could be a better fit for your needs.",
+      "ref_entities": [
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "nano plan"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "MONEY",
+    "ORGANIZATION",
+    "PRODUCT",
+    "PERSON"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

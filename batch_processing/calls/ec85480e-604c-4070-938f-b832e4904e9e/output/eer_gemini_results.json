@@ -1,0 +1,213 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 12,
+      "total_entities": 18,
+      "percentage": 66.67
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 18,
+    "gtothesis_entities": 19,
+    "unique_ref_entities": 11,
+    "unique_gt_entities": 11
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 4,
+      "ORGANIZATION": 2,
+      "PRODUCT": 6,
+      "MONEY": 6
+    },
+    "gtothesis": {
+      "PERSON": 4,
+      "ORGANIZATION": 2,
+      "PRODUCT": 7,
+      "MONEY": 6
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "ElevateNow",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees six thousand",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees four hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand three hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand eight hundred ninety-eight",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Munira Mandviwala?",
+      "gtothesis": "Hello, this is Priya from Elevate now. Am I speaking with Munira Mandviwala?",
+      "ref_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Munira Mandviwala",
+          "type": "PERSON"
+        },
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Munira Mandviwala",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "Elevate",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Munira Mandviwala",
+          "type": "PERSON"
+        },
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "Munira Mandviwala",
+          "type": "PERSON"
+        }
+      ],
+      "missed": [
+        "elevatenow"
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "gtothesis": "I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "Nano",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "nano"
+      ]
+    },
+    {
+      "index": 4,
+      "reference": "Great! Based on your BMI, it's clear your body might be facing some metabolic challenges that can affect weight loss. The Nano Plan is designed to tackle these issues and support your goals. Could you share more about what you're aiming to achieve with your weight loss journey?",
+      "gtothesis": "Got it. Your BMI indicates that tackling specific metabolic challenges can really make a difference. Have you tried any weight loss programs before?",
+      "ref_entities": [
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "nano plan"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "PERSON",
+    "ORGANIZATION",
+    "PRODUCT",
+    "MONEY"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

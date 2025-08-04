@@ -1,0 +1,162 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 11,
+      "total_entities": 12,
+      "percentage": 91.67
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 12,
+    "gtothesis_entities": 4,
+    "unique_ref_entities": 10,
+    "unique_gt_entities": 3
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 1,
+      "LANGUAGE": 2,
+      "DATE": 2,
+      "PRODUCT": 4,
+      "EVENT": 2
+    },
+    "gtothesis": {
+      "PERSON": 1,
+      "PRODUCT": 2,
+      "DATE": 1
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "status": "missed"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "status": "missed"
+    },
+    {
+      "text": "\u0920\u0940\u0915 \u0939\u0948",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "8 July",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "A.T.U.N",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Black Net Dress",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "A T U N",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Black Net Dress",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Simulating Human Transfer",
+      "type": "EVENT",
+      "status": "missed"
+    },
+    {
+      "text": "Simulating Human Transfer",
+      "type": "EVENT",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from \u092e\u093f\u0902\u0924\u094d\u0930\u093e,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "gtothesis": "Hey, I am Rey from",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        }
+      ],
+      "missed": [
+        "hindi",
+        "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "english"
+      ]
+    },
+    {
+      "index": 1,
+      "reference": "\u0920\u0940\u0915 \u0939\u0948! \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0915\u0948\u0938\u0947 \u092e\u0926\u0926",
+      "gtothesis": "\u0920\u0940\u0915 \u0939\u0948, \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0915\u0948\u0938\u0947 \u092e\u0926\u0926",
+      "ref_entities": [
+        {
+          "text": "\u0920\u0940\u0915 \u0939\u0948",
+          "type": "DATE"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "\u0920\u0940\u0915 \u0939\u0948"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "EVENT",
+    "PERSON",
+    "ORGANIZATION",
+    "DATE",
+    "LANGUAGE",
+    "PRODUCT"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

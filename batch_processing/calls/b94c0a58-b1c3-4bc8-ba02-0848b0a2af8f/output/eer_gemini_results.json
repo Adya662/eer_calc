@@ -1,0 +1,320 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 14,
+      "total_entities": 25,
+      "percentage": 56.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 25,
+    "gtothesis_entities": 16,
+    "unique_ref_entities": 10,
+    "unique_gt_entities": 6
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 7,
+      "ORGANIZATION": 1,
+      "PRODUCT": 16,
+      "MONEY": 1
+    },
+    "gtothesis": {
+      "PRODUCT": 11,
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "TIME": 1,
+      "MONEY": 1
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "Niketa",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "senior health coach",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "senior health coach",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "obesity specialist doctor",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "senior health coach",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "health coach",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "blood test",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "doctor consultation",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "blood test",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "doctor consultation",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "blood test",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "doctor consultation",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Niketa?",
+      "gtothesis": "Great. I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are?",
+      "ref_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Niketa",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "missed": [
+        "elevatenow",
+        "priya",
+        "niketa"
+      ]
+    },
+    {
+      "index": 1,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "gtothesis": "Hello, this is Priya from Elevate Now. Am I speaking with Nikita?",
+      "ref_entities": [
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Nikita",
+          "type": "PERSON"
+        }
+      ],
+      "missed": [
+        "nano plan"
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "The Nano Plan is designed to be efficient and flexible. It starts with a blood test, followed by a detailed doctor consultation, which typically lasts thirty to forty-five minutes. From there, you'll have a personalized session with a senior health coach. The timing for these sessions is based on your availability. The goal is to provide you with a comprehensive understanding and a personalized roadmap for your weight loss journey. Would you like to know more about the detailed offerings of the Nano Plan?",
+      "gtothesis": "The Nano plan is designed to be efficient and flexible. It starts with a blood test followed by a detailed doctor consultation which typically lasts 30 to 45 minutes. From there, you'll have a personalized session with a senior health coach. The timing for these sessions is based on your availability. The goal is to provide you with a comprehensive understanding and a personalized roadmap for your weight loss journey. Would you like to know more about the detailed offerings of the Nano plan? Then Nano plan is designed\"",
+      "ref_entities": [
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "blood test",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "doctor consultation",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "senior health coach",
+          "type": "PERSON"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "blood test",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "doctor consultation",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "senior health coach",
+          "type": "PERSON"
+        },
+        {
+          "text": "blood test",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "senior health coach",
+          "type": "PERSON"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "doctor consultation",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "health coach",
+          "type": "PERSON"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "30 to 45 minutes",
+          "type": "TIME"
+        }
+      ],
+      "missed": [
+        "doctor consultation",
+        "blood test",
+        "senior health coach",
+        "nano plan",
+        "health coach"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "ORGANIZATION",
+    "MONEY",
+    "PRODUCT",
+    "PERSON"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

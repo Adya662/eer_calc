@@ -1,0 +1,256 @@
+{
+  "method": "SpaCy NER",
+  "model": "en_core_web_sm",
+  "metrics": {
+    "EER": {
+      "missed_entities": 14,
+      "total_entities": 20,
+      "percentage": 70.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 20,
+    "gtothesis_entities": 19,
+    "unique_ref_entities": 14,
+    "unique_gt_entities": 11
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "NORP": 2,
+      "ORG": 7,
+      "PERSON": 3,
+      "LAW": 1,
+      "DATE": 4,
+      "CARDINAL": 3
+    },
+    "gtothesis": {
+      "GPE": 1,
+      "PERSON": 7,
+      "ORG": 3,
+      "CARDINAL": 6,
+      "DATE": 2
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "priya",
+      "type": "NORP",
+      "status": "missed"
+    },
+    {
+      "text": "priya",
+      "type": "NORP",
+      "status": "missed"
+    },
+    {
+      "text": "elevatenow",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "rupees",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "rupees",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "elevatenow",
+      "type": "ORG",
+      "status": "missed"
+    },
+    {
+      "text": "the nano plan",
+      "type": "LAW",
+      "status": "missed"
+    },
+    {
+      "text": "one thousand seven hundred ninety-nine",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "one thousand three hundred ninety-nine",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "one thousand eight hundred ninety-eight",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "one thousand seven hundred ninety-nine",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "six thousand",
+      "type": "CARDINAL",
+      "status": "missed"
+    },
+    {
+      "text": "two",
+      "type": "CARDINAL",
+      "status": "missed"
+    },
+    {
+      "text": "four hundred ninety-nine",
+      "type": "CARDINAL",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Munira Mandviwala?",
+      "gtothesis": "Hello, this is Priya from Elevate now. Am I speaking with Munira Mandviwala?",
+      "ref_entities": [
+        {
+          "text": "Priya",
+          "type": "NORP"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORG"
+        },
+        {
+          "text": "Munira Mandviwala",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Elevate",
+          "type": "GPE"
+        },
+        {
+          "text": "Munira Mandviwala",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "gtothesis": "I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "Nano",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": []
+    },
+    {
+      "index": 4,
+      "reference": "Great! Based on your BMI, it's clear your body might be facing some metabolic challenges that can affect weight loss. The Nano Plan is designed to tackle these issues and support your goals. Could you share more about what you're aiming to achieve with your weight loss journey?",
+      "gtothesis": "Got it. Your BMI indicates that tackling specific metabolic challenges can really make a difference. Have you tried any weight loss programs before?",
+      "ref_entities": [
+        {
+          "text": "BMI",
+          "type": "ORG"
+        },
+        {
+          "text": "The Nano Plan",
+          "type": "LAW"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "BMI",
+          "type": "ORG"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "reference": "Got it! Your BMI indicates that tackling specific metabolic challenges can really make a difference. Have you tried any weight loss programs before?",
+      "gtothesis": "I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "BMI",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    },
+    {
+      "index": 11,
+      "reference": "The Nano Plan costs Rupees one thousand seven hundred ninety-nine, which includes the blood test, doctor consultation, and health coach session. Compared to individual market prices, which total around Rupees six thousand, our plan offers significant savings. Would you like to know about the payment options?",
+      "gtothesis": "I'll send you the payment links on your registered mobile number. If you have any questions in the future, feel free to reach out. Goodbye and have a great day.",
+      "ref_entities": [
+        {
+          "text": "one thousand seven hundred ninety-nine",
+          "type": "DATE"
+        },
+        {
+          "text": "Rupees",
+          "type": "ORG"
+        },
+        {
+          "text": "six thousand",
+          "type": "CARDINAL"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "a great day",
+          "type": "DATE"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "reference": "You have two payment options: you can either make a partial payment of Rupees four hundred ninety-nine now and pay the remaining Rupees one thousand three hundred ninety-nine at the time of blood sample collection, totaling to Rupees one thousand eight hundred ninety-eight. Or, you can pay the full amount of Rupees one thousand seven hundred ninety-nine upfront. I'll send both payment links to your registered mobile number via WhatsApp. Do you have any more questions?",
+      "gtothesis": "You're welcome. Goodbye and have a great day.",
+      "ref_entities": [
+        {
+          "text": "two",
+          "type": "CARDINAL"
+        },
+        {
+          "text": "Rupees",
+          "type": "ORG"
+        },
+        {
+          "text": "four hundred ninety-nine",
+          "type": "CARDINAL"
+        },
+        {
+          "text": "one thousand three hundred ninety-nine",
+          "type": "DATE"
+        },
+        {
+          "text": "one thousand eight hundred ninety-eight",
+          "type": "DATE"
+        },
+        {
+          "text": "one thousand seven hundred ninety-nine",
+          "type": "DATE"
+        },
+        {
+          "text": "WhatsApp",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "a great day",
+          "type": "DATE"
+        }
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "PERSON",
+    "NORP",
+    "LAW",
+    "DATE",
+    "CARDINAL",
+    "ORG"
+  ]
+}

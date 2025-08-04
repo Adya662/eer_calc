@@ -1,0 +1,236 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 15,
+      "total_entities": 22,
+      "percentage": 68.18
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 22,
+    "gtothesis_entities": 13,
+    "unique_ref_entities": 13,
+    "unique_gt_entities": 10
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 3,
+      "PRODUCT": 10,
+      "MONEY": 4,
+      "GPE": 3
+    },
+    "gtothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 3,
+      "PRODUCT": 2,
+      "MONEY": 2,
+      "GPE": 4
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "ElevateNow",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Tata 1MG",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "twenty-nine point zero",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees six thousand",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "five thousand",
+      "type": "MONEY",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Sanjana Kumar?",
+      "gtothesis": "Hello, this is Priya from Elevate Now. Am I speaking with Sanjana Kumar? I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Sanjana Kumar",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Sanjana Kumar",
+          "type": "PERSON"
+        }
+      ],
+      "missed": [
+        "elevatenow"
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "gtothesis": "I understand your hesitation. Based on your BMI of 29.0, it's clear your body is sending signals about how it's handling weight and metabolism right now. At this pre-obesity stage, many experience low energy levels and slow metabolism due to iron and vitamin D deficiency, making it harder to stay active and burn fat efficiently. A Nano plan focuses on addressing these issues first, so your body naturally boosts metabolism and accelerates fat loss. Would you like to discuss how this personalized plan can help you achieve your weight loss goals?",
+      "ref_entities": [
+        {
+          "text": "Nano",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "nano"
+      ]
+    },
+    {
+      "index": 3,
+      "reference": "I understand your hesitation. Based on your BMI of twenty-nine point zero, it's clear your body is sending signals about how it's handling weight and metabolism right now. At this pre-obesity stage, many experience low energy levels and slow metabolism due to iron and vitamin D deficiency, making it harder to stay active and burn fat efficiently. Our Nano Plan focuses on addressing these issues first, so your body naturally boosts metabolism and accelerates fat loss. Would you like to discuss how this personalized plan can help you achieve your weight loss goals?",
+      "gtothesis": "Have you tried any other weight loss programs before? If yes, did the",
+      "ref_entities": [
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "twenty-nine point zero",
+          "type": "MONEY"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "twenty-nine point zero",
+        "nano plan"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "MONEY",
+    "PERSON",
+    "PRODUCT",
+    "ORGANIZATION",
+    "GPE"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

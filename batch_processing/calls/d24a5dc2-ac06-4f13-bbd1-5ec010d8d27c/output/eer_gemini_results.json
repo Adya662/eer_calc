@@ -1,0 +1,250 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 24,
+      "total_entities": 28,
+      "percentage": 85.71
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 28,
+    "gtothesis_entities": 12,
+    "unique_ref_entities": 18,
+    "unique_gt_entities": 8
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 6,
+      "ORGANIZATION": 1,
+      "PRODUCT": 19,
+      "MONEY": 2
+    },
+    "gtothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 6,
+      "MONEY": 3
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "senior health coach",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "obesity specialist doctor",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "senior health coach",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "senior obesity specialist doctor",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "26.81",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Pre-Obesity",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Iron",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Vitamin D",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "blood test",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "doctor consultation",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "blood test",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "blood test",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "metabolic report",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "doctor consultation",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "blood test",
+      "type": "PRODUCT",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Nupur?",
+      "gtothesis": "Hello, this is Priya from Elevate Now. Am I speaking with Nupur? I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Nupur",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Nupur",
+          "type": "PERSON"
+        }
+      ],
+      "missed": [
+        "elevatenow"
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "gtothesis": "Absolutely, Based on your BMI of 26.81, it's clear your body is sending signals about how it's handling weight and metabolism right now. At this pre-obesity stage, many individuals experience low energy levels and slow metabolism due to iron and vitamin D deficiency. Our program focuses on fixing these first, so your body naturally boosts metabolism and accelerates fat loss. Would you like to discuss a personalized plan to address these challenges and achieve sustainable weight loss?",
+      "ref_entities": [
+        {
+          "text": "Nano",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "BMI",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "26.81",
+          "type": "MONEY"
+        }
+      ],
+      "missed": [
+        "nano"
+      ]
+    },
+    {
+      "index": 3,
+      "reference": "Absolutely! Based on your BMI of 26.81, it's clear your body is sending signals about how it's handling weight and metabolism right now. At this Pre-Obesity Stage, many individuals experience low energy levels and slow metabolism due to Iron & Vitamin D Deficiency. Our program focuses on fixing these first, so your body naturally boosts metabolism and accelerates fat loss. Would you like to discuss a personalized plan to address these challenges and achieve sustainable weight loss?",
+      "gtothesis": "Have you had any past experiences with other weight loss programs? If so",
+      "ref_entities": [
+        {
+          "text": "BMI",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "26.81",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Pre-Obesity",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Iron",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Vitamin D",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "iron",
+        "vitamin d",
+        "bmi",
+        "pre-obesity",
+        "26.81"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "PRODUCT",
+    "PERSON",
+    "MONEY",
+    "ORGANIZATION"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

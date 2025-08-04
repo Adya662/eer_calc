@@ -1,0 +1,217 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 10,
+      "total_entities": 13,
+      "percentage": 76.92
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 13,
+    "gtothesis_entities": 13,
+    "unique_ref_entities": 8,
+    "unique_gt_entities": 7
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 5,
+      "LANGUAGE": 2,
+      "PRODUCT": 3,
+      "DATE": 2
+    },
+    "gtothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 7,
+      "LANGUAGE": 2,
+      "DATE": 2,
+      "PRODUCT": 1
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "21 August",
+      "type": "DATE",
+      "status": "missed"
+    },
+    {
+      "text": "twenty-first August",
+      "type": "DATE",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from \u092e\u093f\u0902\u0924\u094d\u0930\u093e,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "gtothesis": "Hey, I am Ray from Myntra, here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Ray",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        }
+      ],
+      "missed": [
+        "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "rey"
+      ]
+    },
+    {
+      "index": 4,
+      "reference": "Your \u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt is being processed and will be delivered by 21 August.\nPlease tell me, is there anything else I can help you with?",
+      "gtothesis": "Your style",
+      "ref_entities": [
+        {
+          "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "21 August",
+          "type": "DATE"
+        },
+        {
+          "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f men opaque casual shirt",
+        "21 august"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "LANGUAGE",
+    "DATE",
+    "ORGANIZATION",
+    "PERSON",
+    "PRODUCT"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

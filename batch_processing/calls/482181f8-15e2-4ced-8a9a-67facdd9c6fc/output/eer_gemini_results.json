@@ -1,0 +1,183 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 16,
+      "total_entities": 22,
+      "percentage": 72.73
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 22,
+    "gtothesis_entities": 12,
+    "unique_ref_entities": 17,
+    "unique_gt_entities": 10
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 5,
+      "LANGUAGE": 2,
+      "PRODUCT": 12,
+      "DATE": 2
+    },
+    "gtothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 2,
+      "DATE": 2,
+      "PRODUCT": 3
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "\u092e\u0948\u0902\u0917\u094b",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "Regular Fit Round-Neck T-shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Regular Fit Round-Neck T-shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Mango",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Plunge Neck Ruched Top with Asymmetric Hem",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "all about you",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "ethnic",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "top",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Ethnic Printed Full Puff-Sleeves Casual Shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "Ethnic Printed Full Puff-Sleeves Casual Shirt",
+      "type": "PRODUCT",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from \u092e\u093f\u0902\u0924\u094d\u0930\u093e,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "gtothesis": "I am Ray from Myntra, here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Ray",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Hindi",
+          "type": "LANGUAGE"
+        },
+        {
+          "text": "English",
+          "type": "LANGUAGE"
+        }
+      ],
+      "missed": [
+        "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "rey"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "LANGUAGE",
+    "PERSON",
+    "DATE",
+    "ORGANIZATION",
+    "PRODUCT"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}

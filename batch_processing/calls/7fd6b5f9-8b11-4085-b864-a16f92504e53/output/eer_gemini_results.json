@@ -1,0 +1,264 @@
+{
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-pro",
+  "chunk_size": 1000,
+  "metrics": {
+    "EER": {
+      "missed_entities": 8,
+      "total_entities": 18,
+      "percentage": 44.44
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 18,
+    "gtothesis_entities": 18,
+    "unique_ref_entities": 8,
+    "unique_gt_entities": 6
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 10,
+      "MONEY": 4,
+      "EVENT": 1
+    },
+    "gtothesis": {
+      "PERSON": 1,
+      "PRODUCT": 13,
+      "MONEY": 4
+    }
+  },
+  "missed_entities": [
+    {
+      "text": "Bijal Roliya",
+      "type": "PERSON",
+      "status": "missed"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORGANIZATION",
+      "status": "missed"
+    },
+    {
+      "text": "weight management program",
+      "type": "PRODUCT",
+      "status": "missed"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "status": "missed"
+    },
+    {
+      "text": "Obesity Stage - Category I",
+      "type": "EVENT",
+      "status": "missed"
+    }
+  ],
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Bijal Roliya?",
+      "gtothesis": "Hello, this is Priya from",
+      "ref_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        },
+        {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION"
+        },
+        {
+          "text": "Bijal Roliya",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Priya",
+          "type": "PERSON"
+        }
+      ],
+      "missed": [
+        "elevatenow",
+        "bijal roliya"
+      ]
+    },
+    {
+      "index": 1,
+      "reference": "We spoke last call about your interest in our weight management program, and I understand you had some concerns.",
+      "gtothesis": "We spoke last call about your interest in our weight management program and I understand you had some concerns. We spoke last call about your interest in our weight management program and I understand you had some concerns. Based on your BMI of 34.13, it's clear your body is sending signals about how it's handling weight and metabolism. We are genuinely excited to support your goals, and the Nano plan is designed to make weight loss easier and more effective. Would you like to discuss a personalized plan to address these challenges?",
+      "ref_entities": [
+        {
+          "text": "weight management program",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "missed": [
+        "weight management program"
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "We spoke last call about your interest in our weight management program, and I understand you had some concerns. Based on your BMI of 34.13, it's clear your body is sending signals about how it's handling weight and metabolism. We're genuinely excited to support your goals, and the Nano Plan is designed to make weight loss easier and more effective. Would you like to discuss a personalized plan to address these challenges?",
+      "gtothesis": "I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "34.13",
+          "type": "MONEY"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "34.13",
+          "type": "MONEY"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "34.13",
+          "type": "MONEY"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "Nano Plan",
+          "type": "PRODUCT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "nano plan",
+        "34.13"
+      ]
+    },
+    {
+      "index": 4,
+      "reference": "Great! Based on your BMI of 34.13, we've identified key metabolic challenges that might be affecting your weight loss journey. At this Obesity Stage - Category I, most people struggle with insulin resistance and high blood sugar, leading to intense cravings and stubborn fat storage. Our plan is designed to stabilize blood sugar and improve insulin sensitivity, making fat loss easier and more sustainable. Would you like to discuss how the Nano Plan can help with this?",
+      "gtothesis": "We spoke last time about your interest in our weight management program and I understand you had some concerns. Based on your BMI of 34.13, it's clear your body is sending signals about how it's handling weight and metabolism. We are genuinely excited to support your goals and the Nano plan is designed to make weight loss easier and more effective. Would you like to discuss a personalized plan to address these challenges?",
+      "ref_entities": [
+        {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT"
+        }
+      ],
+      "gt_entities": [],
+      "missed": [
+        "obesity stage - category i"
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "MONEY",
+    "EVENT",
+    "PRODUCT",
+    "PERSON",
+    "ORGANIZATION"
+  ],
+  "llm_specific": {
+    "advantages": [
+      "Context-aware entity recognition",
+      "Can identify complex and domain-specific entities",
+      "Flexible entity types"
+    ],
+    "limitations": [
+      "API costs",
+      "Rate limits",
+      "Processing time",
+      "Token limits for long texts"
+    ]
+  }
+}
