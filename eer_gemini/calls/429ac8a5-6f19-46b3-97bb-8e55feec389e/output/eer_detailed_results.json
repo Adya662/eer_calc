@@ -1,0 +1,719 @@
+{
+  "call_id": "429ac8a5-6f19-46b3-97bb-8e55feec389e",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 20.98,
+  "all_entities_eer": {
+    "eer_percentage": 88.88888888888889,
+    "substitutions": 11,
+    "insertions": 22,
+    "deletions": 12,
+    "total_ref": 27,
+    "total_hyp": 47,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 88.88888888888889,
+    "substitutions": 10,
+    "insertions": 18,
+    "deletions": 13,
+    "total_ref": 18,
+    "total_hyp": 31,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 13,
+      "DATE": 3,
+      "TIME": 2
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 3,
+      "LANGUAGE": 4,
+      "DATE": 2,
+      "PRODUCT": 16,
+      "TIME": 2
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "TIME",
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE",
+      "ORGANIZATION",
+      "DATE"
+    ],
+    "hypothesis": [
+      "TIME",
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE",
+      "ORGANIZATION",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 38
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 45
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 68
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 622,
+        "word_index": 137
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 586,
+        "word_index": 156
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 622,
+        "word_index": 163
+      },
+      {
+        "text": "7 July",
+        "type": "DATE",
+        "start": 755,
+        "end": 761,
+        "word_index": 178
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 622,
+        "word_index": 213
+      },
+      {
+        "text": "7 July",
+        "type": "DATE",
+        "start": 755,
+        "end": 761,
+        "word_index": 228
+      },
+      {
+        "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+        "type": "PRODUCT",
+        "start": 1297,
+        "end": 1343,
+        "word_index": 267
+      },
+      {
+        "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+        "type": "PRODUCT",
+        "start": 1395,
+        "end": 1467,
+        "word_index": 298
+      },
+      {
+        "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+        "type": "PRODUCT",
+        "start": 1395,
+        "end": 1467,
+        "word_index": 328
+      },
+      {
+        "text": "tomorrow",
+        "type": "DATE",
+        "start": 1604,
+        "end": 1612,
+        "word_index": 342
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 376
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 391
+      },
+      {
+        "text": "10:44 AM",
+        "type": "TIME",
+        "start": 1945,
+        "end": 1953,
+        "word_index": 401
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 2075,
+        "end": 2081,
+        "word_index": 414
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 440
+      },
+      {
+        "text": "10:44 AM",
+        "type": "TIME",
+        "start": 1945,
+        "end": 1953,
+        "word_index": 450
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 490
+      },
+      {
+        "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+        "type": "PRODUCT",
+        "start": 1395,
+        "end": 1467,
+        "word_index": 518
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 538
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 11
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 15
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 74,
+        "end": 79,
+        "word_index": 26
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 83,
+        "end": 90,
+        "word_index": 32
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 46
+      },
+      {
+        "text": "7 July",
+        "type": "DATE",
+        "start": 734,
+        "end": 740,
+        "word_index": 166
+      },
+      {
+        "text": "Puma",
+        "type": "PRODUCT",
+        "start": 992,
+        "end": 996,
+        "word_index": 213
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 241
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 322
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 341
+      },
+      {
+        "text": "10:44 a.m.",
+        "type": "TIME",
+        "start": 1664,
+        "end": 1674,
+        "word_index": 355
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 390
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 416
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 454
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 480
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 507
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 511
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 74,
+        "end": 79,
+        "word_index": 532
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 83,
+        "end": 90,
+        "word_index": 538
+      },
+      {
+        "text": "7 July",
+        "type": "DATE",
+        "start": 734,
+        "end": 740,
+        "word_index": 604
+      },
+      {
+        "text": "Puma",
+        "type": "PRODUCT",
+        "start": 992,
+        "end": 996,
+        "word_index": 651
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 679
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 760
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 779
+      },
+      {
+        "text": "10:44",
+        "type": "TIME",
+        "start": 1664,
+        "end": 1669,
+        "word_index": 793
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 837
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 863
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 890
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 916
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 68
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 622,
+        "word_index": 137
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 586,
+        "word_index": 156
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 622,
+        "word_index": 163
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 622,
+        "word_index": 213
+      },
+      {
+        "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+        "type": "PRODUCT",
+        "start": 1297,
+        "end": 1343,
+        "word_index": 267
+      },
+      {
+        "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+        "type": "PRODUCT",
+        "start": 1395,
+        "end": 1467,
+        "word_index": 298
+      },
+      {
+        "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+        "type": "PRODUCT",
+        "start": 1395,
+        "end": 1467,
+        "word_index": 328
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 376
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 391
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 2075,
+        "end": 2081,
+        "word_index": 414
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 440
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 490
+      },
+      {
+        "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+        "type": "PRODUCT",
+        "start": 1395,
+        "end": 1467,
+        "word_index": 518
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 538
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 11
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 15
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 46
+      },
+      {
+        "text": "Puma",
+        "type": "PRODUCT",
+        "start": 992,
+        "end": 996,
+        "word_index": 213
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 241
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 322
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 341
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 390
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 416
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 454
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 480
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 507
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 511
+      },
+      {
+        "text": "Puma",
+        "type": "PRODUCT",
+        "start": 992,
+        "end": 996,
+        "word_index": 651
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 679
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 760
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 779
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 837
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 863
+      },
+      {
+        "text": "Agnia",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1094,
+        "word_index": 890
+      },
+      {
+        "text": "Istyle",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1565,
+        "word_index": 916
+      }
+    ]
+  }
+}

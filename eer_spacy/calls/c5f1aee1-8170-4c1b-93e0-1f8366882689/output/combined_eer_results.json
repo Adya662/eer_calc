@@ -1,0 +1,83 @@
+{
+  "call_id": "c5f1aee1-8170-4c1b-93e0-1f8366882689",
+  "method": "Combined SpaCy/Stanza NER",
+  "processing_timestamp": "2025-08-06 03:12:06",
+  "metrics": {
+    "global_EER": {
+      "correct_entities": 1,
+      "missed_entities": 2,
+      "extra_entities": 3,
+      "total_errors": 5,
+      "total_ref_entities": 3,
+      "total_gt_entities": 4,
+      "eer_percentage": 100.0,
+      "accuracy_percentage": 33.33
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 7,
+    "gt_entities": 23,
+    "unique_ref_entities": 7,
+    "unique_gt_entities": 9,
+    "concerned_ref_entities": 3,
+    "concerned_gt_entities": 4
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 2,
+      "GPE": 1,
+      "LANGUAGE": 1,
+      "DATE": 2
+    },
+    "ground_truth": {
+      "PERSON": 3,
+      "GPE": 7,
+      "LANGUAGE": 3,
+      "DATE": 6,
+      "ORG": 4
+    }
+  },
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from मिंत्रा,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "ground_truth": "Hey, I'm Ray from Myntra, here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "मिंत्रा,        ",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Ray",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "reference": "Your क्रॉक्स Unisex Navy Blue Bayaband Clogs will be delivered on or before 12 July.\nPlease tell me, is there anything else I can help you with?",
+      "ground_truth": "Your Crocs Unisex Navy Blue Bayaband Clogs will be delivered on or before 12th July. Please tell me, is there anything else I can help you with?",
+      "ref_entities": [
+        {
+          "text": "Unisex Navy Blue Bayaband Clogs",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    }
+  ],
+  "entity_types_found": [
+    "GPE",
+    "PERSON",
+    "DATE",
+    "LANGUAGE",
+    "ORG"
+  ]
+}

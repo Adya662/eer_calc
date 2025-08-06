@@ -1,0 +1,105 @@
+{
+  "call_id": "5cdef144-9d6a-4100-9be6-8489f90fc466",
+  "method": "Combined SpaCy/Stanza NER",
+  "processing_timestamp": "2025-08-06 03:11:12",
+  "metrics": {
+    "global_EER": {
+      "correct_entities": 3,
+      "missed_entities": 2,
+      "extra_entities": 0,
+      "total_errors": 2,
+      "total_ref_entities": 5,
+      "total_gt_entities": 3,
+      "eer_percentage": 40.0,
+      "accuracy_percentage": 60.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 18,
+    "gt_entities": 20,
+    "unique_ref_entities": 16,
+    "unique_gt_entities": 9,
+    "concerned_ref_entities": 5,
+    "concerned_gt_entities": 3
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "NORP": 1,
+      "ORG": 3,
+      "PERSON": 2,
+      "LAW": 3,
+      "DATE": 3,
+      "CARDINAL": 4,
+      "QUANTITY": 1,
+      "NEN": 1
+    },
+    "ground_truth": {
+      "PERSON": 8,
+      "CARDINAL": 7,
+      "ORG": 1,
+      "NEN": 4
+    }
+  },
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Minal Jani?",
+      "ground_truth": "Hello, this is Priya from Elevate Now. Am I speaking with Minal Jani? I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "ElevateNow",
+          "type": "ORG"
+        },
+        {
+          "text": "Minal Jani",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Minal Jani",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "reference": "Great! To proceed, you can choose between two payment options: a partial payment of four hundred ninety-nine Rupees now with the remaining amount at the time of blood sample collection, or a full payment of one thousand seven hundred ninety-nine Rupees upfront. I'll send you the payment links on WhatsApp. Do you have any more questions?",
+      "ground_truth": "I understand your concern. The Nano plan is designed to address weight loss comprehensively by identifying the root causes and providing personalized guidance. Would you like to discuss any specific aspect you're unsure about or do you need further clarification?",
+      "ref_entities": [
+        {
+          "text": "WhatsApp",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Nano",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "reference": "मैं समझती हूँ कि आप कुछ और जानकारी चाहते हैं। Nano Plan एक comprehensive approach है जो आपके metabolic",
+      "ground_truth": "I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "Nano Plan",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    }
+  ],
+  "entity_types_found": [
+    "NORP",
+    "LAW",
+    "PERSON",
+    "DATE",
+    "CARDINAL",
+    "QUANTITY",
+    "NEN",
+    "ORG"
+  ]
+}

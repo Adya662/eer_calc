@@ -1,0 +1,682 @@
+{
+  "call_id": "5cdef144-9d6a-4100-9be6-8489f90fc466",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 22.22,
+  "all_entities_eer": {
+    "substitutions": 11,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 2,
+    "total_ref": 13,
+    "total_hyp": 13,
+    "eer_percentage": 84.62,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "normalized": "rupees 1,799",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Rs 1,799",
+          "type": "MONEY",
+          "normalized": "rs 1,799",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "rupees",
+          "type": "MONEY",
+          "normalized": "rupees",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "499",
+          "type": "MONEY",
+          "normalized": "499",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "four hundred ninety-nine Rupees",
+          "type": "MONEY",
+          "normalized": "four hundred ninety-nine rupees",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "1,799",
+          "type": "MONEY",
+          "normalized": "1,799",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 12
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Minal Jani",
+          "type": "PERSON",
+          "normalized": "minal jani",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Minal Jani",
+          "type": "PERSON",
+          "normalized": "minal jani",
+          "index": 2
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 6,
+    "insertions": 0,
+    "deletions": 1,
+    "correct": 2,
+    "total_ref": 9,
+    "total_hyp": 8,
+    "eer_percentage": 77.78,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 7
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 8
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Minal Jani",
+          "type": "PERSON",
+          "normalized": "minal jani",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Minal Jani",
+          "type": "PERSON",
+          "normalized": "minal jani",
+          "index": 2
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 6,
+      "MONEY": 4
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 5,
+      "MONEY": 5
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Minal Jani",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 13
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 35
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 130
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 292
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1501,
+        "end": 1546,
+        "word_index": 333
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 491
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1501,
+        "end": 1546,
+        "word_index": 500
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 560
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1501,
+        "end": 1546,
+        "word_index": 603
+      },
+      {
+        "text": "four hundred ninety-nine Rupees",
+        "type": "MONEY",
+        "start": 2220,
+        "end": 2251,
+        "word_index": 640
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 659
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Minal Jani",
+        "type": "PERSON",
+        "start": 58,
+        "end": 68,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 163,
+        "end": 167,
+        "word_index": 23
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 163,
+        "end": 167,
+        "word_index": 27
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1499,
+        "end": 1511,
+        "word_index": 135
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 163,
+        "end": 167,
+        "word_index": 211
+      },
+      {
+        "text": "Rs 1,799",
+        "type": "MONEY",
+        "start": 1856,
+        "end": 1864,
+        "word_index": 216
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 163,
+        "end": 167,
+        "word_index": 272
+      },
+      {
+        "text": "rupees",
+        "type": "MONEY",
+        "start": 1499,
+        "end": 1505,
+        "word_index": 279
+      },
+      {
+        "text": "499",
+        "type": "MONEY",
+        "start": 2139,
+        "end": 2142,
+        "word_index": 282
+      },
+      {
+        "text": "1,799",
+        "type": "MONEY",
+        "start": 1506,
+        "end": 1511,
+        "word_index": 287
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2298,
+        "end": 2306,
+        "word_index": 289
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Minal Jani",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 13
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 35
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 130
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 292
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 491
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 560
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 312,
+        "end": 321,
+        "word_index": 659
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Minal Jani",
+        "type": "PERSON",
+        "start": 58,
+        "end": 68,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 163,
+        "end": 167,
+        "word_index": 23
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 163,
+        "end": 167,
+        "word_index": 27
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 163,
+        "end": 167,
+        "word_index": 211
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 163,
+        "end": 167,
+        "word_index": 272
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2298,
+        "end": 2306,
+        "word_index": 289
+      }
+    ]
+  }
+}

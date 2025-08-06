@@ -1,0 +1,480 @@
+{
+  "call_id": "ec85480e-604c-4070-938f-b832e4904e9e",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 17.27,
+  "all_entities_eer": {
+    "eer_percentage": 28.57,
+    "substitutions": 2,
+    "insertions": 3,
+    "deletions": 7,
+    "total_ref": 17,
+    "total_hyp": 16,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 25.0,
+    "substitutions": 1,
+    "insertions": 2,
+    "deletions": 4,
+    "total_ref": 11,
+    "total_hyp": 10,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 4,
+      "ORGANIZATION": 2,
+      "PRODUCT": 6,
+      "MONEY": 6
+    },
+    "hypothesis": {
+      "PERSON": 4,
+      "ORGANIZATION": 2,
+      "PRODUCT": 5,
+      "MONEY": 6
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT",
+      "PERSON"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT",
+      "PERSON"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 121,
+        "end": 125,
+        "word_index": 18
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 26
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 68
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 120
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 174
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1702,
+        "end": 1747,
+        "word_index": 180
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 1884,
+        "end": 1903,
+        "word_index": 192
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2063,
+        "end": 2094,
+        "word_index": 209
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2121,
+        "end": 2166,
+        "word_index": 224
+      },
+      {
+        "text": "Rupees one thousand eight hundred ninety-eight",
+        "type": "MONEY",
+        "start": 2219,
+        "end": 2265,
+        "word_index": 242
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1702,
+        "end": 1747,
+        "word_index": 256
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2423,
+        "end": 2431,
+        "word_index": 276
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 301
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 304
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 309
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 14
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 20
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 28
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 62
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 164
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 223
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1674,
+        "end": 1686,
+        "word_index": 267
+      },
+      {
+        "text": "rupees 6,000",
+        "type": "MONEY",
+        "start": 1821,
+        "end": 1833,
+        "word_index": 287
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 1963,
+        "end": 1973,
+        "word_index": 317
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 2000,
+        "end": 2012,
+        "word_index": 341
+      },
+      {
+        "text": "rupees 1,898",
+        "type": "MONEY",
+        "start": 2065,
+        "end": 2077,
+        "word_index": 360
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1674,
+        "end": 1686,
+        "word_index": 375
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2202,
+        "end": 2210,
+        "word_index": 406
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 442
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 2477,
+        "end": 2488,
+        "word_index": 446
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 454
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 121,
+        "end": 125,
+        "word_index": 18
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 26
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 68
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 120
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 174
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2423,
+        "end": 2431,
+        "word_index": 276
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 301
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 304
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 309
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 14
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 20
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 28
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 62
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 164
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 223
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2202,
+        "end": 2210,
+        "word_index": 406
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 442
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 2477,
+        "end": 2488,
+        "word_index": 446
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 454
+      }
+    ]
+  }
+}

@@ -1,0 +1,583 @@
+{
+  "call_id": "1bf3729b-c0a7-4f65-a846-88c8aa31a473",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 10.54,
+  "all_entities_eer": {
+    "substitutions": 6,
+    "insertions": 0,
+    "deletions": 2,
+    "correct": 4,
+    "total_ref": 12,
+    "total_hyp": 10,
+    "eer_percentage": 66.67,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Ray",
+          "type": "PERSON",
+          "normalized": "ray",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Ray",
+          "type": "PERSON",
+          "normalized": "ray",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 9
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 11
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 7
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 6,
+    "insertions": 0,
+    "deletions": 2,
+    "correct": 0,
+    "total_ref": 8,
+    "total_hyp": 6,
+    "eer_percentage": 100.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Ray",
+          "type": "PERSON",
+          "normalized": "ray",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Ray",
+          "type": "PERSON",
+          "normalized": "ray",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 5
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 7
+        }
+      }
+    ],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 6,
+      "LANGUAGE": 4
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 4
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORGANIZATION",
+      "LANGUAGE",
+      "PERSON"
+    ],
+    "hypothesis": [
+      "ORGANIZATION",
+      "LANGUAGE",
+      "PERSON"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 39
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 47
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 54
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 58
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 72
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 88
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 127
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 183
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 230
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 277
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 0,
+        "end": 3,
+        "word_index": 0
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 2
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 64,
+        "end": 69,
+        "word_index": 10
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 73,
+        "end": 80,
+        "word_index": 16
+      },
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 0,
+        "end": 3,
+        "word_index": 22
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 24
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 73,
+        "end": 80,
+        "word_index": 32
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 64,
+        "end": 69,
+        "word_index": 40
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 58
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 120
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 54
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 58
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 127
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 183
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 230
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 277
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 0,
+        "end": 3,
+        "word_index": 0
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 2
+      },
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 0,
+        "end": 3,
+        "word_index": 22
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 24
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 58
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 120
+      }
+    ]
+  }
+}

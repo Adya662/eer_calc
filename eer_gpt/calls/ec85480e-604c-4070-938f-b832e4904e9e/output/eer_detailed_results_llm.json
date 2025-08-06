@@ -1,0 +1,490 @@
+{
+  "call_id": "ec85480e-604c-4070-938f-b832e4904e9e",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 19.97,
+  "all_entities_eer": {
+    "eer_percentage": 80.0,
+    "substitutions": 9,
+    "insertions": 10,
+    "deletions": 1,
+    "total_ref": 14,
+    "total_hyp": 22,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 62.5,
+    "substitutions": 1,
+    "insertions": 5,
+    "deletions": 0,
+    "total_ref": 8,
+    "total_hyp": 15,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 5,
+      "MONEY": 6
+    },
+    "hypothesis": {
+      "PERSON": 8,
+      "ORGANIZATION": 2,
+      "PRODUCT": 6,
+      "MONEY": 6
+    }
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORGANIZATION",
+      "PERSON",
+      "MONEY",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "ORGANIZATION",
+      "PERSON",
+      "MONEY",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 121,
+        "end": 125,
+        "word_index": 24
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 121,
+        "end": 125,
+        "word_index": 239
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 338,
+        "end": 341,
+        "word_index": 38
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 338,
+        "end": 341,
+        "word_index": 338
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 340
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1702,
+        "end": 1747,
+        "word_index": 535
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 1884,
+        "end": 1903,
+        "word_index": 551
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2063,
+        "end": 2094,
+        "word_index": 599
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2121,
+        "end": 2166,
+        "word_index": 610
+      },
+      {
+        "text": "Rupees one thousand eight hundred ninety-eight",
+        "type": "MONEY",
+        "start": 2219,
+        "end": 2265,
+        "word_index": 622
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1702,
+        "end": 1747,
+        "word_index": 633
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 24
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 258
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 330,
+        "end": 333,
+        "word_index": 373
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 433
+      },
+      {
+        "text": "doctor",
+        "type": "PERSON",
+        "start": 862,
+        "end": 868,
+        "word_index": 457
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 1084,
+        "end": 1096,
+        "word_index": 479
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 797,
+        "end": 807,
+        "word_index": 509
+      },
+      {
+        "text": "doctor",
+        "type": "PERSON",
+        "start": 862,
+        "end": 868,
+        "word_index": 562
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 1084,
+        "end": 1096,
+        "word_index": 648
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1674,
+        "end": 1686,
+        "word_index": 738
+      },
+      {
+        "text": "rupees 6,000",
+        "type": "MONEY",
+        "start": 1821,
+        "end": 1833,
+        "word_index": 812
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 1963,
+        "end": 1973,
+        "word_index": 887
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 2000,
+        "end": 2012,
+        "word_index": 912
+      },
+      {
+        "text": "rupees 1,898",
+        "type": "MONEY",
+        "start": 2065,
+        "end": 2077,
+        "word_index": 939
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1674,
+        "end": 1686,
+        "word_index": 971
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2202,
+        "end": 2210,
+        "word_index": 1050
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 1175
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 2477,
+        "end": 2488,
+        "word_index": 1177
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 1183
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 121,
+        "end": 125,
+        "word_index": 24
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 121,
+        "end": 125,
+        "word_index": 239
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 338,
+        "end": 341,
+        "word_index": 38
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 338,
+        "end": 341,
+        "word_index": 338
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 340
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 24
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 258
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 330,
+        "end": 333,
+        "word_index": 373
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 433
+      },
+      {
+        "text": "doctor",
+        "type": "PERSON",
+        "start": 862,
+        "end": 868,
+        "word_index": 457
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 1084,
+        "end": 1096,
+        "word_index": 479
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 797,
+        "end": 807,
+        "word_index": 509
+      },
+      {
+        "text": "doctor",
+        "type": "PERSON",
+        "start": 862,
+        "end": 868,
+        "word_index": 562
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 1084,
+        "end": 1096,
+        "word_index": 648
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2202,
+        "end": 2210,
+        "word_index": 1050
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 1175
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 2477,
+        "end": 2488,
+        "word_index": 1177
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 1183
+      }
+    ]
+  }
+}

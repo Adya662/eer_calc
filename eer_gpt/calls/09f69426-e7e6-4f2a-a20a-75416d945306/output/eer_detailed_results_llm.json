@@ -1,0 +1,639 @@
+{
+  "call_id": "09f69426-e7e6-4f2a-a20a-75416d945306",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 22.32,
+  "all_entities_eer": {
+    "eer_percentage": 160.0,
+    "substitutions": 16,
+    "insertions": 5,
+    "deletions": 10,
+    "total_ref": 31,
+    "total_hyp": 13,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 84.62,
+    "substitutions": 2,
+    "insertions": 9,
+    "deletions": 21,
+    "total_ref": 26,
+    "total_hyp": 11,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 6,
+      "ORGANIZATION": 1,
+      "PRODUCT": 19,
+      "MONEY": 3,
+      "EVENT": 2
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 8,
+      "MONEY": 2
+    }
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "PERSON",
+      "PRODUCT",
+      "ORGANIZATION",
+      "EVENT"
+    ],
+    "hypothesis": [
+      "ORGANIZATION",
+      "PERSON",
+      "MONEY",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 12
+      },
+      {
+        "text": "Great",
+        "type": "PRODUCT",
+        "start": 79,
+        "end": 84,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 49
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 796,
+        "end": 841,
+        "word_index": 111
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 114
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 908,
+        "end": 927,
+        "word_index": 116
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 931,
+        "end": 956,
+        "word_index": 119
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 139
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 251
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 276
+      },
+      {
+        "text": "senior obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1197,
+        "end": 1229,
+        "word_index": 288
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 931,
+        "end": 943,
+        "word_index": 322
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 391
+      },
+      {
+        "text": "obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1204,
+        "end": 1229,
+        "word_index": 424
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 931,
+        "end": 943,
+        "word_index": 433
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 474
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 796,
+        "end": 841,
+        "word_index": 490
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 511
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 908,
+        "end": 927,
+        "word_index": 513
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 931,
+        "end": 956,
+        "word_index": 516
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 2317,
+        "end": 2336,
+        "word_index": 540
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 578
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 615
+      },
+      {
+        "text": "flagship program",
+        "type": "EVENT",
+        "start": 2809,
+        "end": 2825,
+        "word_index": 629
+      },
+      {
+        "text": "3, 6, or 12-month subscription plans",
+        "type": "PRODUCT",
+        "start": 2842,
+        "end": 2878,
+        "word_index": 636
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 689
+      },
+      {
+        "text": "flagship program",
+        "type": "EVENT",
+        "start": 2809,
+        "end": 2825,
+        "word_index": 742
+      },
+      {
+        "text": "3, 6, or 12-month subscriptions",
+        "type": "PRODUCT",
+        "start": 3153,
+        "end": 3184,
+        "word_index": 752
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 774
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 58,
+        "end": 68,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 21
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 101
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 199
+      },
+      {
+        "text": "1,799",
+        "type": "MONEY",
+        "start": 750,
+        "end": 755,
+        "word_index": 229
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 370
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 527
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 687
+      },
+      {
+        "text": "6,000",
+        "type": "MONEY",
+        "start": 2170,
+        "end": 2175,
+        "word_index": 704
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 795
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 807
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 12
+      },
+      {
+        "text": "Great",
+        "type": "PRODUCT",
+        "start": 79,
+        "end": 84,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 49
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 114
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 908,
+        "end": 927,
+        "word_index": 116
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 931,
+        "end": 956,
+        "word_index": 119
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 139
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 251
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 276
+      },
+      {
+        "text": "senior obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1197,
+        "end": 1229,
+        "word_index": 288
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 931,
+        "end": 943,
+        "word_index": 322
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 391
+      },
+      {
+        "text": "obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1204,
+        "end": 1229,
+        "word_index": 424
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 931,
+        "end": 943,
+        "word_index": 433
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 474
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 511
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 908,
+        "end": 927,
+        "word_index": 513
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 931,
+        "end": 956,
+        "word_index": 516
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 578
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 615
+      },
+      {
+        "text": "3, 6, or 12-month subscription plans",
+        "type": "PRODUCT",
+        "start": 2842,
+        "end": 2878,
+        "word_index": 636
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 689
+      },
+      {
+        "text": "3, 6, or 12-month subscriptions",
+        "type": "PRODUCT",
+        "start": 3153,
+        "end": 3184,
+        "word_index": 752
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 774
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 58,
+        "end": 68,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 21
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 101
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 199
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 370
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 527
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 687
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 795
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 807
+      }
+    ]
+  }
+}

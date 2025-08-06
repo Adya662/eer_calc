@@ -1,0 +1,158 @@
+{
+  "call_id": "79e02e46-ea93-4669-9dc1-6c4339dcc6ba",
+  "method": "Combined SpaCy/Stanza NER",
+  "processing_timestamp": "2025-08-06 03:11:23",
+  "metrics": {
+    "global_EER": {
+      "correct_entities": 0,
+      "missed_entities": 5,
+      "extra_entities": 4,
+      "total_errors": 9,
+      "total_ref_entities": 5,
+      "total_gt_entities": 4,
+      "eer_percentage": 100.0,
+      "accuracy_percentage": 0.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 14,
+    "gt_entities": 14,
+    "unique_ref_entities": 12,
+    "unique_gt_entities": 12,
+    "concerned_ref_entities": 5,
+    "concerned_gt_entities": 4
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 6,
+      "GPE": 1,
+      "LANGUAGE": 1,
+      "DATE": 3,
+      "TIME": 1,
+      "NORP": 1
+    },
+    "ground_truth": {
+      "PERSON": 1,
+      "GPE": 2,
+      "LANGUAGE": 1,
+      "DATE": 3,
+      "ORG": 5,
+      "TIME": 1,
+      "NEN": 1
+    }
+  },
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from मिंत्रा,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "ground_truth": "I am Ray from Myntra, here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "मिंत्रा,        ",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Ray",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "reference": "I found a product in your order list that sounds similar to what you mentioned, the \"Kook N Keech Urban Edge Printed Relaxed T-Shirt,\" ordered on June eighteenth at five five PM. Is this the item you created a return for?",
+      "ground_truth": "I found a product in your order list that sounds similar to what you mentioned, the Kook N Keech urban edge printed relaxed t-shirt ordered on June 18th at 5:05 p.m.",
+      "ref_entities": [
+        {
+          "text": "the \"Kook N Keech Urban Edge Printed Relaxed",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "the Kook N Keech",
+          "type": "ORG"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "reference": "I couldn't find a Freekins product in your orders. Can you please tell me the exact product name or brand again?",
+      "ground_truth": "I couldn't find a Freakins product in your orders. Can you please tell me the exact product name or brand again?\"",
+      "ref_entities": [
+        {
+          "text": "Freekins",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Freakins",
+          "type": "ORG"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "reference": "I couldn't find a product with the brand name Freekins or Crkins in your order list. Would you like me to connect you to another agent who can assist you better?",
+      "ground_truth": "I couldn't find a product with the brand name Freakins or carkins in your order list. Would you like me to connect you to another agent who can assist you better?",
+      "ref_entities": [
+        {
+          "text": "Freekins",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Freakins",
+          "type": "ORG"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "reference": "I couldn't locate any product under the brand name Freekins in your order list. Do you want to speak with another agent who can assist you better?",
+      "ground_truth": "I couldn't locate any product under the brand name Freakins in your order list. Do you want to speak with another agent who can assist you better?",
+      "ref_entities": [
+        {
+          "text": "Freekins",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Freakins",
+          "type": "ORG"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "reference": "I couldn't find products matching \"UN RL\" in your order list either. Would you like me to connect you to another agent who can assist you better?",
+      "ground_truth": "I couldn't find products matching UNRL in your order list either. Would you like me to connect you to another agent who can assist you better?",
+      "ref_entities": [
+        {
+          "text": "UN",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    }
+  ],
+  "entity_types_found": [
+    "TIME",
+    "NEN",
+    "GPE",
+    "NORP",
+    "PERSON",
+    "DATE",
+    "LANGUAGE",
+    "ORG"
+  ]
+}

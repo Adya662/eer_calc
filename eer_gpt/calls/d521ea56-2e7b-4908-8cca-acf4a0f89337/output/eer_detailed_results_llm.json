@@ -1,0 +1,356 @@
+{
+  "call_id": "d521ea56-2e7b-4908-8cca-acf4a0f89337",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 16.12,
+  "all_entities_eer": {
+    "eer_percentage": 69.23,
+    "substitutions": 5,
+    "insertions": 1,
+    "deletions": 3,
+    "total_ref": 13,
+    "total_hyp": 12,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 62.5,
+    "substitutions": 4,
+    "insertions": 2,
+    "deletions": 2,
+    "total_ref": 8,
+    "total_hyp": 7,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 3,
+      "PRODUCT": 3,
+      "MONEY": 2,
+      "GPE": 2,
+      "LOCATION": 1
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 3,
+      "PRODUCT": 2,
+      "MONEY": 2,
+      "GPE": 3
+    }
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "PERSON",
+      "PRODUCT",
+      "ORGANIZATION",
+      "LOCATION",
+      "GPE"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "PERSON",
+      "PRODUCT",
+      "ORGANIZATION",
+      "GPE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Sanjana Kumar",
+        "type": "PERSON",
+        "start": 57,
+        "end": 70,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 165,
+        "end": 169,
+        "word_index": 41
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 664,
+        "end": 673,
+        "word_index": 223
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 664,
+        "end": 673,
+        "word_index": 327
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1695,
+        "end": 1740,
+        "word_index": 506
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 1925,
+        "end": 1944,
+        "word_index": 573
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "start": 2081,
+        "end": 2086,
+        "word_index": 624
+      },
+      {
+        "text": "Delhi",
+        "type": "LOCATION",
+        "start": 2098,
+        "end": 2103,
+        "word_index": 627
+      },
+      {
+        "text": "Redcliffe",
+        "type": "ORGANIZATION",
+        "start": 2127,
+        "end": 2136,
+        "word_index": 630
+      },
+      {
+        "text": "Tata 1MG",
+        "type": "ORGANIZATION",
+        "start": 2138,
+        "end": 2146,
+        "word_index": 631
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "start": 2081,
+        "end": 2086,
+        "word_index": 713
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Sanjana Kumar",
+        "type": "PERSON",
+        "start": 58,
+        "end": 71,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 166,
+        "end": 170,
+        "word_index": 44
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 166,
+        "end": 170,
+        "word_index": 216
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1624,
+        "end": 1636,
+        "word_index": 285
+      },
+      {
+        "text": "rupees 6,000",
+        "type": "MONEY",
+        "start": 1820,
+        "end": 1832,
+        "word_index": 306
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "start": 1969,
+        "end": 1974,
+        "word_index": 375
+      },
+      {
+        "text": "Delhi",
+        "type": "GPE",
+        "start": 1986,
+        "end": 1991,
+        "word_index": 384
+      },
+      {
+        "text": "Redcliffe",
+        "type": "ORGANIZATION",
+        "start": 2015,
+        "end": 2024,
+        "word_index": 388
+      },
+      {
+        "text": "Tata 1 MG",
+        "type": "ORGANIZATION",
+        "start": 2026,
+        "end": 2035,
+        "word_index": 390
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "start": 1969,
+        "end": 1974,
+        "word_index": 471
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Sanjana Kumar",
+        "type": "PERSON",
+        "start": 57,
+        "end": 70,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 165,
+        "end": 169,
+        "word_index": 41
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 664,
+        "end": 673,
+        "word_index": 223
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 664,
+        "end": 673,
+        "word_index": 327
+      },
+      {
+        "text": "Redcliffe",
+        "type": "ORGANIZATION",
+        "start": 2127,
+        "end": 2136,
+        "word_index": 630
+      },
+      {
+        "text": "Tata 1MG",
+        "type": "ORGANIZATION",
+        "start": 2138,
+        "end": 2146,
+        "word_index": 631
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Sanjana Kumar",
+        "type": "PERSON",
+        "start": 58,
+        "end": 71,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 166,
+        "end": 170,
+        "word_index": 44
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 166,
+        "end": 170,
+        "word_index": 216
+      },
+      {
+        "text": "Redcliffe",
+        "type": "ORGANIZATION",
+        "start": 2015,
+        "end": 2024,
+        "word_index": 388
+      },
+      {
+        "text": "Tata 1 MG",
+        "type": "ORGANIZATION",
+        "start": 2026,
+        "end": 2035,
+        "word_index": 390
+      }
+    ]
+  }
+}

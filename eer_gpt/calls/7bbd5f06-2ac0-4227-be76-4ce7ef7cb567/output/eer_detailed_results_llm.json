@@ -1,0 +1,364 @@
+{
+  "call_id": "7bbd5f06-2ac0-4227-be76-4ce7ef7cb567",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 17.23,
+  "all_entities_eer": {
+    "eer_percentage": 41.67,
+    "substitutions": 5,
+    "insertions": 5,
+    "deletions": 0,
+    "total_ref": 12,
+    "total_hyp": 13,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 87.5,
+    "substitutions": 1,
+    "insertions": 5,
+    "deletions": 2,
+    "total_ref": 8,
+    "total_hyp": 9,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 5,
+      "MONEY": 4
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 1,
+      "PRODUCT": 7,
+      "MONEY": 4
+    }
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORGANIZATION",
+      "PERSON",
+      "MONEY",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "ORGANIZATION",
+      "PERSON",
+      "MONEY",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "start": 57,
+        "end": 62,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 107,
+        "end": 111,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 159
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 233
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1694,
+        "end": 1739,
+        "word_index": 278
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 348
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1694,
+        "end": 1739,
+        "word_index": 439
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2316,
+        "end": 2347,
+        "word_index": 451
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2370,
+        "end": 2415,
+        "word_index": 459
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2493,
+        "end": 2501,
+        "word_index": 496
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 23
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 107
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 166
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 178
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 255
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1682,
+        "end": 1694,
+        "word_index": 289
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 385
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1682,
+        "end": 1694,
+        "word_index": 418
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 2237,
+        "end": 2247,
+        "word_index": 436
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 2270,
+        "end": 2282,
+        "word_index": 451
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2360,
+        "end": 2368,
+        "word_index": 503
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "start": 57,
+        "end": 62,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 107,
+        "end": 111,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 159
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 233
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 348
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2493,
+        "end": 2501,
+        "word_index": 496
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 23
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 107
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 166
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 178
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 255
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 385
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2360,
+        "end": 2368,
+        "word_index": 503
+      }
+    ]
+  }
+}

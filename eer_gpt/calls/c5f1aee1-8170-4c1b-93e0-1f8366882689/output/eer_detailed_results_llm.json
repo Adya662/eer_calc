@@ -1,0 +1,347 @@
+{
+  "call_id": "c5f1aee1-8170-4c1b-93e0-1f8366882689",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 15.15,
+  "all_entities_eer": {
+    "eer_percentage": 60.0,
+    "substitutions": 6,
+    "insertions": 5,
+    "deletions": 0,
+    "total_ref": 10,
+    "total_hyp": 14,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 85.71,
+    "substitutions": 2,
+    "insertions": 3,
+    "deletions": 3,
+    "total_ref": 7,
+    "total_hyp": 8,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 5,
+      "LANGUAGE": 2,
+      "PRODUCT": 1,
+      "DATE": 1
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 1,
+      "LANGUAGE": 4,
+      "PRODUCT": 6,
+      "DATE": 2
+    }
+  },
+  "entity_types_found": {
+    "reference": [
+      "LANGUAGE",
+      "PERSON",
+      "PRODUCT",
+      "DATE",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "LANGUAGE",
+      "PERSON",
+      "PRODUCT",
+      "DATE",
+      "ORGANIZATION"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 3
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 5
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 20
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 23
+      },
+      {
+        "text": "\u0915\u094d\u0930\u0949\u0915\u094d\u0938 Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "start": 318,
+        "end": 357,
+        "word_index": 66
+      },
+      {
+        "text": "12 July",
+        "type": "DATE",
+        "start": 389,
+        "end": 396,
+        "word_index": 82
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 250
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 267
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 369
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 427
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 9,
+        "end": 12,
+        "word_index": 3
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 18,
+        "end": 24,
+        "word_index": 5
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 74,
+        "end": 79,
+        "word_index": 14
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 83,
+        "end": 90,
+        "word_index": 16
+      },
+      {
+        "text": "Crocs Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "start": 265,
+        "end": 302,
+        "word_index": 53
+      },
+      {
+        "text": "12th July",
+        "type": "DATE",
+        "start": 334,
+        "end": 343,
+        "word_index": 59
+      },
+      {
+        "text": "Myntra app",
+        "type": "PRODUCT",
+        "start": 706,
+        "end": 716,
+        "word_index": 193
+      },
+      {
+        "text": "Myntra app",
+        "type": "PRODUCT",
+        "start": 706,
+        "end": 716,
+        "word_index": 287
+      },
+      {
+        "text": "Myntra app",
+        "type": "PRODUCT",
+        "start": 706,
+        "end": 716,
+        "word_index": 343
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 74,
+        "end": 79,
+        "word_index": 346
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 83,
+        "end": 90,
+        "word_index": 348
+      },
+      {
+        "text": "Crocs Unisex Navy blue Bioband clogs",
+        "type": "PRODUCT",
+        "start": 4229,
+        "end": 4265,
+        "word_index": 386
+      },
+      {
+        "text": "12th July",
+        "type": "DATE",
+        "start": 334,
+        "end": 343,
+        "word_index": 392
+      },
+      {
+        "text": "Myntra app",
+        "type": "PRODUCT",
+        "start": 706,
+        "end": 716,
+        "word_index": 481
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 3
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 5
+      },
+      {
+        "text": "\u0915\u094d\u0930\u0949\u0915\u094d\u0938 Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "start": 318,
+        "end": 357,
+        "word_index": 66
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 250
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 267
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 369
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 427
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 9,
+        "end": 12,
+        "word_index": 3
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 18,
+        "end": 24,
+        "word_index": 5
+      },
+      {
+        "text": "Crocs Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "start": 265,
+        "end": 302,
+        "word_index": 53
+      },
+      {
+        "text": "Myntra app",
+        "type": "PRODUCT",
+        "start": 706,
+        "end": 716,
+        "word_index": 193
+      },
+      {
+        "text": "Myntra app",
+        "type": "PRODUCT",
+        "start": 706,
+        "end": 716,
+        "word_index": 287
+      },
+      {
+        "text": "Myntra app",
+        "type": "PRODUCT",
+        "start": 706,
+        "end": 716,
+        "word_index": 343
+      },
+      {
+        "text": "Crocs Unisex Navy blue Bioband clogs",
+        "type": "PRODUCT",
+        "start": 4229,
+        "end": 4265,
+        "word_index": 386
+      },
+      {
+        "text": "Myntra app",
+        "type": "PRODUCT",
+        "start": 706,
+        "end": 716,
+        "word_index": 481
+      }
+    ]
+  }
+}

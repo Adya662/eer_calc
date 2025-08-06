@@ -1,0 +1,842 @@
+{
+  "call_id": "ec85480e-604c-4070-938f-b832e4904e9e",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 16.18,
+  "all_entities_eer": {
+    "substitutions": 11,
+    "insertions": 3,
+    "deletions": 0,
+    "correct": 4,
+    "total_ref": 15,
+    "total_hyp": 18,
+    "eer_percentage": 93.33,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 13
+        },
+        "hyp_entity": {
+          "text": "Elevate",
+          "type": "ORGANIZATION",
+          "normalized": "elevate",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "BMI",
+          "type": "PRODUCT",
+          "normalized": "bmi",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "BMI",
+          "type": "PRODUCT",
+          "normalized": "bmi",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees six thousand",
+          "type": "MONEY",
+          "normalized": "rupees six thousand",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees four hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees four hundred ninety-nine",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand three hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand three hundred ninety-nine",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "normalized": "rupees 1,799",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand eight hundred ninety-eight",
+          "type": "MONEY",
+          "normalized": "rupees one thousand eight hundred ninety-eight",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "rupees 6,000",
+          "type": "MONEY",
+          "normalized": "rupees 6,000",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "rupees 499",
+          "type": "MONEY",
+          "normalized": "rupees 499",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 13
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 16
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "rupees 1,399",
+          "type": "MONEY",
+          "normalized": "rupees 1,399",
+          "index": 12
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "rupees 1,898",
+          "type": "MONEY",
+          "normalized": "rupees 1,898",
+          "index": 13
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "normalized": "rupees 1,799",
+          "index": 14
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Munira Mandviwala",
+          "type": "PERSON",
+          "normalized": "munira mandviwala",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "Munira Mandviwala",
+          "type": "PERSON",
+          "normalized": "munira mandviwala",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Munira Mandviwala",
+          "type": "PERSON",
+          "normalized": "munira mandviwala",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "Munira Mandviwala",
+          "type": "PERSON",
+          "normalized": "munira mandviwala",
+          "index": 17
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 5,
+    "insertions": 3,
+    "deletions": 0,
+    "correct": 4,
+    "total_ref": 9,
+    "total_hyp": 12,
+    "eer_percentage": 88.89,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Elevate",
+          "type": "ORGANIZATION",
+          "normalized": "elevate",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "BMI",
+          "type": "PRODUCT",
+          "normalized": "bmi",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 10
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "BMI",
+          "type": "PRODUCT",
+          "normalized": "bmi",
+          "index": 6
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Munira Mandviwala",
+          "type": "PERSON",
+          "normalized": "munira mandviwala",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Munira Mandviwala",
+          "type": "PERSON",
+          "normalized": "munira mandviwala",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Munira Mandviwala",
+          "type": "PERSON",
+          "normalized": "munira mandviwala",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Munira Mandviwala",
+          "type": "PERSON",
+          "normalized": "munira mandviwala",
+          "index": 11
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 4,
+      "ORGANIZATION": 2,
+      "PRODUCT": 3,
+      "MONEY": 6
+    },
+    "hypothesis": {
+      "PERSON": 4,
+      "ORGANIZATION": 2,
+      "PRODUCT": 6,
+      "MONEY": 6
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 13
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 192
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 324
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1702,
+        "end": 1747,
+        "word_index": 471
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 1884,
+        "end": 1903,
+        "word_index": 478
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2063,
+        "end": 2094,
+        "word_index": 561
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2121,
+        "end": 2166,
+        "word_index": 568
+      },
+      {
+        "text": "Rupees one thousand eight hundred ninety-eight",
+        "type": "MONEY",
+        "start": 2219,
+        "end": 2265,
+        "word_index": 581
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1702,
+        "end": 1747,
+        "word_index": 592
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 748
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 750
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 757
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 14
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 47
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 330,
+        "end": 333,
+        "word_index": 223
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 252
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 330,
+        "end": 333,
+        "word_index": 365
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 477
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 642
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1674,
+        "end": 1686,
+        "word_index": 665
+      },
+      {
+        "text": "rupees 6,000",
+        "type": "MONEY",
+        "start": 1821,
+        "end": 1833,
+        "word_index": 682
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 1963,
+        "end": 1973,
+        "word_index": 759
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 2000,
+        "end": 2012,
+        "word_index": 772
+      },
+      {
+        "text": "rupees 1,898",
+        "type": "MONEY",
+        "start": 2065,
+        "end": 2077,
+        "word_index": 789
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1674,
+        "end": 1686,
+        "word_index": 799
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 927
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 2477,
+        "end": 2488,
+        "word_index": 929
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 935
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 13
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 192
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 448,
+        "word_index": 324
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 748
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 750
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 57,
+        "end": 74,
+        "word_index": 757
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 6
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 14
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 47
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 330,
+        "end": 333,
+        "word_index": 223
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 252
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 330,
+        "end": 333,
+        "word_index": 365
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 477
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 642
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 927
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 2477,
+        "end": 2488,
+        "word_index": 929
+      },
+      {
+        "text": "Munira Mandviwala",
+        "type": "PERSON",
+        "start": 58,
+        "end": 75,
+        "word_index": 935
+      }
+    ]
+  }
+}

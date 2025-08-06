@@ -1,0 +1,928 @@
+{
+  "call_id": "d9aa182c-b21e-4ad5-8138-18d0e9f69b84",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 15.6,
+  "all_entities_eer": {
+    "substitutions": 11,
+    "insertions": 2,
+    "deletions": 0,
+    "correct": 5,
+    "total_ref": 16,
+    "total_hyp": 18,
+    "eer_percentage": 81.25,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Ray",
+          "type": "PERSON",
+          "normalized": "ray",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Laamic",
+          "type": "PRODUCT",
+          "normalized": "laamic",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Lakme",
+          "type": "PRODUCT",
+          "normalized": "lakme",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Love Beauty & Planet",
+          "type": "PRODUCT",
+          "normalized": "love beauty & planet",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Love Beauty and Planet",
+          "type": "PRODUCT",
+          "normalized": "love beauty and planet",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0932\u0948\u0915\u094d\u092e\u0947",
+          "type": "PRODUCT",
+          "normalized": "\u0932\u0948\u0915\u094d\u092e\u0947",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Lakme",
+          "type": "PRODUCT",
+          "normalized": "lakme",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0921\u094d\u0930\u0947\u0938\u092c\u0947\u0930\u0940",
+          "type": "PRODUCT",
+          "normalized": "\u0921\u094d\u0930\u0947\u0938\u092c\u0947\u0930\u0940",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Dressberry",
+          "type": "PRODUCT",
+          "normalized": "dressberry",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "LeCalla",
+          "type": "PRODUCT",
+          "normalized": "lecalla",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Lakala",
+          "type": "PRODUCT",
+          "normalized": "lakala",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Love Beauty & Planet Argan Oil and Lavender",
+          "type": "PRODUCT",
+          "normalized": "love beauty & planet argan oil and lavender",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Love Beauty and Planet Argan Oil",
+          "type": "PRODUCT",
+          "normalized": "love beauty and planet argan oil",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0932\u0948\u0915\u094d\u092e\u0947 Youth Infinity Anti Aging Night Cream with Pro-Retinol C",
+          "type": "PRODUCT",
+          "normalized": "\u0932\u0948\u0915\u094d\u092e\u0947 youth infinity anti aging night cream with pro-retinol c",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C",
+          "type": "PRODUCT",
+          "normalized": "lakme youth infinity anti-aging night cream with pro retinol c",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Love Beauty & Planet Argan Oil and Lavender Shampoo",
+          "type": "PRODUCT",
+          "normalized": "love beauty & planet argan oil and lavender shampoo",
+          "index": 13
+        },
+        "hyp_entity": {
+          "text": "Love Beauty and Planet 10 Argan oil and lavender shampoo",
+          "type": "PRODUCT",
+          "normalized": "love beauty and planet 10 argan oil and lavender shampoo",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 17
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C 50 GD",
+          "type": "PRODUCT",
+          "normalized": "lakme youth infinity anti-aging night cream with pro retinol c 50 gd",
+          "index": 12
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "love beauty and planet 80 D 80 Argan oil and lavender shampoo for frizzy hair 400 milli",
+          "type": "PRODUCT",
+          "normalized": "love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli",
+          "index": 15
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Carlton London",
+          "type": "PRODUCT",
+          "normalized": "carlton london",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Carlton London",
+          "type": "PRODUCT",
+          "normalized": "carlton london",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "27 July",
+          "type": "DATE",
+          "normalized": "27 july",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "27 July",
+          "type": "DATE",
+          "normalized": "27 july",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "tomorrow",
+          "type": "DATE",
+          "normalized": "tomorrow",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "tomorrow",
+          "type": "DATE",
+          "normalized": "tomorrow",
+          "index": 16
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 11,
+    "insertions": 2,
+    "deletions": 0,
+    "correct": 1,
+    "total_ref": 12,
+    "total_hyp": 14,
+    "eer_percentage": 108.33,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Ray",
+          "type": "PERSON",
+          "normalized": "ray",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Laamic",
+          "type": "PRODUCT",
+          "normalized": "laamic",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Lakme",
+          "type": "PRODUCT",
+          "normalized": "lakme",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Love Beauty & Planet",
+          "type": "PRODUCT",
+          "normalized": "love beauty & planet",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Love Beauty and Planet",
+          "type": "PRODUCT",
+          "normalized": "love beauty and planet",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0932\u0948\u0915\u094d\u092e\u0947",
+          "type": "PRODUCT",
+          "normalized": "\u0932\u0948\u0915\u094d\u092e\u0947",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Lakme",
+          "type": "PRODUCT",
+          "normalized": "lakme",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0921\u094d\u0930\u0947\u0938\u092c\u0947\u0930\u0940",
+          "type": "PRODUCT",
+          "normalized": "\u0921\u094d\u0930\u0947\u0938\u092c\u0947\u0930\u0940",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Dressberry",
+          "type": "PRODUCT",
+          "normalized": "dressberry",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "LeCalla",
+          "type": "PRODUCT",
+          "normalized": "lecalla",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Lakala",
+          "type": "PRODUCT",
+          "normalized": "lakala",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Love Beauty & Planet Argan Oil and Lavender",
+          "type": "PRODUCT",
+          "normalized": "love beauty & planet argan oil and lavender",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Love Beauty and Planet Argan Oil",
+          "type": "PRODUCT",
+          "normalized": "love beauty and planet argan oil",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0932\u0948\u0915\u094d\u092e\u0947 Youth Infinity Anti Aging Night Cream with Pro-Retinol C",
+          "type": "PRODUCT",
+          "normalized": "\u0932\u0948\u0915\u094d\u092e\u0947 youth infinity anti aging night cream with pro-retinol c",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C",
+          "type": "PRODUCT",
+          "normalized": "lakme youth infinity anti-aging night cream with pro retinol c",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Love Beauty & Planet Argan Oil and Lavender Shampoo",
+          "type": "PRODUCT",
+          "normalized": "love beauty & planet argan oil and lavender shampoo",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C 50 GD",
+          "type": "PRODUCT",
+          "normalized": "lakme youth infinity anti-aging night cream with pro retinol c 50 gd",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Love Beauty and Planet 10 Argan oil and lavender shampoo",
+          "type": "PRODUCT",
+          "normalized": "love beauty and planet 10 argan oil and lavender shampoo",
+          "index": 11
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "love beauty and planet 80 D 80 Argan oil and lavender shampoo for frizzy hair 400 milli",
+          "type": "PRODUCT",
+          "normalized": "love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli",
+          "index": 12
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 13
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Carlton London",
+          "type": "PRODUCT",
+          "normalized": "carlton london",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Carlton London",
+          "type": "PRODUCT",
+          "normalized": "carlton london",
+          "index": 7
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 2,
+      "LANGUAGE": 2,
+      "PRODUCT": 9,
+      "DATE": 2
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 2,
+      "LANGUAGE": 2,
+      "PRODUCT": 11,
+      "DATE": 2
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "ORGANIZATION",
+      "DATE"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "ORGANIZATION",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 5
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 7
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 27
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 30
+      },
+      {
+        "text": "Laamic",
+        "type": "PRODUCT",
+        "start": 579,
+        "end": 585,
+        "word_index": 91
+      },
+      {
+        "text": "Love Beauty & Planet",
+        "type": "PRODUCT",
+        "start": 636,
+        "end": 656,
+        "word_index": 105
+      },
+      {
+        "text": "\u0932\u0948\u0915\u094d\u092e\u0947",
+        "type": "PRODUCT",
+        "start": 658,
+        "end": 664,
+        "word_index": 107
+      },
+      {
+        "text": "\u0921\u094d\u0930\u0947\u0938\u092c\u0947\u0930\u0940",
+        "type": "PRODUCT",
+        "start": 666,
+        "end": 675,
+        "word_index": 109
+      },
+      {
+        "text": "LeCalla",
+        "type": "PRODUCT",
+        "start": 677,
+        "end": 684,
+        "word_index": 111
+      },
+      {
+        "text": "Carlton London",
+        "type": "PRODUCT",
+        "start": 690,
+        "end": 704,
+        "word_index": 113
+      },
+      {
+        "text": "Love Beauty & Planet Argan Oil and Lavender",
+        "type": "PRODUCT",
+        "start": 1077,
+        "end": 1120,
+        "word_index": 145
+      },
+      {
+        "text": "\u0932\u0948\u0915\u094d\u092e\u0947 Youth Infinity Anti Aging Night Cream with Pro-Retinol C",
+        "type": "PRODUCT",
+        "start": 1159,
+        "end": 1222,
+        "word_index": 150
+      },
+      {
+        "text": "27 July",
+        "type": "DATE",
+        "start": 1372,
+        "end": 1379,
+        "word_index": 164
+      },
+      {
+        "text": "Love Beauty & Planet Argan Oil and Lavender Shampoo",
+        "type": "PRODUCT",
+        "start": 1531,
+        "end": 1582,
+        "word_index": 189
+      },
+      {
+        "text": "tomorrow",
+        "type": "DATE",
+        "start": 1714,
+        "end": 1722,
+        "word_index": 201
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 253
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": 2
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 70,
+        "end": 75,
+        "word_index": 15
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 79,
+        "end": 86,
+        "word_index": 17
+      },
+      {
+        "text": "Lakme",
+        "type": "PRODUCT",
+        "start": 478,
+        "end": 483,
+        "word_index": 74
+      },
+      {
+        "text": "Love Beauty and Planet",
+        "type": "PRODUCT",
+        "start": 533,
+        "end": 555,
+        "word_index": 86
+      },
+      {
+        "text": "Lakme",
+        "type": "PRODUCT",
+        "start": 478,
+        "end": 483,
+        "word_index": 88
+      },
+      {
+        "text": "Dressberry",
+        "type": "PRODUCT",
+        "start": 564,
+        "end": 574,
+        "word_index": 90
+      },
+      {
+        "text": "Lakala",
+        "type": "PRODUCT",
+        "start": 576,
+        "end": 582,
+        "word_index": 92
+      },
+      {
+        "text": "Carlton London",
+        "type": "PRODUCT",
+        "start": 587,
+        "end": 601,
+        "word_index": 94
+      },
+      {
+        "text": "Love Beauty and Planet Argan Oil",
+        "type": "PRODUCT",
+        "start": 972,
+        "end": 1004,
+        "word_index": 134
+      },
+      {
+        "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C",
+        "type": "PRODUCT",
+        "start": 1053,
+        "end": 1115,
+        "word_index": 137
+      },
+      {
+        "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C 50 GD",
+        "type": "PRODUCT",
+        "start": 1164,
+        "end": 1232,
+        "word_index": 148
+      },
+      {
+        "text": "27 July",
+        "type": "DATE",
+        "start": 1264,
+        "end": 1271,
+        "word_index": 157
+      },
+      {
+        "text": "Love Beauty and Planet 10 Argan oil and lavender shampoo",
+        "type": "PRODUCT",
+        "start": 1365,
+        "end": 1421,
+        "word_index": 173
+      },
+      {
+        "text": "love beauty and planet 80 D 80 Argan oil and lavender shampoo for frizzy hair 400 milli",
+        "type": "PRODUCT",
+        "start": 1446,
+        "end": 1533,
+        "word_index": 191
+      },
+      {
+        "text": "tomorrow",
+        "type": "DATE",
+        "start": 1565,
+        "end": 1573,
+        "word_index": 202
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 237
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 5
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 7
+      },
+      {
+        "text": "Laamic",
+        "type": "PRODUCT",
+        "start": 579,
+        "end": 585,
+        "word_index": 91
+      },
+      {
+        "text": "Love Beauty & Planet",
+        "type": "PRODUCT",
+        "start": 636,
+        "end": 656,
+        "word_index": 105
+      },
+      {
+        "text": "\u0932\u0948\u0915\u094d\u092e\u0947",
+        "type": "PRODUCT",
+        "start": 658,
+        "end": 664,
+        "word_index": 107
+      },
+      {
+        "text": "\u0921\u094d\u0930\u0947\u0938\u092c\u0947\u0930\u0940",
+        "type": "PRODUCT",
+        "start": 666,
+        "end": 675,
+        "word_index": 109
+      },
+      {
+        "text": "LeCalla",
+        "type": "PRODUCT",
+        "start": 677,
+        "end": 684,
+        "word_index": 111
+      },
+      {
+        "text": "Carlton London",
+        "type": "PRODUCT",
+        "start": 690,
+        "end": 704,
+        "word_index": 113
+      },
+      {
+        "text": "Love Beauty & Planet Argan Oil and Lavender",
+        "type": "PRODUCT",
+        "start": 1077,
+        "end": 1120,
+        "word_index": 145
+      },
+      {
+        "text": "\u0932\u0948\u0915\u094d\u092e\u0947 Youth Infinity Anti Aging Night Cream with Pro-Retinol C",
+        "type": "PRODUCT",
+        "start": 1159,
+        "end": 1222,
+        "word_index": 150
+      },
+      {
+        "text": "Love Beauty & Planet Argan Oil and Lavender Shampoo",
+        "type": "PRODUCT",
+        "start": 1531,
+        "end": 1582,
+        "word_index": 189
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 253
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": 2
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Lakme",
+        "type": "PRODUCT",
+        "start": 478,
+        "end": 483,
+        "word_index": 74
+      },
+      {
+        "text": "Love Beauty and Planet",
+        "type": "PRODUCT",
+        "start": 533,
+        "end": 555,
+        "word_index": 86
+      },
+      {
+        "text": "Lakme",
+        "type": "PRODUCT",
+        "start": 478,
+        "end": 483,
+        "word_index": 88
+      },
+      {
+        "text": "Dressberry",
+        "type": "PRODUCT",
+        "start": 564,
+        "end": 574,
+        "word_index": 90
+      },
+      {
+        "text": "Lakala",
+        "type": "PRODUCT",
+        "start": 576,
+        "end": 582,
+        "word_index": 92
+      },
+      {
+        "text": "Carlton London",
+        "type": "PRODUCT",
+        "start": 587,
+        "end": 601,
+        "word_index": 94
+      },
+      {
+        "text": "Love Beauty and Planet Argan Oil",
+        "type": "PRODUCT",
+        "start": 972,
+        "end": 1004,
+        "word_index": 134
+      },
+      {
+        "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C",
+        "type": "PRODUCT",
+        "start": 1053,
+        "end": 1115,
+        "word_index": 137
+      },
+      {
+        "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C 50 GD",
+        "type": "PRODUCT",
+        "start": 1164,
+        "end": 1232,
+        "word_index": 148
+      },
+      {
+        "text": "Love Beauty and Planet 10 Argan oil and lavender shampoo",
+        "type": "PRODUCT",
+        "start": 1365,
+        "end": 1421,
+        "word_index": 173
+      },
+      {
+        "text": "love beauty and planet 80 D 80 Argan oil and lavender shampoo for frizzy hair 400 milli",
+        "type": "PRODUCT",
+        "start": 1446,
+        "end": 1533,
+        "word_index": 191
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 237
+      }
+    ]
+  }
+}

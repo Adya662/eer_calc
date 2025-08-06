@@ -1,0 +1,1156 @@
+{
+  "call_id": "b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 15.77,
+  "all_entities_eer": {
+    "substitutions": 3,
+    "insertions": 5,
+    "deletions": 12,
+    "correct": 8,
+    "total_ref": 23,
+    "total_hyp": 16,
+    "eer_percentage": 86.96,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Niketa",
+          "type": "PERSON",
+          "normalized": "niketa",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Nikita",
+          "type": "PERSON",
+          "normalized": "nikita",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "30 to 45 minutes",
+          "type": "TIME",
+          "normalized": "30 to 45 minutes",
+          "index": 5
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Rs 1,799",
+          "type": "MONEY",
+          "normalized": "rs 1,799",
+          "index": 14
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "thirty to forty-five minutes",
+          "type": "TIME",
+          "normalized": "thirty to forty-five minutes",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "normalized": "doctor consultation",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "senior health coach",
+          "type": "PERSON",
+          "normalized": "senior health coach",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "insulin resistance",
+          "type": "PRODUCT",
+          "normalized": "insulin resistance",
+          "index": 12
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "hormonal imbalances",
+          "type": "PRODUCT",
+          "normalized": "hormonal imbalances",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "obesity specialist doctor",
+          "type": "PERSON",
+          "normalized": "obesity specialist doctor",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "senior health coach",
+          "type": "PERSON",
+          "normalized": "senior health coach",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 21
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 2,
+    "insertions": 5,
+    "deletions": 12,
+    "correct": 7,
+    "total_ref": 21,
+    "total_hyp": 14,
+    "eer_percentage": 90.48,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Niketa",
+          "type": "PERSON",
+          "normalized": "niketa",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Nikita",
+          "type": "PERSON",
+          "normalized": "nikita",
+          "index": 3
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "normalized": "doctor consultation",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "senior health coach",
+          "type": "PERSON",
+          "normalized": "senior health coach",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "insulin resistance",
+          "type": "PRODUCT",
+          "normalized": "insulin resistance",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "hormonal imbalances",
+          "type": "PRODUCT",
+          "normalized": "hormonal imbalances",
+          "index": 12
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "obesity specialist doctor",
+          "type": "PERSON",
+          "normalized": "obesity specialist doctor",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "senior health coach",
+          "type": "PERSON",
+          "normalized": "senior health coach",
+          "index": 14
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 13
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 5,
+      "ORGANIZATION": 1,
+      "PRODUCT": 15,
+      "TIME": 1,
+      "MONEY": 1
+    },
+    "hypothesis": {
+      "PRODUCT": 11,
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "TIME": 1,
+      "MONEY": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "TIME",
+      "PERSON",
+      "ORGANIZATION",
+      "PRODUCT",
+      "MONEY"
+    ],
+    "hypothesis": [
+      "TIME",
+      "PERSON",
+      "ORGANIZATION",
+      "PRODUCT",
+      "MONEY"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 16
+      },
+      {
+        "text": "Niketa",
+        "type": "PERSON",
+        "start": 57,
+        "end": 63,
+        "word_index": 26
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 108,
+        "end": 117,
+        "word_index": 37
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 77
+      },
+      {
+        "text": "thirty to forty-five minutes",
+        "type": "TIME",
+        "start": 405,
+        "end": 433,
+        "word_index": 107
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 137
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 164
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 327,
+        "end": 337,
+        "word_index": 169
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 362,
+        "end": 381,
+        "word_index": 181
+      },
+      {
+        "text": "senior health coach",
+        "type": "PERSON",
+        "start": 489,
+        "end": 508,
+        "word_index": 196
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 327,
+        "end": 337,
+        "word_index": 221
+      },
+      {
+        "text": "insulin resistance",
+        "type": "PRODUCT",
+        "start": 1227,
+        "end": 1245,
+        "word_index": 241
+      },
+      {
+        "text": "hormonal imbalances",
+        "type": "PRODUCT",
+        "start": 1250,
+        "end": 1269,
+        "word_index": 258
+      },
+      {
+        "text": "obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1314,
+        "end": 1339,
+        "word_index": 277
+      },
+      {
+        "text": "senior health coach",
+        "type": "PERSON",
+        "start": 489,
+        "end": 508,
+        "word_index": 307
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 343
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 376
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 386
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 444
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 485
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2691,
+        "end": 2736,
+        "word_index": 530
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 530
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 22
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 204,
+        "end": 209,
+        "word_index": 70
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 215,
+        "end": 226,
+        "word_index": 70
+      },
+      {
+        "text": "Nikita",
+        "type": "PERSON",
+        "start": 247,
+        "end": 253,
+        "word_index": 78
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 88
+      },
+      {
+        "text": "30 to 45 minutes",
+        "type": "TIME",
+        "start": 404,
+        "end": 420,
+        "word_index": 135
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 205
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 226
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 245
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 415
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 483
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 556
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 636
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 692
+      },
+      {
+        "text": "Rs 1,799",
+        "type": "MONEY",
+        "start": 2675,
+        "end": 2683,
+        "word_index": 724
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 724
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 16
+      },
+      {
+        "text": "Niketa",
+        "type": "PERSON",
+        "start": 57,
+        "end": 63,
+        "word_index": 26
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 108,
+        "end": 117,
+        "word_index": 37
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 77
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 137
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 164
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 327,
+        "end": 337,
+        "word_index": 169
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 362,
+        "end": 381,
+        "word_index": 181
+      },
+      {
+        "text": "senior health coach",
+        "type": "PERSON",
+        "start": 489,
+        "end": 508,
+        "word_index": 196
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 327,
+        "end": 337,
+        "word_index": 221
+      },
+      {
+        "text": "insulin resistance",
+        "type": "PRODUCT",
+        "start": 1227,
+        "end": 1245,
+        "word_index": 241
+      },
+      {
+        "text": "hormonal imbalances",
+        "type": "PRODUCT",
+        "start": 1250,
+        "end": 1269,
+        "word_index": 258
+      },
+      {
+        "text": "obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1314,
+        "end": 1339,
+        "word_index": 277
+      },
+      {
+        "text": "senior health coach",
+        "type": "PERSON",
+        "start": 489,
+        "end": 508,
+        "word_index": 307
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 343
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 376
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 386
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 444
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 485
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 530
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 22
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 204,
+        "end": 209,
+        "word_index": 70
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 215,
+        "end": 226,
+        "word_index": 70
+      },
+      {
+        "text": "Nikita",
+        "type": "PERSON",
+        "start": 247,
+        "end": 253,
+        "word_index": 78
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 88
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 205
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 226
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 245
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 415
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 483
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 556
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 636
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 692
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 724
+      }
+    ]
+  }
+}

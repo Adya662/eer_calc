@@ -1,0 +1,710 @@
+{
+  "call_id": "09f69426-e7e6-4f2a-a20a-75416d945306",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 20.49,
+  "all_entities_eer": {
+    "eer_percentage": 28.57,
+    "substitutions": 10,
+    "insertions": 1,
+    "deletions": 16,
+    "total_ref": 28,
+    "total_hyp": 21,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 7.69,
+    "substitutions": 2,
+    "insertions": 12,
+    "deletions": 12,
+    "total_ref": 26,
+    "total_hyp": 16,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "EVENT": 1,
+      "PRODUCT": 20,
+      "MONEY": 3,
+      "DATE": 2
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 13,
+      "MONEY": 3,
+      "DATE": 3
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "EVENT",
+      "PRODUCT",
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "DATE"
+    ],
+    "hypothesis": [
+      "PRODUCT",
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 11
+      },
+      {
+        "text": "Great",
+        "type": "EVENT",
+        "start": 79,
+        "end": 84,
+        "word_index": 17
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 122,
+        "end": 126,
+        "word_index": 21
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 796,
+        "end": 841,
+        "word_index": 131
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 131
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 141
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 908,
+        "end": 927,
+        "word_index": 147
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 931,
+        "end": 956,
+        "word_index": 155
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 172
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 172
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 207
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 796,
+        "end": 841,
+        "word_index": 219
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 219
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 228
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 908,
+        "end": 927,
+        "word_index": 234
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 931,
+        "end": 956,
+        "word_index": 242
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 2317,
+        "end": 2336,
+        "word_index": 248
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 257
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 266
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 277
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 299
+      },
+      {
+        "text": "3, 6, or 12-month",
+        "type": "DATE",
+        "start": 2842,
+        "end": 2859,
+        "word_index": 318
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 345
+      },
+      {
+        "text": "3, 6, or 12-month",
+        "type": "DATE",
+        "start": 2842,
+        "end": 2859,
+        "word_index": 357
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 374
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 414
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 427
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 58,
+        "end": 68,
+        "word_index": 12
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 18
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 64
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 104
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 109
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 117
+      },
+      {
+        "text": "1,799",
+        "type": "MONEY",
+        "start": 750,
+        "end": 755,
+        "word_index": 153
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 171
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 251
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 260
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 283
+      },
+      {
+        "text": "3, 6 or 12",
+        "type": "DATE",
+        "start": 2864,
+        "end": 2874,
+        "word_index": 291
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 326
+      },
+      {
+        "text": "3, 6 or 12",
+        "type": "DATE",
+        "start": 2864,
+        "end": 2874,
+        "word_index": 338
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 380
+      },
+      {
+        "text": "three months",
+        "type": "DATE",
+        "start": 3122,
+        "end": 3134,
+        "word_index": 402
+      },
+      {
+        "text": "nano plan",
+        "type": "PRODUCT",
+        "start": 3461,
+        "end": 3470,
+        "word_index": 450
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 463
+      },
+      {
+        "text": "1,799",
+        "type": "MONEY",
+        "start": 750,
+        "end": 755,
+        "word_index": 158
+      },
+      {
+        "text": "6,000",
+        "type": "MONEY",
+        "start": 2170,
+        "end": 2175,
+        "word_index": 189
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 122,
+        "end": 126,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 131
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 141
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 908,
+        "end": 927,
+        "word_index": 147
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 931,
+        "end": 956,
+        "word_index": 155
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 172
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 172
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 207
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 219
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 896,
+        "end": 906,
+        "word_index": 228
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 908,
+        "end": 927,
+        "word_index": 234
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 931,
+        "end": 956,
+        "word_index": 242
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 257
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 266
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 277
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 299
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 345
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 374
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 414
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 427
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 58,
+        "end": 68,
+        "word_index": 12
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 18
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 64
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 104
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 109
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 117
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 171
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 251
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 260
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 283
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 326
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 380
+      },
+      {
+        "text": "nano plan",
+        "type": "PRODUCT",
+        "start": 3461,
+        "end": 3470,
+        "word_index": 450
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 129,
+        "word_index": 463
+      }
+    ]
+  }
+}

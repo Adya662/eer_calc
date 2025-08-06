@@ -1,0 +1,690 @@
+{
+  "call_id": "8daee0cc-cbda-4cdf-b8ed-f120e3329138",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 12.08,
+  "all_entities_eer": {
+    "substitutions": 9,
+    "insertions": 0,
+    "deletions": 1,
+    "correct": 3,
+    "total_ref": 13,
+    "total_hyp": 12,
+    "eer_percentage": 76.92,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Ray",
+          "type": "PERSON",
+          "normalized": "ray",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+          "type": "PRODUCT",
+          "normalized": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f men opaque casual shirt",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "21 August",
+          "type": "DATE",
+          "normalized": "21 august",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "August",
+          "type": "DATE",
+          "normalized": "august",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+          "type": "PRODUCT",
+          "normalized": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f men opaque casual shirt",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "twenty-first August",
+          "type": "DATE",
+          "normalized": "twenty-first august",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 10
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 12
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "SMS",
+          "type": "PRODUCT",
+          "normalized": "sms",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "SMS",
+          "type": "PRODUCT",
+          "normalized": "sms",
+          "index": 11
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 7,
+    "insertions": 1,
+    "deletions": 1,
+    "correct": 1,
+    "total_ref": 9,
+    "total_hyp": 9,
+    "eer_percentage": 100.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Ray",
+          "type": "PERSON",
+          "normalized": "ray",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+          "type": "PRODUCT",
+          "normalized": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f men opaque casual shirt",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+          "type": "PRODUCT",
+          "normalized": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f men opaque casual shirt",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 7
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 7
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 8
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "SMS",
+          "type": "PRODUCT",
+          "normalized": "sms",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "SMS",
+          "type": "PRODUCT",
+          "normalized": "sms",
+          "index": 8
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 5,
+      "LANGUAGE": 2,
+      "PRODUCT": 3,
+      "DATE": 2
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 7,
+      "LANGUAGE": 2,
+      "DATE": 1,
+      "PRODUCT": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "LANGUAGE",
+      "PERSON",
+      "DATE",
+      "PRODUCT",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "LANGUAGE",
+      "PERSON",
+      "DATE",
+      "PRODUCT",
+      "ORGANIZATION"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 42
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 48
+      },
+      {
+        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 379,
+        "word_index": 92
+      },
+      {
+        "text": "21 August",
+        "type": "DATE",
+        "start": 424,
+        "end": 433,
+        "word_index": 106
+      },
+      {
+        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 379,
+        "word_index": 160
+      },
+      {
+        "text": "twenty-first August",
+        "type": "DATE",
+        "start": 786,
+        "end": 805,
+        "word_index": 174
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 246
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 288
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 326
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 1955,
+        "end": 1958,
+        "word_index": 383
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 396
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 3
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 7
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 75,
+        "end": 80,
+        "word_index": 18
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 84,
+        "end": 91,
+        "word_index": 24
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 60
+      },
+      {
+        "text": "August",
+        "type": "DATE",
+        "start": 575,
+        "end": 581,
+        "word_index": 106
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 163
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 218
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 263
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 269
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 315
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 1724,
+        "end": 1727,
+        "word_index": 315
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 379,
+        "word_index": 92
+      },
+      {
+        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 379,
+        "word_index": 160
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 246
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 288
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 326
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 1955,
+        "end": 1958,
+        "word_index": 383
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 396
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 3
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 7
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 60
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 163
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 218
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 263
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 269
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 315
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 1724,
+        "end": 1727,
+        "word_index": 315
+      }
+    ]
+  }
+}

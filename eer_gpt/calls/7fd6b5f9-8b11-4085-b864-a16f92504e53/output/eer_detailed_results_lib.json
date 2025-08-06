@@ -1,0 +1,590 @@
+{
+  "call_id": "7fd6b5f9-8b11-4085-b864-a16f92504e53",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 10.61,
+  "all_entities_eer": {
+    "substitutions": 8,
+    "insertions": 3,
+    "deletions": 0,
+    "correct": 1,
+    "total_ref": 9,
+    "total_hyp": 12,
+    "eer_percentage": 122.22,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "We",
+          "type": "ORGANIZATION",
+          "normalized": "we",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Bijal Roliya",
+          "type": "PERSON",
+          "normalized": "bijal roliya",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "BMI",
+          "type": "PRODUCT",
+          "normalized": "bmi",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "normalized": "obesity stage - category i",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "normalized": "rupees 1,799",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "rupees 499",
+          "type": "MONEY",
+          "normalized": "rupees 499",
+          "index": 9
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "rupees 1,399",
+          "type": "MONEY",
+          "normalized": "rupees 1,399",
+          "index": 10
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "normalized": "rupees 1,799",
+          "index": 11
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 6,
+    "insertions": 1,
+    "deletions": 0,
+    "correct": 1,
+    "total_ref": 7,
+    "total_hyp": 8,
+    "eer_percentage": 100.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "We",
+          "type": "ORGANIZATION",
+          "normalized": "we",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Bijal Roliya",
+          "type": "PERSON",
+          "normalized": "bijal roliya",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "BMI",
+          "type": "PRODUCT",
+          "normalized": "bmi",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 7
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 7
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 4,
+      "EVENT": 1,
+      "MONEY": 1
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 1,
+      "PRODUCT": 6,
+      "MONEY": 4
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "EVENT",
+      "PRODUCT",
+      "MONEY",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "start": 57,
+        "end": 69,
+        "word_index": 12
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 311,
+        "end": 314,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 467,
+        "end": 476,
+        "word_index": 32
+      },
+      {
+        "text": "Obesity Stage - Category I",
+        "type": "EVENT",
+        "start": 796,
+        "end": 822,
+        "word_index": 92
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 467,
+        "end": 476,
+        "word_index": 145
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 467,
+        "end": 476,
+        "word_index": 207
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2739,
+        "end": 2784,
+        "word_index": 293
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "We",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 28,
+        "word_index": 6
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 51
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 109
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 113
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 175
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 206
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 2658,
+        "end": 2670,
+        "word_index": 285
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 308
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 3593,
+        "end": 3603,
+        "word_index": 324
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 3626,
+        "end": 3638,
+        "word_index": 334
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 2658,
+        "end": 2670,
+        "word_index": 347
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "start": 57,
+        "end": 69,
+        "word_index": 12
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 311,
+        "end": 314,
+        "word_index": 21
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 467,
+        "end": 476,
+        "word_index": 32
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 467,
+        "end": 476,
+        "word_index": 145
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 467,
+        "end": 476,
+        "word_index": 207
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "We",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 28,
+        "word_index": 6
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 51
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 109
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 113
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 175
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 206
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 421,
+        "end": 425,
+        "word_index": 308
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "call_id": "b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f",
+  "method": "Combined SpaCy/Stanza NER",
+  "processing_timestamp": "2025-08-06 03:11:37",
+  "metrics": {
+    "global_EER": {
+      "correct_entities": 1,
+      "missed_entities": 2,
+      "extra_entities": 1,
+      "total_errors": 3,
+      "total_ref_entities": 3,
+      "total_gt_entities": 2,
+      "eer_percentage": 100.0,
+      "accuracy_percentage": 33.33
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 14,
+    "gt_entities": 18,
+    "unique_ref_entities": 9,
+    "unique_gt_entities": 8,
+    "concerned_ref_entities": 3,
+    "concerned_gt_entities": 2
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "NORP": 1,
+      "ORG": 2,
+      "PERSON": 1,
+      "LAW": 4,
+      "CARDINAL": 2,
+      "FAC": 3,
+      "DATE": 1
+    },
+    "ground_truth": {
+      "PERSON": 10,
+      "ORG": 1,
+      "TIME": 1,
+      "CARDINAL": 2,
+      "DATE": 1,
+      "NEN": 3
+    }
+  },
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Niketa?",
+      "ground_truth": "Great. I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are?",
+      "ref_entities": [
+        {
+          "text": "ElevateNow",
+          "type": "ORG"
+        },
+        {
+          "text": "Niketa",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Nano",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "ground_truth": "Hello, this is Priya from Elevate Now. Am I speaking with Nikita?",
+      "ref_entities": [
+        {
+          "text": "Nano",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Nikita",
+          "type": "ORG"
+        }
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "TIME",
+    "NORP",
+    "FAC",
+    "LAW",
+    "PERSON",
+    "DATE",
+    "CARDINAL",
+    "NEN",
+    "ORG"
+  ]
+}

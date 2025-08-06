@@ -1,0 +1,1216 @@
+{
+  "call_id": "03856e6b-6925-4012-8eb8-0a0289019b7e",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 14.94,
+  "all_entities_eer": {
+    "substitutions": 5,
+    "insertions": 3,
+    "deletions": 6,
+    "correct": 11,
+    "total_ref": 22,
+    "total_hyp": 19,
+    "eer_percentage": 63.64,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 18
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Category I",
+          "type": "PRODUCT",
+          "normalized": "category i",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Healthify",
+          "type": "ORGANIZATION",
+          "normalized": "healthify",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Elevate-Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate-now",
+          "index": 21
+        },
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 18
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 18
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 18
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "India",
+          "type": "GPE",
+          "normalized": "india",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092a\u091f\u0928\u093e",
+          "type": "GPE",
+          "normalized": "\u092a\u091f\u0928\u093e",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Healthifi",
+          "type": "ORGANIZATION",
+          "normalized": "healthifi",
+          "index": 16
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Atul Sinha",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Atul Sinha",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "MBBS",
+          "type": "PRODUCT",
+          "normalized": "mbbs",
+          "index": 18
+        },
+        "hyp_entity": {
+          "text": "MBBS",
+          "type": "PRODUCT",
+          "normalized": "mbbs",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "MD",
+          "type": "PRODUCT",
+          "normalized": "md",
+          "index": 19
+        },
+        "hyp_entity": {
+          "text": "MD",
+          "type": "PRODUCT",
+          "normalized": "md",
+          "index": 16
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 17
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 5,
+    "insertions": 3,
+    "deletions": 4,
+    "correct": 11,
+    "total_ref": 20,
+    "total_hyp": 19,
+    "eer_percentage": 60.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 18
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Healthify",
+          "type": "ORGANIZATION",
+          "normalized": "healthify",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Elevate-Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate-now",
+          "index": 19
+        },
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 18
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 18
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 18
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Category I",
+          "type": "PRODUCT",
+          "normalized": "category i",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Healthifi",
+          "type": "ORGANIZATION",
+          "normalized": "healthifi",
+          "index": 14
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Atul Sinha",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Atul Sinha",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "nano plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "MBBS",
+          "type": "PRODUCT",
+          "normalized": "mbbs",
+          "index": 16
+        },
+        "hyp_entity": {
+          "text": "MBBS",
+          "type": "PRODUCT",
+          "normalized": "mbbs",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "MD",
+          "type": "PRODUCT",
+          "normalized": "md",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "MD",
+          "type": "PRODUCT",
+          "normalized": "md",
+          "index": 16
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 18
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 17
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 6,
+      "ORGANIZATION": 5,
+      "PRODUCT": 9,
+      "GPE": 2
+    },
+    "hypothesis": {
+      "PERSON": 6,
+      "ORGANIZATION": 5,
+      "PRODUCT": 8
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORGANIZATION",
+      "GPE",
+      "PRODUCT",
+      "PERSON"
+    ],
+    "hypothesis": [
+      "ORGANIZATION",
+      "PRODUCT",
+      "PERSON"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 12
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 18
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 12
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 18
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 12
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 18
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 291,
+        "end": 300,
+        "word_index": 32
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "start": 474,
+        "end": 479,
+        "word_index": 62
+      },
+      {
+        "text": "\u092a\u091f\u0928\u093e",
+        "type": "GPE",
+        "start": 491,
+        "end": 495,
+        "word_index": 66
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 78
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 89
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 110
+      },
+      {
+        "text": "Category I",
+        "type": "PRODUCT",
+        "start": 1215,
+        "end": 1225,
+        "word_index": 138
+      },
+      {
+        "text": "Healthifi",
+        "type": "ORGANIZATION",
+        "start": 1588,
+        "end": 1597,
+        "word_index": 166
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 173
+      },
+      {
+        "text": "MBBS",
+        "type": "PRODUCT",
+        "start": 2062,
+        "end": 2066,
+        "word_index": 203
+      },
+      {
+        "text": "MD",
+        "type": "PRODUCT",
+        "start": 2068,
+        "end": 2070,
+        "word_index": 206
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2322,
+        "end": 2330,
+        "word_index": 227
+      },
+      {
+        "text": "Elevate-Now",
+        "type": "ORGANIZATION",
+        "start": 2648,
+        "end": 2659,
+        "word_index": 263
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "priya",
+        "type": "PERSON",
+        "start": 14,
+        "end": 19,
+        "word_index": 10
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 18
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 46,
+        "end": 57,
+        "word_index": 22
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 18
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 46,
+        "end": 57,
+        "word_index": 22
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "start": 117,
+        "end": 127,
+        "word_index": 43
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 18
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORGANIZATION",
+        "start": 155,
+        "end": 166,
+        "word_index": 22
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "start": 117,
+        "end": 127,
+        "word_index": 43
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 246,
+        "word_index": 71
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 251,
+        "word_index": 71
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 251,
+        "word_index": 121
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 251,
+        "word_index": 175
+      },
+      {
+        "text": "Healthify",
+        "type": "ORGANIZATION",
+        "start": 1287,
+        "end": 1296,
+        "word_index": 272
+      },
+      {
+        "text": "nano plan",
+        "type": "PRODUCT",
+        "start": 1299,
+        "end": 1308,
+        "word_index": 286
+      },
+      {
+        "text": "MBBS",
+        "type": "PRODUCT",
+        "start": 1756,
+        "end": 1760,
+        "word_index": 331
+      },
+      {
+        "text": "MD",
+        "type": "PRODUCT",
+        "start": 1762,
+        "end": 1764,
+        "word_index": 334
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 1975,
+        "end": 1983,
+        "word_index": 362
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORGANIZATION",
+        "start": 155,
+        "end": 166,
+        "word_index": 406
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 12
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 18
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 12
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 18
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 12
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 18
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 291,
+        "end": 300,
+        "word_index": 32
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 78
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 89
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 110
+      },
+      {
+        "text": "Category I",
+        "type": "PRODUCT",
+        "start": 1215,
+        "end": 1225,
+        "word_index": 138
+      },
+      {
+        "text": "Healthifi",
+        "type": "ORGANIZATION",
+        "start": 1588,
+        "end": 1597,
+        "word_index": 166
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 173
+      },
+      {
+        "text": "MBBS",
+        "type": "PRODUCT",
+        "start": 2062,
+        "end": 2066,
+        "word_index": 203
+      },
+      {
+        "text": "MD",
+        "type": "PRODUCT",
+        "start": 2068,
+        "end": 2070,
+        "word_index": 206
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2322,
+        "end": 2330,
+        "word_index": 227
+      },
+      {
+        "text": "Elevate-Now",
+        "type": "ORGANIZATION",
+        "start": 2648,
+        "end": 2659,
+        "word_index": 263
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "priya",
+        "type": "PERSON",
+        "start": 14,
+        "end": 19,
+        "word_index": 10
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 18
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 46,
+        "end": 57,
+        "word_index": 22
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 18
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 46,
+        "end": 57,
+        "word_index": 22
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "start": 117,
+        "end": 127,
+        "word_index": 43
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 18
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORGANIZATION",
+        "start": 155,
+        "end": 166,
+        "word_index": 22
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "start": 117,
+        "end": 127,
+        "word_index": 43
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 246,
+        "word_index": 71
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 251,
+        "word_index": 71
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 251,
+        "word_index": 121
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 251,
+        "word_index": 175
+      },
+      {
+        "text": "Healthify",
+        "type": "ORGANIZATION",
+        "start": 1287,
+        "end": 1296,
+        "word_index": 272
+      },
+      {
+        "text": "nano plan",
+        "type": "PRODUCT",
+        "start": 1299,
+        "end": 1308,
+        "word_index": 286
+      },
+      {
+        "text": "MBBS",
+        "type": "PRODUCT",
+        "start": 1756,
+        "end": 1760,
+        "word_index": 331
+      },
+      {
+        "text": "MD",
+        "type": "PRODUCT",
+        "start": 1762,
+        "end": 1764,
+        "word_index": 334
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 1975,
+        "end": 1983,
+        "word_index": 362
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORGANIZATION",
+        "start": 155,
+        "end": 166,
+        "word_index": 406
+      }
+    ]
+  }
+}

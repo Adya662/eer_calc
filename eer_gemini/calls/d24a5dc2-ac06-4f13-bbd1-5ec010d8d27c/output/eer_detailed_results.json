@@ -1,0 +1,363 @@
+{
+  "call_id": "d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 14.43,
+  "all_entities_eer": {
+    "eer_percentage": 50.0,
+    "substitutions": 4,
+    "insertions": 0,
+    "deletions": 6,
+    "total_ref": 14,
+    "total_hyp": 10,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 22.22222222222222,
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 6,
+    "total_ref": 10,
+    "total_hyp": 7,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "ORGANIZATION": 1,
+      "PERSON": 2,
+      "PRODUCT": 7,
+      "EVENT": 1,
+      "MONEY": 3
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 4,
+      "MONEY": 3
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "EVENT",
+      "PRODUCT",
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT",
+      "PERSON"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 22
+      },
+      {
+        "text": "Nupur",
+        "type": "PERSON",
+        "start": 57,
+        "end": 62,
+        "word_index": 39
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 157,
+        "end": 161,
+        "word_index": 72
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 110
+      },
+      {
+        "text": "Pre-Obesity",
+        "type": "EVENT",
+        "start": 448,
+        "end": 459,
+        "word_index": 173
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 157,
+        "end": 161,
+        "word_index": 252
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1659,
+        "end": 1704,
+        "word_index": 277
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 1877,
+        "end": 1896,
+        "word_index": 320
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 900,
+        "end": 909,
+        "word_index": 351
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 900,
+        "end": 909,
+        "word_index": 440
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 900,
+        "end": 909,
+        "word_index": 515
+      },
+      {
+        "text": "Iron & Vitamin D",
+        "type": "PRODUCT",
+        "start": 540,
+        "end": 556,
+        "word_index": 532
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 329,
+        "end": 332,
+        "word_index": 586
+      },
+      {
+        "text": "26.81",
+        "type": "MONEY",
+        "start": 336,
+        "end": 341,
+        "word_index": 586
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 14
+      },
+      {
+        "text": "Nupur",
+        "type": "PERSON",
+        "start": 58,
+        "end": 63,
+        "word_index": 22
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 158,
+        "end": 162,
+        "word_index": 38
+      },
+      {
+        "text": "26.81",
+        "type": "MONEY",
+        "start": 338,
+        "end": 343,
+        "word_index": 48
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 158,
+        "end": 162,
+        "word_index": 101
+      },
+      {
+        "text": "Rs 1,799",
+        "type": "MONEY",
+        "start": 1658,
+        "end": 1666,
+        "word_index": 130
+      },
+      {
+        "text": "Rs 6,000",
+        "type": "MONEY",
+        "start": 1839,
+        "end": 1847,
+        "word_index": 147
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 158,
+        "end": 162,
+        "word_index": 163
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 158,
+        "end": 162,
+        "word_index": 260
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 22
+      },
+      {
+        "text": "Nupur",
+        "type": "PERSON",
+        "start": 57,
+        "end": 62,
+        "word_index": 39
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 157,
+        "end": 161,
+        "word_index": 72
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 110
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 157,
+        "end": 161,
+        "word_index": 252
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 900,
+        "end": 909,
+        "word_index": 351
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 900,
+        "end": 909,
+        "word_index": 440
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 900,
+        "end": 909,
+        "word_index": 515
+      },
+      {
+        "text": "Iron & Vitamin D",
+        "type": "PRODUCT",
+        "start": 540,
+        "end": 556,
+        "word_index": 532
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 329,
+        "end": 332,
+        "word_index": 586
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 10
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 14
+      },
+      {
+        "text": "Nupur",
+        "type": "PERSON",
+        "start": 58,
+        "end": 63,
+        "word_index": 22
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 158,
+        "end": 162,
+        "word_index": 38
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 158,
+        "end": 162,
+        "word_index": 101
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 158,
+        "end": 162,
+        "word_index": 163
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 158,
+        "end": 162,
+        "word_index": 260
+      }
+    ]
+  }
+}

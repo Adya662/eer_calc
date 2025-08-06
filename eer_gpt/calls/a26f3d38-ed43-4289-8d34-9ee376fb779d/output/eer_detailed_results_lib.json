@@ -1,0 +1,1259 @@
+{
+  "call_id": "a26f3d38-ed43-4289-8d34-9ee376fb779d",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 17.76,
+  "all_entities_eer": {
+    "substitutions": 19,
+    "insertions": 0,
+    "deletions": 3,
+    "correct": 2,
+    "total_ref": 24,
+    "total_hyp": 21,
+    "eer_percentage": 91.67,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Plum face serum",
+          "type": "PRODUCT",
+          "normalized": "plum face serum",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "Plum",
+          "type": "PRODUCT",
+          "normalized": "plum",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Jockey gym towel",
+          "type": "PRODUCT",
+          "normalized": "jockey gym towel",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Jockey",
+          "type": "PRODUCT",
+          "normalized": "jockey",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Bigen beard color",
+          "type": "PRODUCT",
+          "normalized": "bigen beard color",
+          "index": 16
+        },
+        "hyp_entity": {
+          "text": "Bigen",
+          "type": "PRODUCT",
+          "normalized": "bigen",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Kalenji running shorts",
+          "type": "PRODUCT",
+          "normalized": "kalenji running shorts",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "Kalenji",
+          "type": "PRODUCT",
+          "normalized": "kalenji",
+          "index": 16
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Sirona period panties",
+          "type": "PRODUCT",
+          "normalized": "sirona period panties",
+          "index": 18
+        },
+        "hyp_entity": {
+          "text": "Sirona",
+          "type": "PRODUCT",
+          "normalized": "sirona",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Plum face serum",
+          "type": "PRODUCT",
+          "normalized": "plum face serum",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "Plum",
+          "type": "PRODUCT",
+          "normalized": "plum",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Jockey gym towel",
+          "type": "PRODUCT",
+          "normalized": "jockey gym towel",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Jockey",
+          "type": "PRODUCT",
+          "normalized": "jockey",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Bigen beard color",
+          "type": "PRODUCT",
+          "normalized": "bigen beard color",
+          "index": 16
+        },
+        "hyp_entity": {
+          "text": "Bigen",
+          "type": "PRODUCT",
+          "normalized": "bigen",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Kalenji running shorts",
+          "type": "PRODUCT",
+          "normalized": "kalenji running shorts",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "Kalenji",
+          "type": "PRODUCT",
+          "normalized": "kalenji",
+          "index": 16
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Sirona period panties",
+          "type": "PRODUCT",
+          "normalized": "sirona period panties",
+          "index": 18
+        },
+        "hyp_entity": {
+          "text": "Sirona",
+          "type": "PRODUCT",
+          "normalized": "sirona",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Plum face serum",
+          "type": "PRODUCT",
+          "normalized": "plum face serum",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "Plum",
+          "type": "PRODUCT",
+          "normalized": "plum",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Jockey gym towel",
+          "type": "PRODUCT",
+          "normalized": "jockey gym towel",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Jockey",
+          "type": "PRODUCT",
+          "normalized": "jockey",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Bigen beard color",
+          "type": "PRODUCT",
+          "normalized": "bigen beard color",
+          "index": 16
+        },
+        "hyp_entity": {
+          "text": "Bigen",
+          "type": "PRODUCT",
+          "normalized": "bigen",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Kalenji running shorts",
+          "type": "PRODUCT",
+          "normalized": "kalenji running shorts",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "Kalenji",
+          "type": "PRODUCT",
+          "normalized": "kalenji",
+          "index": 16
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Sirona period panties",
+          "type": "PRODUCT",
+          "normalized": "sirona period panties",
+          "index": 18
+        },
+        "hyp_entity": {
+          "text": "Sirona",
+          "type": "PRODUCT",
+          "normalized": "sirona",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092a\u094d\u0932\u092e 10% Niacinamide Brightening Face Serum With Rice Ferment Extract & Licorice - 50ml",
+          "type": "PRODUCT",
+          "normalized": "\u092a\u094d\u0932\u092e 10% niacinamide brightening face serum with rice ferment extract & licorice - 50ml",
+          "index": 19
+        },
+        "hyp_entity": {
+          "text": "Plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml",
+          "type": "PRODUCT",
+          "normalized": "plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml",
+          "index": 18
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "today",
+          "type": "DATE",
+          "normalized": "today",
+          "index": 21
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "today",
+          "type": "DATE",
+          "normalized": "today",
+          "index": 21
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 20
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 23
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 23
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 23
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 2
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 19,
+    "insertions": 0,
+    "deletions": 1,
+    "correct": 0,
+    "total_ref": 20,
+    "total_hyp": 19,
+    "eer_percentage": 100.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 18
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 19
+        },
+        "hyp_entity": {
+          "text": "Plum",
+          "type": "PRODUCT",
+          "normalized": "plum",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Plum face serum",
+          "type": "PRODUCT",
+          "normalized": "plum face serum",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Jockey",
+          "type": "PRODUCT",
+          "normalized": "jockey",
+          "index": 12
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Jockey gym towel",
+          "type": "PRODUCT",
+          "normalized": "jockey gym towel",
+          "index": 13
+        },
+        "hyp_entity": {
+          "text": "Bigen",
+          "type": "PRODUCT",
+          "normalized": "bigen",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Bigen beard color",
+          "type": "PRODUCT",
+          "normalized": "bigen beard color",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "Kalenji",
+          "type": "PRODUCT",
+          "normalized": "kalenji",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Kalenji running shorts",
+          "type": "PRODUCT",
+          "normalized": "kalenji running shorts",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Sirona",
+          "type": "PRODUCT",
+          "normalized": "sirona",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Sirona period panties",
+          "type": "PRODUCT",
+          "normalized": "sirona period panties",
+          "index": 16
+        },
+        "hyp_entity": {
+          "text": "Plum",
+          "type": "PRODUCT",
+          "normalized": "plum",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Plum face serum",
+          "type": "PRODUCT",
+          "normalized": "plum face serum",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Jockey",
+          "type": "PRODUCT",
+          "normalized": "jockey",
+          "index": 12
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Jockey gym towel",
+          "type": "PRODUCT",
+          "normalized": "jockey gym towel",
+          "index": 13
+        },
+        "hyp_entity": {
+          "text": "Bigen",
+          "type": "PRODUCT",
+          "normalized": "bigen",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Bigen beard color",
+          "type": "PRODUCT",
+          "normalized": "bigen beard color",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "Kalenji",
+          "type": "PRODUCT",
+          "normalized": "kalenji",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Kalenji running shorts",
+          "type": "PRODUCT",
+          "normalized": "kalenji running shorts",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Sirona",
+          "type": "PRODUCT",
+          "normalized": "sirona",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Sirona period panties",
+          "type": "PRODUCT",
+          "normalized": "sirona period panties",
+          "index": 16
+        },
+        "hyp_entity": {
+          "text": "Plum",
+          "type": "PRODUCT",
+          "normalized": "plum",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Plum face serum",
+          "type": "PRODUCT",
+          "normalized": "plum face serum",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Jockey",
+          "type": "PRODUCT",
+          "normalized": "jockey",
+          "index": 12
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Jockey gym towel",
+          "type": "PRODUCT",
+          "normalized": "jockey gym towel",
+          "index": 13
+        },
+        "hyp_entity": {
+          "text": "Bigen",
+          "type": "PRODUCT",
+          "normalized": "bigen",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Bigen beard color",
+          "type": "PRODUCT",
+          "normalized": "bigen beard color",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "Kalenji",
+          "type": "PRODUCT",
+          "normalized": "kalenji",
+          "index": 14
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Kalenji running shorts",
+          "type": "PRODUCT",
+          "normalized": "kalenji running shorts",
+          "index": 15
+        },
+        "hyp_entity": {
+          "text": "Sirona",
+          "type": "PRODUCT",
+          "normalized": "sirona",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Sirona period panties",
+          "type": "PRODUCT",
+          "normalized": "sirona period panties",
+          "index": 16
+        },
+        "hyp_entity": {
+          "text": "Plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml",
+          "type": "PRODUCT",
+          "normalized": "plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml",
+          "index": 16
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092a\u094d\u0932\u092e 10% Niacinamide Brightening Face Serum With Rice Ferment Extract & Licorice - 50ml",
+          "type": "PRODUCT",
+          "normalized": "\u092a\u094d\u0932\u092e 10% niacinamide brightening face serum with rice ferment extract & licorice - 50ml",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 18
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 19
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 18
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 19
+        }
+      }
+    ],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 16,
+      "DATE": 2
+    },
+    "hypothesis": {
+      "ORGANIZATION": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 16
+    }
+  },
+  "mispronunciation": {
+    "count": 3,
+    "pronunciation_ids": "nZ8rz;V3ZDi;qVuQg"
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "ORGANIZATION",
+      "DATE"
+    ],
+    "hypothesis": [
+      "ORGANIZATION",
+      "LANGUAGE",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 4
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 7
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 36
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 38
+      },
+      {
+        "text": "Plum face serum",
+        "type": "PRODUCT",
+        "start": 607,
+        "end": 622,
+        "word_index": 146
+      },
+      {
+        "text": "Jockey gym towel",
+        "type": "PRODUCT",
+        "start": 624,
+        "end": 640,
+        "word_index": 148
+      },
+      {
+        "text": "Bigen beard color",
+        "type": "PRODUCT",
+        "start": 642,
+        "end": 659,
+        "word_index": 150
+      },
+      {
+        "text": "Kalenji running shorts",
+        "type": "PRODUCT",
+        "start": 661,
+        "end": 683,
+        "word_index": 152
+      },
+      {
+        "text": "Sirona period panties",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 709,
+        "word_index": 155
+      },
+      {
+        "text": "Plum face serum",
+        "type": "PRODUCT",
+        "start": 607,
+        "end": 622,
+        "word_index": 202
+      },
+      {
+        "text": "Jockey gym towel",
+        "type": "PRODUCT",
+        "start": 624,
+        "end": 640,
+        "word_index": 204
+      },
+      {
+        "text": "Bigen beard color",
+        "type": "PRODUCT",
+        "start": 642,
+        "end": 659,
+        "word_index": 206
+      },
+      {
+        "text": "Kalenji running shorts",
+        "type": "PRODUCT",
+        "start": 661,
+        "end": 683,
+        "word_index": 208
+      },
+      {
+        "text": "Sirona period panties",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 709,
+        "word_index": 211
+      },
+      {
+        "text": "Plum face serum",
+        "type": "PRODUCT",
+        "start": 607,
+        "end": 622,
+        "word_index": 264
+      },
+      {
+        "text": "Jockey gym towel",
+        "type": "PRODUCT",
+        "start": 624,
+        "end": 640,
+        "word_index": 266
+      },
+      {
+        "text": "Bigen beard color",
+        "type": "PRODUCT",
+        "start": 642,
+        "end": 659,
+        "word_index": 268
+      },
+      {
+        "text": "Kalenji running shorts",
+        "type": "PRODUCT",
+        "start": 661,
+        "end": 683,
+        "word_index": 270
+      },
+      {
+        "text": "Sirona period panties",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 709,
+        "word_index": 273
+      },
+      {
+        "text": "\u092a\u094d\u0932\u092e 10% Niacinamide Brightening Face Serum With Rice Ferment Extract & Licorice - 50ml",
+        "type": "PRODUCT",
+        "start": 1281,
+        "end": 1368,
+        "word_index": 292
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "start": 172,
+        "end": 177,
+        "word_index": 303
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "start": 172,
+        "end": 177,
+        "word_index": 321
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 403
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 469
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 0,
+        "end": 6,
+        "word_index": 0
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 55,
+        "end": 60,
+        "word_index": 16
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 64,
+        "end": 71,
+        "word_index": 18
+      },
+      {
+        "text": "Plum",
+        "type": "PRODUCT",
+        "start": 534,
+        "end": 538,
+        "word_index": 137
+      },
+      {
+        "text": "Jockey",
+        "type": "PRODUCT",
+        "start": 551,
+        "end": 557,
+        "word_index": 140
+      },
+      {
+        "text": "Bigen",
+        "type": "PRODUCT",
+        "start": 569,
+        "end": 574,
+        "word_index": 143
+      },
+      {
+        "text": "Kalenji",
+        "type": "PRODUCT",
+        "start": 588,
+        "end": 595,
+        "word_index": 146
+      },
+      {
+        "text": "Sirona",
+        "type": "PRODUCT",
+        "start": 614,
+        "end": 620,
+        "word_index": 150
+      },
+      {
+        "text": "Plum",
+        "type": "PRODUCT",
+        "start": 534,
+        "end": 538,
+        "word_index": 183
+      },
+      {
+        "text": "Jockey",
+        "type": "PRODUCT",
+        "start": 551,
+        "end": 557,
+        "word_index": 186
+      },
+      {
+        "text": "Bigen",
+        "type": "PRODUCT",
+        "start": 569,
+        "end": 574,
+        "word_index": 189
+      },
+      {
+        "text": "Kalenji",
+        "type": "PRODUCT",
+        "start": 588,
+        "end": 595,
+        "word_index": 192
+      },
+      {
+        "text": "Sirona",
+        "type": "PRODUCT",
+        "start": 614,
+        "end": 620,
+        "word_index": 196
+      },
+      {
+        "text": "Plum",
+        "type": "PRODUCT",
+        "start": 534,
+        "end": 538,
+        "word_index": 247
+      },
+      {
+        "text": "Jockey",
+        "type": "PRODUCT",
+        "start": 551,
+        "end": 557,
+        "word_index": 251
+      },
+      {
+        "text": "Bigen",
+        "type": "PRODUCT",
+        "start": 569,
+        "end": 574,
+        "word_index": 254
+      },
+      {
+        "text": "Kalenji",
+        "type": "PRODUCT",
+        "start": 588,
+        "end": 595,
+        "word_index": 257
+      },
+      {
+        "text": "Sirona",
+        "type": "PRODUCT",
+        "start": 614,
+        "end": 620,
+        "word_index": 261
+      },
+      {
+        "text": "Plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml",
+        "type": "PRODUCT",
+        "start": 1151,
+        "end": 1239,
+        "word_index": 311
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 0,
+        "end": 6,
+        "word_index": 331
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 0,
+        "end": 6,
+        "word_index": 376
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 4
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 7
+      },
+      {
+        "text": "Plum face serum",
+        "type": "PRODUCT",
+        "start": 607,
+        "end": 622,
+        "word_index": 146
+      },
+      {
+        "text": "Jockey gym towel",
+        "type": "PRODUCT",
+        "start": 624,
+        "end": 640,
+        "word_index": 148
+      },
+      {
+        "text": "Bigen beard color",
+        "type": "PRODUCT",
+        "start": 642,
+        "end": 659,
+        "word_index": 150
+      },
+      {
+        "text": "Kalenji running shorts",
+        "type": "PRODUCT",
+        "start": 661,
+        "end": 683,
+        "word_index": 152
+      },
+      {
+        "text": "Sirona period panties",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 709,
+        "word_index": 155
+      },
+      {
+        "text": "Plum face serum",
+        "type": "PRODUCT",
+        "start": 607,
+        "end": 622,
+        "word_index": 202
+      },
+      {
+        "text": "Jockey gym towel",
+        "type": "PRODUCT",
+        "start": 624,
+        "end": 640,
+        "word_index": 204
+      },
+      {
+        "text": "Bigen beard color",
+        "type": "PRODUCT",
+        "start": 642,
+        "end": 659,
+        "word_index": 206
+      },
+      {
+        "text": "Kalenji running shorts",
+        "type": "PRODUCT",
+        "start": 661,
+        "end": 683,
+        "word_index": 208
+      },
+      {
+        "text": "Sirona period panties",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 709,
+        "word_index": 211
+      },
+      {
+        "text": "Plum face serum",
+        "type": "PRODUCT",
+        "start": 607,
+        "end": 622,
+        "word_index": 264
+      },
+      {
+        "text": "Jockey gym towel",
+        "type": "PRODUCT",
+        "start": 624,
+        "end": 640,
+        "word_index": 266
+      },
+      {
+        "text": "Bigen beard color",
+        "type": "PRODUCT",
+        "start": 642,
+        "end": 659,
+        "word_index": 268
+      },
+      {
+        "text": "Kalenji running shorts",
+        "type": "PRODUCT",
+        "start": 661,
+        "end": 683,
+        "word_index": 270
+      },
+      {
+        "text": "Sirona period panties",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 709,
+        "word_index": 273
+      },
+      {
+        "text": "\u092a\u094d\u0932\u092e 10% Niacinamide Brightening Face Serum With Rice Ferment Extract & Licorice - 50ml",
+        "type": "PRODUCT",
+        "start": 1281,
+        "end": 1368,
+        "word_index": 292
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 403
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 469
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 0,
+        "end": 6,
+        "word_index": 0
+      },
+      {
+        "text": "Plum",
+        "type": "PRODUCT",
+        "start": 534,
+        "end": 538,
+        "word_index": 137
+      },
+      {
+        "text": "Jockey",
+        "type": "PRODUCT",
+        "start": 551,
+        "end": 557,
+        "word_index": 140
+      },
+      {
+        "text": "Bigen",
+        "type": "PRODUCT",
+        "start": 569,
+        "end": 574,
+        "word_index": 143
+      },
+      {
+        "text": "Kalenji",
+        "type": "PRODUCT",
+        "start": 588,
+        "end": 595,
+        "word_index": 146
+      },
+      {
+        "text": "Sirona",
+        "type": "PRODUCT",
+        "start": 614,
+        "end": 620,
+        "word_index": 150
+      },
+      {
+        "text": "Plum",
+        "type": "PRODUCT",
+        "start": 534,
+        "end": 538,
+        "word_index": 183
+      },
+      {
+        "text": "Jockey",
+        "type": "PRODUCT",
+        "start": 551,
+        "end": 557,
+        "word_index": 186
+      },
+      {
+        "text": "Bigen",
+        "type": "PRODUCT",
+        "start": 569,
+        "end": 574,
+        "word_index": 189
+      },
+      {
+        "text": "Kalenji",
+        "type": "PRODUCT",
+        "start": 588,
+        "end": 595,
+        "word_index": 192
+      },
+      {
+        "text": "Sirona",
+        "type": "PRODUCT",
+        "start": 614,
+        "end": 620,
+        "word_index": 196
+      },
+      {
+        "text": "Plum",
+        "type": "PRODUCT",
+        "start": 534,
+        "end": 538,
+        "word_index": 247
+      },
+      {
+        "text": "Jockey",
+        "type": "PRODUCT",
+        "start": 551,
+        "end": 557,
+        "word_index": 251
+      },
+      {
+        "text": "Bigen",
+        "type": "PRODUCT",
+        "start": 569,
+        "end": 574,
+        "word_index": 254
+      },
+      {
+        "text": "Kalenji",
+        "type": "PRODUCT",
+        "start": 588,
+        "end": 595,
+        "word_index": 257
+      },
+      {
+        "text": "Sirona",
+        "type": "PRODUCT",
+        "start": 614,
+        "end": 620,
+        "word_index": 261
+      },
+      {
+        "text": "Plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml",
+        "type": "PRODUCT",
+        "start": 1151,
+        "end": 1239,
+        "word_index": 311
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 0,
+        "end": 6,
+        "word_index": 331
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 0,
+        "end": 6,
+        "word_index": 376
+      }
+    ]
+  }
+}

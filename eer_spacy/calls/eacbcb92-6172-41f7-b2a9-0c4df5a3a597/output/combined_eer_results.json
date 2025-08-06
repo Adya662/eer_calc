@@ -1,0 +1,159 @@
+{
+  "call_id": "eacbcb92-6172-41f7-b2a9-0c4df5a3a597",
+  "method": "Combined SpaCy/Stanza NER",
+  "processing_timestamp": "2025-08-06 03:11:40",
+  "metrics": {
+    "global_EER": {
+      "correct_entities": 0,
+      "missed_entities": 6,
+      "extra_entities": 4,
+      "total_errors": 10,
+      "total_ref_entities": 6,
+      "total_gt_entities": 4,
+      "eer_percentage": 100.0,
+      "accuracy_percentage": 0.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 23,
+    "gt_entities": 34,
+    "unique_ref_entities": 17,
+    "unique_gt_entities": 14,
+    "concerned_ref_entities": 6,
+    "concerned_gt_entities": 4
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 3,
+      "ORG": 5,
+      "GPE": 1,
+      "LANGUAGE": 1,
+      "DATE": 8,
+      "CARDINAL": 1,
+      "ORDINAL": 1,
+      "NEP": 2,
+      "NEN": 1
+    },
+    "ground_truth": {
+      "PERSON": 19,
+      "GPE": 1,
+      "LANGUAGE": 2,
+      "DATE": 9,
+      "ORG": 1,
+      "CARDINAL": 1,
+      "ORDINAL": 1
+    }
+  },
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from मिंत्रा,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "ground_truth": "Hey, I am Ray from Myntra here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "मिंत्रा,        ",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Ray",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "reference": "I can see that your order GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers has already been delivered on yesterday Do you need any further assistance regarding this order",
+      "ground_truth": "Please give me a moment to fetch your products.",
+      "ref_entities": [
+        {
+          "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    },
+    {
+      "index": 7,
+      "reference": "Talking about Jack & Jones Junior products? Please give me a moment to check.",
+      "ground_truth": "Your order for the Gap Boys camouflage printed relaxed fit midrise joggers has already been delivered. Please let me know if there's anything else you'd like assistance with.",
+      "ref_entities": [
+        {
+          "text": "Jack & Jones Junior",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Gap Boys",
+          "type": "ORG"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "reference": "I see there are additional items in your order list from Jack & Jones Junior. Let me confirm one of the items—Jack & Jones Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans. Would you like me to check the status of this item?",
+      "ground_truth": "Please give me a moment to fetch your products.",
+      "ref_entities": [
+        {
+          "text": "Jack & Jones Junior",
+          "type": "ORG"
+        },
+        {
+          "text": "Jack & Jones Junior Boys",
+          "type": "ORG"
+        },
+        {
+          "text": "Jogger Mid-Rise Pure",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": []
+    },
+    {
+      "index": 16,
+      "reference": "I can see that your order जैक एंड जोन्स Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans has already been delivered on 25 June Do you need any further assistance regarding this order",
+      "ground_truth": "I see there are additional items in your order list from Jack and Jones junior. Let me confirm one of the items, Jack and Jones junior boys jogger mid rice, pure cotton stretchable jeans. Would you like me to check the status of this item?",
+      "ref_entities": [
+        {
+          "text": "Jogger Mid-Rise Pure",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Jack",
+          "type": "PERSON"
+        },
+        {
+          "text": "Jones",
+          "type": "PERSON"
+        },
+        {
+          "text": "Jack",
+          "type": "PERSON"
+        },
+        {
+          "text": "Jones",
+          "type": "PERSON"
+        }
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "NEN",
+    "GPE",
+    "NEP",
+    "ORDINAL",
+    "PERSON",
+    "DATE",
+    "CARDINAL",
+    "LANGUAGE",
+    "ORG"
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "call_id": "d7c521ce-dbcb-4c23-a776-66b38d8127b4",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 14.56,
+  "all_entities_eer": {
+    "eer_percentage": 20.0,
+    "substitutions": 4,
+    "insertions": 2,
+    "deletions": 2,
+    "total_ref": 14,
+    "total_hyp": 15,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 18.18,
+    "substitutions": 4,
+    "insertions": 1,
+    "deletions": 2,
+    "total_ref": 11,
+    "total_hyp": 12,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 2,
+      "PRODUCT": 7
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 2,
+      "PRODUCT": 8,
+      "GPE": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 3,
+    "pronunciation_ids": "06PHq;rtcxo;c0fMl"
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORGANIZATION",
+      "PRODUCT",
+      "LANGUAGE",
+      "PERSON"
+    ],
+    "hypothesis": [
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE",
+      "GPE",
+      "ORGANIZATION"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 17
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 42
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 48
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 58
+      },
+      {
+        "text": "Biotique Morning Nectar Nourish & Hydrate Skin Moisturizer",
+        "type": "PRODUCT",
+        "start": 517,
+        "end": 575,
+        "word_index": 91
+      },
+      {
+        "text": "FABINALIV Kids Silver-Toned Umbrella",
+        "type": "PRODUCT",
+        "start": 598,
+        "end": 634,
+        "word_index": 128
+      },
+      {
+        "text": "FABINALIV Kids Silver-Toned & Brown Cartoon Character Printed Automatic 3 Fold Umbrella",
+        "type": "PRODUCT",
+        "start": 795,
+        "end": 882,
+        "word_index": 169
+      },
+      {
+        "text": "\u092c\u093e\u092f\u094b\u091f\u093f\u0915 Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml",
+        "type": "PRODUCT",
+        "start": 999,
+        "end": 1081,
+        "word_index": 217
+      },
+      {
+        "text": "We Construct",
+        "type": "ORGANIZATION",
+        "start": 1559,
+        "end": 1571,
+        "word_index": 266
+      },
+      {
+        "text": "Deconstruct Vitamin C & Ferulic Acid Serum",
+        "type": "PRODUCT",
+        "start": 1609,
+        "end": 1651,
+        "word_index": 288
+      },
+      {
+        "text": "\u0921\u0940\u0915\u0902\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091f Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml",
+        "type": "PRODUCT",
+        "start": 1701,
+        "end": 1769,
+        "word_index": 316
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 370
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 1959,
+        "end": 1962,
+        "word_index": 378
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 6
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 11
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 75,
+        "end": 80,
+        "word_index": 26
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 84,
+        "end": 91,
+        "word_index": 33
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 45
+      },
+      {
+        "text": "Biotique Morning nectar nourish and hydrate skin moisturizer",
+        "type": "PRODUCT",
+        "start": 464,
+        "end": 524,
+        "word_index": 61
+      },
+      {
+        "text": "FABINALIV kids silver toned umbrella",
+        "type": "PRODUCT",
+        "start": 547,
+        "end": 583,
+        "word_index": 102
+      },
+      {
+        "text": "FABINALIV kids' silver-toned and brown cartoon character printed automatic threefold umbrella",
+        "type": "PRODUCT",
+        "start": 744,
+        "end": 837,
+        "word_index": 140
+      },
+      {
+        "text": "biotech Morning nectar",
+        "type": "PRODUCT",
+        "start": 894,
+        "end": 916,
+        "word_index": 176
+      },
+      {
+        "text": "V Construct",
+        "type": "ORGANIZATION",
+        "start": 1281,
+        "end": 1292,
+        "word_index": 212
+      },
+      {
+        "text": "deconstruct Vitamin C and ferulic acid serum",
+        "type": "PRODUCT",
+        "start": 1328,
+        "end": 1372,
+        "word_index": 229
+      },
+      {
+        "text": "deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML",
+        "type": "PRODUCT",
+        "start": 1421,
+        "end": 1494,
+        "word_index": 259
+      },
+      {
+        "text": "Brighton",
+        "type": "GPE",
+        "start": 1474,
+        "end": 1482,
+        "word_index": 288
+      },
+      {
+        "text": "ML",
+        "type": "PRODUCT",
+        "start": 1492,
+        "end": 1494,
+        "word_index": 293
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 1684,
+        "end": 1687,
+        "word_index": 313
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 335
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 17
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 58
+      },
+      {
+        "text": "Biotique Morning Nectar Nourish & Hydrate Skin Moisturizer",
+        "type": "PRODUCT",
+        "start": 517,
+        "end": 575,
+        "word_index": 91
+      },
+      {
+        "text": "FABINALIV Kids Silver-Toned Umbrella",
+        "type": "PRODUCT",
+        "start": 598,
+        "end": 634,
+        "word_index": 128
+      },
+      {
+        "text": "FABINALIV Kids Silver-Toned & Brown Cartoon Character Printed Automatic 3 Fold Umbrella",
+        "type": "PRODUCT",
+        "start": 795,
+        "end": 882,
+        "word_index": 169
+      },
+      {
+        "text": "\u092c\u093e\u092f\u094b\u091f\u093f\u0915 Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml",
+        "type": "PRODUCT",
+        "start": 999,
+        "end": 1081,
+        "word_index": 217
+      },
+      {
+        "text": "We Construct",
+        "type": "ORGANIZATION",
+        "start": 1559,
+        "end": 1571,
+        "word_index": 266
+      },
+      {
+        "text": "Deconstruct Vitamin C & Ferulic Acid Serum",
+        "type": "PRODUCT",
+        "start": 1609,
+        "end": 1651,
+        "word_index": 288
+      },
+      {
+        "text": "\u0921\u0940\u0915\u0902\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091f Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml",
+        "type": "PRODUCT",
+        "start": 1701,
+        "end": 1769,
+        "word_index": 316
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 370
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 1959,
+        "end": 1962,
+        "word_index": 378
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 6
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 11
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 45
+      },
+      {
+        "text": "Biotique Morning nectar nourish and hydrate skin moisturizer",
+        "type": "PRODUCT",
+        "start": 464,
+        "end": 524,
+        "word_index": 61
+      },
+      {
+        "text": "FABINALIV kids silver toned umbrella",
+        "type": "PRODUCT",
+        "start": 547,
+        "end": 583,
+        "word_index": 102
+      },
+      {
+        "text": "FABINALIV kids' silver-toned and brown cartoon character printed automatic threefold umbrella",
+        "type": "PRODUCT",
+        "start": 744,
+        "end": 837,
+        "word_index": 140
+      },
+      {
+        "text": "biotech Morning nectar",
+        "type": "PRODUCT",
+        "start": 894,
+        "end": 916,
+        "word_index": 176
+      },
+      {
+        "text": "V Construct",
+        "type": "ORGANIZATION",
+        "start": 1281,
+        "end": 1292,
+        "word_index": 212
+      },
+      {
+        "text": "deconstruct Vitamin C and ferulic acid serum",
+        "type": "PRODUCT",
+        "start": 1328,
+        "end": 1372,
+        "word_index": 229
+      },
+      {
+        "text": "deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML",
+        "type": "PRODUCT",
+        "start": 1421,
+        "end": 1494,
+        "word_index": 259
+      },
+      {
+        "text": "ML",
+        "type": "PRODUCT",
+        "start": 1492,
+        "end": 1494,
+        "word_index": 293
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 1684,
+        "end": 1687,
+        "word_index": 313
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 335
+      }
+    ]
+  }
+}

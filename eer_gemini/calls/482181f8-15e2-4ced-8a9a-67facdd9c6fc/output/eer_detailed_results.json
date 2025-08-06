@@ -1,0 +1,484 @@
+{
+  "call_id": "482181f8-15e2-4ced-8a9a-67facdd9c6fc",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 16.58,
+  "all_entities_eer": {
+    "eer_percentage": 21.43,
+    "substitutions": 3,
+    "insertions": 2,
+    "deletions": 6,
+    "total_ref": 18,
+    "total_hyp": 13,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 50.0,
+    "substitutions": 3,
+    "insertions": 1,
+    "deletions": 8,
+    "total_ref": 15,
+    "total_hyp": 9,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 8,
+      "LANGUAGE": 2,
+      "PRODUCT": 7,
+      "DATE": 2
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 5,
+      "LANGUAGE": 2,
+      "DATE": 2,
+      "PRODUCT": 3
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE",
+      "ORGANIZATION",
+      "DATE"
+    ],
+    "hypothesis": [
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE",
+      "ORGANIZATION",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 46
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 53
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 467,
+        "end": 470,
+        "word_index": 106
+      },
+      {
+        "text": "Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 471,
+        "end": 501,
+        "word_index": 106
+      },
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+        "type": "ORGANIZATION",
+        "start": 508,
+        "end": 517,
+        "word_index": 126
+      },
+      {
+        "text": "Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 471,
+        "end": 501,
+        "word_index": 126
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 590,
+        "end": 597,
+        "word_index": 136
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 590,
+        "end": 597,
+        "word_index": 147
+      },
+      {
+        "text": "Mango",
+        "type": "ORGANIZATION",
+        "start": 881,
+        "end": 886,
+        "word_index": 184
+      },
+      {
+        "text": "Mango shirt",
+        "type": "PRODUCT",
+        "start": 881,
+        "end": 892,
+        "word_index": 184
+      },
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b",
+        "type": "ORGANIZATION",
+        "start": 1021,
+        "end": 1026,
+        "word_index": 209
+      },
+      {
+        "text": "Plunge Neck Ruched Top with Asymmetric Hem",
+        "type": "PRODUCT",
+        "start": 1027,
+        "end": 1069,
+        "word_index": 209
+      },
+      {
+        "text": "all about you",
+        "type": "ORGANIZATION",
+        "start": 1405,
+        "end": 1418,
+        "word_index": 266
+      },
+      {
+        "text": "ethnic top",
+        "type": "PRODUCT",
+        "start": 1420,
+        "end": 1430,
+        "word_index": 266
+      },
+      {
+        "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942",
+        "type": "ORGANIZATION",
+        "start": 1656,
+        "end": 1667,
+        "word_index": 323
+      },
+      {
+        "text": "Ethnic Printed Full Puff-Sleeves Casual Shirt",
+        "type": "PRODUCT",
+        "start": 1668,
+        "end": 1713,
+        "word_index": 323
+      },
+      {
+        "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942",
+        "type": "ORGANIZATION",
+        "start": 1656,
+        "end": 1667,
+        "word_index": 348
+      },
+      {
+        "text": "Ethnic Printed Full Puff-Sleeves Casual Shirt",
+        "type": "PRODUCT",
+        "start": 1668,
+        "end": 1713,
+        "word_index": 348
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": 2
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 6
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 70,
+        "end": 75,
+        "word_index": 13
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 79,
+        "end": 86,
+        "word_index": 18
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 412,
+        "end": 415,
+        "word_index": 79
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 412,
+        "end": 415,
+        "word_index": 80
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 529,
+        "end": 536,
+        "word_index": 101
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 529,
+        "end": 536,
+        "word_index": 109
+      },
+      {
+        "text": "Mango",
+        "type": "ORGANIZATION",
+        "start": 820,
+        "end": 825,
+        "word_index": 143
+      },
+      {
+        "text": "Mango",
+        "type": "ORGANIZATION",
+        "start": 820,
+        "end": 825,
+        "word_index": 172
+      },
+      {
+        "text": "all about you ethnic top",
+        "type": "PRODUCT",
+        "start": 1346,
+        "end": 1370,
+        "word_index": 226
+      },
+      {
+        "text": "all about you ethnic printed full puff sleeves casual short",
+        "type": "PRODUCT",
+        "start": 1597,
+        "end": 1656,
+        "word_index": 269
+      },
+      {
+        "text": "all about you ethnic printed full puff sleeves casual shirt",
+        "type": "PRODUCT",
+        "start": 1684,
+        "end": 1743,
+        "word_index": 296
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 467,
+        "end": 470,
+        "word_index": 106
+      },
+      {
+        "text": "Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 471,
+        "end": 501,
+        "word_index": 106
+      },
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+        "type": "ORGANIZATION",
+        "start": 508,
+        "end": 517,
+        "word_index": 126
+      },
+      {
+        "text": "Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 471,
+        "end": 501,
+        "word_index": 126
+      },
+      {
+        "text": "Mango",
+        "type": "ORGANIZATION",
+        "start": 881,
+        "end": 886,
+        "word_index": 184
+      },
+      {
+        "text": "Mango shirt",
+        "type": "PRODUCT",
+        "start": 881,
+        "end": 892,
+        "word_index": 184
+      },
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b",
+        "type": "ORGANIZATION",
+        "start": 1021,
+        "end": 1026,
+        "word_index": 209
+      },
+      {
+        "text": "Plunge Neck Ruched Top with Asymmetric Hem",
+        "type": "PRODUCT",
+        "start": 1027,
+        "end": 1069,
+        "word_index": 209
+      },
+      {
+        "text": "all about you",
+        "type": "ORGANIZATION",
+        "start": 1405,
+        "end": 1418,
+        "word_index": 266
+      },
+      {
+        "text": "ethnic top",
+        "type": "PRODUCT",
+        "start": 1420,
+        "end": 1430,
+        "word_index": 266
+      },
+      {
+        "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942",
+        "type": "ORGANIZATION",
+        "start": 1656,
+        "end": 1667,
+        "word_index": 323
+      },
+      {
+        "text": "Ethnic Printed Full Puff-Sleeves Casual Shirt",
+        "type": "PRODUCT",
+        "start": 1668,
+        "end": 1713,
+        "word_index": 323
+      },
+      {
+        "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942",
+        "type": "ORGANIZATION",
+        "start": 1656,
+        "end": 1667,
+        "word_index": 348
+      },
+      {
+        "text": "Ethnic Printed Full Puff-Sleeves Casual Shirt",
+        "type": "PRODUCT",
+        "start": 1668,
+        "end": 1713,
+        "word_index": 348
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": 2
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 6
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 412,
+        "end": 415,
+        "word_index": 79
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 412,
+        "end": 415,
+        "word_index": 80
+      },
+      {
+        "text": "Mango",
+        "type": "ORGANIZATION",
+        "start": 820,
+        "end": 825,
+        "word_index": 143
+      },
+      {
+        "text": "Mango",
+        "type": "ORGANIZATION",
+        "start": 820,
+        "end": 825,
+        "word_index": 172
+      },
+      {
+        "text": "all about you ethnic top",
+        "type": "PRODUCT",
+        "start": 1346,
+        "end": 1370,
+        "word_index": 226
+      },
+      {
+        "text": "all about you ethnic printed full puff sleeves casual short",
+        "type": "PRODUCT",
+        "start": 1597,
+        "end": 1656,
+        "word_index": 269
+      },
+      {
+        "text": "all about you ethnic printed full puff sleeves casual shirt",
+        "type": "PRODUCT",
+        "start": 1684,
+        "end": 1743,
+        "word_index": 296
+      }
+    ]
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "call_id": "8daee0cc-cbda-4cdf-b8ed-f120e3329138",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 12.19,
+  "all_entities_eer": {
+    "eer_percentage": 72.73,
+    "substitutions": 4,
+    "insertions": 0,
+    "deletions": 4,
+    "total_ref": 11,
+    "total_hyp": 8,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 71.43,
+    "substitutions": 5,
+    "insertions": 0,
+    "deletions": 0,
+    "total_ref": 7,
+    "total_hyp": 5,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 2,
+      "PRODUCT": 2,
+      "DATE": 2
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 1,
+      "DATE": 1
+    }
+  },
+  "entity_types_found": {
+    "reference": [
+      "LANGUAGE",
+      "PERSON",
+      "PRODUCT",
+      "DATE",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "LANGUAGE",
+      "PERSON",
+      "PRODUCT",
+      "DATE",
+      "ORGANIZATION"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 3
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 5
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 23
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 26
+      },
+      {
+        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 379,
+        "word_index": 83
+      },
+      {
+        "text": "21 August",
+        "type": "DATE",
+        "start": 424,
+        "end": 433,
+        "word_index": 99
+      },
+      {
+        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 379,
+        "word_index": 139
+      },
+      {
+        "text": "twenty-first August",
+        "type": "DATE",
+        "start": 786,
+        "end": 805,
+        "word_index": 156
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 357
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 381
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 475
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 3
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 5
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 75,
+        "end": 80,
+        "word_index": 14
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 84,
+        "end": 91,
+        "word_index": 16
+      },
+      {
+        "text": "Style Cast X Revolt",
+        "type": "PRODUCT",
+        "start": 497,
+        "end": 516,
+        "word_index": 97
+      },
+      {
+        "text": "21st August",
+        "type": "DATE",
+        "start": 570,
+        "end": 581,
+        "word_index": 102
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 353
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 410
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 3
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 5
+      },
+      {
+        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 379,
+        "word_index": 83
+      },
+      {
+        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 379,
+        "word_index": 139
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 357
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 381
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 475
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 3
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 5
+      },
+      {
+        "text": "Style Cast X Revolt",
+        "type": "PRODUCT",
+        "start": 497,
+        "end": 516,
+        "word_index": 97
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 353
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 410
+      }
+    ]
+  }
+}

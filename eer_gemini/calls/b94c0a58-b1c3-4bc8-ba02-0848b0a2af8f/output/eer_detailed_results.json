@@ -1,0 +1,533 @@
+{
+  "call_id": "b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 16.74,
+  "all_entities_eer": {
+    "eer_percentage": 76.47,
+    "substitutions": 4,
+    "insertions": 12,
+    "deletions": 12,
+    "total_ref": 18,
+    "total_hyp": 16,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 76.92,
+    "substitutions": 1,
+    "insertions": 12,
+    "deletions": 13,
+    "total_ref": 16,
+    "total_hyp": 15,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 13,
+      "TIME": 1,
+      "MONEY": 2
+    },
+    "hypothesis": {
+      "PRODUCT": 11,
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "TIME": 1,
+      "MONEY": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "TIME",
+      "PRODUCT",
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "TIME",
+      "PRODUCT",
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Niketa",
+        "type": "PERSON",
+        "start": 57,
+        "end": 63,
+        "word_index": 10
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 108,
+        "end": 117,
+        "word_index": 16
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 29
+      },
+      {
+        "text": "thirty to forty-five minutes",
+        "type": "TIME",
+        "start": 405,
+        "end": 433,
+        "word_index": 51
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 67
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 70
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 74
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 78
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 82
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 108
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 110
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 117
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 136
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 157
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2691,
+        "end": 2736,
+        "word_index": 202
+      },
+      {
+        "text": "Rupees",
+        "type": "MONEY",
+        "start": 2691,
+        "end": 2697,
+        "word_index": 202
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 219
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 22
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 204,
+        "end": 209,
+        "word_index": 68
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 215,
+        "end": 226,
+        "word_index": 73
+      },
+      {
+        "text": "Nikita",
+        "type": "PERSON",
+        "start": 247,
+        "end": 253,
+        "word_index": 80
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 91
+      },
+      {
+        "text": "30 to 45 minutes",
+        "type": "TIME",
+        "start": 404,
+        "end": 420,
+        "word_index": 109
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 166
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 182
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 220
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 263
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 330
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 379
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 451
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 499
+      },
+      {
+        "text": "Rs 1,799",
+        "type": "MONEY",
+        "start": 2675,
+        "end": 2683,
+        "word_index": 542
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 542
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Niketa",
+        "type": "PERSON",
+        "start": 57,
+        "end": 63,
+        "word_index": 10
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 108,
+        "end": 117,
+        "word_index": 16
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 29
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 67
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 70
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 74
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 78
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 82
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 108
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 110
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 117
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 136
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 157
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 219
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 22
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 204,
+        "end": 209,
+        "word_index": 68
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 215,
+        "end": 226,
+        "word_index": 73
+      },
+      {
+        "text": "Nikita",
+        "type": "PERSON",
+        "start": 247,
+        "end": 253,
+        "word_index": 80
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 91
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 166
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 182
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 220
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 263
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 330
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 379
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 451
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 499
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 52,
+        "word_index": 542
+      }
+    ]
+  }
+}

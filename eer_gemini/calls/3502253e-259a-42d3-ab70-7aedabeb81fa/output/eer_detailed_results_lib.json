@@ -1,0 +1,1623 @@
+{
+  "call_id": "3502253e-259a-42d3-ab70-7aedabeb81fa",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 20.58,
+  "all_entities_eer": {
+    "substitutions": 22,
+    "insertions": 0,
+    "deletions": 8,
+    "correct": 4,
+    "total_ref": 34,
+    "total_hyp": 26,
+    "eer_percentage": 88.24,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate",
+          "type": "ORGANIZATION",
+          "normalized": "elevate",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "thirty-two point zero three",
+          "type": "MEASURE",
+          "normalized": "thirty-two point zero three",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "normalized": "doctor consultation",
+          "index": 23
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "senior health coach consultation",
+          "type": "PRODUCT",
+          "normalized": "senior health coach consultation",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "normalized": "doctor consultation",
+          "index": 23
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "health coach consultation",
+          "type": "PRODUCT",
+          "normalized": "health coach consultation",
+          "index": 24
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "1799",
+          "type": "MONEY",
+          "normalized": "1799",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "senior obesity specialist doctor",
+          "type": "PERSON",
+          "normalized": "senior obesity specialist doctor",
+          "index": 18
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "health coach",
+          "type": "PERSON",
+          "normalized": "health coach",
+          "index": 19
+        },
+        "hyp_entity": {
+          "text": "rupees 499",
+          "type": "MONEY",
+          "normalized": "rupees 499",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "rupees 1,399",
+          "type": "MONEY",
+          "normalized": "rupees 1,399",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 29
+        },
+        "hyp_entity": {
+          "text": "rupees 1,898",
+          "type": "MONEY",
+          "normalized": "rupees 1,898",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "normalized": "rupees 1,799",
+          "index": 22
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 24
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "normalized": "doctor consultation",
+          "index": 23
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "health coach consultation",
+          "type": "PRODUCT",
+          "normalized": "health coach consultation",
+          "index": 24
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 31
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees four hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees four hundred ninety-nine",
+          "index": 26
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand three hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand three hundred ninety-nine",
+          "index": 27
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand eight hundred ninety-eight",
+          "type": "MONEY",
+          "normalized": "rupees one thousand eight hundred ninety-eight",
+          "index": 28
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 29
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 33
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Taruna Yadav",
+          "type": "PERSON",
+          "normalized": "taruna yadav",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Taruna Yadav",
+          "type": "PERSON",
+          "normalized": "taruna yadav",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 33
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 25
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 33
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 25
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 17,
+    "insertions": 0,
+    "deletions": 7,
+    "correct": 4,
+    "total_ref": 28,
+    "total_hyp": 21,
+    "eer_percentage": 85.71,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate",
+          "type": "ORGANIZATION",
+          "normalized": "elevate",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "normalized": "doctor consultation",
+          "index": 21
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "senior health coach consultation",
+          "type": "PRODUCT",
+          "normalized": "senior health coach consultation",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "normalized": "doctor consultation",
+          "index": 21
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "health coach consultation",
+          "type": "PRODUCT",
+          "normalized": "health coach consultation",
+          "index": 22
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 20
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "senior obesity specialist doctor",
+          "type": "PERSON",
+          "normalized": "senior obesity specialist doctor",
+          "index": 17
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "health coach",
+          "type": "PERSON",
+          "normalized": "health coach",
+          "index": 18
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "normalized": "blood test",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "normalized": "doctor consultation",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "health coach consultation",
+          "type": "PRODUCT",
+          "normalized": "health coach consultation",
+          "index": 22
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 25
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 27
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Taruna Yadav",
+          "type": "PERSON",
+          "normalized": "taruna yadav",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Taruna Yadav",
+          "type": "PERSON",
+          "normalized": "taruna yadav",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 27
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 27
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 20
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 4,
+      "ORGANIZATION": 1,
+      "PRODUCT": 23,
+      "MEASURE": 1,
+      "MONEY": 5
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 18,
+      "MONEY": 5
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MEASURE",
+      "PERSON",
+      "MONEY",
+      "PRODUCT",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "ORGANIZATION",
+      "MONEY",
+      "PRODUCT",
+      "PERSON"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "start": 57,
+        "end": 69,
+        "word_index": 10
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 164,
+        "end": 173,
+        "word_index": 19
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 46
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 46
+      },
+      {
+        "text": "thirty-two point zero three",
+        "type": "MEASURE",
+        "start": 335,
+        "end": 362,
+        "word_index": 64
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 81
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 106
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1025,
+        "end": 1035,
+        "word_index": 117
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1037,
+        "end": 1056,
+        "word_index": 121
+      },
+      {
+        "text": "senior health coach consultation",
+        "type": "PRODUCT",
+        "start": 1060,
+        "end": 1092,
+        "word_index": 128
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 153
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1025,
+        "end": 1035,
+        "word_index": 163
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1037,
+        "end": 1056,
+        "word_index": 167
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 1067,
+        "end": 1092,
+        "word_index": 173
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 184
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1025,
+        "end": 1035,
+        "word_index": 188
+      },
+      {
+        "text": "senior obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1599,
+        "end": 1631,
+        "word_index": 202
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 1067,
+        "end": 1079,
+        "word_index": 233
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 248
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1922,
+        "end": 1967,
+        "word_index": 254
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1025,
+        "end": 1035,
+        "word_index": 291
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1037,
+        "end": 1056,
+        "word_index": 295
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 1067,
+        "end": 1092,
+        "word_index": 302
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 313
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2329,
+        "end": 2360,
+        "word_index": 319
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2387,
+        "end": 2432,
+        "word_index": 338
+      },
+      {
+        "text": "Rupees one thousand eight hundred ninety-eight",
+        "type": "MONEY",
+        "start": 2486,
+        "end": 2532,
+        "word_index": 365
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1922,
+        "end": 1967,
+        "word_index": 383
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2690,
+        "end": 2698,
+        "word_index": 400
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 415
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2690,
+        "end": 2698,
+        "word_index": 437
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2690,
+        "end": 2698,
+        "word_index": 472
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 15
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 24
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "start": 58,
+        "end": 70,
+        "word_index": 36
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 73
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 164
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 328
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 328
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 410
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 410
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 410
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 410
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 459
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 459
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 555
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 555
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 574
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 574
+      },
+      {
+        "text": "1799",
+        "type": "MONEY",
+        "start": 1797,
+        "end": 1801,
+        "word_index": 635
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 709
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 2151,
+        "end": 2161,
+        "word_index": 727
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 2188,
+        "end": 2200,
+        "word_index": 764
+      },
+      {
+        "text": "rupees 1,898",
+        "type": "MONEY",
+        "start": 2254,
+        "end": 2266,
+        "word_index": 791
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 2302,
+        "end": 2314,
+        "word_index": 818
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2391,
+        "end": 2399,
+        "word_index": 864
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 922
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2391,
+        "end": 2399,
+        "word_index": 968
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "start": 57,
+        "end": 69,
+        "word_index": 10
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 164,
+        "end": 173,
+        "word_index": 19
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 46
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 46
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 81
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 106
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1025,
+        "end": 1035,
+        "word_index": 117
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1037,
+        "end": 1056,
+        "word_index": 121
+      },
+      {
+        "text": "senior health coach consultation",
+        "type": "PRODUCT",
+        "start": 1060,
+        "end": 1092,
+        "word_index": 128
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 153
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1025,
+        "end": 1035,
+        "word_index": 163
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1037,
+        "end": 1056,
+        "word_index": 167
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 1067,
+        "end": 1092,
+        "word_index": 173
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 184
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1025,
+        "end": 1035,
+        "word_index": 188
+      },
+      {
+        "text": "senior obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1599,
+        "end": 1631,
+        "word_index": 202
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "start": 1067,
+        "end": 1079,
+        "word_index": 233
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 248
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1025,
+        "end": 1035,
+        "word_index": 291
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1037,
+        "end": 1056,
+        "word_index": 295
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "start": 1067,
+        "end": 1092,
+        "word_index": 302
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 313
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2690,
+        "end": 2698,
+        "word_index": 400
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 516,
+        "end": 525,
+        "word_index": 415
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2690,
+        "end": 2698,
+        "word_index": 437
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2690,
+        "end": 2698,
+        "word_index": 472
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 15
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 24
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "start": 58,
+        "end": 70,
+        "word_index": 36
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 73
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 164
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 328
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 328
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 410
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 410
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 410
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 410
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 459
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 459
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 555
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 555
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 574
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 574
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 709
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2391,
+        "end": 2399,
+        "word_index": 864
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 159,
+        "end": 163,
+        "word_index": 922
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2391,
+        "end": 2399,
+        "word_index": 968
+      }
+    ]
+  }
+}

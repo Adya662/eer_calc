@@ -1,0 +1,152 @@
+{
+  "call_id": "429ac8a5-6f19-46b3-97bb-8e55feec389e",
+  "method": "Combined SpaCy/Stanza NER",
+  "processing_timestamp": "2025-08-06 03:12:01",
+  "metrics": {
+    "global_EER": {
+      "correct_entities": 3,
+      "missed_entities": 7,
+      "extra_entities": 4,
+      "total_errors": 11,
+      "total_ref_entities": 10,
+      "total_gt_entities": 7,
+      "eer_percentage": 100.0,
+      "accuracy_percentage": 30.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 28,
+    "gt_entities": 51,
+    "unique_ref_entities": 22,
+    "unique_gt_entities": 20,
+    "concerned_ref_entities": 10,
+    "concerned_gt_entities": 7
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 4,
+      "ORG": 6,
+      "GPE": 2,
+      "LANGUAGE": 1,
+      "DATE": 8,
+      "WORK_OF_ART": 2,
+      "TIME": 2,
+      "CARDINAL": 1,
+      "NETI": 2
+    },
+    "ground_truth": {
+      "PERSON": 15,
+      "ORG": 2,
+      "GPE": 10,
+      "LANGUAGE": 6,
+      "DATE": 10,
+      "TIME": 3,
+      "CARDINAL": 2,
+      "WORK_OF_ART": 1,
+      "NETI": 2
+    }
+  },
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from मिंत्रा,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "ground_truth": "Hey, I am Rey from Myntra here to assist you. Shall we proceed further in Hindi or English?",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "मिंत्रा,        ",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "Myntra",
+          "type": "ORG"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "reference": "I found a product that matches your description. Are you referring to the \"श्टोरी Plus Size Reflective Detail T-shirt\"?",
+      "ground_truth": "Is there anything else I can help you with?",
+      "ref_entities": [
+        {
+          "text": "the \"श्टोरी Plus Size Reflective Detail T",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    },
+    {
+      "index": 15,
+      "reference": "I understand, could you check if it might be the \"Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top\" that is out for delivery?",
+      "ground_truth": "ज़रूर, मैं हिंदी में बता सकती हूँ। आपका आई स्टाइल कैन टॉप आज डिलीवरी के लिए बाहर है।",
+      "ref_entities": [
+        {
+          "text": "the \"Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "बता",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "reference": "ज़रूर, मैं हिंदी में बता सकती हूँ। आपका Istyle Can Top आज डिलीवरी के लिए बाहर है। डिलीवरी का प्रयास सुबह दस बजकर चवालीस मिनट पर शुरू हुआ। इसे आज के अंत तक आप तक पहुंचने की उम्मीद है। क्या",
+      "ground_truth": "Great. How can I help you today?\"",
+      "ref_entities": [
+        {
+          "text": "बता",
+          "type": "PERSON"
+        },
+        {
+          "text": "Istyle Can Top आज डिलीवरी",
+          "type": "PERSON"
+        },
+        {
+          "text": "बाहर है",
+          "type": "PERSON"
+        },
+        {
+          "text": "पहुंचने की उम्मीद है",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    },
+    {
+      "index": 23,
+      "reference": "Yes, I shared the status for your Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top and your Istyle Can Top. If there's anything more you'd like to know, please let me know!",
+      "ground_truth": "Please give me a moment to fetch your products. Please give me a moment to fetch your products. I found a product that matches your description. Are you referring to the story plus size reflective detail t-shirt? It sounds like you're referring to the story\"",
+      "ref_entities": [
+        {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    }
+  ],
+  "entity_types_found": [
+    "TIME",
+    "GPE",
+    "WORK_OF_ART",
+    "NETI",
+    "PERSON",
+    "DATE",
+    "CARDINAL",
+    "LANGUAGE",
+    "ORG"
+  ]
+}

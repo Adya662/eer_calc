@@ -1,0 +1,424 @@
+{
+  "call_id": "03261666-7d82-49ec-8d6e-78c2f716ad73",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 10.69,
+  "all_entities_eer": {
+    "substitutions": 5,
+    "insertions": 0,
+    "deletions": 3,
+    "correct": 1,
+    "total_ref": 9,
+    "total_hyp": 6,
+    "eer_percentage": 88.89,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "ATUN",
+          "type": "ORGANIZATION",
+          "normalized": "atun",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "type": "PRODUCT",
+          "normalized": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "ATUN",
+          "type": "ORGANIZATION",
+          "normalized": "atun",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "A.T.U.N.",
+          "type": "BRAND",
+          "normalized": "a.t.u.n.",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "type": "PRODUCT",
+          "normalized": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Black Net Dress",
+          "type": "PRODUCT",
+          "normalized": "black net dress",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "8 \u091c\u0941\u0932\u093e\u0908",
+          "type": "DATE",
+          "normalized": "8 \u091c\u0941\u0932\u093e\u0908",
+          "index": 5
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "A T U N",
+          "type": "BRAND",
+          "normalized": "a t u n",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Black Net Dress",
+          "type": "PRODUCT",
+          "normalized": "black net dress",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "8 July",
+          "type": "DATE",
+          "normalized": "8 july",
+          "index": 8
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 3,
+    "insertions": 1,
+    "deletions": 0,
+    "correct": 1,
+    "total_ref": 4,
+    "total_hyp": 5,
+    "eer_percentage": 100.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "ATUN",
+          "type": "ORGANIZATION",
+          "normalized": "atun",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Black Net Dress",
+          "type": "PRODUCT",
+          "normalized": "black net dress",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "type": "PRODUCT",
+          "normalized": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Black Net Dress",
+          "type": "PRODUCT",
+          "normalized": "black net dress",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "ATUN",
+          "type": "ORGANIZATION",
+          "normalized": "atun",
+          "index": 3
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "type": "PRODUCT",
+          "normalized": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "index": 4
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 1,
+      "LANGUAGE": 2,
+      "BRAND": 2,
+      "PRODUCT": 2,
+      "DATE": 1
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 2,
+      "PRODUCT": 2,
+      "DATE": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "BRAND",
+      "LANGUAGE",
+      "PRODUCT",
+      "ORGANIZATION",
+      "DATE"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "ORGANIZATION",
+      "DATE",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 5
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 7
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 22
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 25
+      },
+      {
+        "text": "A.T.U.N.",
+        "type": "BRAND",
+        "start": 721,
+        "end": 729,
+        "word_index": 85
+      },
+      {
+        "text": "Black Net Dress",
+        "type": "PRODUCT",
+        "start": 739,
+        "end": 754,
+        "word_index": 87
+      },
+      {
+        "text": "A T U N",
+        "type": "BRAND",
+        "start": 785,
+        "end": 792,
+        "word_index": 92
+      },
+      {
+        "text": "Black Net Dress",
+        "type": "PRODUCT",
+        "start": 739,
+        "end": 754,
+        "word_index": 93
+      },
+      {
+        "text": "8 July",
+        "type": "DATE",
+        "start": 809,
+        "end": 815,
+        "word_index": 94
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 3
+      },
+      {
+        "text": "ATUN",
+        "type": "ORGANIZATION",
+        "start": 539,
+        "end": 543,
+        "word_index": 50
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+        "type": "PRODUCT",
+        "start": 554,
+        "end": 569,
+        "word_index": 52
+      },
+      {
+        "text": "ATUN",
+        "type": "ORGANIZATION",
+        "start": 539,
+        "end": 543,
+        "word_index": 59
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+        "type": "PRODUCT",
+        "start": 554,
+        "end": 569,
+        "word_index": 60
+      },
+      {
+        "text": "8 \u091c\u0941\u0932\u093e\u0908",
+        "type": "DATE",
+        "start": 621,
+        "end": 628,
+        "word_index": 61
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 5
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 7
+      },
+      {
+        "text": "Black Net Dress",
+        "type": "PRODUCT",
+        "start": 739,
+        "end": 754,
+        "word_index": 87
+      },
+      {
+        "text": "Black Net Dress",
+        "type": "PRODUCT",
+        "start": 739,
+        "end": 754,
+        "word_index": 93
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 3
+      },
+      {
+        "text": "ATUN",
+        "type": "ORGANIZATION",
+        "start": 539,
+        "end": 543,
+        "word_index": 50
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+        "type": "PRODUCT",
+        "start": 554,
+        "end": 569,
+        "word_index": 52
+      },
+      {
+        "text": "ATUN",
+        "type": "ORGANIZATION",
+        "start": 539,
+        "end": 543,
+        "word_index": 59
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+        "type": "PRODUCT",
+        "start": 554,
+        "end": 569,
+        "word_index": 60
+      }
+    ]
+  }
+}

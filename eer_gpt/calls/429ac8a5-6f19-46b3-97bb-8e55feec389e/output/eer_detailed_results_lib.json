@@ -1,0 +1,918 @@
+{
+  "call_id": "429ac8a5-6f19-46b3-97bb-8e55feec389e",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 13.92,
+  "all_entities_eer": {
+    "substitutions": 8,
+    "insertions": 8,
+    "deletions": 0,
+    "correct": 5,
+    "total_ref": 13,
+    "total_hyp": 21,
+    "eer_percentage": 123.08,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+          "type": "PRODUCT",
+          "normalized": "\u0936\u094d\u091f\u094b\u0930\u0940 plus size reflective detail t-shirt",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+          "type": "PRODUCT",
+          "normalized": "\u092a\u094d\u092f\u0942\u092e\u093e women royalcat comfort softride sliders",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Puma",
+          "type": "ORGANIZATION",
+          "normalized": "puma",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "PRODUCT",
+          "normalized": "aaghnya women floral print mandarin collar flared sleeve shirt style top",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Puma women royal cat comfort soft ride sliders",
+          "type": "PRODUCT",
+          "normalized": "puma women royal cat comfort soft ride sliders",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "tomorrow",
+          "type": "DATE",
+          "normalized": "tomorrow",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+          "type": "PRODUCT",
+          "normalized": "agnia women floral print mandarin collar flared sleeve shirt style top",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "today",
+          "type": "TIME",
+          "normalized": "today",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "10:44 AM",
+          "type": "TIME",
+          "normalized": "10:44 am",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "10:44 a.m.",
+          "type": "TIME",
+          "normalized": "10:44 a.m.",
+          "index": 15
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "story",
+          "type": "PRODUCT",
+          "normalized": "story",
+          "index": 5
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "story plus size reflective detail t-shirt",
+          "type": "PRODUCT",
+          "normalized": "story plus size reflective detail t-shirt",
+          "index": 6
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+          "type": "PRODUCT",
+          "normalized": "agnia women floral print mandarin collar flared sleeve shirt style top",
+          "index": 11
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Agnia women floral print mandarin collar, flared sleeve shirt style top",
+          "type": "PRODUCT",
+          "normalized": "agnia women floral print mandarin collar, flared sleeve shirt style top",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 20
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 20
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Agnia women floral print mandarin collar, flared sleeve shirt style top",
+          "type": "PRODUCT",
+          "normalized": "agnia women floral print mandarin collar, flared sleeve shirt style top",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 20
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "7 July",
+          "type": "DATE",
+          "normalized": "7 july",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "7 July",
+          "type": "DATE",
+          "normalized": "7 july",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Istyle Can Top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 20
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 5,
+    "insertions": 10,
+    "deletions": 0,
+    "correct": 2,
+    "total_ref": 7,
+    "total_hyp": 17,
+    "eer_percentage": 214.29,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORGANIZATION",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+          "type": "PRODUCT",
+          "normalized": "\u0936\u094d\u091f\u094b\u0930\u0940 plus size reflective detail t-shirt",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+          "type": "PRODUCT",
+          "normalized": "\u092a\u094d\u092f\u0942\u092e\u093e women royalcat comfort softride sliders",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "story",
+          "type": "PRODUCT",
+          "normalized": "story",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "PRODUCT",
+          "normalized": "aaghnya women floral print mandarin collar flared sleeve shirt style top",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "story plus size reflective detail t-shirt",
+          "type": "PRODUCT",
+          "normalized": "story plus size reflective detail t-shirt",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 16
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Puma",
+          "type": "ORGANIZATION",
+          "normalized": "puma",
+          "index": 5
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Puma women royal cat comfort soft ride sliders",
+          "type": "PRODUCT",
+          "normalized": "puma women royal cat comfort soft ride sliders",
+          "index": 6
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+          "type": "PRODUCT",
+          "normalized": "agnia women floral print mandarin collar flared sleeve shirt style top",
+          "index": 8
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+          "type": "PRODUCT",
+          "normalized": "agnia women floral print mandarin collar flared sleeve shirt style top",
+          "index": 8
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 16
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Agnia women floral print mandarin collar, flared sleeve shirt style top",
+          "type": "PRODUCT",
+          "normalized": "agnia women floral print mandarin collar, flared sleeve shirt style top",
+          "index": 15
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 16
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 16
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Agnia women floral print mandarin collar, flared sleeve shirt style top",
+          "type": "PRODUCT",
+          "normalized": "agnia women floral print mandarin collar, flared sleeve shirt style top",
+          "index": 15
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 16
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Istyle Can Top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Istyle can top",
+          "type": "PRODUCT",
+          "normalized": "istyle can top",
+          "index": 16
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 2,
+      "LANGUAGE": 2,
+      "PRODUCT": 4,
+      "DATE": 2,
+      "TIME": 2
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 13,
+      "DATE": 1,
+      "TIME": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "TIME",
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "ORGANIZATION",
+      "DATE"
+    ],
+    "hypothesis": [
+      "TIME",
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "ORGANIZATION",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 4
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 6
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 20
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 23
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 622,
+        "word_index": 123
+      },
+      {
+        "text": "7 July",
+        "type": "DATE",
+        "start": 755,
+        "end": 761,
+        "word_index": 135
+      },
+      {
+        "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+        "type": "PRODUCT",
+        "start": 1297,
+        "end": 1343,
+        "word_index": 206
+      },
+      {
+        "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+        "type": "PRODUCT",
+        "start": 1395,
+        "end": 1467,
+        "word_index": 228
+      },
+      {
+        "text": "tomorrow",
+        "type": "DATE",
+        "start": 1604,
+        "end": 1612,
+        "word_index": 251
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 302
+      },
+      {
+        "text": "today",
+        "type": "TIME",
+        "start": 172,
+        "end": 177,
+        "word_index": 309
+      },
+      {
+        "text": "10:44 AM",
+        "type": "TIME",
+        "start": 1945,
+        "end": 1953,
+        "word_index": 312
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 2075,
+        "end": 2081,
+        "word_index": 387
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 3
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 5
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 74,
+        "end": 79,
+        "word_index": 13
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 83,
+        "end": 90,
+        "word_index": 15
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 50
+      },
+      {
+        "text": "story",
+        "type": "PRODUCT",
+        "start": 519,
+        "end": 524,
+        "word_index": 87
+      },
+      {
+        "text": "story plus size reflective detail t-shirt",
+        "type": "PRODUCT",
+        "start": 519,
+        "end": 560,
+        "word_index": 102
+      },
+      {
+        "text": "7 July",
+        "type": "DATE",
+        "start": 734,
+        "end": 740,
+        "word_index": 124
+      },
+      {
+        "text": "Puma",
+        "type": "ORGANIZATION",
+        "start": 992,
+        "end": 996,
+        "word_index": 164
+      },
+      {
+        "text": "Puma women royal cat comfort soft ride sliders",
+        "type": "PRODUCT",
+        "start": 992,
+        "end": 1038,
+        "word_index": 165
+      },
+      {
+        "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1159,
+        "word_index": 191
+      },
+      {
+        "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1159,
+        "word_index": 215
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 239
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 245
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 252
+      },
+      {
+        "text": "10:44 a.m.",
+        "type": "TIME",
+        "start": 1664,
+        "end": 1674,
+        "word_index": 259
+      },
+      {
+        "text": "Agnia women floral print mandarin collar, flared sleeve shirt style top",
+        "type": "PRODUCT",
+        "start": 1885,
+        "end": 1956,
+        "word_index": 307
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 311
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 350
+      },
+      {
+        "text": "Agnia women floral print mandarin collar, flared sleeve shirt style top",
+        "type": "PRODUCT",
+        "start": 1885,
+        "end": 1956,
+        "word_index": 354
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 358
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 4
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 6
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 580,
+        "end": 622,
+        "word_index": 123
+      },
+      {
+        "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+        "type": "PRODUCT",
+        "start": 1297,
+        "end": 1343,
+        "word_index": 206
+      },
+      {
+        "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+        "type": "PRODUCT",
+        "start": 1395,
+        "end": 1467,
+        "word_index": 228
+      },
+      {
+        "text": "Istyle Can Top",
+        "type": "PRODUCT",
+        "start": 1849,
+        "end": 1863,
+        "word_index": 302
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 2075,
+        "end": 2081,
+        "word_index": 387
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 3
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 5
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 50
+      },
+      {
+        "text": "story",
+        "type": "PRODUCT",
+        "start": 519,
+        "end": 524,
+        "word_index": 87
+      },
+      {
+        "text": "story plus size reflective detail t-shirt",
+        "type": "PRODUCT",
+        "start": 519,
+        "end": 560,
+        "word_index": 102
+      },
+      {
+        "text": "Puma",
+        "type": "ORGANIZATION",
+        "start": 992,
+        "end": 996,
+        "word_index": 164
+      },
+      {
+        "text": "Puma women royal cat comfort soft ride sliders",
+        "type": "PRODUCT",
+        "start": 992,
+        "end": 1038,
+        "word_index": 165
+      },
+      {
+        "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1159,
+        "word_index": 191
+      },
+      {
+        "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+        "type": "PRODUCT",
+        "start": 1089,
+        "end": 1159,
+        "word_index": 215
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 239
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 245
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 252
+      },
+      {
+        "text": "Agnia women floral print mandarin collar, flared sleeve shirt style top",
+        "type": "PRODUCT",
+        "start": 1885,
+        "end": 1956,
+        "word_index": 307
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 311
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 350
+      },
+      {
+        "text": "Agnia women floral print mandarin collar, flared sleeve shirt style top",
+        "type": "PRODUCT",
+        "start": 1885,
+        "end": 1956,
+        "word_index": 354
+      },
+      {
+        "text": "Istyle can top",
+        "type": "PRODUCT",
+        "start": 1559,
+        "end": 1573,
+        "word_index": 358
+      }
+    ]
+  }
+}

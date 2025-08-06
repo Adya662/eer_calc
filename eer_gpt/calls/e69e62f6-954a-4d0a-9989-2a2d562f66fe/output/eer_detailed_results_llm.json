@@ -1,0 +1,366 @@
+{
+  "call_id": "e69e62f6-954a-4d0a-9989-2a2d562f66fe",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 15.96,
+  "all_entities_eer": {
+    "eer_percentage": 80.0,
+    "substitutions": 2,
+    "insertions": 5,
+    "deletions": 9,
+    "total_ref": 16,
+    "total_hyp": 8,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 75.0,
+    "substitutions": 5,
+    "insertions": 0,
+    "deletions": 4,
+    "total_ref": 12,
+    "total_hyp": 7,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 7,
+      "LANGUAGE": 2,
+      "PRODUCT": 4,
+      "DATE": 1
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 3,
+      "PRODUCT": 3,
+      "DATE": 1
+    }
+  },
+  "entity_types_found": {
+    "reference": [
+      "LANGUAGE",
+      "PERSON",
+      "PRODUCT",
+      "DATE",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "DATE",
+      "ORGANIZATION",
+      "PERSON",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 3
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 5
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 42
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 45
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids",
+        "type": "ORGANIZATION",
+        "start": 549,
+        "end": 565,
+        "word_index": 162
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "start": 587,
+        "end": 660,
+        "word_index": 168
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Embroidered Pure Cotton Straight Skirt",
+        "type": "PRODUCT",
+        "start": 675,
+        "end": 736,
+        "word_index": 181
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids",
+        "type": "ORGANIZATION",
+        "start": 549,
+        "end": 565,
+        "word_index": 208
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "start": 587,
+        "end": 660,
+        "word_index": 210
+      },
+      {
+        "text": "21 June",
+        "type": "DATE",
+        "start": 877,
+        "end": 884,
+        "word_index": 218
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 249
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 362
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "start": 587,
+        "end": 660,
+        "word_index": 370
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids",
+        "type": "ORGANIZATION",
+        "start": 549,
+        "end": 565,
+        "word_index": 447
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 623
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 0,
+        "end": 3,
+        "word_index": 0
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 2
+      },
+      {
+        "text": "U.S. Polo Kids",
+        "type": "PRODUCT",
+        "start": 466,
+        "end": 480,
+        "word_index": 83
+      },
+      {
+        "text": "U.S. Polo Kids Girls",
+        "type": "PRODUCT",
+        "start": 500,
+        "end": 520,
+        "word_index": 86
+      },
+      {
+        "text": "U.S. Polo Kids Girls",
+        "type": "PRODUCT",
+        "start": 500,
+        "end": 520,
+        "word_index": 91
+      },
+      {
+        "text": "21 \u091c\u0942\u0928",
+        "type": "DATE",
+        "start": 773,
+        "end": 779,
+        "word_index": 99
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 115
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 142
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 3
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 5
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids",
+        "type": "ORGANIZATION",
+        "start": 549,
+        "end": 565,
+        "word_index": 162
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "start": 587,
+        "end": 660,
+        "word_index": 168
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Embroidered Pure Cotton Straight Skirt",
+        "type": "PRODUCT",
+        "start": 675,
+        "end": 736,
+        "word_index": 181
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids",
+        "type": "ORGANIZATION",
+        "start": 549,
+        "end": 565,
+        "word_index": 208
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "start": 587,
+        "end": 660,
+        "word_index": 210
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 249
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 362
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "start": 587,
+        "end": 660,
+        "word_index": 370
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids",
+        "type": "ORGANIZATION",
+        "start": 549,
+        "end": 565,
+        "word_index": 447
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 623
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 0,
+        "end": 3,
+        "word_index": 0
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 2
+      },
+      {
+        "text": "U.S. Polo Kids",
+        "type": "PRODUCT",
+        "start": 466,
+        "end": 480,
+        "word_index": 83
+      },
+      {
+        "text": "U.S. Polo Kids Girls",
+        "type": "PRODUCT",
+        "start": 500,
+        "end": 520,
+        "word_index": 86
+      },
+      {
+        "text": "U.S. Polo Kids Girls",
+        "type": "PRODUCT",
+        "start": 500,
+        "end": 520,
+        "word_index": 91
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 115
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 9,
+        "end": 15,
+        "word_index": 142
+      }
+    ]
+  }
+}

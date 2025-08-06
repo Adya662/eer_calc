@@ -1,0 +1,1009 @@
+{
+  "call_id": "09f69426-e7e6-4f2a-a20a-75416d945306",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 16.95,
+  "all_entities_eer": {
+    "substitutions": 10,
+    "insertions": 9,
+    "deletions": 0,
+    "correct": 3,
+    "total_ref": 13,
+    "total_hyp": 22,
+    "eer_percentage": 146.15,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "1,799",
+          "type": "MONEY",
+          "normalized": "1,799",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "\u0915\u0949\u092e\u094d\u092a\u094d\u0930\u093f\u0939\u0947\u0902\u0938\u093f\u0935 \u092a\u0948\u0915\u0947\u091c",
+          "type": "PRODUCT",
+          "normalized": "\u0915\u0949\u092e\u094d\u092a\u094d\u0930\u093f\u0939\u0947\u0902\u0938\u093f\u0935 \u092a\u0948\u0915\u0947\u091c",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees six thousand",
+          "type": "MONEY",
+          "normalized": "rupees six thousand",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "6,000 \u0930\u0941\u092a\u092f\u0947",
+          "type": "MONEY",
+          "normalized": "6,000 \u0930\u0941\u092a\u092f\u0947",
+          "index": 12
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "100% money back guarantee",
+          "type": "PRODUCT",
+          "normalized": "100% money back guarantee",
+          "index": 16
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Purba Sahu",
+          "type": "PERSON",
+          "normalized": "purba sahu",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Purba Sahu",
+          "type": "PERSON",
+          "normalized": "purba sahu",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 21
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 7,
+    "insertions": 10,
+    "deletions": 0,
+    "correct": 3,
+    "total_ref": 10,
+    "total_hyp": 20,
+    "eer_percentage": 170.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "\u0915\u0949\u092e\u094d\u092a\u094d\u0930\u093f\u0939\u0947\u0902\u0938\u093f\u0935 \u092a\u0948\u0915\u0947\u091c",
+          "type": "PRODUCT",
+          "normalized": "\u0915\u0949\u092e\u094d\u092a\u094d\u0930\u093f\u0939\u0947\u0902\u0938\u093f\u0935 \u092a\u0948\u0915\u0947\u091c",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "100% money back guarantee",
+          "type": "PRODUCT",
+          "normalized": "100% money back guarantee",
+          "index": 14
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Purba Sahu",
+          "type": "PERSON",
+          "normalized": "purba sahu",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Purba Sahu",
+          "type": "PERSON",
+          "normalized": "purba sahu",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 19
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 7,
+      "MONEY": 3
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 17,
+      "MONEY": 2
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 122,
+        "end": 126,
+        "word_index": 28
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 146
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 796,
+        "end": 841,
+        "word_index": 151
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 234
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 244
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 346
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 796,
+        "end": 841,
+        "word_index": 354
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 2317,
+        "end": 2336,
+        "word_index": 384
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 458
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 547
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 58,
+        "end": 68,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 20
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 157
+      },
+      {
+        "text": "1,799",
+        "type": "MONEY",
+        "start": 750,
+        "end": 755,
+        "word_index": 215
+      },
+      {
+        "text": "\u0915\u0949\u092e\u094d\u092a\u094d\u0930\u093f\u0939\u0947\u0902\u0938\u093f\u0935 \u092a\u0948\u0915\u0947\u091c",
+        "type": "PRODUCT",
+        "start": 763,
+        "end": 783,
+        "word_index": 217
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 295
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 397
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 529
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 761
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 867
+      },
+      {
+        "text": "6,000 \u0930\u0941\u092a\u092f\u0947",
+        "type": "MONEY",
+        "start": 2170,
+        "end": 2181,
+        "word_index": 960
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1048
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1124
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1172
+      },
+      {
+        "text": "100% money back guarantee",
+        "type": "PRODUCT",
+        "start": 2928,
+        "end": 2953,
+        "word_index": 1228
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1325
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1351
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1413
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1506
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1563
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 122,
+        "end": 126,
+        "word_index": 28
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 146
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 234
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 244
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 346
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 458
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 452,
+        "end": 461,
+        "word_index": 547
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Purba Sahu",
+        "type": "PERSON",
+        "start": 58,
+        "end": 68,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 20
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 157
+      },
+      {
+        "text": "\u0915\u0949\u092e\u094d\u092a\u094d\u0930\u093f\u0939\u0947\u0902\u0938\u093f\u0935 \u092a\u0948\u0915\u0947\u091c",
+        "type": "PRODUCT",
+        "start": 763,
+        "end": 783,
+        "word_index": 217
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 295
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 397
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 529
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 761
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 867
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1048
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1124
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1172
+      },
+      {
+        "text": "100% money back guarantee",
+        "type": "PRODUCT",
+        "start": 2928,
+        "end": 2953,
+        "word_index": 1228
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1325
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1351
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1413
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1506
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 120,
+        "end": 124,
+        "word_index": 1563
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "call_id": "03261666-7d82-49ec-8d6e-78c2f716ad73",
+  "method": "Combined SpaCy/Stanza NER",
+  "processing_timestamp": "2025-08-06 03:12:18",
+  "metrics": {
+    "global_EER": {
+      "correct_entities": 5,
+      "missed_entities": 5,
+      "extra_entities": 5,
+      "total_errors": 10,
+      "total_ref_entities": 10,
+      "total_gt_entities": 10,
+      "eer_percentage": 100.0,
+      "accuracy_percentage": 50.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 28,
+    "gt_entities": 25,
+    "unique_ref_entities": 16,
+    "unique_gt_entities": 15,
+    "concerned_ref_entities": 10,
+    "concerned_gt_entities": 10
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 4,
+      "ORG": 6,
+      "GPE": 3,
+      "LANGUAGE": 1,
+      "CARDINAL": 10,
+      "PRODUCT": 2,
+      "DATE": 1,
+      "NEN": 1
+    },
+    "ground_truth": {
+      "PERSON": 8,
+      "CARDINAL": 9,
+      "ORG": 2,
+      "PRODUCT": 3,
+      "QUANTITY": 2,
+      "NETI": 1
+    }
+  },
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hey,                  I am Rey from मिंत्रा,        here to assist you;                     shall we proceed further in Hindi,    or    English ?",
+      "ground_truth": "Hey, I am Rey from",
+      "ref_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        },
+        {
+          "text": "मिंत्रा,        ",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Rey",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "reference": "मैं आपके order का status check करने में help कर सकती हूँ। कृपया product का नाम या brand name बता सकते हैं?",
+      "ground_truth": "मैं आपके ऑर्डर का स्टेटस चेक करने में हेल्प कर सकती हूं। कृपया प्रोडक्ट का नाम या ब्रांड नेम बता सकते हैं?",
+      "ref_entities": [
+        {
+          "text": "कृपया",
+          "type": "ORG"
+        },
+        {
+          "text": "का नाम या",
+          "type": "ORG"
+        },
+        {
+          "text": "हैं",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "हेल्प",
+          "type": "ORG"
+        },
+        {
+          "text": "कृपया",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "प्रोडक्ट का नाम",
+          "type": "PERSON"
+        },
+        {
+          "text": "हैं",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "reference": "बिल्कुल, मैं आपके product का status check करने में आपकी मदद कर सकती हूँ। कृपया मुझे product का नाम या brand name बता सकते हैं?",
+      "ground_truth": "बिल्कुल, मैं आपके प्रोडक्ट का स्टेटस चेक करने में आपकी मदद कर सकती हूं। कृपया मुझे प्रोडक्ट का नाम या ब्रांड नेम बता सकते हैं?",
+      "ref_entities": [
+        {
+          "text": "कृपया मुझे",
+          "type": "PRODUCT"
+        },
+        {
+          "text": "का नाम या",
+          "type": "ORG"
+        },
+        {
+          "text": "हैं",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "हैं",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "reference": "क्या आप A.T.U.N. brand के Black Net Dress के बारे में पूछ रहे हैं?",
+      "ground_truth": "क्या आप किसी अन्य एजेंट से बात करना चाहते हैं जो आपकी बेहतर मदद कर सके?",
+      "ref_entities": [
+        {
+          "text": "A.T.U.N.",
+          "type": "ORG"
+        },
+        {
+          "text": "Black Net Dress",
+          "type": "ORG"
+        },
+        {
+          "text": "पूछ रहे हैं",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "आपकी बेहतर",
+          "type": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "entity_types_found": [
+    "NEN",
+    "GPE",
+    "PRODUCT",
+    "NETI",
+    "PERSON",
+    "DATE",
+    "CARDINAL",
+    "QUANTITY",
+    "LANGUAGE",
+    "ORG"
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "call_id": "268dbd88-173b-41a1-8363-4a6ba62b9aae",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 14.13,
+  "all_entities_eer": {
+    "eer_percentage": 100.0,
+    "substitutions": 4,
+    "insertions": 0,
+    "deletions": 8,
+    "total_ref": 12,
+    "total_hyp": 6,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 83.33,
+    "substitutions": 3,
+    "insertions": 0,
+    "deletions": 7,
+    "total_ref": 12,
+    "total_hyp": 6,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 3,
+      "ORGANIZATION": 2,
+      "PRODUCT": 7
+    },
+    "hypothesis": {
+      "PERSON": 3,
+      "ORGANIZATION": 2,
+      "PRODUCT": 1
+    }
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORGANIZATION",
+      "PERSON",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "ORGANIZATION",
+      "PERSON",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Rupesh Kondawar",
+        "type": "PERSON",
+        "start": 57,
+        "end": 72,
+        "word_index": 12
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 35
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 37
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 217,
+        "end": 221,
+        "word_index": 44
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 145
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 192
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 251
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 338
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 348
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 381
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Rupesh Kovar",
+        "type": "PERSON",
+        "start": 58,
+        "end": 70,
+        "word_index": 11
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 30
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 32
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 215,
+        "end": 219,
+        "word_index": 39
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Rupesh Kondawar",
+        "type": "PERSON",
+        "start": 57,
+        "end": 72,
+        "word_index": 12
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 35
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 37
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 217,
+        "end": 221,
+        "word_index": 44
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 145
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 192
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 251
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 338
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 348
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 377,
+        "end": 386,
+        "word_index": 381
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Rupesh Kovar",
+        "type": "PERSON",
+        "start": 58,
+        "end": 70,
+        "word_index": 11
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 30
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 32
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 215,
+        "end": 219,
+        "word_index": 39
+      }
+    ]
+  }
+}

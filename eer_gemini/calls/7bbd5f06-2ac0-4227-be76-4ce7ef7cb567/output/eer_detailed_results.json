@@ -1,0 +1,669 @@
+{
+  "call_id": "7bbd5f06-2ac0-4227-be76-4ce7ef7cb567",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 19.89,
+  "all_entities_eer": {
+    "eer_percentage": 70.0,
+    "substitutions": 13,
+    "insertions": 0,
+    "deletions": 17,
+    "total_ref": 30,
+    "total_hyp": 16,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 72.73,
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 23,
+    "total_ref": 24,
+    "total_hyp": 11,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 4,
+      "ORGANIZATION": 1,
+      "PRODUCT": 22,
+      "MONEY": 5
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 1,
+      "PRODUCT": 9,
+      "MONEY": 4
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT",
+      "PERSON"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT",
+      "PERSON"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "start": 57,
+        "end": 62,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 107,
+        "end": 111,
+        "word_index": 17
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 107,
+        "end": 111,
+        "word_index": 31
+      },
+      {
+        "text": "program",
+        "type": "PRODUCT",
+        "start": 208,
+        "end": 215,
+        "word_index": 31
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 267,
+        "end": 270,
+        "word_index": 40
+      },
+      {
+        "text": "31.11",
+        "type": "MONEY",
+        "start": 274,
+        "end": 279,
+        "word_index": 42
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 52
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 80
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 86
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 91
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 95
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1038,
+        "end": 1048,
+        "word_index": 99
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1050,
+        "end": 1069,
+        "word_index": 101
+      },
+      {
+        "text": "senior health coach",
+        "type": "PERSON",
+        "start": 1092,
+        "end": 1111,
+        "word_index": 104
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1038,
+        "end": 1048,
+        "word_index": 112
+      },
+      {
+        "text": "insulin resistance",
+        "type": "PRODUCT",
+        "start": 1268,
+        "end": 1286,
+        "word_index": 123
+      },
+      {
+        "text": "vitamin deficiencies",
+        "type": "PRODUCT",
+        "start": 1290,
+        "end": 1310,
+        "word_index": 128
+      },
+      {
+        "text": "obesity",
+        "type": "PRODUCT",
+        "start": 1379,
+        "end": 1386,
+        "word_index": 135
+      },
+      {
+        "text": "senior health coach",
+        "type": "PERSON",
+        "start": 1092,
+        "end": 1111,
+        "word_index": 147
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 160
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 168
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1694,
+        "end": 1739,
+        "word_index": 172
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1038,
+        "end": 1048,
+        "word_index": 178
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1050,
+        "end": 1069,
+        "word_index": 180
+      },
+      {
+        "text": "health coach session",
+        "type": "PRODUCT",
+        "start": 1798,
+        "end": 1818,
+        "word_index": 183
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 198
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1694,
+        "end": 1739,
+        "word_index": 208
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2316,
+        "end": 2347,
+        "word_index": 216
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2370,
+        "end": 2415,
+        "word_index": 225
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2493,
+        "end": 2501,
+        "word_index": 236
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 27
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 66
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 109
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 115
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 122
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 172
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 193
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1682,
+        "end": 1694,
+        "word_index": 215
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 237
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1682,
+        "end": 1694,
+        "word_index": 262
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 2237,
+        "end": 2247,
+        "word_index": 278
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 2270,
+        "end": 2282,
+        "word_index": 291
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2360,
+        "end": 2368,
+        "word_index": 313
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "start": 57,
+        "end": 62,
+        "word_index": 11
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 107,
+        "end": 111,
+        "word_index": 17
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 107,
+        "end": 111,
+        "word_index": 31
+      },
+      {
+        "text": "program",
+        "type": "PRODUCT",
+        "start": 208,
+        "end": 215,
+        "word_index": 31
+      },
+      {
+        "text": "BMI",
+        "type": "PRODUCT",
+        "start": 267,
+        "end": 270,
+        "word_index": 40
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 52
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 80
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 86
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 91
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 95
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1038,
+        "end": 1048,
+        "word_index": 99
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1050,
+        "end": 1069,
+        "word_index": 101
+      },
+      {
+        "text": "senior health coach",
+        "type": "PERSON",
+        "start": 1092,
+        "end": 1111,
+        "word_index": 104
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1038,
+        "end": 1048,
+        "word_index": 112
+      },
+      {
+        "text": "insulin resistance",
+        "type": "PRODUCT",
+        "start": 1268,
+        "end": 1286,
+        "word_index": 123
+      },
+      {
+        "text": "vitamin deficiencies",
+        "type": "PRODUCT",
+        "start": 1290,
+        "end": 1310,
+        "word_index": 128
+      },
+      {
+        "text": "obesity",
+        "type": "PRODUCT",
+        "start": 1379,
+        "end": 1386,
+        "word_index": 135
+      },
+      {
+        "text": "senior health coach",
+        "type": "PERSON",
+        "start": 1092,
+        "end": 1111,
+        "word_index": 147
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 160
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 168
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "start": 1038,
+        "end": 1048,
+        "word_index": 178
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "start": 1050,
+        "end": 1069,
+        "word_index": 180
+      },
+      {
+        "text": "health coach session",
+        "type": "PRODUCT",
+        "start": 1798,
+        "end": 1818,
+        "word_index": 183
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 433,
+        "end": 442,
+        "word_index": 198
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2493,
+        "end": 2501,
+        "word_index": 236
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 3
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 37,
+        "word_index": 6
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 27
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 66
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 109
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 115
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 122
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 172
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 193
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 96,
+        "end": 100,
+        "word_index": 237
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2360,
+        "end": 2368,
+        "word_index": 313
+      }
+    ]
+  }
+}

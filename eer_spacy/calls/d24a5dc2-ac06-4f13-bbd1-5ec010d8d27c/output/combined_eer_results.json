@@ -1,0 +1,113 @@
+{
+  "call_id": "d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c",
+  "method": "Combined SpaCy/Stanza NER",
+  "processing_timestamp": "2025-08-06 03:11:45",
+  "metrics": {
+    "global_EER": {
+      "correct_entities": 3,
+      "missed_entities": 2,
+      "extra_entities": 0,
+      "total_errors": 2,
+      "total_ref_entities": 5,
+      "total_gt_entities": 3,
+      "eer_percentage": 40.0,
+      "accuracy_percentage": 60.0
+    }
+  },
+  "entity_summary": {
+    "reference_entities": 15,
+    "gt_entities": 16,
+    "unique_ref_entities": 14,
+    "unique_gt_entities": 9,
+    "concerned_ref_entities": 5,
+    "concerned_gt_entities": 3
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "NORP": 1,
+      "ORG": 3,
+      "PERSON": 2,
+      "CARDINAL": 3,
+      "FAC": 1,
+      "ORDINAL": 1,
+      "LAW": 2,
+      "DATE": 1,
+      "NEN": 1
+    },
+    "ground_truth": {
+      "PERSON": 5,
+      "ORG": 1,
+      "CARDINAL": 4,
+      "ORDINAL": 1,
+      "DATE": 3,
+      "NEN": 2
+    }
+  },
+  "sample_error_pairs": [
+    {
+      "index": 0,
+      "reference": "Hello, this is Priya from ElevateNow. Am I speaking with Nupur?",
+      "ground_truth": "Hello, this is Priya from Elevate Now. Am I speaking with Nupur? I noticed you've been quiet. Are you still there?",
+      "ref_entities": [
+        {
+          "text": "ElevateNow",
+          "type": "ORG"
+        },
+        {
+          "text": "Nupur",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "Nupur",
+          "type": "PERSON"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "reference": "Great! I noticed you were checking out our Nano plan but didn't complete the payment. I'd love to understand what motivated you to consider our program and what your weight loss goals are.",
+      "ground_truth": "Absolutely, Based on your BMI of 26.81, it's clear your body is sending signals about how it's handling weight and metabolism right now. At this pre-obesity stage, many individuals experience low energy levels and slow metabolism due to iron and vitamin D deficiency. Our program focuses on fixing these first, so your body naturally boosts metabolism and accelerates fat loss. Would you like to discuss a personalized plan to address these challenges and achieve sustainable weight loss?",
+      "ref_entities": [
+        {
+          "text": "Nano",
+          "type": "PERSON"
+        }
+      ],
+      "gt_entities": [
+        {
+          "text": "BMI",
+          "type": "ORG"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "reference": "Absolutely! Based on your BMI of 26.81, it's clear your body is sending signals about how it's handling weight and metabolism right now. At this Pre-Obesity Stage, many individuals experience low energy levels and slow metabolism due to Iron & Vitamin D Deficiency. Our program focuses on fixing these first, so your body naturally boosts metabolism and accelerates fat loss. Would you like to discuss a personalized plan to address these challenges and achieve sustainable weight loss?",
+      "ground_truth": "Have you had any past experiences with other weight loss programs? If so",
+      "ref_entities": [
+        {
+          "text": "BMI",
+          "type": "ORG"
+        },
+        {
+          "text": "Iron & Vitamin D Deficiency",
+          "type": "ORG"
+        }
+      ],
+      "gt_entities": []
+    }
+  ],
+  "entity_types_found": [
+    "NORP",
+    "FAC",
+    "ORDINAL",
+    "LAW",
+    "PERSON",
+    "DATE",
+    "CARDINAL",
+    "NEN",
+    "ORG"
+  ]
+}

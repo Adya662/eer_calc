@@ -1,0 +1,666 @@
+{
+  "call_id": "eacbcb92-6172-41f7-b2a9-0c4df5a3a597",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 19.96,
+  "all_entities_eer": {
+    "eer_percentage": 23.076923076923077,
+    "substitutions": 7,
+    "insertions": 0,
+    "deletions": 7,
+    "total_ref": 26,
+    "total_hyp": 26,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "concerned_entities_eer": {
+    "eer_percentage": 7.69,
+    "substitutions": 2,
+    "insertions": 0,
+    "deletions": 10,
+    "total_ref": 22,
+    "total_hyp": 14,
+    "correct": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [],
+    "detailed_correct": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORGANIZATION": 10,
+      "LANGUAGE": 2,
+      "PRODUCT": 10,
+      "DATE": 5
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 2,
+      "DATE": 5,
+      "PRODUCT": 9
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE",
+      "ORGANIZATION",
+      "DATE"
+    ],
+    "hypothesis": [
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE",
+      "ORGANIZATION",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 44
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 51
+      },
+      {
+        "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+        "type": "PRODUCT",
+        "start": 358,
+        "end": 414,
+        "word_index": 82
+      },
+      {
+        "text": "yesterday",
+        "type": "DATE",
+        "start": 445,
+        "end": 454,
+        "word_index": 102
+      },
+      {
+        "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+        "type": "PRODUCT",
+        "start": 358,
+        "end": 414,
+        "word_index": 119
+      },
+      {
+        "text": "Jack & Jones Junior",
+        "type": "ORGANIZATION",
+        "start": 887,
+        "end": 906,
+        "word_index": 170
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+        "type": "PRODUCT",
+        "start": 956,
+        "end": 1013,
+        "word_index": 193
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 193
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "start": 173,
+        "end": 178,
+        "word_index": 216
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+        "type": "PRODUCT",
+        "start": 956,
+        "end": 1013,
+        "word_index": 238
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 238
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Relaxed-Fit Mid-Rise Joggers",
+        "type": "PRODUCT",
+        "start": 1288,
+        "end": 1342,
+        "word_index": 276
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 276
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "start": 173,
+        "end": 178,
+        "word_index": 299
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+        "type": "PRODUCT",
+        "start": 956,
+        "end": 1013,
+        "word_index": 322
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 322
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Relaxed-Fit Mid-Rise Joggers",
+        "type": "PRODUCT",
+        "start": 1288,
+        "end": 1342,
+        "word_index": 339
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 339
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "start": 173,
+        "end": 178,
+        "word_index": 362
+      },
+      {
+        "text": "Jack & Jones Junior",
+        "type": "ORGANIZATION",
+        "start": 887,
+        "end": 906,
+        "word_index": 389
+      },
+      {
+        "text": "Jack & Jones Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans",
+        "type": "PRODUCT",
+        "start": 2075,
+        "end": 2145,
+        "word_index": 417
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans",
+        "type": "PRODUCT",
+        "start": 2225,
+        "end": 2296,
+        "word_index": 452
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 452
+      },
+      {
+        "text": "25 June",
+        "type": "DATE",
+        "start": 2327,
+        "end": 2334,
+        "word_index": 473
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 2459,
+        "end": 2462,
+        "word_index": 508
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 537
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 6
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 10
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 74,
+        "end": 79,
+        "word_index": 21
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 83,
+        "end": 90,
+        "word_index": 28
+      },
+      {
+        "text": "yesterday",
+        "type": "DATE",
+        "start": 408,
+        "end": 417,
+        "word_index": 72
+      },
+      {
+        "text": "Gap Boys camouflage printed relaxed fit midrise joggers",
+        "type": "PRODUCT",
+        "start": 495,
+        "end": 550,
+        "word_index": 98
+      },
+      {
+        "text": "Jack and Jones junior",
+        "type": "ORGANIZATION",
+        "start": 851,
+        "end": 872,
+        "word_index": 161
+      },
+      {
+        "text": "Jack and Jones junior boys pure cotton relaxed fit joggers",
+        "type": "PRODUCT",
+        "start": 922,
+        "end": 980,
+        "word_index": 178
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "start": 135,
+        "end": 140,
+        "word_index": 200
+      },
+      {
+        "text": "Jack and Jones junior boys pure cotton relaxed fit joggers",
+        "type": "PRODUCT",
+        "start": 922,
+        "end": 980,
+        "word_index": 217
+      },
+      {
+        "text": "Jack and Jones junior boys relaxed fit mid rise joggers",
+        "type": "PRODUCT",
+        "start": 1256,
+        "end": 1311,
+        "word_index": 254
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "start": 135,
+        "end": 140,
+        "word_index": 276
+      },
+      {
+        "text": "Jack and Jones junior boys pure cotton relaxed fit joggers",
+        "type": "PRODUCT",
+        "start": 922,
+        "end": 980,
+        "word_index": 291
+      },
+      {
+        "text": "Jack and Jones junior boys relaxed fit mid rise joggers",
+        "type": "PRODUCT",
+        "start": 1256,
+        "end": 1311,
+        "word_index": 313
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "start": 135,
+        "end": 140,
+        "word_index": 335
+      },
+      {
+        "text": "Jack and Jones junior",
+        "type": "ORGANIZATION",
+        "start": 851,
+        "end": 872,
+        "word_index": 367
+      },
+      {
+        "text": "Jack and Jones junior boys jogger mid rice, pure cotton stretchable jeans",
+        "type": "PRODUCT",
+        "start": 2051,
+        "end": 2124,
+        "word_index": 396
+      },
+      {
+        "text": "Jack and Jones junior boys jogger mid rice pure cotton stretchable jeans",
+        "type": "PRODUCT",
+        "start": 2204,
+        "end": 2276,
+        "word_index": 447
+      },
+      {
+        "text": "25th June",
+        "type": "DATE",
+        "start": 2307,
+        "end": 2316,
+        "word_index": 471
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 503
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 2443,
+        "end": 2446,
+        "word_index": 516
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 10
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 14
+      },
+      {
+        "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+        "type": "PRODUCT",
+        "start": 358,
+        "end": 414,
+        "word_index": 82
+      },
+      {
+        "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+        "type": "PRODUCT",
+        "start": 358,
+        "end": 414,
+        "word_index": 119
+      },
+      {
+        "text": "Jack & Jones Junior",
+        "type": "ORGANIZATION",
+        "start": 887,
+        "end": 906,
+        "word_index": 170
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+        "type": "PRODUCT",
+        "start": 956,
+        "end": 1013,
+        "word_index": 193
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 193
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+        "type": "PRODUCT",
+        "start": 956,
+        "end": 1013,
+        "word_index": 238
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 238
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Relaxed-Fit Mid-Rise Joggers",
+        "type": "PRODUCT",
+        "start": 1288,
+        "end": 1342,
+        "word_index": 276
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 276
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Pure Cotton Relaxed-Fit Joggers",
+        "type": "PRODUCT",
+        "start": 956,
+        "end": 1013,
+        "word_index": 322
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 322
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Relaxed-Fit Mid-Rise Joggers",
+        "type": "PRODUCT",
+        "start": 1288,
+        "end": 1342,
+        "word_index": 339
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 339
+      },
+      {
+        "text": "Jack & Jones Junior",
+        "type": "ORGANIZATION",
+        "start": 887,
+        "end": 906,
+        "word_index": 389
+      },
+      {
+        "text": "Jack & Jones Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans",
+        "type": "PRODUCT",
+        "start": 2075,
+        "end": 2145,
+        "word_index": 417
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938 Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans",
+        "type": "PRODUCT",
+        "start": 2225,
+        "end": 2296,
+        "word_index": 452
+      },
+      {
+        "text": "\u091c\u0948\u0915 \u090f\u0902\u0921 \u091c\u094b\u0928\u094d\u0938",
+        "type": "ORGANIZATION",
+        "start": 956,
+        "end": 969,
+        "word_index": 452
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 2459,
+        "end": 2462,
+        "word_index": 508
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORGANIZATION",
+        "start": 36,
+        "end": 43,
+        "word_index": 537
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 10,
+        "end": 13,
+        "word_index": 6
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 10
+      },
+      {
+        "text": "Gap Boys camouflage printed relaxed fit midrise joggers",
+        "type": "PRODUCT",
+        "start": 495,
+        "end": 550,
+        "word_index": 98
+      },
+      {
+        "text": "Jack and Jones junior",
+        "type": "ORGANIZATION",
+        "start": 851,
+        "end": 872,
+        "word_index": 161
+      },
+      {
+        "text": "Jack and Jones junior boys pure cotton relaxed fit joggers",
+        "type": "PRODUCT",
+        "start": 922,
+        "end": 980,
+        "word_index": 178
+      },
+      {
+        "text": "Jack and Jones junior boys pure cotton relaxed fit joggers",
+        "type": "PRODUCT",
+        "start": 922,
+        "end": 980,
+        "word_index": 217
+      },
+      {
+        "text": "Jack and Jones junior boys relaxed fit mid rise joggers",
+        "type": "PRODUCT",
+        "start": 1256,
+        "end": 1311,
+        "word_index": 254
+      },
+      {
+        "text": "Jack and Jones junior boys pure cotton relaxed fit joggers",
+        "type": "PRODUCT",
+        "start": 922,
+        "end": 980,
+        "word_index": 291
+      },
+      {
+        "text": "Jack and Jones junior boys relaxed fit mid rise joggers",
+        "type": "PRODUCT",
+        "start": 1256,
+        "end": 1311,
+        "word_index": 313
+      },
+      {
+        "text": "Jack and Jones junior",
+        "type": "ORGANIZATION",
+        "start": 851,
+        "end": 872,
+        "word_index": 367
+      },
+      {
+        "text": "Jack and Jones junior boys jogger mid rice, pure cotton stretchable jeans",
+        "type": "PRODUCT",
+        "start": 2051,
+        "end": 2124,
+        "word_index": 396
+      },
+      {
+        "text": "Jack and Jones junior boys jogger mid rice pure cotton stretchable jeans",
+        "type": "PRODUCT",
+        "start": 2204,
+        "end": 2276,
+        "word_index": 447
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 19,
+        "end": 25,
+        "word_index": 503
+      },
+      {
+        "text": "SMS",
+        "type": "PRODUCT",
+        "start": 2443,
+        "end": 2446,
+        "word_index": 516
+      }
+    ]
+  }
+}

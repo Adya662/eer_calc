@@ -1,0 +1,1040 @@
+{
+  "call_id": "03856e6b-6925-4012-8eb8-0a0289019b7e",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 17.55,
+  "all_entities_eer": {
+    "substitutions": 6,
+    "insertions": 3,
+    "deletions": 13,
+    "correct": 4,
+    "total_ref": 23,
+    "total_hyp": 13,
+    "eer_percentage": 95.65,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Healthify",
+          "type": "ORG",
+          "normalized": "healthify",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "MBBS",
+          "type": "ORG",
+          "normalized": "mbbs",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "MD",
+          "type": "ORG",
+          "normalized": "md",
+          "index": 12
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 7
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 7
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "India",
+          "type": "GPE",
+          "normalized": "india",
+          "index": 12
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092a\u091f\u0928\u093e",
+          "type": "GPE",
+          "normalized": "\u092a\u091f\u0928\u093e",
+          "index": 13
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "normalized": "obesity stage - category i",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Healthifi",
+          "type": "ORGANIZATION",
+          "normalized": "healthifi",
+          "index": 18
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 20
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "MBBS",
+          "type": "PRODUCT",
+          "normalized": "mbbs",
+          "index": 21
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "MD",
+          "type": "PRODUCT",
+          "normalized": "md",
+          "index": 22
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Atul Sinha",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Atul Sinha",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 3,
+    "insertions": 3,
+    "deletions": 13,
+    "correct": 4,
+    "total_ref": 20,
+    "total_hyp": 10,
+    "eer_percentage": 95.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 9
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 7
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Elevate now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 7
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Healthifi",
+          "type": "ORGANIZATION",
+          "normalized": "healthifi",
+          "index": 15
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 17
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "MBBS",
+          "type": "PRODUCT",
+          "normalized": "mbbs",
+          "index": 18
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "MD",
+          "type": "PRODUCT",
+          "normalized": "md",
+          "index": 19
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Atul Sinha",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "ATUL SINHA",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "Atul Sinha",
+          "type": "PERSON",
+          "normalized": "atul sinha",
+          "index": 8
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 8,
+      "ORGANIZATION": 5,
+      "GPE": 2,
+      "PRODUCT": 7,
+      "EVENT": 1
+    },
+    "hypothesis": {
+      "PERSON": 6,
+      "ORGANIZATION": 3,
+      "PRODUCT": 1,
+      "ORG": 3
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "EVENT",
+      "GPE",
+      "PRODUCT",
+      "ORGANIZATION"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "ORGANIZATION",
+      "ORG",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 10
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 30
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 32
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 36
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 56
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 58
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 62
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 84
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 86
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 90
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "start": 474,
+        "end": 479,
+        "word_index": 123
+      },
+      {
+        "text": "\u092a\u091f\u0928\u093e",
+        "type": "GPE",
+        "start": 491,
+        "end": 495,
+        "word_index": 126
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 131
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 149
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 158
+      },
+      {
+        "text": "Obesity Stage - Category I",
+        "type": "EVENT",
+        "start": 1199,
+        "end": 1225,
+        "word_index": 183
+      },
+      {
+        "text": "Healthifi",
+        "type": "ORGANIZATION",
+        "start": 1588,
+        "end": 1597,
+        "word_index": 218
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 223
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 238
+      },
+      {
+        "text": "MBBS",
+        "type": "PRODUCT",
+        "start": 2062,
+        "end": 2066,
+        "word_index": 262
+      },
+      {
+        "text": "MD",
+        "type": "PRODUCT",
+        "start": 2068,
+        "end": 2070,
+        "word_index": 263
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 5
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 10
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 46,
+        "end": 57,
+        "word_index": 12
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 17
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 46,
+        "end": 57,
+        "word_index": 19
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "start": 117,
+        "end": 127,
+        "word_index": 27
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 32
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORGANIZATION",
+        "start": 155,
+        "end": 166,
+        "word_index": 34
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "start": 117,
+        "end": 127,
+        "word_index": 42
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 246,
+        "word_index": 63
+      },
+      {
+        "text": "Healthify",
+        "type": "ORG",
+        "start": 1287,
+        "end": 1296,
+        "word_index": 141
+      },
+      {
+        "text": "MBBS",
+        "type": "ORG",
+        "start": 1756,
+        "end": 1760,
+        "word_index": 191
+      },
+      {
+        "text": "MD",
+        "type": "ORG",
+        "start": 1762,
+        "end": 1764,
+        "word_index": 192
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 10
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 30
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 32
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 36
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 56
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 58
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 62
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 84
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 86
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "start": 57,
+        "end": 67,
+        "word_index": 90
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 131
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 149
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 158
+      },
+      {
+        "text": "Healthifi",
+        "type": "ORGANIZATION",
+        "start": 1588,
+        "end": 1597,
+        "word_index": 218
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 223
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 581,
+        "end": 590,
+        "word_index": 238
+      },
+      {
+        "text": "MBBS",
+        "type": "PRODUCT",
+        "start": 2062,
+        "end": 2066,
+        "word_index": 262
+      },
+      {
+        "text": "MD",
+        "type": "PRODUCT",
+        "start": 2068,
+        "end": 2070,
+        "word_index": 263
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 5
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 10
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 46,
+        "end": 57,
+        "word_index": 12
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 17
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 46,
+        "end": 57,
+        "word_index": 19
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "start": 117,
+        "end": 127,
+        "word_index": 27
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 35,
+        "end": 40,
+        "word_index": 32
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORGANIZATION",
+        "start": 155,
+        "end": 166,
+        "word_index": 34
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "start": 117,
+        "end": 127,
+        "word_index": 42
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 242,
+        "end": 246,
+        "word_index": 63
+      }
+    ]
+  }
+}

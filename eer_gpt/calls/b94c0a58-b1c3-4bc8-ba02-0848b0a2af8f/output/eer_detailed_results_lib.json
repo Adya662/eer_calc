@@ -1,0 +1,521 @@
+{
+  "call_id": "b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 10.75,
+  "all_entities_eer": {
+    "substitutions": 5,
+    "insertions": 3,
+    "deletions": 0,
+    "correct": 2,
+    "total_ref": 7,
+    "total_hyp": 10,
+    "eer_percentage": 114.29,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Niketa",
+          "type": "PERSON",
+          "normalized": "niketa",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Nikita",
+          "type": "PERSON",
+          "normalized": "nikita",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees",
+          "type": "MONEY",
+          "normalized": "rupees",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "one thousand seven hundred ninety-nine",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Rs 1,799",
+          "type": "MONEY",
+          "normalized": "rs 1,799",
+          "index": 9
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 3,
+    "insertions": 4,
+    "deletions": 0,
+    "correct": 2,
+    "total_ref": 5,
+    "total_hyp": 9,
+    "eer_percentage": 140.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate Now",
+          "type": "ORGANIZATION",
+          "normalized": "elevate now",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Niketa",
+          "type": "PERSON",
+          "normalized": "niketa",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Nikita",
+          "type": "PERSON",
+          "normalized": "nikita",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 8
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 2,
+      "MONEY": 2
+    },
+    "hypothesis": {
+      "PRODUCT": 6,
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "MONEY": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Niketa",
+        "type": "PERSON",
+        "start": 57,
+        "end": 63,
+        "word_index": 14
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 108,
+        "end": 112,
+        "word_index": 20
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 108
+      },
+      {
+        "text": "Rupees",
+        "type": "MONEY",
+        "start": 2691,
+        "end": 2697,
+        "word_index": 212
+      },
+      {
+        "text": "one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2698,
+        "end": 2736,
+        "word_index": 213
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 15
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 204,
+        "end": 209,
+        "word_index": 50
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 215,
+        "end": 226,
+        "word_index": 53
+      },
+      {
+        "text": "Nikita",
+        "type": "PERSON",
+        "start": 247,
+        "end": 253,
+        "word_index": 58
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 61
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 309
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 451
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 807
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 1199
+      },
+      {
+        "text": "Rs 1,799",
+        "type": "MONEY",
+        "start": 2675,
+        "end": 2683,
+        "word_index": 1258
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Niketa",
+        "type": "PERSON",
+        "start": 57,
+        "end": 63,
+        "word_index": 14
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 108,
+        "end": 112,
+        "word_index": 20
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 258,
+        "end": 267,
+        "word_index": 108
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 15
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 204,
+        "end": 209,
+        "word_index": 50
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORGANIZATION",
+        "start": 215,
+        "end": 226,
+        "word_index": 53
+      },
+      {
+        "text": "Nikita",
+        "type": "PERSON",
+        "start": 247,
+        "end": 253,
+        "word_index": 58
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 61
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 309
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 451
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 807
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 43,
+        "end": 47,
+        "word_index": 1199
+      }
+    ]
+  }
+}

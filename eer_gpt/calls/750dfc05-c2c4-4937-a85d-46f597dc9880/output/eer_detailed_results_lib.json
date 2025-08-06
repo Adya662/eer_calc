@@ -1,0 +1,586 @@
+{
+  "call_id": "750dfc05-c2c4-4937-a85d-46f597dc9880",
+  "method": "GPT LLM as NER",
+  "model": "gpt-4o",
+  "processing_time": 10.65,
+  "all_entities_eer": {
+    "substitutions": 7,
+    "insertions": 0,
+    "deletions": 1,
+    "correct": 4,
+    "total_ref": 12,
+    "total_hyp": 11,
+    "eer_percentage": 66.67,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate",
+          "type": "ORGANIZATION",
+          "normalized": "elevate",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 10
+        },
+        "hyp_entity": {
+          "text": "Rs 1,799",
+          "type": "MONEY",
+          "normalized": "rs 1,799",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees six thousand",
+          "type": "MONEY",
+          "normalized": "rupees six thousand",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "Rs 6,000",
+          "type": "MONEY",
+          "normalized": "rs 6,000",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "rupees 499",
+          "type": "MONEY",
+          "normalized": "rupees 499",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees four hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees four hundred ninety-nine",
+          "index": 8
+        },
+        "hyp_entity": {
+          "text": "rupees 1,399",
+          "type": "MONEY",
+          "normalized": "rupees 1,399",
+          "index": 8
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand three hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand three hundred ninety-nine",
+          "index": 9
+        },
+        "hyp_entity": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "normalized": "rupees 1,799",
+          "index": 9
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "Rupees one thousand seven hundred ninety-nine",
+          "type": "MONEY",
+          "normalized": "rupees one thousand seven hundred ninety-nine",
+          "index": 10
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Yogesh Deshmukh",
+          "type": "PERSON",
+          "normalized": "yogesh deshmukh",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Yogesh Deshmukh",
+          "type": "PERSON",
+          "normalized": "yogesh deshmukh",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 10
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 2,
+    "insertions": 0,
+    "deletions": 1,
+    "correct": 4,
+    "total_ref": 7,
+    "total_hyp": 6,
+    "eer_percentage": 42.86,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "ElevateNow",
+          "type": "ORGANIZATION",
+          "normalized": "elevatenow",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Elevate",
+          "type": "ORGANIZATION",
+          "normalized": "elevate",
+          "index": 1
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 4
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "normalized": "nano plan",
+          "index": 5
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        },
+        "hyp_entity": {
+          "text": "Priya",
+          "type": "PERSON",
+          "normalized": "priya",
+          "index": 0
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Yogesh Deshmukh",
+          "type": "PERSON",
+          "normalized": "yogesh deshmukh",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Yogesh Deshmukh",
+          "type": "PERSON",
+          "normalized": "yogesh deshmukh",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "Nano",
+          "type": "PRODUCT",
+          "normalized": "nano",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "WhatsApp",
+          "type": "PRODUCT",
+          "normalized": "whatsapp",
+          "index": 5
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 4,
+      "MONEY": 5
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 1,
+      "PRODUCT": 3,
+      "MONEY": 5
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "MONEY",
+      "ORGANIZATION",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Yogesh Deshmukh",
+        "type": "PERSON",
+        "start": 57,
+        "end": 72,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 167,
+        "end": 171,
+        "word_index": 26
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 549,
+        "end": 558,
+        "word_index": 89
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1755,
+        "end": 1800,
+        "word_index": 174
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 1992,
+        "end": 2011,
+        "word_index": 187
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 549,
+        "end": 558,
+        "word_index": 217
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2333,
+        "end": 2364,
+        "word_index": 246
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "start": 2387,
+        "end": 2432,
+        "word_index": 253
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1755,
+        "end": 1800,
+        "word_index": 262
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2615,
+        "end": 2623,
+        "word_index": 284
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 6
+      },
+      {
+        "text": "Yogesh Deshmukh",
+        "type": "PERSON",
+        "start": 58,
+        "end": 73,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 168,
+        "end": 172,
+        "word_index": 23
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 168,
+        "end": 172,
+        "word_index": 220
+      },
+      {
+        "text": "Rs 1,799",
+        "type": "MONEY",
+        "start": 1748,
+        "end": 1756,
+        "word_index": 294
+      },
+      {
+        "text": "Rs 6,000",
+        "type": "MONEY",
+        "start": 1947,
+        "end": 1955,
+        "word_index": 327
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 2270,
+        "end": 2280,
+        "word_index": 398
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 2303,
+        "end": 2315,
+        "word_index": 408
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 2376,
+        "end": 2388,
+        "word_index": 424
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2464,
+        "end": 2472,
+        "word_index": 486
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 36,
+        "word_index": 6
+      },
+      {
+        "text": "Yogesh Deshmukh",
+        "type": "PERSON",
+        "start": 57,
+        "end": 72,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 167,
+        "end": 171,
+        "word_index": 26
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 549,
+        "end": 558,
+        "word_index": 89
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 549,
+        "end": 558,
+        "word_index": 217
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2615,
+        "end": 2623,
+        "word_index": 284
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 15,
+        "end": 20,
+        "word_index": 4
+      },
+      {
+        "text": "Elevate",
+        "type": "ORGANIZATION",
+        "start": 26,
+        "end": 33,
+        "word_index": 6
+      },
+      {
+        "text": "Yogesh Deshmukh",
+        "type": "PERSON",
+        "start": 58,
+        "end": 73,
+        "word_index": 12
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 168,
+        "end": 172,
+        "word_index": 23
+      },
+      {
+        "text": "Nano",
+        "type": "PRODUCT",
+        "start": 168,
+        "end": 172,
+        "word_index": 220
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "start": 2464,
+        "end": 2472,
+        "word_index": 486
+      }
+    ]
+  }
+}

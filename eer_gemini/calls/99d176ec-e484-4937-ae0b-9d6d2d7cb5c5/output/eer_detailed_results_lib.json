@@ -1,0 +1,618 @@
+{
+  "call_id": "99d176ec-e484-4937-ae0b-9d6d2d7cb5c5",
+  "method": "Gemini LLM as NER",
+  "model": "gemini-1.5-flash",
+  "processing_time": 11.61,
+  "all_entities_eer": {
+    "substitutions": 4,
+    "insertions": 0,
+    "deletions": 2,
+    "correct": 9,
+    "total_ref": 15,
+    "total_hyp": 13,
+    "eer_percentage": 40.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "normalized": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "index": 5
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 5
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+          "type": "ORG",
+          "normalized": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "H&M",
+          "type": "ORGANIZATION",
+          "normalized": "h&m",
+          "index": 11
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+          "type": "ORG",
+          "normalized": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+          "index": 12
+        },
+        "hyp_entity": {
+          "text": "H&M",
+          "type": "ORGANIZATION",
+          "normalized": "h&m",
+          "index": 11
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "ref_entity": {
+          "text": "Regular Fit Round-Neck T-shirt",
+          "type": "PRODUCT",
+          "normalized": "regular fit round-neck t-shirt",
+          "index": 9
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Cotton Dungaree Shorts",
+          "type": "PRODUCT",
+          "normalized": "cotton dungaree shorts",
+          "index": 13
+        }
+      }
+    ],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 4
+        },
+        "hyp_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 4
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 6
+        },
+        "hyp_entity": {
+          "text": "English",
+          "type": "LANGUAGE",
+          "normalized": "english",
+          "index": 6
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 7
+        },
+        "hyp_entity": {
+          "text": "Hindi",
+          "type": "LANGUAGE",
+          "normalized": "hindi",
+          "index": 7
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "20 June",
+          "type": "DATE",
+          "normalized": "20 june",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "20 June",
+          "type": "DATE",
+          "normalized": "20 june",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "20 June",
+          "type": "DATE",
+          "normalized": "20 june",
+          "index": 11
+        },
+        "hyp_entity": {
+          "text": "20 June",
+          "type": "DATE",
+          "normalized": "20 june",
+          "index": 10
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "22 June",
+          "type": "DATE",
+          "normalized": "22 june",
+          "index": 14
+        },
+        "hyp_entity": {
+          "text": "22 June",
+          "type": "DATE",
+          "normalized": "22 june",
+          "index": 12
+        }
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 2,
+    "insertions": 2,
+    "deletions": 0,
+    "correct": 2,
+    "total_ref": 4,
+    "total_hyp": 6,
+    "eer_percentage": 100.0,
+    "detailed_substitutions": [
+      {
+        "ref_entity": {
+          "text": "Regular Fit Round-Neck T-shirt",
+          "type": "PRODUCT",
+          "normalized": "regular fit round-neck t-shirt",
+          "index": 2
+        },
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 3
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Cotton Dungaree Shorts",
+          "type": "PRODUCT",
+          "normalized": "cotton dungaree shorts",
+          "index": 3
+        },
+        "hyp_entity": {
+          "text": "H&M",
+          "type": "ORGANIZATION",
+          "normalized": "h&m",
+          "index": 5
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "hyp_entity": {
+          "text": "Myntra",
+          "type": "ORGANIZATION",
+          "normalized": "myntra",
+          "index": 3
+        }
+      },
+      {
+        "hyp_entity": {
+          "text": "H&M",
+          "type": "ORGANIZATION",
+          "normalized": "h&m",
+          "index": 5
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_correct": [
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 2
+        }
+      },
+      {
+        "ref_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 1
+        },
+        "hyp_entity": {
+          "text": "Rey",
+          "type": "PERSON",
+          "normalized": "rey",
+          "index": 2
+        }
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORG": 4,
+      "LANGUAGE": 4,
+      "PRODUCT": 2,
+      "DATE": 3
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORGANIZATION": 4,
+      "LANGUAGE": 4,
+      "DATE": 3
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "LANGUAGE",
+      "PERSON",
+      "ORG",
+      "DATE",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "DATE",
+      "ORGANIZATION",
+      "LANGUAGE",
+      "PERSON"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 11
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "start": 36,
+        "end": 43,
+        "word_index": 15
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 52
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 58
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 66
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "start": 36,
+        "end": 43,
+        "word_index": 70
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 136,
+        "end": 143,
+        "word_index": 93
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 120,
+        "end": 125,
+        "word_index": 117
+      },
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+        "type": "ORG",
+        "start": 466,
+        "end": 475,
+        "word_index": 148
+      },
+      {
+        "text": "Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 476,
+        "end": 506,
+        "word_index": 148
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 548,
+        "end": 555,
+        "word_index": 172
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 548,
+        "end": 555,
+        "word_index": 186
+      },
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e",
+        "type": "ORG",
+        "start": 466,
+        "end": 475,
+        "word_index": 278
+      },
+      {
+        "text": "Cotton Dungaree Shorts",
+        "type": "PRODUCT",
+        "start": 1490,
+        "end": 1512,
+        "word_index": 278
+      },
+      {
+        "text": "22 June",
+        "type": "DATE",
+        "start": 1544,
+        "end": 1551,
+        "word_index": 302
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": 2
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 6
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 69,
+        "end": 74,
+        "word_index": 16
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 78,
+        "end": 85,
+        "word_index": 22
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": 26
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 30
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 78,
+        "end": 85,
+        "word_index": 40
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 69,
+        "end": 74,
+        "word_index": 50
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 409,
+        "end": 412,
+        "word_index": 87
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 485,
+        "end": 492,
+        "word_index": 113
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 485,
+        "end": 492,
+        "word_index": 125
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 409,
+        "end": 412,
+        "word_index": 220
+      },
+      {
+        "text": "22 June",
+        "type": "DATE",
+        "start": 1473,
+        "end": 1480,
+        "word_index": 246
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 11
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 27,
+        "end": 30,
+        "word_index": 66
+      },
+      {
+        "text": "Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 476,
+        "end": 506,
+        "word_index": 148
+      },
+      {
+        "text": "Cotton Dungaree Shorts",
+        "type": "PRODUCT",
+        "start": 1490,
+        "end": 1512,
+        "word_index": 278
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": 2
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 6
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": 26
+      },
+      {
+        "text": "Myntra",
+        "type": "ORGANIZATION",
+        "start": 14,
+        "end": 20,
+        "word_index": 30
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 409,
+        "end": 412,
+        "word_index": 87
+      },
+      {
+        "text": "H&M",
+        "type": "ORGANIZATION",
+        "start": 409,
+        "end": 412,
+        "word_index": 220
+      }
+    ]
+  }
+}
