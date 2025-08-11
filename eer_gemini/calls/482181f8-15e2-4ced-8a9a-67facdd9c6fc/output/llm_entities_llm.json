@@ -1,0 +1,146 @@
+{
+  "ref_entities": [
+    {
+      "text": "Ray",
+      "type": "PERSON",
+      "canonical": "ray"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "H&M regular fit round neck t-shirt",
+      "type": "PRODUCT",
+      "canonical": "hm regular fit round neck t shirt"
+    },
+    {
+      "text": "H&M regular fit round neck t-shirt",
+      "type": "PRODUCT",
+      "canonical": "hm regular fit round neck t shirt"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "canonical": "20 june"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "canonical": "20 june"
+    },
+    {
+      "text": "Mango shirt",
+      "type": "PRODUCT",
+      "canonical": "mango shirt"
+    },
+    {
+      "text": "Mango",
+      "type": "PRODUCT",
+      "canonical": "mango"
+    },
+    {
+      "text": "Mango plunge neck ruched top with asymmetric hem",
+      "type": "PRODUCT",
+      "canonical": "mango plunge neck ruched top with asymmetric hem"
+    },
+    {
+      "text": "all about you ethnic top",
+      "type": "PRODUCT",
+      "canonical": "all about you ethnic top"
+    },
+    {
+      "text": "all about you ethnic printed full puff sleeves casual short",
+      "type": "PRODUCT",
+      "canonical": "all about you ethnic printed full puff sleeves casual short"
+    },
+    {
+      "text": "all about you ethnic printed full puff sleeves casual shirt",
+      "type": "PRODUCT",
+      "canonical": "all about you ethnic printed full puff sleeves casual shirt"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "H&M Regular Fit Round-Neck T-shirt",
+      "type": "PRODUCT",
+      "canonical": "hm regular fit round neck t shirt"
+    },
+    {
+      "text": "एच एंड एम Regular Fit Round-Neck T-shirt",
+      "type": "PRODUCT",
+      "canonical": "hm regular fit round neck t shirt"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "canonical": "20 june"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "canonical": "20 june"
+    },
+    {
+      "text": "Mango",
+      "type": "PRODUCT",
+      "canonical": "mango"
+    },
+    {
+      "text": "Mango shirt",
+      "type": "PRODUCT",
+      "canonical": "mango shirt"
+    },
+    {
+      "text": "मैंगो Plunge Neck Ruched Top with Asymmetric Hem",
+      "type": "PRODUCT",
+      "canonical": "mango plunge neck ruched top with asymmetric hem"
+    },
+    {
+      "text": "\"all about you\" ethnic top",
+      "type": "PRODUCT",
+      "canonical": "all about you ethnic top"
+    },
+    {
+      "text": "ऑल अबाउट यू Ethnic Printed Full Puff-Sleeves Casual Shirt",
+      "type": "PRODUCT",
+      "canonical": "all about you ethnic printed full puff sleeves casual shirt"
+    },
+    {
+      "text": "ऑल अबाउट यू Ethnic Printed Full Puff-Sleeves Casual Shirt",
+      "type": "PRODUCT",
+      "canonical": "all about you ethnic printed full puff sleeves casual shirt"
+    }
+  ]
+}

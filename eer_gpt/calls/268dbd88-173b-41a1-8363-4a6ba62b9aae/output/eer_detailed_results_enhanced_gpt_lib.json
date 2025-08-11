@@ -1,0 +1,574 @@
+{
+  "call_id": "268dbd88-173b-41a1-8363-4a6ba62b9aae",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 18.4,
+  "all_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 0,
+    "correct": 10,
+    "total_ref": 11,
+    "total_hyp": 12,
+    "eer_percentage": 18.18,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rupesh Kovar",
+          "type": "PERSON",
+          "start": 61,
+          "end": 73,
+          "word_index": -1,
+          "canonical": "rupesh kovar",
+          "bucket_norm": "rupesh kovar"
+        },
+        "hyp": {
+          "text": "Rupesh Kondawar",
+          "type": "PERSON",
+          "start": 58,
+          "end": 73,
+          "word_index": -1,
+          "canonical": "rupesh kondawar",
+          "bucket_norm": "rupesh kondawar"
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_insertions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 160,
+        "end": 169,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 0,
+    "correct": 10,
+    "total_ref": 11,
+    "total_hyp": 12,
+    "eer_percentage": 18.18,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rupesh Kovar",
+          "type": "PERSON",
+          "start": 61,
+          "end": 73,
+          "word_index": -1,
+          "canonical": "rupesh kovar",
+          "bucket_norm": "rupesh kovar"
+        },
+        "hyp": {
+          "text": "Rupesh Kondawar",
+          "type": "PERSON",
+          "start": 58,
+          "end": 73,
+          "word_index": -1,
+          "canonical": "rupesh kondawar",
+          "bucket_norm": "rupesh kondawar"
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_insertions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 160,
+        "end": 169,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 3,
+      "ORG": 2,
+      "PRODUCT": 6
+    },
+    "hypothesis": {
+      "PERSON": 3,
+      "ORG": 2,
+      "PRODUCT": 7
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PRODUCT",
+      "PERSON",
+      "ORG"
+    ],
+    "hypothesis": [
+      "PRODUCT",
+      "PERSON",
+      "ORG"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "start": 29,
+        "end": 40,
+        "word_index": -1,
+        "canonical": "elevate now",
+        "bucket_norm": "elevate now"
+      },
+      {
+        "text": "Rupesh Kovar",
+        "type": "PERSON",
+        "start": 61,
+        "end": 73,
+        "word_index": -1,
+        "canonical": "rupesh kovar",
+        "bucket_norm": "rupesh kovar"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 108,
+        "end": 113,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "start": 119,
+        "end": 130,
+        "word_index": -1,
+        "canonical": "elevate now",
+        "bucket_norm": "elevate now"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 162,
+        "end": 171,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 375,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 618,
+        "end": 627,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1010,
+        "end": 1019,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1274,
+        "end": 1283,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1455,
+        "end": 1464,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "start": 29,
+        "end": 39,
+        "word_index": -1,
+        "canonical": "elevatenow",
+        "bucket_norm": "elevatenow"
+      },
+      {
+        "text": "Rupesh Kondawar",
+        "type": "PERSON",
+        "start": 58,
+        "end": 73,
+        "word_index": -1,
+        "canonical": "rupesh kondawar",
+        "bucket_norm": "rupesh kondawar"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 108,
+        "end": 113,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "start": 119,
+        "end": 129,
+        "word_index": -1,
+        "canonical": "elevatenow",
+        "bucket_norm": "elevatenow"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 160,
+        "end": 169,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 375,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 618,
+        "end": 627,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1010,
+        "end": 1019,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1225,
+        "end": 1234,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1400,
+        "end": 1409,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1535,
+        "end": 1544,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "start": 29,
+        "end": 40,
+        "word_index": -1,
+        "canonical": "elevate now",
+        "bucket_norm": "elevate now"
+      },
+      {
+        "text": "Rupesh Kovar",
+        "type": "PERSON",
+        "start": 61,
+        "end": 73,
+        "word_index": -1,
+        "canonical": "rupesh kovar",
+        "bucket_norm": "rupesh kovar"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 108,
+        "end": 113,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "start": 119,
+        "end": 130,
+        "word_index": -1,
+        "canonical": "elevate now",
+        "bucket_norm": "elevate now"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 162,
+        "end": 171,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 375,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 618,
+        "end": 627,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1010,
+        "end": 1019,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1274,
+        "end": 1283,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1455,
+        "end": 1464,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "start": 29,
+        "end": 39,
+        "word_index": -1,
+        "canonical": "elevatenow",
+        "bucket_norm": "elevatenow"
+      },
+      {
+        "text": "Rupesh Kondawar",
+        "type": "PERSON",
+        "start": 58,
+        "end": 73,
+        "word_index": -1,
+        "canonical": "rupesh kondawar",
+        "bucket_norm": "rupesh kondawar"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 108,
+        "end": 113,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "start": 119,
+        "end": 129,
+        "word_index": -1,
+        "canonical": "elevatenow",
+        "bucket_norm": "elevatenow"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 160,
+        "end": 169,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 375,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 618,
+        "end": 627,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1010,
+        "end": 1019,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1225,
+        "end": 1234,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1400,
+        "end": 1409,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1535,
+        "end": 1544,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "elevate now",
+      "rupesh kovar",
+      "priya",
+      "elevate now",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "nano plan"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "rupesh kondawar",
+      "priya",
+      "elevatenow",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "nano plan"
+    ]
+  }
+}

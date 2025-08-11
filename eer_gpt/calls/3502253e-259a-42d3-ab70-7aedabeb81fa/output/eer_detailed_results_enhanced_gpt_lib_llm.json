@@ -1,0 +1,339 @@
+{
+  "call_id": "3502253e-259a-42d3-ab70-7aedabeb81fa",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 14.81,
+  "all_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 16,
+    "total_ref": 16,
+    "total_hyp": 16,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 16,
+    "total_ref": 16,
+    "total_hyp": 16,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORG": 1,
+      "PRODUCT": 3,
+      "MONEY": 6,
+      "DATE": 3,
+      "EVENT": 1
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORG": 1,
+      "PRODUCT": 3,
+      "MONEY": 6,
+      "DATE": 3,
+      "EVENT": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "EVENT",
+      "PERSON",
+      "PRODUCT",
+      "MONEY",
+      "DATE"
+    ],
+    "hypothesis": [
+      "ORG",
+      "EVENT",
+      "PERSON",
+      "PRODUCT",
+      "MONEY",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "canonical": "taruna yadav"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "32.03",
+        "type": "MONEY",
+        "canonical": "32.03"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "1799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      },
+      {
+        "text": "rupees 1,898",
+        "type": "MONEY",
+        "canonical": "1898"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "\u0924\u0940\u0928",
+        "type": "DATE",
+        "canonical": "3"
+      },
+      {
+        "text": "\u091b\u0939",
+        "type": "DATE",
+        "canonical": "6"
+      },
+      {
+        "text": "12",
+        "type": "DATE",
+        "canonical": "12"
+      },
+      {
+        "text": "100% \u092e\u0928\u0940 \u092c\u0948\u0915 \u0917\u093e\u0930\u0902\u091f\u0940",
+        "type": "EVENT",
+        "canonical": "100% money back guarantee"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "canonical": "taruna yadav"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "thirty-two point zero three",
+        "type": "MONEY",
+        "canonical": "32.03"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1399"
+      },
+      {
+        "text": "Rupees one thousand eight hundred ninety-eight",
+        "type": "MONEY",
+        "canonical": "1898"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "three",
+        "type": "DATE",
+        "canonical": "3"
+      },
+      {
+        "text": "six",
+        "type": "DATE",
+        "canonical": "6"
+      },
+      {
+        "text": "twelve",
+        "type": "DATE",
+        "canonical": "12"
+      },
+      {
+        "text": "100% money back guarantee",
+        "type": "EVENT",
+        "canonical": "100% money back guarantee"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "canonical": "taruna yadav"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "canonical": "taruna yadav"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "elevate now",
+      "taruna yadav",
+      "nano plan",
+      "32.03",
+      "nano plan",
+      "nano plan",
+      "1799",
+      "499",
+      "1399",
+      "1898",
+      "1799",
+      "3",
+      "6",
+      "12",
+      "100% money back guarantee"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "taruna yadav",
+      "nano plan",
+      "32.03",
+      "nano plan",
+      "nano plan",
+      "1799",
+      "499",
+      "1399",
+      "1898",
+      "1799",
+      "3",
+      "6",
+      "12",
+      "100% money back guarantee"
+    ]
+  }
+}

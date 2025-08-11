@@ -1,0 +1,245 @@
+{
+  "call_id": "b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 11.87,
+  "all_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "correct": 5,
+    "total_ref": 6,
+    "total_hyp": 6,
+    "eer_percentage": 33.33,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Niketa",
+          "type": "PERSON",
+          "canonical": "niketa"
+        },
+        "hyp": {
+          "text": "Nikita",
+          "type": "PERSON",
+          "canonical": "nikita"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "correct": 5,
+    "total_ref": 6,
+    "total_hyp": 6,
+    "eer_percentage": 33.33,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Niketa",
+          "type": "PERSON",
+          "canonical": "niketa"
+        },
+        "hyp": {
+          "text": "Nikita",
+          "type": "PERSON",
+          "canonical": "nikita"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORG": 1,
+      "PRODUCT": 1,
+      "TIME": 1,
+      "MONEY": 1
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORG": 1,
+      "PRODUCT": 1,
+      "TIME": 1,
+      "MONEY": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "PERSON",
+      "PRODUCT",
+      "TIME",
+      "MONEY"
+    ],
+    "hypothesis": [
+      "ORG",
+      "PERSON",
+      "PRODUCT",
+      "TIME",
+      "MONEY"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Nikita",
+        "type": "PERSON",
+        "canonical": "nikita"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "30 to 45 minutes",
+        "type": "TIME",
+        "canonical": "30 to 45 minutes"
+      },
+      {
+        "text": "Rs 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Niketa",
+        "type": "PERSON",
+        "canonical": "niketa"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "thirty to forty-five minutes",
+        "type": "TIME",
+        "canonical": "30 to 45 minutes"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Nikita",
+        "type": "PERSON",
+        "canonical": "nikita"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Niketa",
+        "type": "PERSON",
+        "canonical": "niketa"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "elevate now",
+      "nikita",
+      "nano plan",
+      "30 to 45 minutes",
+      "1799"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "niketa",
+      "nano plan",
+      "30 to 45 minutes",
+      "1799"
+    ]
+  }
+}

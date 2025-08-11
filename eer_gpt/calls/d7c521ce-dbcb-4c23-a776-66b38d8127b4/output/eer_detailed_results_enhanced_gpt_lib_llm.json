@@ -1,0 +1,504 @@
+{
+  "call_id": "d7c521ce-dbcb-4c23-a776-66b38d8127b4",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 30.06,
+  "all_entities_eer": {
+    "substitutions": 4,
+    "insertions": 2,
+    "deletions": 2,
+    "correct": 10,
+    "total_ref": 14,
+    "total_hyp": 14,
+    "eer_percentage": 42.86,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u092c\u093e\u092f\u094b\u091f\u093f\u0915 Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml",
+          "type": "PRODUCT",
+          "canonical": "biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml"
+        },
+        "hyp": {
+          "text": "biotech Morning nectar",
+          "type": "PRODUCT",
+          "canonical": "biotech morning nectar"
+        }
+      },
+      {
+        "ref": {
+          "text": "Biotique Moisturizer",
+          "type": "PRODUCT",
+          "canonical": "biotique moisturizer"
+        },
+        "hyp": {
+          "text": "biotech moisturizer",
+          "type": "PRODUCT",
+          "canonical": "biotech moisturizer"
+        }
+      },
+      {
+        "ref": {
+          "text": "We Construct",
+          "type": "PRODUCT",
+          "canonical": "we construct"
+        },
+        "hyp": {
+          "text": "V Construct",
+          "type": "PRODUCT",
+          "canonical": "v construct"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "biotech Morning nectar",
+        "type": "PRODUCT",
+        "canonical": "biotech morning nectar"
+      },
+      {
+        "text": "deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "\u0921\u0940\u0915\u0902\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091f Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 4,
+    "insertions": 2,
+    "deletions": 2,
+    "correct": 10,
+    "total_ref": 14,
+    "total_hyp": 14,
+    "eer_percentage": 42.86,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u092c\u093e\u092f\u094b\u091f\u093f\u0915 Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml",
+          "type": "PRODUCT",
+          "canonical": "biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml"
+        },
+        "hyp": {
+          "text": "biotech Morning nectar",
+          "type": "PRODUCT",
+          "canonical": "biotech morning nectar"
+        }
+      },
+      {
+        "ref": {
+          "text": "Biotique Moisturizer",
+          "type": "PRODUCT",
+          "canonical": "biotique moisturizer"
+        },
+        "hyp": {
+          "text": "biotech moisturizer",
+          "type": "PRODUCT",
+          "canonical": "biotech moisturizer"
+        }
+      },
+      {
+        "ref": {
+          "text": "We Construct",
+          "type": "PRODUCT",
+          "canonical": "we construct"
+        },
+        "hyp": {
+          "text": "V Construct",
+          "type": "PRODUCT",
+          "canonical": "v construct"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "biotech Morning nectar",
+        "type": "PRODUCT",
+        "canonical": "biotech morning nectar"
+      },
+      {
+        "text": "deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "\u0921\u0940\u0915\u0902\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091f Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 8
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORG": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 8
+    }
+  },
+  "mispronunciation": {
+    "count": 3,
+    "pronunciation_ids": "06PHq;c0fMl;rtcxo"
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE"
+    ],
+    "hypothesis": [
+      "ORG",
+      "PRODUCT",
+      "PERSON",
+      "LANGUAGE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Biotique Morning nectar nourish and hydrate skin moisturizer",
+        "type": "PRODUCT",
+        "canonical": "biotique morning nectar nourish and hydrate skin moisturizer"
+      },
+      {
+        "text": "FABINALIV kids silver toned umbrella",
+        "type": "PRODUCT",
+        "canonical": "fabinaliv kids silver toned umbrella"
+      },
+      {
+        "text": "FABINALIV kids' silver-toned and brown cartoon character printed automatic threefold umbrella",
+        "type": "PRODUCT",
+        "canonical": "fabinaliv kids' silver-toned and brown cartoon character printed automatic threefold umbrella"
+      },
+      {
+        "text": "biotech Morning nectar",
+        "type": "PRODUCT",
+        "canonical": "biotech morning nectar"
+      },
+      {
+        "text": "biotech moisturizer",
+        "type": "PRODUCT",
+        "canonical": "biotech moisturizer"
+      },
+      {
+        "text": "V Construct",
+        "type": "PRODUCT",
+        "canonical": "v construct"
+      },
+      {
+        "text": "deconstruct Vitamin C and ferulic acid serum",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c and ferulic acid serum"
+      },
+      {
+        "text": "deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Biotique Morning Nectar Nourish & Hydrate Skin Moisturizer",
+        "type": "PRODUCT",
+        "canonical": "biotique morning nectar nourish & hydrate skin moisturizer"
+      },
+      {
+        "text": "FABINALIV Kids Silver-Toned Umbrella",
+        "type": "PRODUCT",
+        "canonical": "fabinaliv kids silver-toned umbrella"
+      },
+      {
+        "text": "FABINALIV Kids Silver-Toned & Brown Cartoon Character Printed Automatic 3 Fold Umbrella",
+        "type": "PRODUCT",
+        "canonical": "fabinaliv kids silver-toned & brown cartoon character printed automatic 3 fold umbrella"
+      },
+      {
+        "text": "\u092c\u093e\u092f\u094b\u091f\u093f\u0915 Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml",
+        "type": "PRODUCT",
+        "canonical": "biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml"
+      },
+      {
+        "text": "Biotique Moisturizer",
+        "type": "PRODUCT",
+        "canonical": "biotique moisturizer"
+      },
+      {
+        "text": "We Construct",
+        "type": "PRODUCT",
+        "canonical": "we construct"
+      },
+      {
+        "text": "Deconstruct Vitamin C & Ferulic Acid Serum",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c & ferulic acid serum"
+      },
+      {
+        "text": "\u0921\u0940\u0915\u0902\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091f Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Biotique Morning nectar nourish and hydrate skin moisturizer",
+        "type": "PRODUCT",
+        "canonical": "biotique morning nectar nourish and hydrate skin moisturizer"
+      },
+      {
+        "text": "FABINALIV kids silver toned umbrella",
+        "type": "PRODUCT",
+        "canonical": "fabinaliv kids silver toned umbrella"
+      },
+      {
+        "text": "FABINALIV kids' silver-toned and brown cartoon character printed automatic threefold umbrella",
+        "type": "PRODUCT",
+        "canonical": "fabinaliv kids' silver-toned and brown cartoon character printed automatic threefold umbrella"
+      },
+      {
+        "text": "biotech Morning nectar",
+        "type": "PRODUCT",
+        "canonical": "biotech morning nectar"
+      },
+      {
+        "text": "V Construct",
+        "type": "PRODUCT",
+        "canonical": "v construct"
+      },
+      {
+        "text": "deconstruct Vitamin C and ferulic acid serum",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c and ferulic acid serum"
+      },
+      {
+        "text": "deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Biotique Morning Nectar Nourish & Hydrate Skin Moisturizer",
+        "type": "PRODUCT",
+        "canonical": "biotique morning nectar nourish & hydrate skin moisturizer"
+      },
+      {
+        "text": "FABINALIV Kids Silver-Toned Umbrella",
+        "type": "PRODUCT",
+        "canonical": "fabinaliv kids silver-toned umbrella"
+      },
+      {
+        "text": "FABINALIV Kids Silver-Toned & Brown Cartoon Character Printed Automatic 3 Fold Umbrella",
+        "type": "PRODUCT",
+        "canonical": "fabinaliv kids silver-toned & brown cartoon character printed automatic 3 fold umbrella"
+      },
+      {
+        "text": "\u092c\u093e\u092f\u094b\u091f\u093f\u0915 Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml",
+        "type": "PRODUCT",
+        "canonical": "biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml"
+      },
+      {
+        "text": "Biotique Moisturizer",
+        "type": "PRODUCT",
+        "canonical": "biotique moisturizer"
+      },
+      {
+        "text": "We Construct",
+        "type": "PRODUCT",
+        "canonical": "we construct"
+      },
+      {
+        "text": "Deconstruct Vitamin C & Ferulic Acid Serum",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c & ferulic acid serum"
+      },
+      {
+        "text": "\u0921\u0940\u0915\u0902\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091f Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml",
+        "type": "PRODUCT",
+        "canonical": "deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "ray",
+      "myntra",
+      "hindi",
+      "english",
+      "myntra",
+      "biotique morning nectar nourish and hydrate skin moisturizer",
+      "fabinaliv kids silver toned umbrella",
+      "fabinaliv kids' silver-toned and brown cartoon character printed automatic threefold umbrella",
+      "biotech morning nectar",
+      "biotech moisturizer",
+      "v construct",
+      "deconstruct vitamin c and ferulic acid serum",
+      "deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml",
+      "myntra"
+    ],
+    "hypothesis_ordered": [
+      "rey",
+      "myntra",
+      "hindi",
+      "english",
+      "myntra",
+      "biotique morning nectar nourish and hydrate skin moisturizer",
+      "fabinaliv kids silver-toned umbrella",
+      "fabinaliv kids silver-toned and brown cartoon character printed automatic 3 fold umbrella",
+      "biotique morning nectar nourish and hydrate visibly flawless skin moisturizer - 120ml",
+      "biotique moisturizer",
+      "we construct",
+      "deconstruct vitamin c and ferulic acid serum",
+      "deconstruct vitamin c and ferulic acid serum for brighten skin - 20ml",
+      "myntra"
+    ]
+  }
+}

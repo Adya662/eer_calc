@@ -1,0 +1,66 @@
+{
+  "ref_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "Elevate Now",
+      "type": "ORG",
+      "canonical": "elevate now"
+    },
+    {
+      "text": "Nikita",
+      "type": "PERSON",
+      "canonical": "nikita"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "30 to 45 minutes",
+      "type": "TIME",
+      "canonical": "30 to 45 minutes"
+    },
+    {
+      "text": "Rs 1,799",
+      "type": "MONEY",
+      "canonical": "1799"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORG",
+      "canonical": "elevatenow"
+    },
+    {
+      "text": "Niketa",
+      "type": "PERSON",
+      "canonical": "niketa"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "thirty to forty-five minutes",
+      "type": "TIME",
+      "canonical": "30 to 45 minutes"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "canonical": "1799"
+    }
+  ]
+}

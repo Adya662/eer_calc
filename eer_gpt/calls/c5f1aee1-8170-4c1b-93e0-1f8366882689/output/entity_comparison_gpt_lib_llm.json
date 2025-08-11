@@ -1,0 +1,104 @@
+{
+  "call_id": "c5f1aee1-8170-4c1b-93e0-1f8366882689",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, hindi, english, crocs unisex navy blue bayaband clogs, 12 july, myntra, myntra, myntra",
+    "reference_entity_string": "ray, myntra, hindi, english, crocs unisex navy blue bayaband clogs, 12 july, myntra, myntra, myntra, rey, myntra, hindi, english, crocs unisex navy blue bioband clogs, 12 july, myntra, myntra, myntra"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 9,
+    "deletions": 0,
+    "correct_matches": 8,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "Crocs Unisex Navy blue Bioband clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bioband clogs"
+      },
+      {
+        "text": "12th July",
+        "type": "DATE",
+        "canonical": "12 july"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 0,
+    "correct_matches": 8,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "Crocs Unisex Navy blue Bioband clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bioband clogs"
+      }
+    ],
+    "detailed_deletions": []
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "call_id": "e69e62f6-954a-4d0a-9989-2a2d562f66fe",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, mintra, hindi, english, us polo kids, us polo kids girls drop shoulder sleeves pure cotton applique tshirt, us polo kids girls embroidered pure cotton straight skirt, us polo kids girls drop shoulder sleeves pure cotton applique tshirt, 21 june, mintra app, mintra, us polo kids girls drop shoulder sleeves pure cotton applique tshirt",
+    "reference_entity_string": "rey, myntra, hinglish, us polo kids, us polo kids girls drop shoulder sleeves pure cotton applique tshirt, us polo kids girls embroidered pure cotton straight skirt, us polo kids girls drop shoulder sleeves pure cotton applique tshirt, 21 jun, myntra app, myntra, us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 2,
+    "correct_matches": 10,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "canonical": "mintra"
+        },
+        "hyp": {
+          "text": "Myntra",
+          "type": "ORG",
+          "canonical": "myntra"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "hinglish",
+        "type": "LANGUAGE",
+        "canonical": "hinglish"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 2,
+    "correct_matches": 10,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "canonical": "mintra"
+        },
+        "hyp": {
+          "text": "Myntra",
+          "type": "ORG",
+          "canonical": "myntra"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "hinglish",
+        "type": "LANGUAGE",
+        "canonical": "hinglish"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      }
+    ]
+  }
+}

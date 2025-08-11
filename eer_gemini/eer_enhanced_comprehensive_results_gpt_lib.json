@@ -1,0 +1,1328 @@
+{
+  "processing_summary": {
+    "total_calls": 27,
+    "successful_calls": 0,
+    "total_processing_time": 602.84,
+    "average_time_per_call": 22.33,
+    "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing"
+  },
+  "aggregate_metrics": {
+    "average_all_entities_eer": 0,
+    "average_concerned_entities_eer": 0,
+    "total_ref_entities": 0,
+    "total_hyp_entities": 0,
+    "total_concerned_ref": 0,
+    "total_concerned_hyp": 0
+  },
+  "global_eer": {
+    "all_entities": {
+      "S": 61,
+      "I": 17,
+      "D": 4,
+      "C": 412,
+      "N_ref": 493,
+      "N_hyp": 508,
+      "EER": 0.14602425307557118,
+      "detailed_substitutions": [
+        [
+          "ORG::atun",
+          "ORG::mintra"
+        ],
+        [
+          "PRODUCT::blaik net dres",
+          "PRODUCT::black net dress"
+        ],
+        [
+          "DATE::8 julai",
+          "DATE::8 july"
+        ],
+        [
+          "ORG::elevate now",
+          "ORG::elevatenow"
+        ],
+        [
+          "PRODUCT::he nano plan",
+          "PRODUCT::nano plan"
+        ],
+        [
+          "PRODUCT::naino plan",
+          "PRODUCT::nano plan"
+        ],
+        [
+          "PRODUCT::nno plan",
+          "PRODUCT::nano plan"
+        ],
+        [
+          "PERSON::ray",
+          "PERSON::rey"
+        ],
+        [
+          "ORG::myntra",
+          "ORG::mintra"
+        ],
+        [
+          "PRODUCT::he nano plan",
+          "PRODUCT::nano plan"
+        ],
+        [
+          "DATE::3 months",
+          "DATE::3 month"
+        ],
+        [
+          "PERSON::rupesh kovar",
+          "PERSON::rupesh kondawar"
+        ],
+        [
+          "PRODUCT::naino plan",
+          "PRODUCT::nano plan"
+        ],
+        [
+          "PRODUCT::excite to lipid",
+          "PRODUCT::exide to lipid"
+        ],
+        [
+          "ORG::myntra",
+          "ORG::mintra"
+        ],
+        [
+          "ORG::elevatenow",
+          "ORG::elevate now"
+        ],
+        [
+          "PRODUCT::naino plan",
+          "PRODUCT::nano plan"
+        ],
+        [
+          "PRODUCT::blad test",
+          "PRODUCT::blood test"
+        ],
+        [
+          "PRODUCT::dakter kansalteshan",
+          "PRODUCT::doctor consultation"
+        ],
+        [
+          "PRODUCT::siniyar helth koch kansalteshan",
+          "PRODUCT::senior health coach consultation"
+        ],
+        [
+          "PRODUCT::helth koch kansalteshan",
+          "PRODUCT::health coach consultation"
+        ],
+        [
+          "PERSON::siniyar obesi speshlist dakter",
+          "PERSON::senior obesity specialist doctor"
+        ],
+        [
+          "PERSON::helth koch",
+          "PERSON::health coach"
+        ],
+        [
+          "PRODUCT::naino plan",
+          "PRODUCT::nano plan"
+        ],
+        [
+          "PRODUCT::phlaigship program",
+          "PRODUCT::flagship program"
+        ],
+        [
+          "PRODUCT::agnia women floral print mandarin collar flared sleeve shirt style top",
+          "PRODUCT::aaghnya women floral print mandarin collar flared sleeve shirt style top"
+        ],
+        [
+          "PRODUCT::i stail kain top",
+          "PRODUCT::istyle can top"
+        ],
+        [
+          "TIME::10:44",
+          "TIME::10:44 am"
+        ],
+        [
+          "PRODUCT::mango",
+          "PRODUCT::mango shirt"
+        ],
+        [
+          "PRODUCT::all about you ethnic printed full puff sleeves casual short",
+          "PRODUCT::all about you ethnic printed full puff sleeves casual shirt"
+        ],
+        [
+          "ORG::elevatenow",
+          "ORG::elevate now"
+        ],
+        [
+          "ORG::elevatenow",
+          "ORG::elevate now"
+        ],
+        [
+          "PRODUCT::freakins",
+          "PRODUCT::freekins"
+        ],
+        [
+          "PRODUCT::carkins",
+          "PRODUCT::crkins"
+        ],
+        [
+          "PRODUCT::masculine sasafers",
+          "PRODUCT::masculincaline sasa fars"
+        ],
+        [
+          "PRODUCT::unrl",
+          "PRODUCT::un rl"
+        ],
+        [
+          "EVENT::obesity stage category y",
+          "EVENT::obesity stage category i"
+        ],
+        [
+          "ORG::myntra",
+          "ORG::mintra"
+        ],
+        [
+          "PRODUCT::kook n keech urban edge printed relaxed tshirt",
+          "PRODUCT::kook n keech urban edge printed relaxed tshirt"
+        ],
+        [
+          "PRODUCT::hm regular fit round neck t shirt",
+          "PRODUCT::h and m regular fit round neck t shirt"
+        ],
+        [
+          "PRODUCT::plum 10 niacinamide brightening face serum with rice ferment extract and licorice 15ml",
+          "PRODUCT::plum 10 niacinamide brightening face serum with rice ferment extract and licorice 50ml"
+        ],
+        [
+          "ORG::myntra",
+          "ORG::mintra"
+        ],
+        [
+          "PRODUCT::order",
+          "PRODUCT::orders"
+        ],
+        [
+          "PRODUCT::crocs unisex navy blue bayaband clogs",
+          "PRODUCT::crocs unisex navy blue bioband clogs"
+        ],
+        [
+          "PRODUCT::fabinaliv kids silver toned and brown cartoon character printed automatic threefold umbrella",
+          "PRODUCT::fabinaliv kids silver toned and brown cartoon character printed automatic 3 fold umbrella"
+        ],
+        [
+          "PRODUCT::biotech morning nectar",
+          "PRODUCT::bayotik morning nectar nourish and hydrate visibly flawless skin moisturizer 120ml"
+        ],
+        [
+          "ORG::v construct",
+          "ORG::we construct"
+        ],
+        [
+          "PRODUCT::deconstruct vitamin c and ferulic acid serum",
+          "PRODUCT::dikastrakt vitamin c and ferulic acid serum for brighten skin 20ml"
+        ],
+        [
+          "ORG::myntra",
+          "ORG::mintra"
+        ],
+        [
+          "ORG::lakme",
+          "ORG::laamic"
+        ],
+        [
+          "ORG::lakala",
+          "ORG::lecalla"
+        ],
+        [
+          "PRODUCT::love beauty and planet argan oil and love",
+          "PRODUCT::love beauty and planet argan oil and lavender"
+        ],
+        [
+          "PRODUCT::lakme youth infinity anti aging night cream with pro retinol c 50 gd",
+          "PRODUCT::lakme youth infinity anti aging night cream with pro retinol c 50g"
+        ],
+        [
+          "PRODUCT::love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli",
+          "PRODUCT::love beauty and planet argan oil and lavender shampoo for frizzy hair 400ml"
+        ],
+        [
+          "ORG::myntra",
+          "ORG::mintra"
+        ],
+        [
+          "DATE::21 jun",
+          "DATE::21 june"
+        ],
+        [
+          "PRODUCT::myntra app",
+          "PRODUCT::mintra app"
+        ],
+        [
+          "ORG::myntra",
+          "ORG::mintra"
+        ],
+        [
+          "PRODUCT::jack and jones junior boys jogger mid rice pure cotton stretchable jeans",
+          "PRODUCT::jack and jones junior boys jogger mid-rise pure cotton stretchable jeans"
+        ],
+        [
+          "ORG::myntra",
+          "ORG::mintra"
+        ]
+      ],
+      "detailed_insertions": [
+        "GPE::india",
+        "GPE::patna",
+        "ORG::elevatenow",
+        "ORG::myntra",
+        "PRODUCT::nano plan",
+        "PRODUCT::nano plan",
+        "PRODUCT::nano plan",
+        "PRODUCT::weight",
+        "PRODUCT::whatsapp",
+        "PRODUCT::story plus size reflective detail t-shirt",
+        "DATE::7 july",
+        "ORG::myntra",
+        "PRODUCT::istyle can top",
+        "TIME::10:44 am",
+        "PRODUCT::nano plan",
+        "PERSON::nidhi",
+        "ORG::elevatenow",
+        "PERSON::bijal roliya",
+        "MONEY::34.13",
+        "PRODUCT::stylecast x revolt men opaque casual shirt",
+        "DATE::21 august",
+        "PERSON::rey",
+        "ORG::mintra"
+      ],
+      "detailed_deletions": [
+        "PRODUCT::nano plan",
+        "PRODUCT::nano plan",
+        "PRODUCT::nano plan",
+        "PRODUCT::nano plan",
+        "MONEY::499"
+      ]
+    },
+    "concerned_entities": {
+      "S": 60,
+      "I": 26,
+      "D": 1,
+      "C": 212,
+      "N_ref": 299,
+      "N_hyp": 308,
+      "EER": 0.294314381270903,
+      "detailed_substitutions": {
+        "ORG::myntra": [
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra",
+          "ORG::mintra"
+        ],
+        "PRODUCT::blaik net dres": "PRODUCT::black net dress",
+        "ORG::elevate nows": "ORG::elevate-nows",
+        "PRODUCT::naino plan": "PRODUCT::nano plan",
+        "PRODUCT::nno plan": "PRODUCT::nano plan",
+        "PERSON::rupesh kovar": "PERSON::rupesh kondawar",
+        "PRODUCT::he nano plan": "PRODUCT::nano plan",
+        "ORG::elevatenow": "ORG::elevate now",
+        "PRODUCT::dakter kansalteshan": "PRODUCT::nano plan",
+        "PRODUCT::siniyar helth koch kansalteshan": "PRODUCT::nano plan",
+        "PRODUCT::helth koch kansalteshan": "PRODUCT::whatsapp",
+        "PERSON::siniyar obesi speshlist dakter": "PRODUCT::whatsapp",
+        "PERSON::helth koch": "PRODUCT::whatsapp",
+        "PRODUCT::phlaigship program": "PRODUCT::story plus size reflective detail t-shirt",
+        "PRODUCT::agnia women floral print mandarin collar flared sleeve shirt style top": "PRODUCT::aaghnya women floral print mandarin collar flared sleeve shirt style top",
+        "PRODUCT::i stail kain top": "ORG::myntra",
+        "PRODUCT::freakins": [
+          "PRODUCT::freekins",
+          "PRODUCT::freekins",
+          "PRODUCT::freekins"
+        ],
+        "PRODUCT::masculine sasafers": "PRODUCT::masculincaline sasa fars",
+        "PRODUCT::unrl": "PRODUCT::un rl",
+        "PERSON::nikita": "PERSON::niketa",
+        "PRODUCT::fabinaliv kids silver toned and brown cartoon character printed automatic threefold umbrella": "PRODUCT::fabinaliv kids silver toned and brown cartoon character printed automatic 3 fold umbrella",
+        "PRODUCT::biotech morning nectar": "PRODUCT::bayotik morning nectar nourish and hydrate visibly flawless skin moisturizer 120ml",
+        "ORG::v construct": "ORG::we construct",
+        "PRODUCT::deconstruct vitamin c and ferulic acid serum for brighton skin 20 ml": "PRODUCT::dikastrakt vitamin c and ferulic acid serum for brighten skin 20ml",
+        "ORG::lakme": "ORG::laamic",
+        "ORG::lakala": "ORG::lecalla",
+        "PRODUCT::love beauty and planet argan oil and love": "PRODUCT::trim hand shampoo",
+        "PRODUCT::love beauty and planet 10 argan oil and lavender shampoo": "PRODUCT::love beauty and planet argan oil and lavender",
+        "PRODUCT::love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli": "PRODUCT::love beauty and planet argan oil and lavender shampoo for frizzy hair 400ml",
+        "PRODUCT::myntra app": "PRODUCT::mintra app",
+        "PRODUCT::plum 10 niacinamide brightening face serum with rice ferment extract and licorice 15ml": "PRODUCT::plum 10 niacinamide brightening face serum with rice ferment extract and licorice 50ml",
+        "PRODUCT::crocs unisex navy blue bioband clogs": "PRODUCT::orders"
+      },
+      "detailed_insertions": {
+        "PRODUCT::category i": 1,
+        "PRODUCT::exide to lipid": 1,
+        "PRODUCT::story": 1,
+        "PRODUCT::all about you ethnic printed full puff sleeves casual shirt": 2,
+        "PRODUCT::crkins": 2,
+        "PERSON::nidhi": 1,
+        "PERSON::bijal roliya": 1,
+        "PRODUCT::biotique moisturizer": 1,
+        "PRODUCT::return": 1,
+        "PRODUCT::gap boys camouflage printed relaxed-fit mid-rise joggers": 1,
+        "PRODUCT::nano plan": 4
+      },
+      "detailed_deletions": {
+        "PERSON::priya": 1,
+        "ORG::elevate now": 1
+      }
+    },
+    "total_global_ref_entities": 496,
+    "total_global_hyp_entities": 460,
+    "total_global_concerned_ref": 319,
+    "total_global_concerned_hyp": 313
+  },
+  "normalization_settings": {
+    "concerned_labels": [
+      "PRODUCT",
+      "PERSON",
+      "ORG",
+      "ORGANIZATION"
+    ],
+    "normalization_steps": [
+      "Lowercase",
+      "Strip whitespace",
+      "Remove leading articles",
+      "Remove spaces/hyphens/underscores/dots",
+      "Replace & with and",
+      "Strip non-word characters",
+      "Apply canonical mappings",
+      "Remove diacritics/accents",
+      "Transliterate if needed",
+      "Apply product bucketing"
+    ]
+  },
+  "individual_results": [
+    {
+      "call_id": "03261666-7d82-49ec-8d6e-78c2f716ad73",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "03856e6b-6925-4012-8eb8-0a0289019b7e",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "09f69426-e7e6-4f2a-a20a-75416d945306",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "1bf3729b-c0a7-4f65-a846-88c8aa31a473",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "268dbd88-173b-41a1-8363-4a6ba62b9aae",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "332017b6-9f62-444d-a657-7b733bc727fc",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "3502253e-259a-42d3-ab70-7aedabeb81fa",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "429ac8a5-6f19-46b3-97bb-8e55feec389e",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "482181f8-15e2-4ced-8a9a-67facdd9c6fc",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "5cdef144-9d6a-4100-9be6-8489f90fc466",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "5f4d919f-b1bc-4a3d-9d98-1f8279d51215",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "750dfc05-c2c4-4937-a85d-46f597dc9880",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "79e02e46-ea93-4669-9dc1-6c4339dcc6ba",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "7bbd5f06-2ac0-4227-be76-4ce7ef7cb567",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "7fd6b5f9-8b11-4085-b864-a16f92504e53",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "8daee0cc-cbda-4cdf-b8ed-f120e3329138",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "99d176ec-e484-4937-ae0b-9d6d2d7cb5c5",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "a26f3d38-ed43-4289-8d34-9ee376fb779d",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "c5f1aee1-8170-4c1b-93e0-1f8366882689",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "d521ea56-2e7b-4908-8cca-acf4a0f89337",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "d7c521ce-dbcb-4c23-a776-66b38d8127b4",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "d9aa182c-b21e-4ad5-8138-18d0e9f69b84",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "e69e62f6-954a-4d0a-9989-2a2d562f66fe",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "eacbcb92-6172-41f7-b2a9-0c4df5a3a597",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    },
+    {
+      "call_id": "ec85480e-604c-4070-938f-b832e4904e9e",
+      "all_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "concerned_entities_eer": {
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "correct": 0,
+        "total_ref": 0,
+        "total_hyp": 0,
+        "eer_percentage": 0,
+        "detailed_substitutions": [],
+        "detailed_insertions": [],
+        "detailed_deletions": [],
+        "detailed_correct": []
+      },
+      "mispronunciation": {
+        "count": 0,
+        "pronunciation_ids": ""
+      },
+      "processing_time": 0
+    }
+  ]
+}

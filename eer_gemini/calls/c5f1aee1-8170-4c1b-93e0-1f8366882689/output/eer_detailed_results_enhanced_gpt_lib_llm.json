@@ -1,0 +1,671 @@
+{
+  "call_id": "c5f1aee1-8170-4c1b-93e0-1f8366882689",
+  "method": "Enhanced Gemini LLM as NER with Precise Normalization and Bucketing",
+  "model": "gemini-1.5-pro",
+  "temperature": 0,
+  "processing_time": 27.01,
+  "all_entities_eer": {
+    "substitutions": 15,
+    "insertions": 32,
+    "deletions": 0,
+    "correct": 15,
+    "total_ref": 17,
+    "total_hyp": 47,
+    "eer_percentage": 65.96,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u0915\u094d\u0930\u0949\u0915\u094d\u0938 Unisex Navy Blue Bayaband Clogs",
+          "type": "PRODUCT",
+          "canonical": "crocs unisex navy blue bayaband clogs"
+        },
+        "hyp": {
+          "text": "Crocs Unisex Navy blue Bioband clogs",
+          "type": "PRODUCT",
+          "canonical": "crocs unisex navy blue bioband clogs"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 1,
+    "insertions": 2,
+    "deletions": 0,
+    "correct": 16,
+    "total_ref": 17,
+    "total_hyp": 19,
+    "eer_percentage": 17.65,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "\u0915\u094d\u0930\u0949\u0915\u094d\u0938 Unisex Navy Blue Bayaband Clogs",
+          "type": "PRODUCT",
+          "canonical": "crocs unisex navy blue bayaband clogs"
+        },
+        "hyp": {
+          "text": "Crocs Unisex Navy blue Bioband clogs",
+          "type": "PRODUCT",
+          "canonical": "crocs unisex navy blue bioband clogs"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 3,
+      "ORG": 19,
+      "LANGUAGE": 6,
+      "PRODUCT": 13,
+      "DATE": 3
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORG": 7,
+      "LANGUAGE": 2,
+      "PRODUCT": 5,
+      "DATE": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "ORG",
+      "PRODUCT",
+      "LANGUAGE",
+      "DATE"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "ORG",
+      "PRODUCT",
+      "LANGUAGE",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "Crocs Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bayaband clogs"
+      },
+      {
+        "text": "12th July",
+        "type": "DATE",
+        "canonical": "12 july"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "canonical": "order"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "canonical": "order"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "canonical": "order"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "Crocs Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bayaband clogs"
+      },
+      {
+        "text": "12th July",
+        "type": "DATE",
+        "canonical": "12 july"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "canonical": "order"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "canonical": "order"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "Crocs Unisex Navy blue Bioband clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bioband clogs"
+      },
+      {
+        "text": "12th July",
+        "type": "DATE",
+        "canonical": "12 july"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "canonical": "order"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "canonical": "order"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "\u0915\u094d\u0930\u0949\u0915\u094d\u0938 Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bayaband clogs"
+      },
+      {
+        "text": "12 July",
+        "type": "DATE",
+        "canonical": "12 july"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Crocs Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bayaband clogs"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Crocs Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bayaband clogs"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Crocs Unisex Navy blue Bioband clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bioband clogs"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "\u0915\u094d\u0930\u0949\u0915\u094d\u0938 Unisex Navy Blue Bayaband Clogs",
+        "type": "PRODUCT",
+        "canonical": "crocs unisex navy blue bayaband clogs"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Orders",
+        "type": "PRODUCT",
+        "canonical": "orders"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "ray",
+      "myntra",
+      "hindi",
+      "english",
+      "crocs unisex navy blue bayaband clogs",
+      "12 july",
+      "myntra",
+      "orders",
+      "myntra",
+      "order",
+      "myntra",
+      "order",
+      "myntra",
+      "myntra",
+      "order",
+      "myntra",
+      "rey",
+      "myntra",
+      "hindi",
+      "english",
+      "crocs unisex navy blue bayaband clogs",
+      "12 july",
+      "myntra",
+      "orders",
+      "myntra",
+      "order",
+      "myntra",
+      "myntra",
+      "order",
+      "myntra",
+      "rey",
+      "myntra",
+      "hindi",
+      "english",
+      "crocs unisex navy blue bioband clogs",
+      "12 july",
+      "myntra",
+      "orders",
+      "myntra",
+      "order",
+      "myntra",
+      "myntra",
+      "order",
+      "myntra"
+    ],
+    "hypothesis_ordered": [
+      "rey",
+      "myntra",
+      "hindi",
+      "english",
+      "crocs unisex navy blue bayaband clogs",
+      "12 july",
+      "myntra",
+      "orders",
+      "myntra",
+      "orders",
+      "myntra",
+      "orders",
+      "myntra",
+      "myntra",
+      "orders",
+      "myntra"
+    ]
+  }
+}

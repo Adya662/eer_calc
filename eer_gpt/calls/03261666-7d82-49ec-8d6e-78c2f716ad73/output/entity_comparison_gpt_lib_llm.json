@@ -1,0 +1,68 @@
+{
+  "call_id": "03261666-7d82-49ec-8d6e-78c2f716ad73",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, mintra, hindi, english, atun, black net dress, 8 july, atun",
+    "reference_entity_string": "rey, atun, black net dress, 8 july, atun"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 4,
+    "correct_matches": 4,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "A T U N",
+        "type": "ORG",
+        "canonical": "atun"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 4,
+    "correct_matches": 4,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "A T U N",
+        "type": "ORG",
+        "canonical": "atun"
+      }
+    ]
+  }
+}

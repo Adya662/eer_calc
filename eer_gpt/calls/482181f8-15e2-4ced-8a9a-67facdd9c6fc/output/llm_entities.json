@@ -1,0 +1,204 @@
+{
+  "ref_entities": [
+    {
+      "text": "Ray",
+      "type": "PERSON",
+      "start": 5,
+      "end": 8,
+      "word_index": -1,
+      "canonical": "ray",
+      "bucket_norm": "ray"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "start": 14,
+      "end": 20,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "start": 66,
+      "end": 71,
+      "word_index": -1,
+      "canonical": "hindi",
+      "bucket_norm": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "start": 75,
+      "end": 82,
+      "word_index": -1,
+      "canonical": "english",
+      "bucket_norm": "english"
+    },
+    {
+      "text": "H&M",
+      "type": "ORG",
+      "start": 324,
+      "end": 327,
+      "word_index": -1,
+      "canonical": "h&m",
+      "bucket_norm": "h&m"
+    },
+    {
+      "text": "H&M",
+      "type": "ORG",
+      "start": 384,
+      "end": 387,
+      "word_index": -1,
+      "canonical": "h&m",
+      "bucket_norm": "h&m"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "start": 444,
+      "end": 451,
+      "word_index": -1,
+      "canonical": "20 june",
+      "bucket_norm": "20 june"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "start": 471,
+      "end": 478,
+      "word_index": -1,
+      "canonical": "20 june",
+      "bucket_norm": "20 june"
+    },
+    {
+      "text": "Mango",
+      "type": "ORG",
+      "start": 682,
+      "end": 687,
+      "word_index": -1,
+      "canonical": "mango",
+      "bucket_norm": "mango"
+    },
+    {
+      "text": "Mango",
+      "type": "ORG",
+      "start": 764,
+      "end": 769,
+      "word_index": -1,
+      "canonical": "mango",
+      "bucket_norm": "mango"
+    },
+    {
+      "text": "all about you",
+      "type": "ORG",
+      "start": 1010,
+      "end": 1023,
+      "word_index": -1,
+      "canonical": "all about you",
+      "bucket_norm": "all about you"
+    },
+    {
+      "text": "all about you",
+      "type": "ORG",
+      "start": 1165,
+      "end": 1178,
+      "word_index": -1,
+      "canonical": "all about you",
+      "bucket_norm": "all about you"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "start": 8,
+      "end": 11,
+      "word_index": -1,
+      "canonical": "rey",
+      "bucket_norm": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "start": 17,
+      "end": 23,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    },
+    {
+      "text": "H&M Regular Fit Round-Neck T-shirt",
+      "type": "PRODUCT",
+      "start": 366,
+      "end": 401,
+      "word_index": -1,
+      "canonical": "h&m regular fit round-neck t-shirt",
+      "bucket_norm": "h&m regular fit round-neck t-shirt"
+    },
+    {
+      "text": "एच एंड एम Regular Fit Round-Neck T-shirt",
+      "type": "PRODUCT",
+      "start": 410,
+      "end": 448,
+      "word_index": -1,
+      "canonical": "h&m regular fit round-neck t-shirt",
+      "bucket_norm": "h&m regular fit round-neck t-shirt"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "start": 478,
+      "end": 485,
+      "word_index": -1,
+      "canonical": "20 june",
+      "bucket_norm": "20 june"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "start": 506,
+      "end": 513,
+      "word_index": -1,
+      "canonical": "20 june",
+      "bucket_norm": "20 june"
+    },
+    {
+      "text": "Mango",
+      "type": "ORG",
+      "start": 732,
+      "end": 737,
+      "word_index": -1,
+      "canonical": "mango",
+      "bucket_norm": "mango"
+    },
+    {
+      "text": "मैंगो Plunge Neck Ruched Top with Asymmetric Hem",
+      "type": "PRODUCT",
+      "start": 788,
+      "end": 836,
+      "word_index": -1,
+      "canonical": "mango plunge neck ruched top with asymmetric hem",
+      "bucket_norm": "mango plunge neck ruched top with asymmetric hem"
+    },
+    {
+      "text": "all about you",
+      "type": "ORG",
+      "start": 1080,
+      "end": 1093,
+      "word_index": -1,
+      "canonical": "all about you",
+      "bucket_norm": "all about you"
+    },
+    {
+      "text": "ऑल अबाउट यू Ethnic Printed Full Puff-Sleeves Casual Shirt",
+      "type": "PRODUCT",
+      "start": 1264,
+      "end": 1318,
+      "word_index": -1,
+      "canonical": "all about you ethnic printed full puff-sleeves casual shirt",
+      "bucket_norm": "all about you ethnic printed full puff-sleeves casual shirt"
+    }
+  ]
+}

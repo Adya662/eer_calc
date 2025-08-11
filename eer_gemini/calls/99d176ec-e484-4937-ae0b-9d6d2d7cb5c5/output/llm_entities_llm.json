@@ -1,0 +1,136 @@
+{
+  "ref_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "H&M regular fit round neck t-shirt",
+      "type": "PRODUCT",
+      "canonical": "h and m regular fit round neck t shirt"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "canonical": "20 june"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "canonical": "20 june"
+    },
+    {
+      "text": "H&M cotton dungaree shorts",
+      "type": "PRODUCT",
+      "canonical": "h and m cotton dungaree shorts"
+    },
+    {
+      "text": "22 June",
+      "type": "DATE",
+      "canonical": "22 june"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "एच एंड एम Regular Fit Round-Neck T-shirt",
+      "type": "PRODUCT",
+      "canonical": "h and m regular fit round neck t shirt"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "canonical": "20 june"
+    },
+    {
+      "text": "20 June",
+      "type": "DATE",
+      "canonical": "20 june"
+    },
+    {
+      "text": "एच एंड एम Cotton Dungaree Shorts",
+      "type": "PRODUCT",
+      "canonical": "h and m cotton dungaree shorts"
+    },
+    {
+      "text": "22 June",
+      "type": "DATE",
+      "canonical": "22 june"
+    }
+  ]
+}

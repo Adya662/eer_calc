@@ -1,0 +1,176 @@
+{
+  "ref_entities": [
+    {
+      "text": "Ray",
+      "type": "PERSON",
+      "canonical": "ray"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "Lakme",
+      "type": "PRODUCT",
+      "canonical": "lakme"
+    },
+    {
+      "text": "Love Beauty and Planet",
+      "type": "ORG",
+      "canonical": "love beauty and planet"
+    },
+    {
+      "text": "Lakme",
+      "type": "ORG",
+      "canonical": "lakme"
+    },
+    {
+      "text": "Dressberry",
+      "type": "ORG",
+      "canonical": "dressberry"
+    },
+    {
+      "text": "Lakala",
+      "type": "ORG",
+      "canonical": "lakala"
+    },
+    {
+      "text": "Carlton London",
+      "type": "ORG",
+      "canonical": "carlton london"
+    },
+    {
+      "text": "trim hand shampoo",
+      "type": "PRODUCT",
+      "canonical": "trim hand shampoo"
+    },
+    {
+      "text": "Love Beauty and Planet Argan Oil and Love",
+      "type": "PRODUCT",
+      "canonical": "love beauty and planet argan oil and love"
+    },
+    {
+      "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C",
+      "type": "PRODUCT",
+      "canonical": "lakme youth infinity anti aging night cream with pro retinol c"
+    },
+    {
+      "text": "27 July",
+      "type": "DATE",
+      "canonical": "27 july"
+    },
+    {
+      "text": "Love Beauty and Planet 10 Argan oil and lavender shampoo",
+      "type": "PRODUCT",
+      "canonical": "love beauty and planet argan oil and lavender shampoo"
+    },
+    {
+      "text": "400 milli",
+      "type": "PRODUCT",
+      "canonical": "400 milli"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "Laamic",
+      "type": "PRODUCT",
+      "canonical": "laamic"
+    },
+    {
+      "text": "Love Beauty & Planet",
+      "type": "ORG",
+      "canonical": "love beauty and planet"
+    },
+    {
+      "text": "लैक्मे",
+      "type": "ORG",
+      "canonical": "lakme"
+    },
+    {
+      "text": "ड्रेसबेरी",
+      "type": "ORG",
+      "canonical": "dressberry"
+    },
+    {
+      "text": "LeCalla",
+      "type": "ORG",
+      "canonical": "lecalla"
+    },
+    {
+      "text": "Carlton London",
+      "type": "ORG",
+      "canonical": "carlton london"
+    },
+    {
+      "text": "Trim hand shampoo",
+      "type": "PRODUCT",
+      "canonical": "trim hand shampoo"
+    },
+    {
+      "text": "Love Beauty & Planet Argan Oil and Lavender",
+      "type": "PRODUCT",
+      "canonical": "love beauty and planet argan oil and lavender"
+    },
+    {
+      "text": "लैक्मे Youth Infinity Anti Aging Night Cream with Pro-Retinol C",
+      "type": "PRODUCT",
+      "canonical": "lakme youth infinity anti aging night cream with pro retinol c"
+    },
+    {
+      "text": "27 July",
+      "type": "DATE",
+      "canonical": "27 july"
+    },
+    {
+      "text": "Love Beauty & Planet Argan Oil and Lavender Shampoo",
+      "type": "PRODUCT",
+      "canonical": "love beauty and planet argan oil and lavender shampoo"
+    },
+    {
+      "text": "400ml",
+      "type": "PRODUCT",
+      "canonical": "400ml"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "myntra"
+    }
+  ]
+}

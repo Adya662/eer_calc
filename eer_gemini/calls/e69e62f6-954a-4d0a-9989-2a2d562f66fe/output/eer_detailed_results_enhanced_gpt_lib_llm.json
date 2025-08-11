@@ -1,0 +1,371 @@
+{
+  "call_id": "e69e62f6-954a-4d0a-9989-2a2d562f66fe",
+  "method": "Enhanced Gemini LLM as NER with Precise Normalization and Bucketing",
+  "model": "gemini-1.5-pro",
+  "temperature": 0,
+  "processing_time": 17.67,
+  "all_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 2,
+    "correct": 9,
+    "total_ref": 12,
+    "total_hyp": 11,
+    "eer_percentage": 33.33,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "canonical": "mintra"
+        },
+        "hyp": {
+          "text": "Myntra",
+          "type": "ORG",
+          "canonical": "myntra"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "hinglish",
+        "type": "LANGUAGE",
+        "canonical": "hinglish"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 2,
+    "correct": 9,
+    "total_ref": 12,
+    "total_hyp": 11,
+    "eer_percentage": 33.33,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "canonical": "mintra"
+        },
+        "hyp": {
+          "text": "Myntra",
+          "type": "ORG",
+          "canonical": "myntra"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "hinglish",
+        "type": "LANGUAGE",
+        "canonical": "hinglish"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 3,
+      "LANGUAGE": 1,
+      "PRODUCT": 5,
+      "DATE": 1
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORG": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 5,
+      "DATE": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "PERSON",
+      "ORG",
+      "PRODUCT",
+      "LANGUAGE",
+      "DATE"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "ORG",
+      "PRODUCT",
+      "LANGUAGE",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "hinglish",
+        "type": "LANGUAGE",
+        "canonical": "hinglish"
+      },
+      {
+        "text": "U.S. Polo Kids",
+        "type": "ORG",
+        "canonical": "us polo kids"
+      },
+      {
+        "text": "U.S. Polo Kids Girls \u0921\u094d\u0930\u0949\u092a \u0936\u094b\u0932\u094d\u0921\u0930 \u0938\u094d\u0932\u0940\u0935\u094d\u0938 \u092a\u094d\u092f\u094b\u0930 \u0915\u0949\u091f\u0928 \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u091f \u091f\u0940-\u0936\u0930\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      },
+      {
+        "text": "U.S. Polo Kids Girls \u090f\u092e\u094d\u092c\u094d\u0930\u0949\u092f\u0921\u0947\u0921 \u092a\u094d\u092f\u094b\u0930 \u0915\u0949\u091f\u0928 \u0938\u094d\u091f\u094d\u0930\u0947\u091f \u0938\u094d\u0915\u0930\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls embroidered pure cotton straight skirt"
+      },
+      {
+        "text": "U.S. Polo Kids Girls \u0921\u094d\u0930\u0949\u092a \u0936\u094b\u0932\u094d\u0921\u0930 \u0938\u094d\u0932\u0940\u0935\u094d\u0938 \u092a\u094d\u092f\u094b\u0930 \u0915\u0949\u091f\u0928 \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u091f \u091f\u0940-\u0936\u0930\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      },
+      {
+        "text": "21 \u091c\u0942\u0928",
+        "type": "DATE",
+        "canonical": "21 jun"
+      },
+      {
+        "text": "Myntra \u0910\u092a",
+        "type": "PRODUCT",
+        "canonical": "myntra app"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "U.S Polo Kids Girls \u0921\u094d\u0930\u0949\u092a \u0936\u094b\u0932\u094d\u0921\u0930 \u0938\u094d\u0932\u0940\u0935\u094d\u0938 \u092a\u094d\u092f\u094b\u0930 \u0915\u0949\u091f\u0928 \u090f\u092a\u094d\u0932\u0940\u0915\u0947 T.Shirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids",
+        "type": "ORG",
+        "canonical": "us polo kids"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Embroidered Pure Cotton Straight Skirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls embroidered pure cotton straight skirt"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      },
+      {
+        "text": "21 June",
+        "type": "DATE",
+        "canonical": "21 june"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e \u0910\u092a",
+        "type": "PRODUCT",
+        "canonical": "mintra app"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "U.S. Polo Kids",
+        "type": "ORG",
+        "canonical": "us polo kids"
+      },
+      {
+        "text": "U.S. Polo Kids Girls \u0921\u094d\u0930\u0949\u092a \u0936\u094b\u0932\u094d\u0921\u0930 \u0938\u094d\u0932\u0940\u0935\u094d\u0938 \u092a\u094d\u092f\u094b\u0930 \u0915\u0949\u091f\u0928 \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u091f \u091f\u0940-\u0936\u0930\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      },
+      {
+        "text": "U.S. Polo Kids Girls \u090f\u092e\u094d\u092c\u094d\u0930\u0949\u092f\u0921\u0947\u0921 \u092a\u094d\u092f\u094b\u0930 \u0915\u0949\u091f\u0928 \u0938\u094d\u091f\u094d\u0930\u0947\u091f \u0938\u094d\u0915\u0930\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls embroidered pure cotton straight skirt"
+      },
+      {
+        "text": "U.S. Polo Kids Girls \u0921\u094d\u0930\u0949\u092a \u0936\u094b\u0932\u094d\u0921\u0930 \u0938\u094d\u0932\u0940\u0935\u094d\u0938 \u092a\u094d\u092f\u094b\u0930 \u0915\u0949\u091f\u0928 \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u091f \u091f\u0940-\u0936\u0930\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      },
+      {
+        "text": "Myntra \u0910\u092a",
+        "type": "PRODUCT",
+        "canonical": "myntra app"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "U.S Polo Kids Girls \u0921\u094d\u0930\u0949\u092a \u0936\u094b\u0932\u094d\u0921\u0930 \u0938\u094d\u0932\u0940\u0935\u094d\u0938 \u092a\u094d\u092f\u094b\u0930 \u0915\u0949\u091f\u0928 \u090f\u092a\u094d\u0932\u0940\u0915\u0947 T.Shirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids",
+        "type": "ORG",
+        "canonical": "us polo kids"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Embroidered Pure Cotton Straight Skirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls embroidered pure cotton straight skirt"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e \u0910\u092a",
+        "type": "PRODUCT",
+        "canonical": "mintra app"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "\u092f\u0942.\u090f\u0938. \u092a\u094b\u0932\u094b Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+        "type": "PRODUCT",
+        "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "rey",
+      "myntra",
+      "hinglish",
+      "us polo kids",
+      "us polo kids girls drop shoulder sleeves pure cotton applique tshirt",
+      "us polo kids girls embroidered pure cotton straight skirt",
+      "us polo kids girls drop shoulder sleeves pure cotton applique tshirt",
+      "21 jun",
+      "myntra app",
+      "myntra",
+      "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+    ],
+    "hypothesis_ordered": [
+      "rey",
+      "mintra",
+      "hindi",
+      "english",
+      "us polo kids",
+      "us polo kids girls drop shoulder sleeves pure cotton applique tshirt",
+      "us polo kids girls embroidered pure cotton straight skirt",
+      "us polo kids girls drop shoulder sleeves pure cotton applique tshirt",
+      "21 june",
+      "mintra app",
+      "mintra",
+      "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+    ]
+  }
+}

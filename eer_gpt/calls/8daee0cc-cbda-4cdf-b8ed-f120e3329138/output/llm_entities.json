@@ -1,0 +1,186 @@
+{
+  "ref_entities": [
+    {
+      "text": "Ray",
+      "type": "PERSON",
+      "start": 9,
+      "end": 12,
+      "word_index": -1,
+      "canonical": "ray",
+      "bucket_norm": "ray"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "start": 18,
+      "end": 24,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "start": 70,
+      "end": 75,
+      "word_index": -1,
+      "canonical": "hindi",
+      "bucket_norm": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "start": 79,
+      "end": 86,
+      "word_index": -1,
+      "canonical": "english",
+      "bucket_norm": "english"
+    },
+    {
+      "text": "Style Cast X Revolt men opaque casual shirt",
+      "type": "PRODUCT",
+      "start": 331,
+      "end": 375,
+      "word_index": -1,
+      "canonical": "style cast x revolt men opaque casual shirt",
+      "bucket_norm": "style cast x revolt men opaque casual shirt"
+    },
+    {
+      "text": "21st August",
+      "type": "DATE",
+      "start": 406,
+      "end": 417,
+      "word_index": -1,
+      "canonical": "21 august",
+      "bucket_norm": "21 august"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "start": 746,
+      "end": 752,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "start": 1014,
+      "end": 1020,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "start": 1150,
+      "end": 1156,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "start": 8,
+      "end": 11,
+      "word_index": -1,
+      "canonical": "rey",
+      "bucket_norm": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "start": 17,
+      "end": 23,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "start": 75,
+      "end": 80,
+      "word_index": -1,
+      "canonical": "hindi",
+      "bucket_norm": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "start": 85,
+      "end": 92,
+      "word_index": -1,
+      "canonical": "english",
+      "bucket_norm": "english"
+    },
+    {
+      "text": "स्टाइलकास्ट एक्स रिवॉल्ट Men Opaque Casual Shirt",
+      "type": "PRODUCT",
+      "start": 204,
+      "end": 247,
+      "word_index": -1,
+      "canonical": "stylecast ex revolt men opaque casual shirt",
+      "bucket_norm": "stylecast ex revolt men opaque casual shirt"
+    },
+    {
+      "text": "21 August",
+      "type": "DATE",
+      "start": 283,
+      "end": 292,
+      "word_index": -1,
+      "canonical": "21 august",
+      "bucket_norm": "21 august"
+    },
+    {
+      "text": "स्टाइलकास्ट एक्स रिवॉल्ट Men Opaque Casual Shirt",
+      "type": "PRODUCT",
+      "start": 451,
+      "end": 494,
+      "word_index": -1,
+      "canonical": "stylecast ex revolt men opaque casual shirt",
+      "bucket_norm": "stylecast ex revolt men opaque casual shirt"
+    },
+    {
+      "text": "twenty-first August",
+      "type": "DATE",
+      "start": 522,
+      "end": 541,
+      "word_index": -1,
+      "canonical": "21 august",
+      "bucket_norm": "21 august"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "start": 1020,
+      "end": 1026,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "start": 1185,
+      "end": 1191,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "start": 1325,
+      "end": 1331,
+      "word_index": -1,
+      "canonical": "myntra",
+      "bucket_norm": "myntra"
+    }
+  ]
+}

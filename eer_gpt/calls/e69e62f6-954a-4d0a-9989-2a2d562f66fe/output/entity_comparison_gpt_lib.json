@@ -1,0 +1,144 @@
+{
+  "call_id": "e69e62f6-954a-4d0a-9989-2a2d562f66fe",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, product, brand, order, hinglish, product, brand, products, order, us polo kids, us polo kids girls drop-shoulder sleeves pure cotton applique t-shirt, us polo kids girls embroidered pure cotton straight skirt, us polo kids girls drop-shoulder sleeves pure cotton applique t-shirt, 21 june, myntra, order, myntra, order, us polo kids girls drop-shoulder sleeves pure cotton applique t-shirt, order, refund, refund",
+    "reference_entity_string": "rey, myntra, us polo kids, us polo kids girls drop shoulder sleeves pure cotton applicate t-shirt, us polo kids girls embroidered pure cotton straight skirt, us polo kids girls drop shoulder sleeves pure cotton applicate t-shirt, 21 june, myntra, myntra, us polo kids girls drop shoulder sleeves pure cotton applicate t.shirt"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 13,
+    "deletions": 0,
+    "correct_matches": 10,
+    "detailed_substitutions": [],
+    "detailed_insertions": [
+      {
+        "text": "product",
+        "type": "PRODUCT",
+        "start": 144,
+        "end": 151,
+        "word_index": -1,
+        "canonical": "product",
+        "bucket_norm": "product"
+      },
+      {
+        "text": "brand",
+        "type": "ORG",
+        "start": 155,
+        "end": 160,
+        "word_index": -1,
+        "canonical": "brand",
+        "bucket_norm": "brand"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "start": 186,
+        "end": 191,
+        "word_index": -1,
+        "canonical": "order",
+        "bucket_norm": "order"
+      },
+      {
+        "text": "Hinglish",
+        "type": "LANGUAGE",
+        "start": 218,
+        "end": 226,
+        "word_index": -1,
+        "canonical": "hinglish",
+        "bucket_norm": "hinglish"
+      },
+      {
+        "text": "product",
+        "type": "PRODUCT",
+        "start": 263,
+        "end": 270,
+        "word_index": -1,
+        "canonical": "product",
+        "bucket_norm": "product"
+      },
+      {
+        "text": "brand",
+        "type": "ORG",
+        "start": 274,
+        "end": 279,
+        "word_index": -1,
+        "canonical": "brand",
+        "bucket_norm": "brand"
+      },
+      {
+        "text": "products",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 339,
+        "word_index": -1,
+        "canonical": "products",
+        "bucket_norm": "products"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "start": 353,
+        "end": 358,
+        "word_index": -1,
+        "canonical": "order",
+        "bucket_norm": "order"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "start": 878,
+        "end": 883,
+        "word_index": -1,
+        "canonical": "order",
+        "bucket_norm": "order"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "start": 1026,
+        "end": 1031,
+        "word_index": -1,
+        "canonical": "order",
+        "bucket_norm": "order"
+      },
+      {
+        "text": "order",
+        "type": "PRODUCT",
+        "start": 1154,
+        "end": 1159,
+        "word_index": -1,
+        "canonical": "order",
+        "bucket_norm": "order"
+      },
+      {
+        "text": "refund",
+        "type": "MONEY",
+        "start": 1163,
+        "end": 1169,
+        "word_index": -1,
+        "canonical": "refund",
+        "bucket_norm": "refund"
+      },
+      {
+        "text": "refund",
+        "type": "MONEY",
+        "start": 1254,
+        "end": 1260,
+        "word_index": -1,
+        "canonical": "refund",
+        "bucket_norm": "refund"
+      }
+    ],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 9,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

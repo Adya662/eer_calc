@@ -1,0 +1,453 @@
+{
+  "call_id": "7fd6b5f9-8b11-4085-b864-a16f92504e53",
+  "method": "Enhanced Gemini LLM as NER with Precise Normalization and Bucketing",
+  "model": "gemini-1.5-pro",
+  "temperature": 0,
+  "processing_time": 20.37,
+  "all_entities_eer": {
+    "substitutions": 15,
+    "insertions": 4,
+    "deletions": 2,
+    "correct": 0,
+    "total_ref": 21,
+    "total_hyp": 21,
+    "eer_percentage": 33.33,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "canonical": "obesity stage category i"
+        },
+        "hyp": {
+          "text": "obesity stage, category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
+        }
+      },
+      {
+        "ref": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "canonical": "nano plan"
+        },
+        "hyp": {
+          "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+          "type": "PRODUCT",
+          "canonical": "naino plan"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "canonical": "bijal roliya"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 0,
+    "total_ref": 0,
+    "total_hyp": 0,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "MONEY": 7,
+      "PRODUCT": 10,
+      "EVENT": 1
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORG": 1,
+      "MONEY": 5,
+      "PRODUCT": 7,
+      "EVENT": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "PERSON",
+      "PRODUCT",
+      "EVENT"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "PERSON",
+      "ORG",
+      "PRODUCT",
+      "EVENT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "34.13",
+        "type": "MONEY",
+        "canonical": "34.13"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "34.13",
+        "type": "MONEY",
+        "canonical": "34.13"
+      },
+      {
+        "text": "obesity stage, category Y",
+        "type": "EVENT",
+        "canonical": "obesity stage category y"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "34.13",
+        "type": "MONEY",
+        "canonical": "34.13"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "canonical": "bijal roliya"
+      },
+      {
+        "text": "34.13",
+        "type": "MONEY",
+        "canonical": "34.13"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "34.13",
+        "type": "MONEY",
+        "canonical": "34.13"
+      },
+      {
+        "text": "Obesity Stage - Category I",
+        "type": "EVENT",
+        "canonical": "obesity stage category i"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "34.13",
+        "type": "MONEY",
+        "canonical": "34.13"
+      },
+      {
+        "text": "34.13",
+        "type": "MONEY",
+        "canonical": "34.13"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "canonical": "bijal roliya"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "34.13",
+      "nano plan",
+      "34.13",
+      "obesity stage category y",
+      "nano plan",
+      "34.13",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "naino plan",
+      "nano plan",
+      "1799",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "499",
+      "1399",
+      "1799"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "bijal roliya",
+      "34.13",
+      "nano plan",
+      "34.13",
+      "obesity stage category i",
+      "nano plan",
+      "34.13",
+      "34.13",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "1799",
+      "nano plan",
+      "nano plan"
+    ]
+  }
+}

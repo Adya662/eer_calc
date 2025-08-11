@@ -1,0 +1,52 @@
+{
+  "call_id": "5cdef144-9d6a-4100-9be6-8489f90fc466",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, minal jani, nano plan, nano plan, nano plan, nano plan, nano plan, 1799, nano plan, 1799, nano plan, 499, 1799, whatsapp, nano plan",
+    "reference_entity_string": "priya, elevate now, minal jani, nano plan, nano plan, nano plan, nano plan, nano plan, 1799, nano plan, 1799, nano plan, 499, 1799, whatsapp, nano plan"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 16,
+    "insertions": 0,
+    "deletions": 1,
+    "correct_matches": 17,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 16,
+    "insertions": 0,
+    "deletions": 1,
+    "correct_matches": 17,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

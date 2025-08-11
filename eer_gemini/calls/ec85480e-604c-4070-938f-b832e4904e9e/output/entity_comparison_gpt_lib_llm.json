@@ -1,0 +1,26 @@
+{
+  "call_id": "ec85480e-604c-4070-938f-b832e4904e9e",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, munira mandviwala, nano plan, nano plan, nano plan, nano plan, 1799, 6000, 499, 1399, 1898, 1799, whatsapp, priya, elevatenow, munira mandviwala",
+    "reference_entity_string": "priya, elevate now, munira mandviwala, nano plan, nano plan, nano plan, nano plan, 1799, 6000, 499, 1399, 1898, 1799, whatsapp, priya, elevate now, munira mandviwala"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 16,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 16,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 16,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 16,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

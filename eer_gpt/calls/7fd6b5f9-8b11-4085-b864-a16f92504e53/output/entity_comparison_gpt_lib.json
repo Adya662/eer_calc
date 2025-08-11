@@ -1,0 +1,167 @@
+{
+  "call_id": "7fd6b5f9-8b11-4085-b864-a16f92504e53",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, bijal roliya, nano plan, obesity stage - category i, nano plan, nano plan, 1799",
+    "reference_entity_string": "priya, nano plan, nano plan, nano plan, nano plan, 1799, nano plan, 499, 1399, 1799"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 4,
+    "insertions": 0,
+    "deletions": 2,
+    "correct_matches": 4,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "start": 688,
+          "end": 697,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        },
+        "hyp": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "start": 29,
+          "end": 39,
+          "word_index": -1,
+          "canonical": "elevatenow",
+          "bucket_norm": "elevatenow"
+        }
+      },
+      {
+        "ref": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "start": 1110,
+          "end": 1119,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        },
+        "hyp": {
+          "text": "Bijal Roliya",
+          "type": "PERSON",
+          "start": 58,
+          "end": 70,
+          "word_index": -1,
+          "canonical": "bijal roliya",
+          "bucket_norm": "bijal roliya"
+        }
+      },
+      {
+        "ref": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "start": 1605,
+          "end": 1617,
+          "word_index": -1,
+          "canonical": "1799",
+          "bucket_norm": "1799"
+        },
+        "hyp": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "start": 598,
+          "end": 625,
+          "word_index": -1,
+          "canonical": "obesity stage - category i",
+          "bucket_norm": "obesity stage - category i"
+        }
+      },
+      {
+        "ref": {
+          "text": "rupees 1,399",
+          "type": "MONEY",
+          "start": 2060,
+          "end": 2072,
+          "word_index": -1,
+          "canonical": "1399",
+          "bucket_norm": "1399"
+        },
+        "hyp": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "start": 1445,
+          "end": 1454,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 327,
+        "end": 336,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 2025,
+        "end": 2035,
+        "word_index": -1,
+        "canonical": "499",
+        "bucket_norm": "499"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 2,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 4,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "start": 327,
+          "end": 336,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        },
+        "hyp": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "start": 29,
+          "end": 39,
+          "word_index": -1,
+          "canonical": "elevatenow",
+          "bucket_norm": "elevatenow"
+        }
+      },
+      {
+        "ref": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "start": 688,
+          "end": 697,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        },
+        "hyp": {
+          "text": "Bijal Roliya",
+          "type": "PERSON",
+          "start": 58,
+          "end": 70,
+          "word_index": -1,
+          "canonical": "bijal roliya",
+          "bucket_norm": "bijal roliya"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

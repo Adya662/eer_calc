@@ -1,0 +1,545 @@
+{
+  "call_id": "03856e6b-6925-4012-8eb8-0a0289019b7e",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 23.48,
+  "all_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 2,
+    "correct": 20,
+    "total_ref": 23,
+    "total_hyp": 17,
+    "eer_percentage": 17.39,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "canonical": "obesity stage category i"
+        },
+        "hyp": {
+          "text": "obesity stage category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "\u092a\u091f\u0928\u093e",
+        "type": "GPE",
+        "canonical": "patna"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 2,
+    "correct": 20,
+    "total_ref": 23,
+    "total_hyp": 17,
+    "eer_percentage": 17.39,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "canonical": "obesity stage category i"
+        },
+        "hyp": {
+          "text": "obesity stage category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "\u092a\u091f\u0928\u093e",
+        "type": "GPE",
+        "canonical": "patna"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 6,
+      "ORG": 7,
+      "PRODUCT": 2,
+      "MONEY": 1,
+      "EVENT": 1
+    },
+    "hypothesis": {
+      "PERSON": 8,
+      "ORG": 8,
+      "PRODUCT": 3,
+      "GPE": 2,
+      "MONEY": 1,
+      "EVENT": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "EVENT",
+      "PERSON",
+      "PRODUCT",
+      "MONEY"
+    ],
+    "hypothesis": [
+      "ORG",
+      "EVENT",
+      "PERSON",
+      "GPE",
+      "PRODUCT",
+      "MONEY"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "BMI of 35.56",
+        "type": "MONEY",
+        "canonical": "35.56"
+      },
+      {
+        "text": "obesity stage category Y",
+        "type": "EVENT",
+        "canonical": "obesity stage category y"
+      },
+      {
+        "text": "Healthify",
+        "type": "ORG",
+        "canonical": "healthify"
+      },
+      {
+        "text": "nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "MBBS",
+        "type": "ORG",
+        "canonical": "mbbs"
+      },
+      {
+        "text": "MD",
+        "type": "ORG",
+        "canonical": "md"
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "\u092a\u091f\u0928\u093e",
+        "type": "GPE",
+        "canonical": "patna"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "BMI of 35.56",
+        "type": "MONEY",
+        "canonical": "35.56"
+      },
+      {
+        "text": "Obesity Stage - Category I",
+        "type": "EVENT",
+        "canonical": "obesity stage category i"
+      },
+      {
+        "text": "Healthifi",
+        "type": "ORG",
+        "canonical": "healthifi"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "MBBS",
+        "type": "ORG",
+        "canonical": "mbbs"
+      },
+      {
+        "text": "MD",
+        "type": "ORG",
+        "canonical": "md"
+      },
+      {
+        "text": "Elevate-Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Atul Sinha",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Healthify",
+        "type": "ORG",
+        "canonical": "healthify"
+      },
+      {
+        "text": "MBBS",
+        "type": "ORG",
+        "canonical": "mbbs"
+      },
+      {
+        "text": "MD",
+        "type": "ORG",
+        "canonical": "md"
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "ATUL SINHA",
+        "type": "PERSON",
+        "canonical": "atul sinha"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Healthifi",
+        "type": "ORG",
+        "canonical": "healthifi"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "MBBS",
+        "type": "ORG",
+        "canonical": "mbbs"
+      },
+      {
+        "text": "MD",
+        "type": "ORG",
+        "canonical": "md"
+      },
+      {
+        "text": "Elevate-Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "priya",
+      "elevate now",
+      "priya",
+      "elevate now",
+      "atul sinha",
+      "priya",
+      "elevate now",
+      "atul sinha",
+      "nano plan",
+      "35.56",
+      "obesity stage category y",
+      "healthify",
+      "nano plan",
+      "mbbs",
+      "md",
+      "elevate now"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "atul sinha",
+      "priya",
+      "elevatenow",
+      "atul sinha",
+      "priya",
+      "elevatenow",
+      "atul sinha",
+      "priya",
+      "elevatenow",
+      "atul sinha",
+      "nano plan",
+      "india",
+      "patna",
+      "nano plan",
+      "35.56",
+      "obesity stage category i",
+      "healthifi",
+      "nano plan",
+      "mbbs",
+      "md",
+      "elevate now"
+    ]
+  }
+}

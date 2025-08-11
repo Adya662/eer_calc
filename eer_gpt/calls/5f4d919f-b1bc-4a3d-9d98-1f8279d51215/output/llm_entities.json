@@ -1,0 +1,195 @@
+{
+  "ref_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "start": 18,
+      "end": 23,
+      "word_index": -1,
+      "canonical": "priya",
+      "bucket_norm": "priya"
+    },
+    {
+      "text": "Elevate Now",
+      "type": "ORG",
+      "start": 29,
+      "end": 40,
+      "word_index": -1,
+      "canonical": "elevate now",
+      "bucket_norm": "elevate now"
+    },
+    {
+      "text": "Pearl Biju",
+      "type": "PERSON",
+      "start": 61,
+      "end": 71,
+      "word_index": -1,
+      "canonical": "pearl biju",
+      "bucket_norm": "pearl biju"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 134,
+      "end": 143,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "BMI",
+      "type": "ORG",
+      "start": 276,
+      "end": 279,
+      "word_index": -1,
+      "canonical": "bmi",
+      "bucket_norm": "bmi"
+    },
+    {
+      "text": "44.08",
+      "type": "MONEY",
+      "start": 283,
+      "end": 288,
+      "word_index": -1,
+      "canonical": "44.08",
+      "bucket_norm": "44.08"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 451,
+      "end": 460,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 682,
+      "end": 691,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 1015,
+      "end": 1024,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "rupees 1,799",
+      "type": "MONEY",
+      "start": 1285,
+      "end": 1297,
+      "word_index": -1,
+      "canonical": "1,799",
+      "bucket_norm": "1,799"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "start": 18,
+      "end": 23,
+      "word_index": -1,
+      "canonical": "priya",
+      "bucket_norm": "priya"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORG",
+      "start": 29,
+      "end": 39,
+      "word_index": -1,
+      "canonical": "elevatenow",
+      "bucket_norm": "elevatenow"
+    },
+    {
+      "text": "Pearl Biju",
+      "type": "PERSON",
+      "start": 58,
+      "end": 68,
+      "word_index": -1,
+      "canonical": "pearl biju",
+      "bucket_norm": "pearl biju"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 134,
+      "end": 143,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "BMI",
+      "type": "ORG",
+      "start": 276,
+      "end": 279,
+      "word_index": -1,
+      "canonical": "bmi",
+      "bucket_norm": "bmi"
+    },
+    {
+      "text": "44.08",
+      "type": "MONEY",
+      "start": 283,
+      "end": 288,
+      "word_index": -1,
+      "canonical": "44.08",
+      "bucket_norm": "44.08"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 451,
+      "end": 460,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 688,
+      "end": 697,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 1010,
+      "end": 1019,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "start": 1280,
+      "end": 1325,
+      "word_index": -1,
+      "canonical": "1799",
+      "bucket_norm": "1799"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 1444,
+      "end": 1453,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    }
+  ]
+}

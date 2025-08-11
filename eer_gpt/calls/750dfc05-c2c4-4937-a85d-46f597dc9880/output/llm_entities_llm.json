@@ -1,0 +1,116 @@
+{
+  "ref_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "Elevate now",
+      "type": "ORG",
+      "canonical": "elevate now"
+    },
+    {
+      "text": "Yogesh Deshmukh",
+      "type": "PERSON",
+      "canonical": "yogesh deshmukh"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "BMI of 25",
+      "type": "MONEY",
+      "canonical": "25"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Rs 1,799",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "Rs 6,000",
+      "type": "MONEY",
+      "canonical": "6000"
+    },
+    {
+      "text": "rupees 499",
+      "type": "MONEY",
+      "canonical": "499"
+    },
+    {
+      "text": "rupees 1,399",
+      "type": "MONEY",
+      "canonical": "1399"
+    },
+    {
+      "text": "rupees 1,799",
+      "type": "MONEY",
+      "canonical": "1799"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORG",
+      "canonical": "elevatenow"
+    },
+    {
+      "text": "Yogesh Deshmukh",
+      "type": "PERSON",
+      "canonical": "yogesh deshmukh"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "BMI of twenty-five",
+      "type": "MONEY",
+      "canonical": "25"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "Rupees six thousand",
+      "type": "MONEY",
+      "canonical": "6000"
+    },
+    {
+      "text": "Rupees four hundred ninety-nine",
+      "type": "MONEY",
+      "canonical": "499"
+    },
+    {
+      "text": "Rupees one thousand three hundred ninety-nine",
+      "type": "MONEY",
+      "canonical": "1399"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "canonical": "1799"
+    }
+  ]
+}

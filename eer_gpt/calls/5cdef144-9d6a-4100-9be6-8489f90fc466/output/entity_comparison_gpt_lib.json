@@ -1,0 +1,76 @@
+{
+  "call_id": "5cdef144-9d6a-4100-9be6-8489f90fc466",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, minal jani, nano plan, nano plan, 1799, nano plan, 1799, nano plan, nano plan, 1799, 499, nano plan",
+    "reference_entity_string": "priya, elevate now, minal jani, nano plan, nano plan, nano plan, nano plan, nano plan, 1799, 499, 1799"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 2,
+    "deletions": 0,
+    "correct_matches": 10,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "1,799",
+          "type": "MONEY",
+          "start": 1514,
+          "end": 1519,
+          "word_index": -1,
+          "canonical": "1799",
+          "bucket_norm": "1799"
+        },
+        "hyp": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "start": 2175,
+          "end": 2184,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1010,
+        "end": 1053,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1260,
+        "end": 1303,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      }
+    ],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 1,
+    "deletions": 0,
+    "correct_matches": 8,
+    "detailed_substitutions": [],
+    "detailed_insertions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 122,
+        "end": 131,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ],
+    "detailed_deletions": []
+  }
+}

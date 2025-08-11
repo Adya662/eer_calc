@@ -1,0 +1,95 @@
+{
+  "call_id": "7fd6b5f9-8b11-4085-b864-a16f92504e53",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, bijal roliya, 34.13, nano plan, obesity stage category i, nano plan, nano plan, 1799",
+    "reference_entity_string": "priya, 34.13, nano plan, obesity stage category y, nano plan, nano plan, 1799, 499, 1399, 1799"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 4,
+    "deletions": 2,
+    "correct_matches": 5,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "canonical": "obesity stage category i"
+        },
+        "hyp": {
+          "text": "obesity stage, category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "canonical": "bijal roliya"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 2,
+    "correct_matches": 5,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "canonical": "obesity stage category i"
+        },
+        "hyp": {
+          "text": "obesity stage, category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "canonical": "bijal roliya"
+      }
+    ]
+  }
+}

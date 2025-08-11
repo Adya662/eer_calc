@@ -1,0 +1,82 @@
+{
+  "call_id": "ec85480e-604c-4070-938f-b832e4904e9e",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, munira mandviwala, nano plan, nano plan, 1799, 6000, 499, 1399, 1898, 1799, priya, elevatenow, munira mandviwala",
+    "reference_entity_string": "priya, elevate now, munira mandviwala, nano plan, bmi, nano plan, bmi, nano plan, 1799, 6000, 499, 1399, 1898, 1799, priya, elevate now, munira mandviwala"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 3,
+    "correct_matches": 14,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 116,
+        "end": 125,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "BMI",
+        "type": "ORG",
+        "start": 276,
+        "end": 279,
+        "word_index": -1,
+        "canonical": "bmi",
+        "bucket_norm": "bmi"
+      },
+      {
+        "text": "BMI",
+        "type": "ORG",
+        "start": 556,
+        "end": 559,
+        "word_index": -1,
+        "canonical": "bmi",
+        "bucket_norm": "bmi"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 3,
+    "correct_matches": 8,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 116,
+        "end": 125,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "BMI",
+        "type": "ORG",
+        "start": 276,
+        "end": 279,
+        "word_index": -1,
+        "canonical": "bmi",
+        "bucket_norm": "bmi"
+      },
+      {
+        "text": "BMI",
+        "type": "ORG",
+        "start": 556,
+        "end": 559,
+        "word_index": -1,
+        "canonical": "bmi",
+        "bucket_norm": "bmi"
+      }
+    ]
+  }
+}

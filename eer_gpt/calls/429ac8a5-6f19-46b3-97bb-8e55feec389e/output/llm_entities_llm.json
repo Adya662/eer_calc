@@ -1,0 +1,126 @@
+{
+  "ref_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "story plus size reflective detail t-shirt",
+      "type": "PRODUCT",
+      "canonical": "story plus size reflective detail t shirt"
+    },
+    {
+      "text": "7 July",
+      "type": "DATE",
+      "canonical": "7 july"
+    },
+    {
+      "text": "Puma women royal cat comfort soft ride sliders",
+      "type": "PRODUCT",
+      "canonical": "puma women royalcat comfort softride sliders"
+    },
+    {
+      "text": "Agnia women floral print mandarin collar flared sleeve shirt style top",
+      "type": "PRODUCT",
+      "canonical": "agnia women floral print mandarin collar flared sleeve shirt style top"
+    },
+    {
+      "text": "Istyle can top",
+      "type": "PRODUCT",
+      "canonical": "istyle can top"
+    },
+    {
+      "text": "10:44 a.m.",
+      "type": "TIME",
+      "canonical": "10:44 am"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "श्टोरी Plus Size Reflective Detail T-shirt",
+      "type": "PRODUCT",
+      "canonical": "story plus size reflective detail t shirt"
+    },
+    {
+      "text": "7 July",
+      "type": "DATE",
+      "canonical": "7 july"
+    },
+    {
+      "text": "प्यूमा Women Royalcat Comfort Softride Sliders",
+      "type": "PRODUCT",
+      "canonical": "puma women royalcat comfort softride sliders"
+    },
+    {
+      "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+      "type": "PRODUCT",
+      "canonical": "aaghnya women floral print mandarin collar flared sleeve shirt style top"
+    },
+    {
+      "text": "Istyle Can Top",
+      "type": "PRODUCT",
+      "canonical": "istyle can top"
+    },
+    {
+      "text": "10:44 AM",
+      "type": "TIME",
+      "canonical": "10:44 am"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    }
+  ]
+}

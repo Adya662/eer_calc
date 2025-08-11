@@ -1,0 +1,246 @@
+{
+  "call_id": "03261666-7d82-49ec-8d6e-78c2f716ad73",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 12.59,
+  "all_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 4,
+    "correct": 4,
+    "total_ref": 8,
+    "total_hyp": 5,
+    "eer_percentage": 50.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "A T U N",
+        "type": "ORG",
+        "canonical": "atun"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 4,
+    "correct": 4,
+    "total_ref": 8,
+    "total_hyp": 5,
+    "eer_percentage": 50.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "A T U N",
+        "type": "ORG",
+        "canonical": "atun"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 2,
+      "PRODUCT": 1,
+      "DATE": 1
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORG": 3,
+      "LANGUAGE": 2,
+      "PRODUCT": 1,
+      "DATE": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "PERSON",
+      "DATE",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "ORG",
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "ATUN",
+        "type": "ORG",
+        "canonical": "atun"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+        "type": "PRODUCT",
+        "canonical": "black net dress"
+      },
+      {
+        "text": "8 \u091c\u0941\u0932\u093e\u0908",
+        "type": "DATE",
+        "canonical": "8 july"
+      },
+      {
+        "text": "ATUN",
+        "type": "ORG",
+        "canonical": "atun"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "A.T.U.N.",
+        "type": "ORG",
+        "canonical": "atun"
+      },
+      {
+        "text": "Black Net Dress",
+        "type": "PRODUCT",
+        "canonical": "black net dress"
+      },
+      {
+        "text": "8 July",
+        "type": "DATE",
+        "canonical": "8 july"
+      },
+      {
+        "text": "A T U N",
+        "type": "ORG",
+        "canonical": "atun"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "ATUN",
+        "type": "ORG",
+        "canonical": "atun"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+        "type": "PRODUCT",
+        "canonical": "black net dress"
+      },
+      {
+        "text": "ATUN",
+        "type": "ORG",
+        "canonical": "atun"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "A.T.U.N.",
+        "type": "ORG",
+        "canonical": "atun"
+      },
+      {
+        "text": "Black Net Dress",
+        "type": "PRODUCT",
+        "canonical": "black net dress"
+      },
+      {
+        "text": "A T U N",
+        "type": "ORG",
+        "canonical": "atun"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "rey",
+      "atun",
+      "black net dress",
+      "8 july",
+      "atun"
+    ],
+    "hypothesis_ordered": [
+      "rey",
+      "mintra",
+      "hindi",
+      "english",
+      "atun",
+      "black net dress",
+      "8 july",
+      "atun"
+    ]
+  }
+}

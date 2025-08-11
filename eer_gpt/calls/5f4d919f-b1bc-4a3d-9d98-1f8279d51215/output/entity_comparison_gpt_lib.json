@@ -1,0 +1,46 @@
+{
+  "call_id": "5f4d919f-b1bc-4a3d-9d98-1f8279d51215",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, pearl biju, nano plan, bmi, 44.08, nano plan, nano plan, nano plan, 1799, nano plan",
+    "reference_entity_string": "priya, elevate now, pearl biju, nano plan, bmi, 44.08, nano plan, nano plan, nano plan, 1,799"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 1,
+    "deletions": 0,
+    "correct_matches": 10,
+    "detailed_substitutions": [],
+    "detailed_insertions": [
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1444,
+        "end": 1453,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 1,
+    "deletions": 0,
+    "correct_matches": 8,
+    "detailed_substitutions": [],
+    "detailed_insertions": [
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 451,
+        "end": 460,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ],
+    "detailed_deletions": []
+  }
+}

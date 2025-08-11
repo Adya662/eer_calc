@@ -1,0 +1,52 @@
+{
+  "call_id": "268dbd88-173b-41a1-8363-4a6ba62b9aae",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, rupesh kondawar, nano plan, obesity specialized doctor, senior health coach, nano plan, senior obesity specialist doctor, nano plan, nano plan, nano plan, nano plan, flagship program, 3 6 or 12 month subscription plans, senior obesity specialist, nano plan, flagship program, nano plan, nano plan",
+    "reference_entity_string": "priya, elevate now, rupesh kovar, nano plan, obesity specialized doctor, senior health coach, nano plan, senior obesity specialist doctor, nano plan, nano plan, nano plan, flagship program, 3 6 or 12 month subscription plans, senior obesity specialist, nano plan, flagship program, nano plan, nano plan"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 18,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rupesh Kondawar",
+          "type": "PERSON",
+          "canonical": "rupesh kondawar"
+        },
+        "hyp": {
+          "text": "Rupesh Kovar",
+          "type": "PERSON",
+          "canonical": "rupesh kovar"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 18,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rupesh Kondawar",
+          "type": "PERSON",
+          "canonical": "rupesh kondawar"
+        },
+        "hyp": {
+          "text": "Rupesh Kovar",
+          "type": "PERSON",
+          "canonical": "rupesh kovar"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

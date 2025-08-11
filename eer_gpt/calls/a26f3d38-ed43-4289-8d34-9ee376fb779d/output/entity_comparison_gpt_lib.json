@@ -1,0 +1,46 @@
+{
+  "call_id": "a26f3d38-ed43-4289-8d34-9ee376fb779d",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum 10% niacinamide brightening face serum with rice ferment extract and licorice - 50ml, myntra, myntra, myntra",
+    "reference_entity_string": "myntra, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml, myntra, myntra, myntra"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 1,
+    "deletions": 0,
+    "correct_matches": 20,
+    "detailed_substitutions": [],
+    "detailed_insertions": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 8,
+        "end": 11,
+        "word_index": -1,
+        "canonical": "rey",
+        "bucket_norm": "rey"
+      }
+    ],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 1,
+    "deletions": 0,
+    "correct_matches": 20,
+    "detailed_substitutions": [],
+    "detailed_insertions": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 8,
+        "end": 11,
+        "word_index": -1,
+        "canonical": "rey",
+        "bucket_norm": "rey"
+      }
+    ],
+    "detailed_deletions": []
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "call_id": "7bbd5f06-2ac0-4227-be76-4ce7ef7cb567",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 18.59,
+  "all_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "correct": 10,
+    "total_ref": 12,
+    "total_hyp": 11,
+    "eer_percentage": 16.67,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "canonical": "nidhi"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "correct": 10,
+    "total_ref": 12,
+    "total_hyp": 11,
+    "eer_percentage": 16.67,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "canonical": "nidhi"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 1,
+      "PRODUCT": 4,
+      "MONEY": 5
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORG": 1,
+      "PRODUCT": 4,
+      "MONEY": 5
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "ORG",
+      "PERSON",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "ORG",
+      "PERSON",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "BMI of 31.11",
+        "type": "MONEY",
+        "canonical": "31.11"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "canonical": "nidhi"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "BMI of 31.11",
+        "type": "MONEY",
+        "canonical": "31.11"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1399"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "canonical": "nidhi"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "elevate now",
+      "nano plan",
+      "31.11",
+      "nano plan",
+      "nano plan",
+      "1799",
+      "nano plan",
+      "1799",
+      "499",
+      "1399"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "nidhi",
+      "nano plan",
+      "31.11",
+      "nano plan",
+      "nano plan",
+      "1799",
+      "nano plan",
+      "1799",
+      "499",
+      "1399"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "call_id": "b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, niketa, nano plan, nano plan, 30 to 45 minutes, nano plan, nano plan, nano plan, 1799",
+    "reference_entity_string": "nano plan, priya, elevate now, nikita, nano plan, blood test, doctor consultation, 30 to 45 minutes, nano plan, blood test, doctor consultation, nano plan, obesity specialist doctor, nano plan, nano plan, 1799"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 6,
+    "correct_matches": 9,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "doctor consultation",
+          "type": "EVENT",
+          "start": 606,
+          "end": 626,
+          "word_index": -1,
+          "canonical": "doctor consultation",
+          "bucket_norm": "doctor consultation"
+        },
+        "hyp": {
+          "text": "thirty to forty-five minutes",
+          "type": "TIME",
+          "start": 366,
+          "end": 393,
+          "word_index": -1,
+          "canonical": "30 to 45 minutes",
+          "bucket_norm": "30 to 45 minutes"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 42,
+        "end": 51,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "blood test",
+        "type": "EVENT",
+        "start": 308,
+        "end": 318,
+        "word_index": -1,
+        "canonical": "blood test",
+        "bucket_norm": "blood test"
+      },
+      {
+        "text": "doctor consultation",
+        "type": "EVENT",
+        "start": 331,
+        "end": 351,
+        "word_index": -1,
+        "canonical": "doctor consultation",
+        "bucket_norm": "doctor consultation"
+      },
+      {
+        "text": "30 to 45 minutes",
+        "type": "TIME",
+        "start": 374,
+        "end": 390,
+        "word_index": -1,
+        "canonical": "30 to 45 minutes",
+        "bucket_norm": "30 to 45 minutes"
+      },
+      {
+        "text": "blood test",
+        "type": "EVENT",
+        "start": 594,
+        "end": 604,
+        "word_index": -1,
+        "canonical": "blood test",
+        "bucket_norm": "blood test"
+      },
+      {
+        "text": "obesity specialist doctor",
+        "type": "PERSON",
+        "start": 1165,
+        "end": 1191,
+        "word_index": -1,
+        "canonical": "obesity specialist doctor",
+        "bucket_norm": "obesity specialist doctor"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 1,
+    "correct_matches": 8,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 42,
+        "end": 51,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ]
+  }
+}

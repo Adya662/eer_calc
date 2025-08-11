@@ -1,0 +1,76 @@
+{
+  "call_id": "eacbcb92-6172-41f7-b2a9-0c4df5a3a597",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, mintra, hindi, english, gap boys camouflage printed relaxed-fit mid-rise joggers, yesterday, gap boys camouflage printed relaxed-fit mid-rise joggers, jack and jones junior, jack and jones junior boys pure cotton relaxed-fit joggers, today, jack and jones junior boys pure cotton relaxed-fit joggers, jack and jones junior boys relaxed-fit mid-rise joggers, today, jack and jones junior boys pure cotton relaxed-fit joggers, jack and jones junior boys relaxed-fit mid-rise joggers, today, jack and jones junior, jack and jones junior boys jogger mid-rise pure cotton stretchable jeans, jack and jones junior boys jogger mid-rise pure cotton stretchable jeans, 25 june, sms, mintra",
+    "reference_entity_string": "ray, myntra, hindi, english, gap boys camouflage printed relaxed-fit mid-rise joggers, yesterday, gap boys camouflage printed relaxed-fit mid-rise joggers, jack and jones junior, jack and jones junior boys pure cotton relaxed-fit joggers, today, jack and jones junior boys pure cotton relaxed-fit joggers, jack and jones junior boys relaxed-fit mid-rise joggers, today, jack and jones junior boys pure cotton relaxed-fit joggers, jack and jones junior boys relaxed-fit mid-rise joggers, today, jack and jones junior, jack and jones junior boys jogger mid rice pure cotton stretchable jeans, jack and jones junior boys jogger mid rice pure cotton stretchable jeans, 25 june, sms, myntra"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 21,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 21,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "canonical": "mintra"
+        },
+        "hyp": {
+          "text": "Myntra",
+          "type": "ORG",
+          "canonical": "myntra"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 21,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 21,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "canonical": "mintra"
+        },
+        "hyp": {
+          "text": "Myntra",
+          "type": "ORG",
+          "canonical": "myntra"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "call_id": "7fd6b5f9-8b11-4085-b864-a16f92504e53",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 16.17,
+  "all_entities_eer": {
+    "substitutions": 4,
+    "insertions": 0,
+    "deletions": 2,
+    "correct": 4,
+    "total_ref": 10,
+    "total_hyp": 8,
+    "eer_percentage": 60.0,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "start": 688,
+          "end": 697,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        },
+        "hyp": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "start": 29,
+          "end": 39,
+          "word_index": -1,
+          "canonical": "elevatenow",
+          "bucket_norm": "elevatenow"
+        }
+      },
+      {
+        "ref": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "start": 1110,
+          "end": 1119,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        },
+        "hyp": {
+          "text": "Bijal Roliya",
+          "type": "PERSON",
+          "start": 58,
+          "end": 70,
+          "word_index": -1,
+          "canonical": "bijal roliya",
+          "bucket_norm": "bijal roliya"
+        }
+      },
+      {
+        "ref": {
+          "text": "rupees 1,799",
+          "type": "MONEY",
+          "start": 1605,
+          "end": 1617,
+          "word_index": -1,
+          "canonical": "1799",
+          "bucket_norm": "1799"
+        },
+        "hyp": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "start": 598,
+          "end": 625,
+          "word_index": -1,
+          "canonical": "obesity stage - category i",
+          "bucket_norm": "obesity stage - category i"
+        }
+      },
+      {
+        "ref": {
+          "text": "rupees 1,399",
+          "type": "MONEY",
+          "start": 2060,
+          "end": 2072,
+          "word_index": -1,
+          "canonical": "1399",
+          "bucket_norm": "1399"
+        },
+        "hyp": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "start": 1445,
+          "end": 1454,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 327,
+        "end": 336,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 2025,
+        "end": 2035,
+        "word_index": -1,
+        "canonical": "499",
+        "bucket_norm": "499"
+      }
+    ],
+    "detailed_insertions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 2,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 4,
+    "total_ref": 6,
+    "total_hyp": 6,
+    "eer_percentage": 33.33,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "start": 327,
+          "end": 336,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        },
+        "hyp": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "start": 29,
+          "end": 39,
+          "word_index": -1,
+          "canonical": "elevatenow",
+          "bucket_norm": "elevatenow"
+        }
+      },
+      {
+        "ref": {
+          "text": "Nano plan",
+          "type": "PRODUCT",
+          "start": 688,
+          "end": 697,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        },
+        "hyp": {
+          "text": "Bijal Roliya",
+          "type": "PERSON",
+          "start": 58,
+          "end": 70,
+          "word_index": -1,
+          "canonical": "bijal roliya",
+          "bucket_norm": "bijal roliya"
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_insertions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "PRODUCT": 5,
+      "MONEY": 4
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORG": 1,
+      "PRODUCT": 3,
+      "EVENT": 1,
+      "MONEY": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "PRODUCT",
+      "PERSON"
+    ],
+    "hypothesis": [
+      "PERSON",
+      "EVENT",
+      "ORG",
+      "MONEY",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 327,
+        "end": 336,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 697,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1110,
+        "end": 1119,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1450,
+        "end": 1459,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1605,
+        "end": 1617,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1865,
+        "end": 1874,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 2025,
+        "end": 2035,
+        "word_index": -1,
+        "canonical": "499",
+        "bucket_norm": "499"
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 2060,
+        "end": 2072,
+        "word_index": -1,
+        "canonical": "1399",
+        "bucket_norm": "1399"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 2104,
+        "end": 2116,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "start": 29,
+        "end": 39,
+        "word_index": -1,
+        "canonical": "elevatenow",
+        "bucket_norm": "elevatenow"
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "start": 58,
+        "end": 70,
+        "word_index": -1,
+        "canonical": "bijal roliya",
+        "bucket_norm": "bijal roliya"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 375,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Obesity Stage - Category I",
+        "type": "EVENT",
+        "start": 598,
+        "end": 625,
+        "word_index": -1,
+        "canonical": "obesity stage - category i",
+        "bucket_norm": "obesity stage - category i"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1001,
+        "end": 1010,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1445,
+        "end": 1454,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1863,
+        "end": 1908,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 327,
+        "end": 336,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 697,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1110,
+        "end": 1119,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1450,
+        "end": 1459,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1865,
+        "end": 1874,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "start": 29,
+        "end": 39,
+        "word_index": -1,
+        "canonical": "elevatenow",
+        "bucket_norm": "elevatenow"
+      },
+      {
+        "text": "Bijal Roliya",
+        "type": "PERSON",
+        "start": 58,
+        "end": 70,
+        "word_index": -1,
+        "canonical": "bijal roliya",
+        "bucket_norm": "bijal roliya"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 375,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1001,
+        "end": 1010,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1445,
+        "end": 1454,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "nano plan",
+      "1799",
+      "nano plan",
+      "499",
+      "1399",
+      "1799"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "bijal roliya",
+      "nano plan",
+      "obesity stage - category i",
+      "nano plan",
+      "nano plan",
+      "1799"
+    ]
+  }
+}

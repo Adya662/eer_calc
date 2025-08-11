@@ -1,0 +1,166 @@
+{
+  "ref_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "Elevate Now",
+      "type": "ORG",
+      "canonical": "elevate now"
+    },
+    {
+      "text": "Minal Jani",
+      "type": "PERSON",
+      "canonical": "minal jani"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "1,799",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "1,799",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "499 rupees",
+      "type": "MONEY",
+      "canonical": "499"
+    },
+    {
+      "text": "1,799 rupees",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "WhatsApp",
+      "type": "PRODUCT",
+      "canonical": "whatsapp"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORG",
+      "canonical": "elevatenow"
+    },
+    {
+      "text": "Minal Jani",
+      "type": "PERSON",
+      "canonical": "minal jani"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "four hundred ninety-nine Rupees",
+      "type": "MONEY",
+      "canonical": "499"
+    },
+    {
+      "text": "one thousand seven hundred ninety-nine Rupees",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "WhatsApp",
+      "type": "PRODUCT",
+      "canonical": "whatsapp"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    }
+  ]
+}

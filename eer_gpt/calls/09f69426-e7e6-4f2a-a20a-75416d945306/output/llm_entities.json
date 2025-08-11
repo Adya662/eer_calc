@@ -1,0 +1,231 @@
+{
+  "ref_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "start": 18,
+      "end": 23,
+      "word_index": -1,
+      "canonical": "priya",
+      "bucket_norm": "priya"
+    },
+    {
+      "text": "Elevate Now",
+      "type": "ORG",
+      "start": 29,
+      "end": 40,
+      "word_index": -1,
+      "canonical": "elevate now",
+      "bucket_norm": "elevate now"
+    },
+    {
+      "text": "Purba Sahu",
+      "type": "PERSON",
+      "start": 61,
+      "end": 71,
+      "word_index": -1,
+      "canonical": "purba sahu",
+      "bucket_norm": "purba sahu"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 104,
+      "end": 113,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 276,
+      "end": 285,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "1,799",
+      "type": "MONEY",
+      "start": 451,
+      "end": 456,
+      "word_index": -1,
+      "canonical": "1799",
+      "bucket_norm": "1799"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 556,
+      "end": 565,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 1081,
+      "end": 1090,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 1225,
+      "end": 1234,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 1445,
+      "end": 1454,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 1685,
+      "end": 1694,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 1860,
+      "end": 1869,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "start": 18,
+      "end": 23,
+      "word_index": -1,
+      "canonical": "priya",
+      "bucket_norm": "priya"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORG",
+      "start": 29,
+      "end": 39,
+      "word_index": -1,
+      "canonical": "elevatenow",
+      "bucket_norm": "elevatenow"
+    },
+    {
+      "text": "Purba Sahu",
+      "type": "PERSON",
+      "start": 58,
+      "end": 68,
+      "word_index": -1,
+      "canonical": "purba sahu",
+      "bucket_norm": "purba sahu"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "start": 98,
+      "end": 107,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 276,
+      "end": 285,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "start": 406,
+      "end": 450,
+      "word_index": -1,
+      "canonical": "1799",
+      "bucket_norm": "1799"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 482,
+      "end": 491,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 1010,
+      "end": 1019,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "start": 1224,
+      "end": 1268,
+      "word_index": -1,
+      "canonical": "1799",
+      "bucket_norm": "1799"
+    },
+    {
+      "text": "Rupees six thousand",
+      "type": "MONEY",
+      "start": 1360,
+      "end": 1379,
+      "word_index": -1,
+      "canonical": "6000",
+      "bucket_norm": "6000"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 1455,
+      "end": 1464,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 1605,
+      "end": 1614,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "start": 1865,
+      "end": 1874,
+      "word_index": -1,
+      "canonical": "nano plan",
+      "bucket_norm": "nano plan"
+    }
+  ]
+}

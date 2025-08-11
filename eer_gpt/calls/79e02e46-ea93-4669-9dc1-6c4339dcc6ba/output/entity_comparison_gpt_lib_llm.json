@@ -1,0 +1,64 @@
+{
+  "call_id": "79e02e46-ea93-4669-9dc1-6c4339dcc6ba",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, hindi, english, kook n keech urban edge printed relaxed t shirt, june 18, 5:05 pm, kook n keech urban edge printed relaxed t shirt, 21 june, freekins, crkins, freekins, crkins, masculincaline sasafers, freekins, unrl",
+    "reference_entity_string": "ray, myntra, hindi, english, kook n keech urban edge printed relaxed t shirt, june 18, 5:05 pm, kook n keech urban edge printed relaxed t shirt, 21 june, freekins, crkins, freekins, crkins, masculincaline sasafers, freekins, unrl"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 2,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 14,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "Masculincaline \u0938\u093e\u0938\u093e \u092b\u093c\u0930\u0938",
+          "type": "PRODUCT",
+          "canonical": "masculincaline sasafers"
+        },
+        "hyp": {
+          "text": "masculine Sasafers",
+          "type": "PRODUCT",
+          "canonical": "masculincaline sasafers"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 6,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "ref_entities": [
+    {
+      "text": "Ray",
+      "type": "PERSON",
+      "canonical": "ray"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "gap boys camouflage printed relaxed fit mid rise joggers",
+      "type": "PRODUCT",
+      "canonical": "gap boys camouflage printed relaxed fit mid rise joggers"
+    },
+    {
+      "text": "yesterday",
+      "type": "DATE",
+      "canonical": "yesterday"
+    },
+    {
+      "text": "Jack and Jones junior",
+      "type": "ORG",
+      "canonical": "jack and jones junior"
+    },
+    {
+      "text": "Jack and Jones junior boys pure cotton relaxed fit joggers",
+      "type": "PRODUCT",
+      "canonical": "jack and jones junior boys pure cotton relaxed fit joggers"
+    },
+    {
+      "text": "end of day today",
+      "type": "DATE",
+      "canonical": "end of day today"
+    },
+    {
+      "text": "Jack and Jones junior boys relaxed fit mid rise joggers",
+      "type": "PRODUCT",
+      "canonical": "jack and jones junior boys relaxed fit mid rise joggers"
+    },
+    {
+      "text": "Jack and Jones junior boys jogger mid rice pure cotton stretchable jeans",
+      "type": "PRODUCT",
+      "canonical": "jack and jones junior boys jogger mid rise pure cotton stretchable jeans"
+    },
+    {
+      "text": "25th June",
+      "type": "DATE",
+      "canonical": "25 june"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers",
+      "type": "PRODUCT",
+      "canonical": "gap boys camouflage printed relaxed fit mid rise joggers"
+    },
+    {
+      "text": "yesterday",
+      "type": "DATE",
+      "canonical": "yesterday"
+    },
+    {
+      "text": "Jack & Jones Junior",
+      "type": "ORG",
+      "canonical": "jack and jones junior"
+    },
+    {
+      "text": "जैक एंड जोन्स Junior Boys Pure Cotton Relaxed-Fit Joggers",
+      "type": "PRODUCT",
+      "canonical": "jack and jones junior boys pure cotton relaxed fit joggers"
+    },
+    {
+      "text": "end of day today",
+      "type": "DATE",
+      "canonical": "end of day today"
+    },
+    {
+      "text": "जैक एंड जोन्स Junior Boys Relaxed-Fit Mid-Rise Joggers",
+      "type": "PRODUCT",
+      "canonical": "jack and jones junior boys relaxed fit mid rise joggers"
+    },
+    {
+      "text": "Jack & Jones Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans",
+      "type": "PRODUCT",
+      "canonical": "jack and jones junior boys jogger mid rise pure cotton stretchable jeans"
+    },
+    {
+      "text": "25 June",
+      "type": "DATE",
+      "canonical": "25 june"
+    }
+  ]
+}

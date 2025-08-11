@@ -1,0 +1,232 @@
+{
+  "call_id": "5f4d919f-b1bc-4a3d-9d98-1f8279d51215",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 5.58,
+  "all_entities_eer": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 0,
+    "correct": 6,
+    "total_ref": 7,
+    "total_hyp": 7,
+    "eer_percentage": 28.57,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ],
+    "detailed_deletions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 0,
+    "total_ref": 0,
+    "total_hyp": 0,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORG": 1,
+      "PRODUCT": 2,
+      "MONEY": 2
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORG": 1,
+      "PRODUCT": 2,
+      "MONEY": 2
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "ORG",
+      "PERSON",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "ORG",
+      "PERSON",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Pearl Biju",
+        "type": "PERSON",
+        "canonical": "pearl biju"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "BMI of 44.08",
+        "type": "MONEY",
+        "canonical": "44.08"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Pearl Biju",
+        "type": "PERSON",
+        "canonical": "pearl biju"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "BMI of 44.08",
+        "type": "MONEY",
+        "canonical": "44.08"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Pearl Biju",
+        "type": "PERSON",
+        "canonical": "pearl biju"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Pearl Biju",
+        "type": "PERSON",
+        "canonical": "pearl biju"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "elevate now",
+      "pearl biju",
+      "nano plan",
+      "44.08",
+      "nano plan",
+      "1799"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "pearl biju",
+      "nano plan",
+      "44.08",
+      "nano plan",
+      "1799"
+    ]
+  }
+}

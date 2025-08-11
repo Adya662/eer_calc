@@ -1,0 +1,587 @@
+{
+  "call_id": "482181f8-15e2-4ced-8a9a-67facdd9c6fc",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 24.87,
+  "all_entities_eer": {
+    "substitutions": 4,
+    "insertions": 0,
+    "deletions": 2,
+    "correct": 6,
+    "total_ref": 12,
+    "total_hyp": 10,
+    "eer_percentage": 50.0,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "H&M",
+          "type": "ORG",
+          "start": 324,
+          "end": 327,
+          "word_index": -1,
+          "canonical": "h&m",
+          "bucket_norm": "h&m"
+        },
+        "hyp": {
+          "text": "H&M Regular Fit Round-Neck T-shirt",
+          "type": "PRODUCT",
+          "start": 366,
+          "end": 401,
+          "word_index": -1,
+          "canonical": "h&m regular fit round-neck t-shirt",
+          "bucket_norm": "h&m regular fit round-neck t-shirt"
+        }
+      },
+      {
+        "ref": {
+          "text": "H&M",
+          "type": "ORG",
+          "start": 384,
+          "end": 387,
+          "word_index": -1,
+          "canonical": "h&m",
+          "bucket_norm": "h&m"
+        },
+        "hyp": {
+          "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e Regular Fit Round-Neck T-shirt",
+          "type": "PRODUCT",
+          "start": 410,
+          "end": 448,
+          "word_index": -1,
+          "canonical": "h&m regular fit round-neck t-shirt",
+          "bucket_norm": "h&m regular fit round-neck t-shirt"
+        }
+      },
+      {
+        "ref": {
+          "text": "Mango",
+          "type": "ORG",
+          "start": 764,
+          "end": 769,
+          "word_index": -1,
+          "canonical": "mango",
+          "bucket_norm": "mango"
+        },
+        "hyp": {
+          "text": "\u092e\u0948\u0902\u0917\u094b Plunge Neck Ruched Top with Asymmetric Hem",
+          "type": "PRODUCT",
+          "start": 788,
+          "end": 836,
+          "word_index": -1,
+          "canonical": "mango plunge neck ruched top with asymmetric hem",
+          "bucket_norm": "mango plunge neck ruched top with asymmetric hem"
+        }
+      },
+      {
+        "ref": {
+          "text": "all about you",
+          "type": "ORG",
+          "start": 1165,
+          "end": 1178,
+          "word_index": -1,
+          "canonical": "all about you",
+          "bucket_norm": "all about you"
+        },
+        "hyp": {
+          "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942 Ethnic Printed Full Puff-Sleeves Casual Shirt",
+          "type": "PRODUCT",
+          "start": 1264,
+          "end": 1318,
+          "word_index": -1,
+          "canonical": "all about you ethnic printed full puff-sleeves casual shirt",
+          "bucket_norm": "all about you ethnic printed full puff-sleeves casual shirt"
+        }
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 66,
+        "end": 71,
+        "word_index": -1,
+        "canonical": "hindi",
+        "bucket_norm": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 75,
+        "end": 82,
+        "word_index": -1,
+        "canonical": "english",
+        "bucket_norm": "english"
+      }
+    ],
+    "detailed_insertions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 3,
+    "insertions": 1,
+    "deletions": 0,
+    "correct": 3,
+    "total_ref": 6,
+    "total_hyp": 7,
+    "eer_percentage": 66.67,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "H&M",
+          "type": "ORG",
+          "start": 324,
+          "end": 327,
+          "word_index": -1,
+          "canonical": "h&m",
+          "bucket_norm": "h&m"
+        },
+        "hyp": {
+          "text": "H&M Regular Fit Round-Neck T-shirt",
+          "type": "PRODUCT",
+          "start": 366,
+          "end": 401,
+          "word_index": -1,
+          "canonical": "h&m regular fit round-neck t-shirt",
+          "bucket_norm": "h&m regular fit round-neck t-shirt"
+        }
+      },
+      {
+        "ref": {
+          "text": "H&M",
+          "type": "ORG",
+          "start": 384,
+          "end": 387,
+          "word_index": -1,
+          "canonical": "h&m",
+          "bucket_norm": "h&m"
+        },
+        "hyp": {
+          "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e Regular Fit Round-Neck T-shirt",
+          "type": "PRODUCT",
+          "start": 410,
+          "end": 448,
+          "word_index": -1,
+          "canonical": "h&m regular fit round-neck t-shirt",
+          "bucket_norm": "h&m regular fit round-neck t-shirt"
+        }
+      },
+      {
+        "ref": {
+          "text": "Mango",
+          "type": "ORG",
+          "start": 764,
+          "end": 769,
+          "word_index": -1,
+          "canonical": "mango",
+          "bucket_norm": "mango"
+        },
+        "hyp": {
+          "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942 Ethnic Printed Full Puff-Sleeves Casual Shirt",
+          "type": "PRODUCT",
+          "start": 1264,
+          "end": 1318,
+          "word_index": -1,
+          "canonical": "all about you ethnic printed full puff-sleeves casual shirt",
+          "bucket_norm": "all about you ethnic printed full puff-sleeves casual shirt"
+        }
+      }
+    ],
+    "detailed_deletions": [],
+    "detailed_insertions": [
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b Plunge Neck Ruched Top with Asymmetric Hem",
+        "type": "PRODUCT",
+        "start": 788,
+        "end": 836,
+        "word_index": -1,
+        "canonical": "mango plunge neck ruched top with asymmetric hem",
+        "bucket_norm": "mango plunge neck ruched top with asymmetric hem"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 7,
+      "LANGUAGE": 2,
+      "DATE": 2
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORG": 3,
+      "PRODUCT": 4,
+      "DATE": 2
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "LANGUAGE",
+      "DATE",
+      "PERSON",
+      "ORG"
+    ],
+    "hypothesis": [
+      "DATE",
+      "PRODUCT",
+      "PERSON",
+      "ORG"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": -1,
+        "canonical": "ray",
+        "bucket_norm": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "start": 14,
+        "end": 20,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 66,
+        "end": 71,
+        "word_index": -1,
+        "canonical": "hindi",
+        "bucket_norm": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 75,
+        "end": 82,
+        "word_index": -1,
+        "canonical": "english",
+        "bucket_norm": "english"
+      },
+      {
+        "text": "H&M",
+        "type": "ORG",
+        "start": 324,
+        "end": 327,
+        "word_index": -1,
+        "canonical": "h&m",
+        "bucket_norm": "h&m"
+      },
+      {
+        "text": "H&M",
+        "type": "ORG",
+        "start": 384,
+        "end": 387,
+        "word_index": -1,
+        "canonical": "h&m",
+        "bucket_norm": "h&m"
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 444,
+        "end": 451,
+        "word_index": -1,
+        "canonical": "20 june",
+        "bucket_norm": "20 june"
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 471,
+        "end": 478,
+        "word_index": -1,
+        "canonical": "20 june",
+        "bucket_norm": "20 june"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "start": 682,
+        "end": 687,
+        "word_index": -1,
+        "canonical": "mango",
+        "bucket_norm": "mango"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "start": 764,
+        "end": 769,
+        "word_index": -1,
+        "canonical": "mango",
+        "bucket_norm": "mango"
+      },
+      {
+        "text": "all about you",
+        "type": "ORG",
+        "start": 1010,
+        "end": 1023,
+        "word_index": -1,
+        "canonical": "all about you",
+        "bucket_norm": "all about you"
+      },
+      {
+        "text": "all about you",
+        "type": "ORG",
+        "start": 1165,
+        "end": 1178,
+        "word_index": -1,
+        "canonical": "all about you",
+        "bucket_norm": "all about you"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 8,
+        "end": 11,
+        "word_index": -1,
+        "canonical": "rey",
+        "bucket_norm": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "start": 17,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      },
+      {
+        "text": "H&M Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 401,
+        "word_index": -1,
+        "canonical": "h&m regular fit round-neck t-shirt",
+        "bucket_norm": "h&m regular fit round-neck t-shirt"
+      },
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 410,
+        "end": 448,
+        "word_index": -1,
+        "canonical": "h&m regular fit round-neck t-shirt",
+        "bucket_norm": "h&m regular fit round-neck t-shirt"
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 478,
+        "end": 485,
+        "word_index": -1,
+        "canonical": "20 june",
+        "bucket_norm": "20 june"
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "start": 506,
+        "end": 513,
+        "word_index": -1,
+        "canonical": "20 june",
+        "bucket_norm": "20 june"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "start": 732,
+        "end": 737,
+        "word_index": -1,
+        "canonical": "mango",
+        "bucket_norm": "mango"
+      },
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b Plunge Neck Ruched Top with Asymmetric Hem",
+        "type": "PRODUCT",
+        "start": 788,
+        "end": 836,
+        "word_index": -1,
+        "canonical": "mango plunge neck ruched top with asymmetric hem",
+        "bucket_norm": "mango plunge neck ruched top with asymmetric hem"
+      },
+      {
+        "text": "all about you",
+        "type": "ORG",
+        "start": 1080,
+        "end": 1093,
+        "word_index": -1,
+        "canonical": "all about you",
+        "bucket_norm": "all about you"
+      },
+      {
+        "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942 Ethnic Printed Full Puff-Sleeves Casual Shirt",
+        "type": "PRODUCT",
+        "start": 1264,
+        "end": 1318,
+        "word_index": -1,
+        "canonical": "all about you ethnic printed full puff-sleeves casual shirt",
+        "bucket_norm": "all about you ethnic printed full puff-sleeves casual shirt"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "start": 5,
+        "end": 8,
+        "word_index": -1,
+        "canonical": "ray",
+        "bucket_norm": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "start": 14,
+        "end": 20,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      },
+      {
+        "text": "H&M",
+        "type": "ORG",
+        "start": 324,
+        "end": 327,
+        "word_index": -1,
+        "canonical": "h&m",
+        "bucket_norm": "h&m"
+      },
+      {
+        "text": "H&M",
+        "type": "ORG",
+        "start": 384,
+        "end": 387,
+        "word_index": -1,
+        "canonical": "h&m",
+        "bucket_norm": "h&m"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "start": 682,
+        "end": 687,
+        "word_index": -1,
+        "canonical": "mango",
+        "bucket_norm": "mango"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "start": 764,
+        "end": 769,
+        "word_index": -1,
+        "canonical": "mango",
+        "bucket_norm": "mango"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 8,
+        "end": 11,
+        "word_index": -1,
+        "canonical": "rey",
+        "bucket_norm": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "start": 17,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      },
+      {
+        "text": "H&M Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 401,
+        "word_index": -1,
+        "canonical": "h&m regular fit round-neck t-shirt",
+        "bucket_norm": "h&m regular fit round-neck t-shirt"
+      },
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "start": 410,
+        "end": 448,
+        "word_index": -1,
+        "canonical": "h&m regular fit round-neck t-shirt",
+        "bucket_norm": "h&m regular fit round-neck t-shirt"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "start": 732,
+        "end": 737,
+        "word_index": -1,
+        "canonical": "mango",
+        "bucket_norm": "mango"
+      },
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b Plunge Neck Ruched Top with Asymmetric Hem",
+        "type": "PRODUCT",
+        "start": 788,
+        "end": 836,
+        "word_index": -1,
+        "canonical": "mango plunge neck ruched top with asymmetric hem",
+        "bucket_norm": "mango plunge neck ruched top with asymmetric hem"
+      },
+      {
+        "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942 Ethnic Printed Full Puff-Sleeves Casual Shirt",
+        "type": "PRODUCT",
+        "start": 1264,
+        "end": 1318,
+        "word_index": -1,
+        "canonical": "all about you ethnic printed full puff-sleeves casual shirt",
+        "bucket_norm": "all about you ethnic printed full puff-sleeves casual shirt"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "ray",
+      "myntra",
+      "hindi",
+      "english",
+      "h and m",
+      "h and m",
+      "20 june",
+      "20 june",
+      "mango",
+      "mango",
+      "all about you",
+      "all about you"
+    ],
+    "hypothesis_ordered": [
+      "rey",
+      "myntra",
+      "h and m regular fit round-neck t-shirt",
+      "h and m regular fit round-neck t-shirt",
+      "20 june",
+      "20 june",
+      "mango",
+      "mango plunge neck ruched top with asymmetric hem",
+      "all about you",
+      "all about you ethnic printed full puff-sleeves casual shirt"
+    ]
+  }
+}

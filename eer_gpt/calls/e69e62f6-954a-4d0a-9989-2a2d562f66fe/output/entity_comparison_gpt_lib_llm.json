@@ -1,0 +1,48 @@
+{
+  "call_id": "e69e62f6-954a-4d0a-9989-2a2d562f66fe",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, hindi, english, us polo kids, us polo kids girls drop shoulder sleeves pure cotton applique tshirt, us polo kids girls embroidered pure cotton straight skirt, 21 june, myntra app, us polo kids girls drop shoulder sleeves pure cotton applique tshirt, 5 to 7 working days",
+    "reference_entity_string": "rey, myntra, us polo kids, us polo kids girls drop shoulder sleeves pure cotton applique tshirt, us polo kids girls embroidered pure cotton straight skirt, 21 june, myntra app, us polo kids girls drop shoulder sleeves pure cotton applique tshirt, 5 to 7 working days"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 2,
+    "correct_matches": 9,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 2,
+    "correct_matches": 9,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      }
+    ]
+  }
+}

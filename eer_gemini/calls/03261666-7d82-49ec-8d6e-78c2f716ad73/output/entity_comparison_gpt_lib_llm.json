@@ -1,0 +1,132 @@
+{
+  "call_id": "03261666-7d82-49ec-8d6e-78c2f716ad73",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, mintra, hindi, english, atun, black net dress, atun, black net dress, 8 july",
+    "reference_entity_string": "rey, atun, blaik net dres, atun, blaik net dres, 8 julai"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 5,
+    "insertions": 0,
+    "deletions": 3,
+    "correct_matches": 5,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Black Net Dress",
+          "type": "PRODUCT",
+          "canonical": "black net dress"
+        },
+        "hyp": {
+          "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "type": "PRODUCT",
+          "canonical": "blaik net dres"
+        }
+      },
+      {
+        "ref": {
+          "text": "Black Net Dress",
+          "type": "PRODUCT",
+          "canonical": "black net dress"
+        },
+        "hyp": {
+          "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "type": "PRODUCT",
+          "canonical": "blaik net dres"
+        }
+      },
+      {
+        "ref": {
+          "text": "8 July",
+          "type": "DATE",
+          "canonical": "8 july"
+        },
+        "hyp": {
+          "text": "8 \u091c\u0941\u0932\u093e\u0908",
+          "type": "DATE",
+          "canonical": "8 julai"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 5,
+    "insertions": 0,
+    "deletions": 3,
+    "correct_matches": 5,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Black Net Dress",
+          "type": "PRODUCT",
+          "canonical": "black net dress"
+        },
+        "hyp": {
+          "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "type": "PRODUCT",
+          "canonical": "blaik net dres"
+        }
+      },
+      {
+        "ref": {
+          "text": "Black Net Dress",
+          "type": "PRODUCT",
+          "canonical": "black net dress"
+        },
+        "hyp": {
+          "text": "\u092c\u094d\u0932\u0948\u0915 \u0928\u0947\u091f \u0921\u094d\u0930\u0947\u0938",
+          "type": "PRODUCT",
+          "canonical": "blaik net dres"
+        }
+      },
+      {
+        "ref": {
+          "text": "8 July",
+          "type": "DATE",
+          "canonical": "8 july"
+        },
+        "hyp": {
+          "text": "8 \u091c\u0941\u0932\u093e\u0908",
+          "type": "DATE",
+          "canonical": "8 julai"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "mintra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      }
+    ]
+  }
+}

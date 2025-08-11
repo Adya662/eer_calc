@@ -1,0 +1,165 @@
+{
+  "call_id": "79e02e46-ea93-4669-9dc1-6c4339dcc6ba",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, kook n keech urban edge printed relaxed t-shirt, june 18, 5:05 pm, kook and keech urban edge printed relaxed t-shirt, 21 june, freekins, crkins, freekins, crkins, masculincaline sasa faras, freekins, un rl",
+    "reference_entity_string": "ray, myntra, hindi, english, kook n keech urban edge printed relaxed t-shirt, june 18, 5:05 pm, 21 june, freakins, carkins, freakins, carkins, sasafers, freakins, unrl"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 2,
+    "insertions": 1,
+    "deletions": 2,
+    "correct_matches": 11,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Sasafers",
+          "type": "ORG",
+          "start": 682,
+          "end": 690,
+          "word_index": -1,
+          "canonical": "sasafers",
+          "bucket_norm": "sasafers"
+        },
+        "hyp": {
+          "text": "Masculincaline \u0938\u093e\u0938\u093e \u092b\u093c\u0930\u0938",
+          "type": "PRODUCT",
+          "start": 841,
+          "end": 864,
+          "word_index": -1,
+          "canonical": "masculincaline sasa faras",
+          "bucket_norm": "masculincaline sasa faras"
+        }
+      },
+      {
+        "ref": {
+          "text": "UNRL",
+          "type": "ORG",
+          "start": 936,
+          "end": 940,
+          "word_index": -1,
+          "canonical": "unrl",
+          "bucket_norm": "unrl"
+        },
+        "hyp": {
+          "text": "UN RL",
+          "type": "PRODUCT",
+          "start": 1150,
+          "end": 1155,
+          "word_index": -1,
+          "canonical": "un rl",
+          "bucket_norm": "un rl"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "\u0915\u0941\u0915 \u090f\u0902\u0921 \u0915\u0940\u091a Urban Edge Printed Relaxed T-Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 374,
+        "word_index": -1,
+        "canonical": "kook and keech urban edge printed relaxed t-shirt",
+        "bucket_norm": "kook and keech urban edge printed relaxed t-shirt"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 66,
+        "end": 71,
+        "word_index": -1,
+        "canonical": "hindi",
+        "bucket_norm": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 75,
+        "end": 82,
+        "word_index": -1,
+        "canonical": "english",
+        "bucket_norm": "english"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 2,
+    "insertions": 3,
+    "deletions": 0,
+    "correct_matches": 6,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Sasafers",
+          "type": "ORG",
+          "start": 682,
+          "end": 690,
+          "word_index": -1,
+          "canonical": "sasafers",
+          "bucket_norm": "sasafers"
+        },
+        "hyp": {
+          "text": "Masculincaline \u0938\u093e\u0938\u093e \u092b\u093c\u0930\u0938",
+          "type": "PRODUCT",
+          "start": 841,
+          "end": 864,
+          "word_index": -1,
+          "canonical": "masculincaline sasa faras",
+          "bucket_norm": "masculincaline sasa faras"
+        }
+      },
+      {
+        "ref": {
+          "text": "UNRL",
+          "type": "ORG",
+          "start": 936,
+          "end": 940,
+          "word_index": -1,
+          "canonical": "unrl",
+          "bucket_norm": "unrl"
+        },
+        "hyp": {
+          "text": "UN RL",
+          "type": "PRODUCT",
+          "start": 1150,
+          "end": 1155,
+          "word_index": -1,
+          "canonical": "un rl",
+          "bucket_norm": "un rl"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "\u0915\u0941\u0915 \u090f\u0902\u0921 \u0915\u0940\u091a Urban Edge Printed Relaxed T-Shirt",
+        "type": "PRODUCT",
+        "start": 331,
+        "end": 374,
+        "word_index": -1,
+        "canonical": "kook and keech urban edge printed relaxed t-shirt",
+        "bucket_norm": "kook and keech urban edge printed relaxed t-shirt"
+      },
+      {
+        "text": "Crkins",
+        "type": "ORG",
+        "start": 589,
+        "end": 595,
+        "word_index": -1,
+        "canonical": "crkins",
+        "bucket_norm": "crkins"
+      },
+      {
+        "text": "Crkins",
+        "type": "ORG",
+        "start": 722,
+        "end": 728,
+        "word_index": -1,
+        "canonical": "crkins",
+        "bucket_norm": "crkins"
+      }
+    ],
+    "detailed_deletions": []
+  }
+}

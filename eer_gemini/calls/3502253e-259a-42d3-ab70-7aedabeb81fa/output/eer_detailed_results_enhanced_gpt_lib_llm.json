@@ -1,0 +1,796 @@
+{
+  "call_id": "3502253e-259a-42d3-ab70-7aedabeb81fa",
+  "method": "Enhanced Gemini LLM as NER with Precise Normalization and Bucketing",
+  "model": "gemini-1.5-pro",
+  "temperature": 0,
+  "processing_time": 39.19,
+  "all_entities_eer": {
+    "substitutions": 7,
+    "insertions": 14,
+    "deletions": 4,
+    "correct": 17,
+    "total_ref": 35,
+    "total_hyp": 35,
+    "eer_percentage": 62.86,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "canonical": "nano plan"
+        },
+        "hyp": {
+          "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+          "type": "PRODUCT",
+          "canonical": "naino plan"
+        }
+      },
+      {
+        "ref": {
+          "text": "blood test",
+          "type": "PRODUCT",
+          "canonical": "blood test"
+        },
+        "hyp": {
+          "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+          "type": "PRODUCT",
+          "canonical": "blad test"
+        }
+      },
+      {
+        "ref": {
+          "text": "doctor consultation",
+          "type": "PRODUCT",
+          "canonical": "doctor consultation"
+        },
+        "hyp": {
+          "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+          "type": "PRODUCT",
+          "canonical": "dakter kansalteshan"
+        }
+      },
+      {
+        "ref": {
+          "text": "senior health coach consultation",
+          "type": "PRODUCT",
+          "canonical": "senior health coach consultation"
+        },
+        "hyp": {
+          "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+          "type": "PRODUCT",
+          "canonical": "siniyar helth koch kansalteshan"
+        }
+      },
+      {
+        "ref": {
+          "text": "health coach consultation",
+          "type": "PRODUCT",
+          "canonical": "health coach consultation"
+        },
+        "hyp": {
+          "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+          "type": "PRODUCT",
+          "canonical": "helth koch kansalteshan"
+        }
+      },
+      {
+        "ref": {
+          "text": "senior obesity specialist doctor",
+          "type": "PERSON",
+          "canonical": "senior obesity specialist doctor"
+        },
+        "hyp": {
+          "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0913\u092c\u0947\u0938\u093f\u091f\u0940 \u0938\u094d\u092a\u0947\u0936\u0932\u093f\u0938\u094d\u091f \u0921\u0949\u0915\u094d\u091f\u0930",
+          "type": "PERSON",
+          "canonical": "siniyar obesi speshlist daktar"
+        }
+      },
+      {
+        "ref": {
+          "text": "flagship program",
+          "type": "PRODUCT",
+          "canonical": "flagship program"
+        },
+        "hyp": {
+          "text": "\u092b\u094d\u0932\u0948\u0917\u0936\u093f\u092a \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e",
+          "type": "PRODUCT",
+          "canonical": "phlaigship program"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "dakter kansalteshan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "dakter kansalteshan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a",
+        "type": "PERSON",
+        "canonical": "helth koch"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "canonical": "blood test"
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "canonical": "doctor consultation"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 0,
+    "total_ref": 0,
+    "total_hyp": 0,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 4,
+      "ORG": 1,
+      "PRODUCT": 18,
+      "MONEY": 6
+    },
+    "hypothesis": {
+      "PERSON": 4,
+      "ORG": 1,
+      "PRODUCT": 20,
+      "MONEY": 6
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "MONEY",
+      "PERSON",
+      "PRODUCT"
+    ],
+    "hypothesis": [
+      "ORG",
+      "MONEY",
+      "PERSON",
+      "PRODUCT"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "canonical": "taruna yadav"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "32.03",
+        "type": "MONEY",
+        "canonical": "32.03"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "dakter kansalteshan"
+      },
+      {
+        "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "siniyar helth koch kansalteshan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "dakter kansalteshan"
+      },
+      {
+        "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "helth koch kansalteshan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0913\u092c\u0947\u0938\u093f\u091f\u0940 \u0938\u094d\u092a\u0947\u0936\u0932\u093f\u0938\u094d\u091f \u0921\u0949\u0915\u094d\u091f\u0930",
+        "type": "PERSON",
+        "canonical": "siniyar obesi speshlist daktar"
+      },
+      {
+        "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a",
+        "type": "PERSON",
+        "canonical": "helth koch"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "1799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      },
+      {
+        "text": "rupees 1,898",
+        "type": "MONEY",
+        "canonical": "1898"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092b\u094d\u0932\u0948\u0917\u0936\u093f\u092a \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e",
+        "type": "PRODUCT",
+        "canonical": "phlaigship program"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "canonical": "taruna yadav"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "thirty-two point zero three",
+        "type": "MONEY",
+        "canonical": "32.03"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "canonical": "blood test"
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "canonical": "doctor consultation"
+      },
+      {
+        "text": "senior health coach consultation",
+        "type": "PRODUCT",
+        "canonical": "senior health coach consultation"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "canonical": "blood test"
+      },
+      {
+        "text": "doctor consultation",
+        "type": "PRODUCT",
+        "canonical": "doctor consultation"
+      },
+      {
+        "text": "health coach consultation",
+        "type": "PRODUCT",
+        "canonical": "health coach consultation"
+      },
+      {
+        "text": "weight",
+        "type": "PRODUCT",
+        "canonical": "weight"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "blood test",
+        "type": "PRODUCT",
+        "canonical": "blood test"
+      },
+      {
+        "text": "senior obesity specialist doctor",
+        "type": "PERSON",
+        "canonical": "senior obesity specialist doctor"
+      },
+      {
+        "text": "health coach",
+        "type": "PERSON",
+        "canonical": "health coach"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "499"
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1399"
+      },
+      {
+        "text": "Rupees one thousand eight hundred ninety-eight",
+        "type": "MONEY",
+        "canonical": "1898"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "flagship program",
+        "type": "PRODUCT",
+        "canonical": "flagship program"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate now",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "canonical": "taruna yadav"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "dakter kansalteshan"
+      },
+      {
+        "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "siniyar helth koch kansalteshan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "dakter kansalteshan"
+      },
+      {
+        "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "canonical": "helth koch kansalteshan"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "canonical": "blad test"
+      },
+      {
+        "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0913\u092c\u0947\u0938\u093f\u091f\u0940 \u0938\u094d\u092a\u0947\u0936\u0932\u093f\u0938\u094d\u091f \u0921\u0949\u0915\u094d\u091f\u0930",
+        "type": "PERSON",
+        "canonical": "siniyar obesi speshlist daktar"
+      },
+      {
+        "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a",
+        "type": "PERSON",
+        "canonical": "helth koch"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      },
+      {
+        "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+        "type": "PRODUCT",
+        "canonical": "naino plan"
+      },
+      {
+        "text": "\u092b\u094d\u0932\u0948\u0917\u0936\u093f\u092a \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e",
+        "type": "PRODUCT",
+        "canonical": "phlaigship program"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Taruna Yadav",
+        "type": "PERSON",
+        "canonical": "taruna yadav"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      },
+      {
+        "text": "WhatsApp",
+        "type": "PRODUCT",
+        "canonical": "whatsapp"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "elevatenow",
+      "taruna yadav",
+      "nano plan",
+      "32.03",
+      "nano plan",
+      "naino plan",
+      "blad test",
+      "dakter kansalteshan",
+      "siniyar helth koch kansalteshan",
+      "naino plan",
+      "blad test",
+      "dakter kansalteshan",
+      "helth koch kansalteshan",
+      "naino plan",
+      "blad test",
+      "siniyar obesi speshlist daktar",
+      "helth koch",
+      "naino plan",
+      "1799",
+      "nano plan",
+      "499",
+      "1399",
+      "1898",
+      "1799",
+      "whatsapp",
+      "naino plan",
+      "phlaigship program",
+      "whatsapp"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "taruna yadav",
+      "nano plan",
+      "32.03",
+      "nano plan",
+      "nano plan",
+      "blood test",
+      "doctor consultation",
+      "senior health coach consultation",
+      "nano plan",
+      "blood test",
+      "doctor consultation",
+      "health coach consultation",
+      "weight",
+      "nano plan",
+      "blood test",
+      "senior obesity specialist doctor",
+      "health coach",
+      "nano plan",
+      "1799",
+      "nano plan",
+      "499",
+      "1399",
+      "1898",
+      "1799",
+      "whatsapp",
+      "nano plan",
+      "flagship program",
+      "whatsapp",
+      "whatsapp"
+    ]
+  }
+}

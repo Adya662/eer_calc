@@ -1,0 +1,86 @@
+{
+  "call_id": "03856e6b-6925-4012-8eb8-0a0289019b7e",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, atul sinha, priya, elevatenow, atul sinha, priya, elevatenow, atul sinha, priya, elevatenow, atul sinha, nano plan, india, patna, nano plan, 35.56, obesity stage category i, healthifi, nano plan, mbbs, md, elevate now",
+    "reference_entity_string": "priya, priya, elevate now, priya, elevate now, atul sinha, priya, elevate now, atul sinha, nano plan, 35.56, obesity stage category y, healthify, nano plan, mbbs, md, elevate now"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 2,
+    "correct_matches": 20,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "canonical": "obesity stage category i"
+        },
+        "hyp": {
+          "text": "obesity stage category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "\u092a\u091f\u0928\u093e",
+        "type": "GPE",
+        "canonical": "patna"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 2,
+    "correct_matches": 20,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "canonical": "obesity stage category i"
+        },
+        "hyp": {
+          "text": "obesity stage category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "\u092a\u091f\u0928\u093e",
+        "type": "GPE",
+        "canonical": "patna"
+      }
+    ]
+  }
+}

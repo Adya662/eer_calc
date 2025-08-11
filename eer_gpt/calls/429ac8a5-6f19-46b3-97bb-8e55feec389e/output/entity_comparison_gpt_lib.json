@@ -1,0 +1,287 @@
+{
+  "call_id": "429ac8a5-6f19-46b3-97bb-8e55feec389e",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, myntra, shtori plus size reflective detail t-shirt, shtori plus, shtori plus size reflective detail t-shirt, 7 july, shtori plus size reflective detail t-shirt, 7 july, pyuma women royalcat comfort softride sliders, aaghnya women floral print mandarin collar flared sleeve shirt style top, aaghnya women floral print mandarin collar flared sleeve shirt style top, istyle can top, istyle can top, 10:44 am, myntra, istyle can top, 10:44 am, aaghnya women floral print mandarin collar flared sleeve shirt style top, istyle can top",
+    "reference_entity_string": "rey, myntra, myntra, 7 july, puma, agnia, i style can top, istyle can top, 10:44 a.m., i style can top, 10:44 minute, agnia, istyle can top"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 4,
+    "insertions": 7,
+    "deletions": 0,
+    "correct_matches": 9,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Puma",
+          "type": "ORG",
+          "start": 707,
+          "end": 711,
+          "word_index": -1,
+          "canonical": "puma",
+          "bucket_norm": "puma"
+        },
+        "hyp": {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "PRODUCT",
+          "start": 1114,
+          "end": 1183,
+          "word_index": -1,
+          "canonical": "aaghnya women floral print mandarin collar flared sleeve shirt style top",
+          "bucket_norm": "aaghnya women floral print mandarin collar flared sleeve shirt style top"
+        }
+      },
+      {
+        "ref": {
+          "text": "Agnia",
+          "type": "ORG",
+          "start": 812,
+          "end": 817,
+          "word_index": -1,
+          "canonical": "agnia",
+          "bucket_norm": "agnia"
+        },
+        "hyp": {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "PRODUCT",
+          "start": 1260,
+          "end": 1329,
+          "word_index": -1,
+          "canonical": "aaghnya women floral print mandarin collar flared sleeve shirt style top",
+          "bucket_norm": "aaghnya women floral print mandarin collar flared sleeve shirt style top"
+        }
+      },
+      {
+        "ref": {
+          "text": "10:44 minute",
+          "type": "TIME",
+          "start": 1225,
+          "end": 1237,
+          "word_index": -1,
+          "canonical": "10:44 minute",
+          "bucket_norm": "10:44 minute"
+        },
+        "hyp": {
+          "text": "10:44 AM",
+          "type": "TIME",
+          "start": 1761,
+          "end": 1769,
+          "word_index": -1,
+          "canonical": "10:44 am",
+          "bucket_norm": "10:44 am"
+        }
+      },
+      {
+        "ref": {
+          "text": "Agnia",
+          "type": "ORG",
+          "start": 1365,
+          "end": 1370,
+          "word_index": -1,
+          "canonical": "agnia",
+          "bucket_norm": "agnia"
+        },
+        "hyp": {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "PRODUCT",
+          "start": 1985,
+          "end": 2054,
+          "word_index": -1,
+          "canonical": "aaghnya women floral print mandarin collar flared sleeve shirt style top",
+          "bucket_norm": "aaghnya women floral print mandarin collar flared sleeve shirt style top"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 409,
+        "word_index": -1,
+        "canonical": "shtori plus size reflective detail t-shirt",
+        "bucket_norm": "shtori plus size reflective detail t-shirt"
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus",
+        "type": "PRODUCT",
+        "start": 454,
+        "end": 466,
+        "word_index": -1,
+        "canonical": "shtori plus",
+        "bucket_norm": "shtori plus"
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 471,
+        "end": 514,
+        "word_index": -1,
+        "canonical": "shtori plus size reflective detail t-shirt",
+        "bucket_norm": "shtori plus size reflective detail t-shirt"
+      },
+      {
+        "text": "7 July",
+        "type": "DATE",
+        "start": 548,
+        "end": 554,
+        "word_index": -1,
+        "canonical": "7 july",
+        "bucket_norm": "7 july"
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 666,
+        "end": 709,
+        "word_index": -1,
+        "canonical": "shtori plus size reflective detail t-shirt",
+        "bucket_norm": "shtori plus size reflective detail t-shirt"
+      },
+      {
+        "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+        "type": "PRODUCT",
+        "start": 1010,
+        "end": 1054,
+        "word_index": -1,
+        "canonical": "pyuma women royalcat comfort softride sliders",
+        "bucket_norm": "pyuma women royalcat comfort softride sliders"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "start": 1624,
+        "end": 1630,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      }
+    ],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 3,
+    "insertions": 6,
+    "deletions": 0,
+    "correct_matches": 7,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Puma",
+          "type": "ORG",
+          "start": 707,
+          "end": 711,
+          "word_index": -1,
+          "canonical": "puma",
+          "bucket_norm": "puma"
+        },
+        "hyp": {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "PRODUCT",
+          "start": 1114,
+          "end": 1183,
+          "word_index": -1,
+          "canonical": "aaghnya women floral print mandarin collar flared sleeve shirt style top",
+          "bucket_norm": "aaghnya women floral print mandarin collar flared sleeve shirt style top"
+        }
+      },
+      {
+        "ref": {
+          "text": "Agnia",
+          "type": "ORG",
+          "start": 812,
+          "end": 817,
+          "word_index": -1,
+          "canonical": "agnia",
+          "bucket_norm": "agnia"
+        },
+        "hyp": {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "PRODUCT",
+          "start": 1260,
+          "end": 1329,
+          "word_index": -1,
+          "canonical": "aaghnya women floral print mandarin collar flared sleeve shirt style top",
+          "bucket_norm": "aaghnya women floral print mandarin collar flared sleeve shirt style top"
+        }
+      },
+      {
+        "ref": {
+          "text": "Agnia",
+          "type": "ORG",
+          "start": 1365,
+          "end": 1370,
+          "word_index": -1,
+          "canonical": "agnia",
+          "bucket_norm": "agnia"
+        },
+        "hyp": {
+          "text": "Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top",
+          "type": "PRODUCT",
+          "start": 1985,
+          "end": 2054,
+          "word_index": -1,
+          "canonical": "aaghnya women floral print mandarin collar flared sleeve shirt style top",
+          "bucket_norm": "aaghnya women floral print mandarin collar flared sleeve shirt style top"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 366,
+        "end": 409,
+        "word_index": -1,
+        "canonical": "shtori plus size reflective detail t-shirt",
+        "bucket_norm": "shtori plus size reflective detail t-shirt"
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus",
+        "type": "PRODUCT",
+        "start": 454,
+        "end": 466,
+        "word_index": -1,
+        "canonical": "shtori plus",
+        "bucket_norm": "shtori plus"
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 471,
+        "end": 514,
+        "word_index": -1,
+        "canonical": "shtori plus size reflective detail t-shirt",
+        "bucket_norm": "shtori plus size reflective detail t-shirt"
+      },
+      {
+        "text": "\u0936\u094d\u091f\u094b\u0930\u0940 Plus Size Reflective Detail T-shirt",
+        "type": "PRODUCT",
+        "start": 666,
+        "end": 709,
+        "word_index": -1,
+        "canonical": "shtori plus size reflective detail t-shirt",
+        "bucket_norm": "shtori plus size reflective detail t-shirt"
+      },
+      {
+        "text": "\u092a\u094d\u092f\u0942\u092e\u093e Women Royalcat Comfort Softride Sliders",
+        "type": "PRODUCT",
+        "start": 1010,
+        "end": 1054,
+        "word_index": -1,
+        "canonical": "pyuma women royalcat comfort softride sliders",
+        "bucket_norm": "pyuma women royalcat comfort softride sliders"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "start": 1624,
+        "end": 1630,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      }
+    ],
+    "detailed_deletions": []
+  }
+}

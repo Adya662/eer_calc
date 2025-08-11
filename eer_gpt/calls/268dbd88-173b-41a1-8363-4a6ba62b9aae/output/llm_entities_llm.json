@@ -1,0 +1,191 @@
+{
+  "ref_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "Elevate Now",
+      "type": "ORG",
+      "canonical": "elevate now"
+    },
+    {
+      "text": "Rupesh Kovar",
+      "type": "PERSON",
+      "canonical": "rupesh kovar"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "obesity specialized doctor",
+      "type": "PERSON",
+      "canonical": "obesity specialized doctor"
+    },
+    {
+      "text": "senior health coach",
+      "type": "PERSON",
+      "canonical": "senior health coach"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "senior obesity specialist doctor",
+      "type": "PERSON",
+      "canonical": "senior obesity specialist doctor"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "flagship program",
+      "type": "PRODUCT",
+      "canonical": "flagship program"
+    },
+    {
+      "text": "3, 6, or 12 month subscription plans",
+      "type": "DATE",
+      "canonical": "3 6 or 12 month subscription plans"
+    },
+    {
+      "text": "senior obesity specialist",
+      "type": "PERSON",
+      "canonical": "senior obesity specialist"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "flagship program",
+      "type": "PRODUCT",
+      "canonical": "flagship program"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORG",
+      "canonical": "elevatenow"
+    },
+    {
+      "text": "Rupesh Kondawar",
+      "type": "PERSON",
+      "canonical": "rupesh kondawar"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "obesity-specialized doctor",
+      "type": "PERSON",
+      "canonical": "obesity specialized doctor"
+    },
+    {
+      "text": "senior health coach",
+      "type": "PERSON",
+      "canonical": "senior health coach"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "senior obesity specialist doctor",
+      "type": "PERSON",
+      "canonical": "senior obesity specialist doctor"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "flagship program",
+      "type": "PRODUCT",
+      "canonical": "flagship program"
+    },
+    {
+      "text": "3, 6, or 12-month subscription plans",
+      "type": "DATE",
+      "canonical": "3 6 or 12 month subscription plans"
+    },
+    {
+      "text": "senior obesity specialist",
+      "type": "PERSON",
+      "canonical": "senior obesity specialist"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "flagship program",
+      "type": "PRODUCT",
+      "canonical": "flagship program"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    }
+  ]
+}

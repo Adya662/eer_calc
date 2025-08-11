@@ -1,0 +1,148 @@
+{
+  "call_id": "c5f1aee1-8170-4c1b-93e0-1f8366882689",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, hindi, english, crocs unisex navy blue bayaband clogs, 12 july, myntra, myntra, myntra",
+    "reference_entity_string": "ray, myntra, hindi, english, crocs unisex navy blue bayaband clogs, 12th july, myntra, myntra, myntra, rey, myntra, hindi, english, crocs unisex navy blue bioband clogs, 12th july, myntra"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 7,
+    "correct_matches": 8,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Myntra",
+          "type": "ORG",
+          "start": 682,
+          "end": 688,
+          "word_index": -1,
+          "canonical": "myntra",
+          "bucket_norm": "myntra"
+        },
+        "hyp": {
+          "text": "12 July",
+          "type": "DATE",
+          "start": 252,
+          "end": 259,
+          "word_index": -1,
+          "canonical": "12 july",
+          "bucket_norm": "12 july"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "12th July",
+        "type": "DATE",
+        "start": 283,
+        "end": 292,
+        "word_index": -1,
+        "canonical": "12th july",
+        "bucket_norm": "12th july"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "start": 515,
+        "end": 521,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 1343,
+        "end": 1346,
+        "word_index": -1,
+        "canonical": "rey",
+        "bucket_norm": "rey"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "start": 1401,
+        "end": 1406,
+        "word_index": -1,
+        "canonical": "hindi",
+        "bucket_norm": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "start": 1410,
+        "end": 1417,
+        "word_index": -1,
+        "canonical": "english",
+        "bucket_norm": "english"
+      },
+      {
+        "text": "Crocs Unisex Navy blue Bioband clogs",
+        "type": "PRODUCT",
+        "start": 1557,
+        "end": 1593,
+        "word_index": -1,
+        "canonical": "crocs unisex navy blue bioband clogs",
+        "bucket_norm": "crocs unisex navy blue bioband clogs"
+      },
+      {
+        "text": "12th July",
+        "type": "DATE",
+        "start": 1617,
+        "end": 1626,
+        "word_index": -1,
+        "canonical": "12th july",
+        "bucket_norm": "12th july"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 4,
+    "correct_matches": 6,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "start": 515,
+        "end": 521,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "start": 682,
+        "end": 688,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      },
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "start": 1343,
+        "end": 1346,
+        "word_index": -1,
+        "canonical": "rey",
+        "bucket_norm": "rey"
+      },
+      {
+        "text": "Crocs Unisex Navy blue Bioband clogs",
+        "type": "PRODUCT",
+        "start": 1557,
+        "end": 1593,
+        "word_index": -1,
+        "canonical": "crocs unisex navy blue bioband clogs",
+        "bucket_norm": "crocs unisex navy blue bioband clogs"
+      }
+    ]
+  }
+}

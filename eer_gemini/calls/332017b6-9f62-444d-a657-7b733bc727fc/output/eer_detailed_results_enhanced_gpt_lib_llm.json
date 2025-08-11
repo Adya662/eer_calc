@@ -1,0 +1,368 @@
+{
+  "call_id": "332017b6-9f62-444d-a657-7b733bc727fc",
+  "method": "Enhanced Gemini LLM as NER with Precise Normalization and Bucketing",
+  "model": "gemini-1.5-pro",
+  "temperature": 0,
+  "processing_time": 14.61,
+  "all_entities_eer": {
+    "substitutions": 16,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 16,
+    "total_ref": 16,
+    "total_hyp": 16,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 16,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 16,
+    "total_ref": 16,
+    "total_hyp": 16,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 3,
+      "LANGUAGE": 2,
+      "DATE": 3,
+      "TIME": 1,
+      "MONEY": 1,
+      "PRODUCT": 5
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORG": 3,
+      "LANGUAGE": 2,
+      "DATE": 3,
+      "TIME": 1,
+      "MONEY": 1,
+      "PRODUCT": 5
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "PERSON",
+      "TIME",
+      "ORG",
+      "PRODUCT",
+      "LANGUAGE",
+      "DATE"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "PERSON",
+      "TIME",
+      "ORG",
+      "PRODUCT",
+      "LANGUAGE",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "canonical": "today"
+      },
+      {
+        "text": "July 17th",
+        "type": "DATE",
+        "canonical": "july 17"
+      },
+      {
+        "text": "10:24 a.m.",
+        "type": "TIME",
+        "canonical": "10:24 am"
+      },
+      {
+        "text": "two",
+        "type": "MONEY",
+        "canonical": "2"
+      },
+      {
+        "text": "Mango extended sleeves high neck top",
+        "type": "PRODUCT",
+        "canonical": "mango extended sleeves high neck top"
+      },
+      {
+        "text": "Forever new women top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "Forever new women top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "28th July",
+        "type": "DATE",
+        "canonical": "july 28"
+      },
+      {
+        "text": "excite to lipid",
+        "type": "PRODUCT",
+        "canonical": "excite to lipid"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Forever new women top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "today",
+        "type": "DATE",
+        "canonical": "today"
+      },
+      {
+        "text": "July seventeenth",
+        "type": "DATE",
+        "canonical": "july 17"
+      },
+      {
+        "text": "ten twenty-four AM",
+        "type": "TIME",
+        "canonical": "10:24 am"
+      },
+      {
+        "text": "two",
+        "type": "MONEY",
+        "canonical": "2"
+      },
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b Extended Sleeves High Neck Top",
+        "type": "PRODUCT",
+        "canonical": "mango extended sleeves high neck top"
+      },
+      {
+        "text": "Forever New Women Top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "Forever New Women Top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "28 July",
+        "type": "DATE",
+        "canonical": "july 28"
+      },
+      {
+        "text": "Exide to lipid",
+        "type": "PRODUCT",
+        "canonical": "exide to lipid"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Forever New Women Top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Mango extended sleeves high neck top",
+        "type": "PRODUCT",
+        "canonical": "mango extended sleeves high neck top"
+      },
+      {
+        "text": "Forever new women top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "Forever new women top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Forever new women top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b Extended Sleeves High Neck Top",
+        "type": "PRODUCT",
+        "canonical": "mango extended sleeves high neck top"
+      },
+      {
+        "text": "Forever New Women Top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "Forever New Women Top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "Exide to lipid",
+        "type": "PRODUCT",
+        "canonical": "exide to lipid"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Forever New Women Top",
+        "type": "PRODUCT",
+        "canonical": "forever new women top"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "ray",
+      "myntra",
+      "hindi",
+      "english",
+      "today",
+      "july 17",
+      "10:24 am",
+      "2",
+      "mango extended sleeves high neck top",
+      "forever new women top",
+      "forever new women top",
+      "july 28",
+      "excite to lipid",
+      "myntra",
+      "forever new women top",
+      "myntra"
+    ],
+    "hypothesis_ordered": [
+      "rey",
+      "myntra",
+      "hindi",
+      "english",
+      "today",
+      "july 17",
+      "10:24 am",
+      "2",
+      "mango extended sleeves high neck top",
+      "forever new women top",
+      "forever new women top",
+      "july 28",
+      "exide to lipid",
+      "myntra",
+      "forever new women top",
+      "myntra"
+    ]
+  }
+}

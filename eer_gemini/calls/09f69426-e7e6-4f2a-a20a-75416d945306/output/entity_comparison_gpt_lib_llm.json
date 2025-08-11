@@ -1,0 +1,97 @@
+{
+  "call_id": "09f69426-e7e6-4f2a-a20a-75416d945306",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, purba sahu, nano plan, nano plan, nano plan, nano plan, 1799, nano plan, nano plan, nano plan, 1799, 6000, nano plan, nano plan, 3 6 or 12 month, nano plan, 3 6 or 12 month, nano plan, nano plan, 3 month, nano plan, nano plan",
+    "reference_entity_string": "priya, elevate now, purba sahu, nano plan, nano plan, nano plan, nano plan, 1799, nano plan, nano plan, naino plan, 1799, 6000, nano plan, nano plan, 3 6 or 12 month, nano plan, 3 6 or 12 month, nano plan, 3 months, nno plan, nano plan, nno plan"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 21,
+    "insertions": 3,
+    "deletions": 2,
+    "correct_matches": 0,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      },
+      {
+        "ref": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "canonical": "nano plan"
+        },
+        "hyp": {
+          "text": "\u0928\u0948\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+          "type": "PRODUCT",
+          "canonical": "naino plan"
+        }
+      },
+      {
+        "ref": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "canonical": "nano plan"
+        },
+        "hyp": {
+          "text": "\u0928\u094d\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+          "type": "PRODUCT",
+          "canonical": "nno plan"
+        }
+      },
+      {
+        "ref": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "canonical": "nano plan"
+        },
+        "hyp": {
+          "text": "\u0928\u094d\u0928\u094b \u092a\u094d\u0932\u093e\u0928",
+          "type": "PRODUCT",
+          "canonical": "nno plan"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "the three months",
+        "type": "DATE",
+        "canonical": "3 months"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "three month",
+        "type": "DATE",
+        "canonical": "3 month"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

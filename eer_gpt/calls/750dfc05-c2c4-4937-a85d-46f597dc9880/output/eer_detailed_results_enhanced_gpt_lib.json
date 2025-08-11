@@ -1,0 +1,484 @@
+{
+  "call_id": "750dfc05-c2c4-4937-a85d-46f597dc9880",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 24.0,
+  "all_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 13,
+    "total_ref": 13,
+    "total_hyp": 13,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_deletions": [],
+    "detailed_insertions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 0,
+    "insertions": 2,
+    "deletions": 0,
+    "correct": 6,
+    "total_ref": 6,
+    "total_hyp": 8,
+    "eer_percentage": 33.33,
+    "detailed_substitutions": [],
+    "detailed_deletions": [],
+    "detailed_insertions": [
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 474,
+        "end": 483,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 678,
+        "end": 687,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORG": 2,
+      "PRODUCT": 4,
+      "MONEY": 5
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORG": 2,
+      "PRODUCT": 4,
+      "MONEY": 5
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "MONEY",
+      "PRODUCT",
+      "PERSON",
+      "ORG"
+    ],
+    "hypothesis": [
+      "MONEY",
+      "PRODUCT",
+      "PERSON",
+      "ORG"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "Elevate",
+        "type": "ORG",
+        "start": 29,
+        "end": 36,
+        "word_index": -1,
+        "canonical": "elevate",
+        "bucket_norm": "elevate"
+      },
+      {
+        "text": "Yogesh Deshmukh",
+        "type": "PERSON",
+        "start": 58,
+        "end": 73,
+        "word_index": -1,
+        "canonical": "yogesh deshmukh",
+        "bucket_norm": "yogesh deshmukh"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 134,
+        "end": 143,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "BMI",
+        "type": "ORG",
+        "start": 283,
+        "end": 286,
+        "word_index": -1,
+        "canonical": "bmi",
+        "bucket_norm": "bmi"
+      },
+      {
+        "text": "nano plan",
+        "type": "PRODUCT",
+        "start": 451,
+        "end": 460,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 697,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Rs 1,799",
+        "type": "MONEY",
+        "start": 1085,
+        "end": 1092,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      },
+      {
+        "text": "Rs 6,000",
+        "type": "MONEY",
+        "start": 1220,
+        "end": 1227,
+        "word_index": -1,
+        "canonical": "6000",
+        "bucket_norm": "6000"
+      },
+      {
+        "text": "nano plan",
+        "type": "PRODUCT",
+        "start": 1340,
+        "end": 1349,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "rupees 499",
+        "type": "MONEY",
+        "start": 1445,
+        "end": 1456,
+        "word_index": -1,
+        "canonical": "499",
+        "bucket_norm": "499"
+      },
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "start": 1481,
+        "end": 1494,
+        "word_index": -1,
+        "canonical": "1399",
+        "bucket_norm": "1399"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "start": 1534,
+        "end": 1547,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "start": 29,
+        "end": 39,
+        "word_index": -1,
+        "canonical": "elevatenow",
+        "bucket_norm": "elevatenow"
+      },
+      {
+        "text": "Yogesh Deshmukh",
+        "type": "PERSON",
+        "start": 58,
+        "end": 73,
+        "word_index": -1,
+        "canonical": "yogesh deshmukh",
+        "bucket_norm": "yogesh deshmukh"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 134,
+        "end": 143,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "BMI",
+        "type": "ORG",
+        "start": 265,
+        "end": 268,
+        "word_index": -1,
+        "canonical": "bmi",
+        "bucket_norm": "bmi"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 474,
+        "end": 483,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 678,
+        "end": 687,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1015,
+        "end": 1060,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "start": 1165,
+        "end": 1183,
+        "word_index": -1,
+        "canonical": "6000",
+        "bucket_norm": "6000"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1280,
+        "end": 1289,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Rupees four hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1394,
+        "end": 1425,
+        "word_index": -1,
+        "canonical": "499",
+        "bucket_norm": "499"
+      },
+      {
+        "text": "Rupees one thousand three hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1445,
+        "end": 1490,
+        "word_index": -1,
+        "canonical": "1399",
+        "bucket_norm": "1399"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "start": 1530,
+        "end": 1575,
+        "word_index": -1,
+        "canonical": "1799",
+        "bucket_norm": "1799"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "Elevate",
+        "type": "ORG",
+        "start": 29,
+        "end": 36,
+        "word_index": -1,
+        "canonical": "elevate",
+        "bucket_norm": "elevate"
+      },
+      {
+        "text": "Yogesh Deshmukh",
+        "type": "PERSON",
+        "start": 58,
+        "end": 73,
+        "word_index": -1,
+        "canonical": "yogesh deshmukh",
+        "bucket_norm": "yogesh deshmukh"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 134,
+        "end": 143,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "BMI",
+        "type": "ORG",
+        "start": 283,
+        "end": 286,
+        "word_index": -1,
+        "canonical": "bmi",
+        "bucket_norm": "bmi"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 688,
+        "end": 697,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "start": 18,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "priya",
+        "bucket_norm": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "start": 29,
+        "end": 39,
+        "word_index": -1,
+        "canonical": "elevatenow",
+        "bucket_norm": "elevatenow"
+      },
+      {
+        "text": "Yogesh Deshmukh",
+        "type": "PERSON",
+        "start": 58,
+        "end": 73,
+        "word_index": -1,
+        "canonical": "yogesh deshmukh",
+        "bucket_norm": "yogesh deshmukh"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 134,
+        "end": 143,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "BMI",
+        "type": "ORG",
+        "start": 265,
+        "end": 268,
+        "word_index": -1,
+        "canonical": "bmi",
+        "bucket_norm": "bmi"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 474,
+        "end": 483,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 678,
+        "end": 687,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "start": 1280,
+        "end": 1289,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "elevate",
+      "yogesh deshmukh",
+      "nano plan",
+      "bmi",
+      "nano plan",
+      "nano plan",
+      "1799",
+      "6000",
+      "nano plan",
+      "499",
+      "1399",
+      "1799"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "yogesh deshmukh",
+      "nano plan",
+      "bmi",
+      "nano plan",
+      "nano plan",
+      "1799",
+      "6000",
+      "nano plan",
+      "499",
+      "1399",
+      "1799"
+    ]
+  }
+}

@@ -1,0 +1,3004 @@
+(venv) adyasrivastava@NURIX-37 eer_gpt % python3 eer_gpt_llm.py calls
+Found 27 valid call directories to process
+
+[03261666-7d82-49ec-8d6e-78c2f716ad73] Processing started at 12:20:18
+[03261666-7d82-49ec-8d6e-78c2f716ad73] Loaded 31 ref and 23 gt utterance records
+[03261666-7d82-49ec-8d6e-78c2f716ad73] Calling LLM for end-to-end normalization/alignment...
+[03261666-7d82-49ec-8d6e-78c2f716ad73] Found 5 ref and 8 hyp entities
+[03261666-7d82-49ec-8d6e-78c2f716ad73] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'ATUN' (Type: ORG, Position: N/A-N/A)
+       canonical: 'atun'
+   3. 'ब्लैक नेट ड्रेस' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'black net dress'
+   4. '8 जुलाई' (Type: DATE, Position: N/A-N/A)
+       canonical: '8 july'
+   5. 'ATUN' (Type: ORG, Position: N/A-N/A)
+       canonical: 'atun'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'mintra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'A.T.U.N.' (Type: ORG, Position: N/A-N/A)
+       canonical: 'atun'
+   6. 'Black Net Dress' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'black net dress'
+   7. '8 July' (Type: DATE, Position: N/A-N/A)
+       canonical: '8 july'
+   8. 'A T U N' (Type: ORG, Position: N/A-N/A)
+       canonical: 'atun'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 2, 'PRODUCT': 1, 'DATE': 1}
+Hypothesis: {'PERSON': 1, 'ORG': 3, 'LANGUAGE': 2, 'PRODUCT': 1, 'DATE': 1}
+[03261666-7d82-49ec-8d6e-78c2f716ad73] Found 4 concerned ref and 5 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 03261666-7d82-49ec-8d6e-78c2f716ad73
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 8
+Hypothesis entities: 5
+Correct (C): 4
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 4
+EER = (S+I+D)/N = (0+0+4)/8 = 50.00%
+
+❌ DELETIONS (4):
+  1. 'मिंत्रा' → canonical: 'mintra' → normalized: 'mintra' - MISSING in hypothesis
+  2. 'Hindi' → canonical: 'hindi' → normalized: 'hindi' - MISSING in hypothesis
+  3. 'English' → canonical: 'english' → normalized: 'english' - MISSING in hypothesis
+  4. 'A T U N' → canonical: 'atun' → normalized: 'atun' - MISSING in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 8
+Hypothesis concerned entities: 5
+Correct (C): 4
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 4
+Concerned EER = (S+I+D)/N = (0+0+4)/8 = 50.00%
+
+❌ CONCERNED DELETIONS (4):
+  1. 'मिंत्रा' → canonical: 'mintra' → normalized: 'mintra' - MISSING in hypothesis
+  2. 'Hindi' → canonical: 'hindi' → normalized: 'hindi' - MISSING in hypothesis
+  3. 'English' → canonical: 'english' → normalized: 'english' - MISSING in hypothesis
+  4. 'A T U N' → canonical: 'atun' → normalized: 'atun' - MISSING in hypothesis
+
+================================================================================
+🕒 [03261666-7d82-49ec-8d6e-78c2f716ad73] Completed in 12.59s
+📊 All Entities EER: 50.00% | Concerned Entities EER: 50.00%
+
+[03856e6b-6925-4012-8eb8-0a0289019b7e] Processing started at 12:20:30
+[03856e6b-6925-4012-8eb8-0a0289019b7e] Loaded 41 ref and 26 gt utterance records
+[03856e6b-6925-4012-8eb8-0a0289019b7e] Calling LLM for end-to-end normalization/alignment...
+[03856e6b-6925-4012-8eb8-0a0289019b7e] Found 17 ref and 23 hyp entities
+[03856e6b-6925-4012-8eb8-0a0289019b7e] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   3. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   4. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   5. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   6. 'Atul Sinha' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'atul sinha'
+   7. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   8. 'Elevate now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   9. 'Atul Sinha' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'atul sinha'
+  10. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  11. 'BMI of 35.56' (Type: MONEY, Position: N/A-N/A)
+       canonical: '35.56'
+  12. 'obesity stage category Y' (Type: EVENT, Position: N/A-N/A)
+       canonical: 'obesity stage category y'
+  13. 'Healthify' (Type: ORG, Position: N/A-N/A)
+       canonical: 'healthify'
+  14. 'nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  15. 'MBBS' (Type: ORG, Position: N/A-N/A)
+       canonical: 'mbbs'
+  16. 'MD' (Type: ORG, Position: N/A-N/A)
+       canonical: 'md'
+  17. 'Elevate now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'ATUL SINHA' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'atul sinha'
+   4. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   5. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   6. 'ATUL SINHA' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'atul sinha'
+   7. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   8. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   9. 'ATUL SINHA' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'atul sinha'
+  10. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+  11. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+  12. 'ATUL SINHA' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'atul sinha'
+  13. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  14. 'India' (Type: GPE, Position: N/A-N/A)
+       canonical: 'india'
+  15. 'पटना' (Type: GPE, Position: N/A-N/A)
+       canonical: 'patna'
+  16. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  17. 'BMI of 35.56' (Type: MONEY, Position: N/A-N/A)
+       canonical: '35.56'
+  18. 'Obesity Stage - Category I' (Type: EVENT, Position: N/A-N/A)
+       canonical: 'obesity stage category i'
+  19. 'Healthifi' (Type: ORG, Position: N/A-N/A)
+       canonical: 'healthifi'
+  20. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  21. 'MBBS' (Type: ORG, Position: N/A-N/A)
+       canonical: 'mbbs'
+  22. 'MD' (Type: ORG, Position: N/A-N/A)
+       canonical: 'md'
+  23. 'Elevate-Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 6, 'ORG': 7, 'PRODUCT': 2, 'MONEY': 1, 'EVENT': 1}
+Hypothesis: {'PERSON': 8, 'ORG': 8, 'PRODUCT': 3, 'GPE': 2, 'MONEY': 1, 'EVENT': 1}
+[03856e6b-6925-4012-8eb8-0a0289019b7e] Found 13 concerned ref and 19 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 03856e6b-6925-4012-8eb8-0a0289019b7e
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 23
+Hypothesis entities: 17
+Correct (C): 20
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 2
+EER = (S+I+D)/N = (1+1+2)/23 = 17.39%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Obesity Stage - Category I' → 'obesity stage category Y'
+      canonical: 'obesity stage category i' → 'obesity stage category y'
+      bucketed: 'obesity stage category i' → 'obesity stage category y'
+
+❌ DELETIONS (2):
+  1. 'India' → canonical: 'india' → normalized: 'india' - MISSING in hypothesis
+  2. 'पटना' → canonical: 'patna' → normalized: 'patna' - MISSING in hypothesis
+
+➕ INSERTIONS (1):
+  1. 'priya' → canonical: 'priya' → normalized: 'priya' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 23
+Hypothesis concerned entities: 17
+Correct (C): 20
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 2
+Concerned EER = (S+I+D)/N = (1+1+2)/23 = 17.39%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Obesity Stage - Category I' → 'obesity stage category Y'
+      canonical: 'obesity stage category i' → 'obesity stage category y'
+      normalized: 'obesity stage category i' → 'obesity stage category y'
+
+❌ CONCERNED DELETIONS (2):
+  1. 'India' → canonical: 'india' → normalized: 'india' - MISSING in hypothesis
+  2. 'पटना' → canonical: 'patna' → normalized: 'patna' - MISSING in hypothesis
+
+➕ CONCERNED INSERTIONS (1):
+  1. 'priya' → canonical: 'priya' → normalized: 'priya' - EXTRA in hypothesis
+
+================================================================================
+🕒 [03856e6b-6925-4012-8eb8-0a0289019b7e] Completed in 23.48s
+📊 All Entities EER: 17.39% | Concerned Entities EER: 17.39%
+
+[09f69426-e7e6-4f2a-a20a-75416d945306] Processing started at 12:20:54
+[09f69426-e7e6-4f2a-a20a-75416d945306] Loaded 51 ref and 34 gt utterance records
+[09f69426-e7e6-4f2a-a20a-75416d945306] Calling LLM for end-to-end normalization/alignment...
+[09f69426-e7e6-4f2a-a20a-75416d945306] Found 11 ref and 11 hyp entities
+[09f69426-e7e6-4f2a-a20a-75416d945306] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Purba Sahu' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'purba sahu'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. '1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   6. 'ब्लड टेस्ट' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'blood test'
+   7. 'डॉक्टर कंसल्टेशन' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'doctor consultation'
+   8. 'हेल्थ कोच कंसल्टेशन' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'health coach consultation'
+   9. '6,000 रुपये' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+  10. 'three, six or 12 month subscription plans' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: '3 6 or 12 month subscription plans'
+  11. '100% money back guarantee' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: '100 percent money back guarantee'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Purba Sahu' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'purba sahu'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   6. 'blood test' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'blood test'
+   7. 'doctor consultation' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'doctor consultation'
+   8. 'health coach consultation' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'health coach consultation'
+   9. 'Rupees six thousand' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+  10. '3, 6, or 12-month subscription plans' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: '3 6 or 12 month subscription plans'
+  11. '100% money-back guarantee' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: '100 percent money back guarantee'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 6, 'MONEY': 2}
+Hypothesis: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 6, 'MONEY': 2}
+[09f69426-e7e6-4f2a-a20a-75416d945306] Found 7 concerned ref and 4 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 09f69426-e7e6-4f2a-a20a-75416d945306
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 11
+Hypothesis entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/11 = 9.09%
+
+📝 SUBSTITUTIONS (1):
+  1. 'ElevateNow' → 'Elevate Now'
+      canonical: 'elevatenow' → 'elevate now'
+      bucketed: 'elevatenow' → 'elevate now'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 0
+Hypothesis concerned entities: 0
+Correct (C): 0
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/0 = 0.00%
+
+================================================================================
+🕒 [09f69426-e7e6-4f2a-a20a-75416d945306] Completed in 13.97s
+📊 All Entities EER: 9.09% | Concerned Entities EER: 0.00%
+
+[1bf3729b-c0a7-4f65-a846-88c8aa31a473] Processing started at 12:21:08
+[1bf3729b-c0a7-4f65-a846-88c8aa31a473] Loaded 27 ref and 25 gt utterance records
+[1bf3729b-c0a7-4f65-a846-88c8aa31a473] Calling LLM for end-to-end normalization/alignment...
+[1bf3729b-c0a7-4f65-a846-88c8aa31a473] Found 12 ref and 12 hyp entities
+[1bf3729b-c0a7-4f65-a846-88c8aa31a473] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   6. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   7. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   8. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   9. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  10. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  11. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  12. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   6. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   7. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   8. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   9. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  10. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  11. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  12. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 6, 'LANGUAGE': 4}
+Hypothesis: {'PERSON': 2, 'ORG': 6, 'LANGUAGE': 4}
+[1bf3729b-c0a7-4f65-a846-88c8aa31a473] Found 8 concerned ref and 8 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 1bf3729b-c0a7-4f65-a846-88c8aa31a473
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 12
+Hypothesis entities: 12
+Correct (C): 11
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/12 = 8.33%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      bucketed: 'rey' → 'ray'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 12
+Hypothesis concerned entities: 12
+Correct (C): 11
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (1+0+0)/12 = 8.33%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      normalized: 'rey' → 'ray'
+
+================================================================================
+🕒 [1bf3729b-c0a7-4f65-a846-88c8aa31a473] Completed in 13.67s
+📊 All Entities EER: 8.33% | Concerned Entities EER: 8.33%
+
+[268dbd88-173b-41a1-8363-4a6ba62b9aae] Processing started at 12:21:21
+[268dbd88-173b-41a1-8363-4a6ba62b9aae] Loaded 35 ref and 24 gt utterance records
+[268dbd88-173b-41a1-8363-4a6ba62b9aae] Calling LLM for end-to-end normalization/alignment...
+[268dbd88-173b-41a1-8363-4a6ba62b9aae] Found 18 ref and 19 hyp entities
+[268dbd88-173b-41a1-8363-4a6ba62b9aae] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Rupesh Kovar' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rupesh kovar'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'obesity specialized doctor' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'obesity specialized doctor'
+   6. 'senior health coach' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'senior health coach'
+   7. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   8. 'senior obesity specialist doctor' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'senior obesity specialist doctor'
+   9. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  10. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  11. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  12. 'flagship program' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'flagship program'
+  13. '3, 6, or 12 month subscription plans' (Type: DATE, Position: N/A-N/A)
+       canonical: '3 6 or 12 month subscription plans'
+  14. 'senior obesity specialist' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'senior obesity specialist'
+  15. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  16. 'flagship program' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'flagship program'
+  17. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  18. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Rupesh Kondawar' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rupesh kondawar'
+   4. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'obesity-specialized doctor' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'obesity specialized doctor'
+   6. 'senior health coach' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'senior health coach'
+   7. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   8. 'senior obesity specialist doctor' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'senior obesity specialist doctor'
+   9. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  10. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  11. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  12. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  13. 'flagship program' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'flagship program'
+  14. '3, 6, or 12-month subscription plans' (Type: DATE, Position: N/A-N/A)
+       canonical: '3 6 or 12 month subscription plans'
+  15. 'senior obesity specialist' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'senior obesity specialist'
+  16. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  17. 'flagship program' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'flagship program'
+  18. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  19. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 6, 'ORG': 1, 'PRODUCT': 10, 'DATE': 1}
+Hypothesis: {'PERSON': 6, 'ORG': 1, 'PRODUCT': 11, 'DATE': 1}
+[268dbd88-173b-41a1-8363-4a6ba62b9aae] Found 11 concerned ref and 12 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 268dbd88-173b-41a1-8363-4a6ba62b9aae
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 19
+Hypothesis entities: 18
+Correct (C): 18
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/19 = 5.26%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Rupesh Kondawar' → 'Rupesh Kovar'
+      canonical: 'rupesh kondawar' → 'rupesh kovar'
+      bucketed: 'rupesh kondawar' → 'rupesh kovar'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 19
+Hypothesis concerned entities: 18
+Correct (C): 18
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (1+0+0)/19 = 5.26%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Rupesh Kondawar' → 'Rupesh Kovar'
+      canonical: 'rupesh kondawar' → 'rupesh kovar'
+      normalized: 'rupesh kondawar' → 'rupesh kovar'
+
+================================================================================
+🕒 [268dbd88-173b-41a1-8363-4a6ba62b9aae] Completed in 18.70s
+📊 All Entities EER: 5.26% | Concerned Entities EER: 5.26%
+
+[332017b6-9f62-444d-a657-7b733bc727fc] Processing started at 12:21:40
+[332017b6-9f62-444d-a657-7b733bc727fc] Loaded 41 ref and 28 gt utterance records
+[332017b6-9f62-444d-a657-7b733bc727fc] Calling LLM for end-to-end normalization/alignment...
+[332017b6-9f62-444d-a657-7b733bc727fc] Found 11 ref and 11 hyp entities
+[332017b6-9f62-444d-a657-7b733bc727fc] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'July 17th' (Type: DATE, Position: N/A-N/A)
+       canonical: 'july 17'
+   6. '10:24 a.m.' (Type: TIME, Position: N/A-N/A)
+       canonical: '10:24 am'
+   7. 'Mango extended sleeves high neck top' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'mango extended sleeves high neck top'
+   8. 'Forever new women top' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'forever new women top'
+   9. '28th July' (Type: DATE, Position: N/A-N/A)
+       canonical: '28 july'
+  10. 'excite to lipid' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'excite to lipid'
+  11. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'July seventeenth' (Type: DATE, Position: N/A-N/A)
+       canonical: 'july 17'
+   6. 'ten twenty-four AM' (Type: TIME, Position: N/A-N/A)
+       canonical: '10:24 am'
+   7. 'मैंगो Extended Sleeves High Neck Top' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'mango extended sleeves high neck top'
+   8. 'Forever New Women Top' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'forever new women top'
+   9. '28 July' (Type: DATE, Position: N/A-N/A)
+       canonical: '28 july'
+  10. 'Exide to lipid' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'exide to lipid'
+  11. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 2, 'LANGUAGE': 2, 'DATE': 2, 'TIME': 1, 'PRODUCT': 3}
+Hypothesis: {'PERSON': 1, 'ORG': 2, 'LANGUAGE': 2, 'DATE': 2, 'TIME': 1, 'PRODUCT': 3}
+[332017b6-9f62-444d-a657-7b733bc727fc] Found 5 concerned ref and 6 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 332017b6-9f62-444d-a657-7b733bc727fc
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 11
+Hypothesis entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/11 = 9.09%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Exide to lipid' → 'excite to lipid'
+      canonical: 'exide to lipid' → 'excite to lipid'
+      bucketed: 'exide to lipid' → 'excite to lipid'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 11
+Hypothesis concerned entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (1+0+0)/11 = 9.09%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Exide to lipid' → 'excite to lipid'
+      canonical: 'exide to lipid' → 'excite to lipid'
+      normalized: 'exide to lipid' → 'excite to lipid'
+
+================================================================================
+🕒 [332017b6-9f62-444d-a657-7b733bc727fc] Completed in 13.45s
+📊 All Entities EER: 9.09% | Concerned Entities EER: 9.09%
+
+[3502253e-259a-42d3-ab70-7aedabeb81fa] Processing started at 12:21:54
+[3502253e-259a-42d3-ab70-7aedabeb81fa] Loaded 29 ref and 20 gt utterance records
+[3502253e-259a-42d3-ab70-7aedabeb81fa] Calling LLM for end-to-end normalization/alignment...
+[3502253e-259a-42d3-ab70-7aedabeb81fa] Found 16 ref and 16 hyp entities
+[3502253e-259a-42d3-ab70-7aedabeb81fa] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Taruna Yadav' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'taruna yadav'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. '32.03' (Type: MONEY, Position: N/A-N/A)
+       canonical: '32.03'
+   6. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   8. '1799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   9. 'rupees 499' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  10. 'rupees 1,399' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+  11. 'rupees 1,898' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1898'
+  12. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  13. 'तीन' (Type: DATE, Position: N/A-N/A)
+       canonical: '3'
+  14. 'छह' (Type: DATE, Position: N/A-N/A)
+       canonical: '6'
+  15. '12' (Type: DATE, Position: N/A-N/A)
+       canonical: '12'
+  16. '100% मनी बैक गारंटी' (Type: EVENT, Position: N/A-N/A)
+       canonical: '100% money back guarantee'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Taruna Yadav' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'taruna yadav'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'thirty-two point zero three' (Type: MONEY, Position: N/A-N/A)
+       canonical: '32.03'
+   6. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   8. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   9. 'Rupees four hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  10. 'Rupees one thousand three hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+  11. 'Rupees one thousand eight hundred ninety-eight' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1898'
+  12. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  13. 'three' (Type: DATE, Position: N/A-N/A)
+       canonical: '3'
+  14. 'six' (Type: DATE, Position: N/A-N/A)
+       canonical: '6'
+  15. 'twelve' (Type: DATE, Position: N/A-N/A)
+       canonical: '12'
+  16. '100% money back guarantee' (Type: EVENT, Position: N/A-N/A)
+       canonical: '100% money back guarantee'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 3, 'MONEY': 6, 'DATE': 3, 'EVENT': 1}
+Hypothesis: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 3, 'MONEY': 6, 'DATE': 3, 'EVENT': 1}
+[3502253e-259a-42d3-ab70-7aedabeb81fa] Found 6 concerned ref and 6 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 3502253e-259a-42d3-ab70-7aedabeb81fa
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 16
+Hypothesis entities: 16
+Correct (C): 16
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (0+0+0)/16 = 0.00%
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 16
+Hypothesis concerned entities: 16
+Correct (C): 16
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/16 = 0.00%
+
+================================================================================
+🕒 [3502253e-259a-42d3-ab70-7aedabeb81fa] Completed in 14.81s
+📊 All Entities EER: 0.00% | Concerned Entities EER: 0.00%
+
+[429ac8a5-6f19-46b3-97bb-8e55feec389e] Processing started at 12:22:08
+[429ac8a5-6f19-46b3-97bb-8e55feec389e] Loaded 57 ref and 69 gt utterance records
+[429ac8a5-6f19-46b3-97bb-8e55feec389e] Calling LLM for end-to-end normalization/alignment...
+[429ac8a5-6f19-46b3-97bb-8e55feec389e] Found 12 ref and 12 hyp entities
+[429ac8a5-6f19-46b3-97bb-8e55feec389e] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   6. 'story plus size reflective detail t-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'story plus size reflective detail t shirt'
+   7. '7 July' (Type: DATE, Position: N/A-N/A)
+       canonical: '7 july'
+   8. 'Puma women royal cat comfort soft ride sliders' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'puma women royalcat comfort softride sliders'
+   9. 'Agnia women floral print mandarin collar flared sleeve shirt style top' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'agnia women floral print mandarin collar flared sleeve shirt style top'
+  10. 'Istyle can top' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'istyle can top'
+  11. '10:44 a.m.' (Type: TIME, Position: N/A-N/A)
+       canonical: '10:44 am'
+  12. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   6. 'श्टोरी Plus Size Reflective Detail T-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'story plus size reflective detail t shirt'
+   7. '7 July' (Type: DATE, Position: N/A-N/A)
+       canonical: '7 july'
+   8. 'प्यूमा Women Royalcat Comfort Softride Sliders' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'puma women royalcat comfort softride sliders'
+   9. 'Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'aaghnya women floral print mandarin collar flared sleeve shirt style top'
+  10. 'Istyle Can Top' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'istyle can top'
+  11. '10:44 AM' (Type: TIME, Position: N/A-N/A)
+       canonical: '10:44 am'
+  12. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 3, 'LANGUAGE': 2, 'PRODUCT': 4, 'DATE': 1, 'TIME': 1}
+Hypothesis: {'PERSON': 1, 'ORG': 3, 'LANGUAGE': 2, 'PRODUCT': 4, 'DATE': 1, 'TIME': 1}
+[429ac8a5-6f19-46b3-97bb-8e55feec389e] Found 7 concerned ref and 8 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 429ac8a5-6f19-46b3-97bb-8e55feec389e
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 12
+Hypothesis entities: 12
+Correct (C): 11
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/12 = 8.33%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top' → 'Agnia women floral print mandarin collar flared sleeve shirt style top'
+      canonical: 'aaghnya women floral print mandarin collar flared sleeve shirt style top' → 'agnia women floral print mandarin collar flared sleeve shirt style top'
+      bucketed: 'aaghnya women floral print mandarin collar flared sleeve shirt style top' → 'agnia women floral print mandarin collar flared sleeve shirt style top'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 12
+Hypothesis concerned entities: 12
+Correct (C): 11
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (1+0+0)/12 = 8.33%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Aaghnya Women Floral Print Mandarin Collar Flared Sleeve Shirt Style Top' → 'Agnia women floral print mandarin collar flared sleeve shirt style top'
+      canonical: 'aaghnya women floral print mandarin collar flared sleeve shirt style top' → 'agnia women floral print mandarin collar flared sleeve shirt style top'
+      normalized: 'aaghnya women floral print mandarin collar flared sleeve shirt style top' → 'agnia women floral print mandarin collar flared sleeve shirt style top'
+
+================================================================================
+🕒 [429ac8a5-6f19-46b3-97bb-8e55feec389e] Completed in 21.60s
+📊 All Entities EER: 8.33% | Concerned Entities EER: 8.33%
+
+[482181f8-15e2-4ced-8a9a-67facdd9c6fc] Processing started at 12:22:30
+[482181f8-15e2-4ced-8a9a-67facdd9c6fc] Loaded 36 ref and 27 gt utterance records
+[482181f8-15e2-4ced-8a9a-67facdd9c6fc] Calling LLM for end-to-end normalization/alignment...
+[482181f8-15e2-4ced-8a9a-67facdd9c6fc] Found 11 ref and 12 hyp entities
+[482181f8-15e2-4ced-8a9a-67facdd9c6fc] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'H&M regular fit round neck t-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'h&m regular fit round neck t shirt'
+   6. '20 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '20 june'
+   7. '20 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '20 june'
+   8. 'Mango' (Type: ORG, Position: N/A-N/A)
+       canonical: 'mango'
+   9. 'Mango plunge neck ruched top with asymmetric hem' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'mango plunge neck ruched top with asymmetric hem'
+  10. 'all about you' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'all about you'
+  11. 'all about you ethnic printed full puff sleeves casual short' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'all about you ethnic printed full puff sleeves casual shirt'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'H&M Regular Fit Round-Neck T-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'h&m regular fit round neck t shirt'
+   6. 'एच एंड एम Regular Fit Round-Neck T-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'h&m regular fit round neck t shirt'
+   7. '20 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '20 june'
+   8. '20 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '20 june'
+   9. 'Mango' (Type: ORG, Position: N/A-N/A)
+       canonical: 'mango'
+  10. 'मैंगो Plunge Neck Ruched Top with Asymmetric Hem' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'mango plunge neck ruched top with asymmetric hem'
+  11. 'all about you' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'all about you'
+  12. 'ऑल अबाउट यू Ethnic Printed Full Puff-Sleeves Casual Shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'all about you ethnic printed full puff sleeves casual shirt'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 2, 'LANGUAGE': 2, 'PRODUCT': 4, 'DATE': 2}
+Hypothesis: {'PERSON': 1, 'ORG': 2, 'LANGUAGE': 2, 'PRODUCT': 5, 'DATE': 2}
+[482181f8-15e2-4ced-8a9a-67facdd9c6fc] Found 5 concerned ref and 7 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 482181f8-15e2-4ced-8a9a-67facdd9c6fc
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 12
+Hypothesis entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 1
+EER = (S+I+D)/N = (1+0+1)/12 = 16.67%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      bucketed: 'rey' → 'ray'
+
+❌ DELETIONS (1):
+  1. 'एच एंड एम Regular Fit Round-Neck T-shirt' → canonical: 'h&m regular fit round neck t shirt' → normalized: 'h&m regular fit round neck t shirt' - MISSING in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 12
+Hypothesis concerned entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 1
+Concerned EER = (S+I+D)/N = (1+0+1)/12 = 16.67%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      normalized: 'rey' → 'ray'
+
+❌ CONCERNED DELETIONS (1):
+  1. 'एच एंड एम Regular Fit Round-Neck T-shirt' → canonical: 'h&m regular fit round neck t shirt' → normalized: 'h&m regular fit round neck t shirt' - MISSING in hypothesis
+
+================================================================================
+🕒 [482181f8-15e2-4ced-8a9a-67facdd9c6fc] Completed in 16.85s
+📊 All Entities EER: 16.67% | Concerned Entities EER: 16.67%
+
+[5cdef144-9d6a-4100-9be6-8489f90fc466] Processing started at 12:22:47
+[5cdef144-9d6a-4100-9be6-8489f90fc466] Loaded 35 ref and 24 gt utterance records
+[5cdef144-9d6a-4100-9be6-8489f90fc466] Calling LLM for end-to-end normalization/alignment...
+[5cdef144-9d6a-4100-9be6-8489f90fc466] Found 10 ref and 10 hyp entities
+[5cdef144-9d6a-4100-9be6-8489f90fc466] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Minal Jani' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'minal jani'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'obesity specialist doctor' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'obesity specialist doctor'
+   6. 'senior health coach' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'senior health coach'
+   7. 'nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   8. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   9. '499 rupees' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  10. '1,799 rupees' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Minal Jani' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'minal jani'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'obesity specialist doctor' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'obesity specialist doctor'
+   6. 'senior health coach' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'senior health coach'
+   7. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   8. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   9. 'four hundred ninety-nine Rupees' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  10. 'one thousand seven hundred ninety-nine Rupees' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 4, 'ORG': 1, 'PRODUCT': 2, 'MONEY': 3}
+Hypothesis: {'PERSON': 4, 'ORG': 1, 'PRODUCT': 2, 'MONEY': 3}
+[5cdef144-9d6a-4100-9be6-8489f90fc466] Found 4 concerned ref and 5 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 5cdef144-9d6a-4100-9be6-8489f90fc466
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 10
+Hypothesis entities: 10
+Correct (C): 9
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/10 = 10.00%
+
+📝 SUBSTITUTIONS (1):
+  1. 'ElevateNow' → 'Elevate Now'
+      canonical: 'elevatenow' → 'elevate now'
+      bucketed: 'elevatenow' → 'elevate now'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 0
+Hypothesis concerned entities: 0
+Correct (C): 0
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/0 = 0.00%
+
+================================================================================
+🕒 [5cdef144-9d6a-4100-9be6-8489f90fc466] Completed in 12.23s
+📊 All Entities EER: 10.00% | Concerned Entities EER: 0.00%
+
+[5f4d919f-b1bc-4a3d-9d98-1f8279d51215] Processing started at 12:22:59
+[5f4d919f-b1bc-4a3d-9d98-1f8279d51215] Loaded 34 ref and 21 gt utterance records
+[5f4d919f-b1bc-4a3d-9d98-1f8279d51215] Calling LLM for end-to-end normalization/alignment...
+[5f4d919f-b1bc-4a3d-9d98-1f8279d51215] Found 7 ref and 7 hyp entities
+[5f4d919f-b1bc-4a3d-9d98-1f8279d51215] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Pearl Biju' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'pearl biju'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI of 44.08' (Type: MONEY, Position: N/A-N/A)
+       canonical: '44.08'
+   6. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Pearl Biju' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'pearl biju'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI of 44.08' (Type: MONEY, Position: N/A-N/A)
+       canonical: '44.08'
+   6. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 2, 'MONEY': 2}
+Hypothesis: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 2, 'MONEY': 2}
+[5f4d919f-b1bc-4a3d-9d98-1f8279d51215] Found 5 concerned ref and 5 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 5f4d919f-b1bc-4a3d-9d98-1f8279d51215
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 7
+Hypothesis entities: 7
+Correct (C): 6
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 0
+EER = (S+I+D)/N = (1+1+0)/7 = 28.57%
+
+📝 SUBSTITUTIONS (1):
+  1. 'ElevateNow' → 'Elevate Now'
+      canonical: 'elevatenow' → 'elevate now'
+      bucketed: 'elevatenow' → 'elevate now'
+
+➕ INSERTIONS (1):
+  1. 'Nano plan' → canonical: 'nano plan' → normalized: 'nano plan' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 0
+Hypothesis concerned entities: 0
+Correct (C): 0
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/0 = 0.00%
+
+================================================================================
+🕒 [5f4d919f-b1bc-4a3d-9d98-1f8279d51215] Completed in 5.58s
+📊 All Entities EER: 28.57% | Concerned Entities EER: 0.00%
+
+[750dfc05-c2c4-4937-a85d-46f597dc9880] Processing started at 12:23:05
+[750dfc05-c2c4-4937-a85d-46f597dc9880] Loaded 24 ref and 22 gt utterance records
+[750dfc05-c2c4-4937-a85d-46f597dc9880] Calling LLM for end-to-end normalization/alignment...
+[750dfc05-c2c4-4937-a85d-46f597dc9880] Found 11 ref and 11 hyp entities
+[750dfc05-c2c4-4937-a85d-46f597dc9880] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Yogesh Deshmukh' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'yogesh deshmukh'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI of 25' (Type: MONEY, Position: N/A-N/A)
+       canonical: '25'
+   6. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'Rs 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   8. 'Rs 6,000' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+   9. 'rupees 499' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  10. 'rupees 1,399' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+  11. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Yogesh Deshmukh' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'yogesh deshmukh'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI of twenty-five' (Type: MONEY, Position: N/A-N/A)
+       canonical: '25'
+   6. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   8. 'Rupees six thousand' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+   9. 'Rupees four hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  10. 'Rupees one thousand three hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+  11. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 2, 'MONEY': 6}
+Hypothesis: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 2, 'MONEY': 6}
+[750dfc05-c2c4-4937-a85d-46f597dc9880] Found 5 concerned ref and 5 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 750dfc05-c2c4-4937-a85d-46f597dc9880
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 11
+Hypothesis entities: 11
+Correct (C): 11
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (0+0+0)/11 = 0.00%
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 11
+Hypothesis concerned entities: 11
+Correct (C): 11
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/11 = 0.00%
+
+================================================================================
+🕒 [750dfc05-c2c4-4937-a85d-46f597dc9880] Completed in 12.70s
+📊 All Entities EER: 0.00% | Concerned Entities EER: 0.00%
+
+[79e02e46-ea93-4669-9dc1-6c4339dcc6ba] Processing started at 12:23:17
+[79e02e46-ea93-4669-9dc1-6c4339dcc6ba] Loaded 30 ref and 23 gt utterance records
+[79e02e46-ea93-4669-9dc1-6c4339dcc6ba] Calling LLM for end-to-end normalization/alignment...
+[79e02e46-ea93-4669-9dc1-6c4339dcc6ba] Found 16 ref and 16 hyp entities
+[79e02e46-ea93-4669-9dc1-6c4339dcc6ba] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Kook N Keech urban edge printed relaxed t-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'kook n keech urban edge printed relaxed t shirt'
+   6. 'June 18th' (Type: DATE, Position: N/A-N/A)
+       canonical: 'june 18'
+   7. '5:05 p.m.' (Type: TIME, Position: N/A-N/A)
+       canonical: '5:05 pm'
+   8. 'Kook N Keech urban edge printed relaxed t-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'kook n keech urban edge printed relaxed t shirt'
+   9. '21 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '21 june'
+  10. 'Freakins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'freekins'
+  11. 'carkins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'crkins'
+  12. 'Freakins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'freekins'
+  13. 'carkins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'crkins'
+  14. 'masculine Sasafers' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'masculincaline sasafers'
+  15. 'Freakins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'freekins'
+  16. 'UNRL' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'unrl'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Kook N Keech Urban Edge Printed Relaxed T-Shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'kook n keech urban edge printed relaxed t shirt'
+   6. 'June eighteenth' (Type: DATE, Position: N/A-N/A)
+       canonical: 'june 18'
+   7. 'five five PM' (Type: TIME, Position: N/A-N/A)
+       canonical: '5:05 pm'
+   8. 'कुक एंड कीच Urban Edge Printed Relaxed T-Shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'kook n keech urban edge printed relaxed t shirt'
+   9. '21 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '21 june'
+  10. 'Freekins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'freekins'
+  11. 'Crkins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'crkins'
+  12. 'Freekins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'freekins'
+  13. 'Crkins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'crkins'
+  14. 'Masculincaline सासा फ़रस' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'masculincaline sasafers'
+  15. 'Freekins' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'freekins'
+  16. 'UN RL' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'unrl'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 1, 'LANGUAGE': 2, 'PRODUCT': 9, 'DATE': 2, 'TIME': 1}
+Hypothesis: {'PERSON': 1, 'ORG': 1, 'LANGUAGE': 2, 'PRODUCT': 9, 'DATE': 2, 'TIME': 1}
+[79e02e46-ea93-4669-9dc1-6c4339dcc6ba] Found 9 concerned ref and 11 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 79e02e46-ea93-4669-9dc1-6c4339dcc6ba
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 16
+Hypothesis entities: 16
+Correct (C): 14
+Substitutions (S): 2
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (2+0+0)/16 = 12.50%
+
+📝 SUBSTITUTIONS (2):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      bucketed: 'rey' → 'ray'
+  2. 'Masculincaline सासा फ़रस' → 'masculine Sasafers'
+      canonical: 'masculincaline sasafers' → 'masculincaline sasafers'
+      bucketed: 'masculincaline sasafers' → 'masculincaline sasafers'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 7
+Hypothesis concerned entities: 7
+Correct (C): 6
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (1+0+0)/7 = 14.29%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      normalized: 'rey' → 'ray'
+
+================================================================================
+🕒 [79e02e46-ea93-4669-9dc1-6c4339dcc6ba] Completed in 17.52s
+📊 All Entities EER: 12.50% | Concerned Entities EER: 14.29%
+
+[7bbd5f06-2ac0-4227-be76-4ce7ef7cb567] Processing started at 12:23:35
+[7bbd5f06-2ac0-4227-be76-4ce7ef7cb567] Loaded 25 ref and 26 gt utterance records
+[7bbd5f06-2ac0-4227-be76-4ce7ef7cb567] Calling LLM for end-to-end normalization/alignment...
+[7bbd5f06-2ac0-4227-be76-4ce7ef7cb567] Found 11 ref and 12 hyp entities
+[7bbd5f06-2ac0-4227-be76-4ce7ef7cb567] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   4. 'BMI of 31.11' (Type: MONEY, Position: N/A-N/A)
+       canonical: '31.11'
+   5. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   6. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   8. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   9. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  10. 'rupees 499' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  11. 'rupees 1,399' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Nidhi' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'nidhi'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI of 31.11' (Type: MONEY, Position: N/A-N/A)
+       canonical: '31.11'
+   6. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   8. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   9. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  10. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  11. 'Rupees four hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  12. 'Rupees one thousand three hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 1, 'PRODUCT': 4, 'MONEY': 5}
+Hypothesis: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 4, 'MONEY': 5}
+[7bbd5f06-2ac0-4227-be76-4ce7ef7cb567] Found 6 concerned ref and 7 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 7bbd5f06-2ac0-4227-be76-4ce7ef7cb567
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 12
+Hypothesis entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 1
+EER = (S+I+D)/N = (1+1+1)/12 = 16.67%
+
+📝 SUBSTITUTIONS (1):
+  1. 'ElevateNow' → 'Elevate Now'
+      canonical: 'elevatenow' → 'elevate now'
+      bucketed: 'elevatenow' → 'elevate now'
+
+❌ DELETIONS (1):
+  1. 'Nidhi' → canonical: 'nidhi' → normalized: 'nidhi' - MISSING in hypothesis
+
+➕ INSERTIONS (1):
+  1. 'rupees 1,399' → canonical: '1399' → normalized: '1399' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 12
+Hypothesis concerned entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 1
+Concerned EER = (S+I+D)/N = (1+1+1)/12 = 16.67%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'ElevateNow' → 'Elevate Now'
+      canonical: 'elevatenow' → 'elevate now'
+      normalized: 'elevatenow' → 'elevate now'
+
+❌ CONCERNED DELETIONS (1):
+  1. 'Nidhi' → canonical: 'nidhi' → normalized: 'nidhi' - MISSING in hypothesis
+
+➕ CONCERNED INSERTIONS (1):
+  1. 'rupees 1,399' → canonical: '1399' → normalized: '1399' - EXTRA in hypothesis
+
+================================================================================
+🕒 [7bbd5f06-2ac0-4227-be76-4ce7ef7cb567] Completed in 18.59s
+📊 All Entities EER: 16.67% | Concerned Entities EER: 16.67%
+
+[7fd6b5f9-8b11-4085-b864-a16f92504e53] Processing started at 12:23:53
+[7fd6b5f9-8b11-4085-b864-a16f92504e53] Loaded 44 ref and 29 gt utterance records
+[7fd6b5f9-8b11-4085-b864-a16f92504e53] Calling LLM for end-to-end normalization/alignment...
+[7fd6b5f9-8b11-4085-b864-a16f92504e53] Found 10 ref and 9 hyp entities
+[7fd6b5f9-8b11-4085-b864-a16f92504e53] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'BMI of 34.13' (Type: MONEY, Position: N/A-N/A)
+       canonical: '34.13'
+   3. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   4. 'obesity stage, category Y' (Type: EVENT, Position: N/A-N/A)
+       canonical: 'obesity stage category y'
+   5. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   6. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   8. 'rupees 499' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+   9. 'rupees 1,399' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+  10. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Bijal Roliya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'bijal roliya'
+   4. 'BMI of 34.13' (Type: MONEY, Position: N/A-N/A)
+       canonical: '34.13'
+   5. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   6. 'Obesity Stage - Category I' (Type: EVENT, Position: N/A-N/A)
+       canonical: 'obesity stage category i'
+   7. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   8. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   9. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'MONEY': 5, 'PRODUCT': 3, 'EVENT': 1}
+Hypothesis: {'PERSON': 2, 'ORG': 1, 'MONEY': 2, 'PRODUCT': 3, 'EVENT': 1}
+[7fd6b5f9-8b11-4085-b864-a16f92504e53] Found 4 concerned ref and 6 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 7fd6b5f9-8b11-4085-b864-a16f92504e53
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 9
+Hypothesis entities: 10
+Correct (C): 5
+Substitutions (S): 1
+Insertions (I): 4
+Deletions (D): 2
+EER = (S+I+D)/N = (1+4+2)/9 = 77.78%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Obesity Stage - Category I' → 'obesity stage, category Y'
+      canonical: 'obesity stage category i' → 'obesity stage category y'
+      bucketed: 'obesity stage category i' → 'obesity stage category y'
+
+❌ DELETIONS (2):
+  1. 'ElevateNow' → canonical: 'elevatenow' → normalized: 'elevatenow' - MISSING in hypothesis
+  2. 'Bijal Roliya' → canonical: 'bijal roliya' → normalized: 'bijal roliya' - MISSING in hypothesis
+
+➕ INSERTIONS (4):
+  1. 'rupees 499' → canonical: '499' → normalized: '499' - EXTRA in hypothesis
+  2. 'rupees 1,399' → canonical: '1399' → normalized: '1399' - EXTRA in hypothesis
+  3. 'rupees 1,799' → canonical: '1799' → normalized: '1799' - EXTRA in hypothesis
+  4. 'rupees 1,799' → canonical: '1799' → normalized: '1799' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 9
+Hypothesis concerned entities: 6
+Correct (C): 5
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 2
+Concerned EER = (S+I+D)/N = (1+0+2)/9 = 33.33%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Obesity Stage - Category I' → 'obesity stage, category Y'
+      canonical: 'obesity stage category i' → 'obesity stage category y'
+      normalized: 'obesity stage category i' → 'obesity stage category y'
+
+❌ CONCERNED DELETIONS (2):
+  1. 'ElevateNow' → canonical: 'elevatenow' → normalized: 'elevatenow' - MISSING in hypothesis
+  2. 'Bijal Roliya' → canonical: 'bijal roliya' → normalized: 'bijal roliya' - MISSING in hypothesis
+
+================================================================================
+🕒 [7fd6b5f9-8b11-4085-b864-a16f92504e53] Completed in 18.74s
+📊 All Entities EER: 77.78% | Concerned Entities EER: 33.33%
+
+[8daee0cc-cbda-4cdf-b8ed-f120e3329138] Processing started at 12:24:12
+[8daee0cc-cbda-4cdf-b8ed-f120e3329138] Loaded 33 ref and 32 gt utterance records
+[8daee0cc-cbda-4cdf-b8ed-f120e3329138] Calling LLM for end-to-end normalization/alignment...
+[8daee0cc-cbda-4cdf-b8ed-f120e3329138] Found 9 ref and 10 hyp entities
+[8daee0cc-cbda-4cdf-b8ed-f120e3329138] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Style Cast X Revolt men opaque casual shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'stylecast x revolt men opaque casual shirt'
+   6. '21st August' (Type: DATE, Position: N/A-N/A)
+       canonical: '21 august'
+   7. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   8. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   9. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'स्टाइलकास्ट एक्स रिवॉल्ट Men Opaque Casual Shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'stylecast x revolt men opaque casual shirt'
+   6. '21 August' (Type: DATE, Position: N/A-N/A)
+       canonical: '21 august'
+   7. 'twenty-first August' (Type: DATE, Position: N/A-N/A)
+       canonical: '21 august'
+   8. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   9. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  10. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 4, 'LANGUAGE': 2, 'PRODUCT': 1, 'DATE': 1}
+Hypothesis: {'PERSON': 1, 'ORG': 4, 'LANGUAGE': 2, 'PRODUCT': 1, 'DATE': 2}
+[8daee0cc-cbda-4cdf-b8ed-f120e3329138] Found 6 concerned ref and 6 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 8daee0cc-cbda-4cdf-b8ed-f120e3329138
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 10
+Hypothesis entities: 9
+Correct (C): 9
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/10 = 10.00%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      bucketed: 'rey' → 'ray'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 0
+Hypothesis concerned entities: 0
+Correct (C): 0
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/0 = 0.00%
+
+================================================================================
+🕒 [8daee0cc-cbda-4cdf-b8ed-f120e3329138] Completed in 11.90s
+📊 All Entities EER: 10.00% | Concerned Entities EER: 0.00%
+
+[99d176ec-e484-4937-ae0b-9d6d2d7cb5c5] Processing started at 12:24:24
+[99d176ec-e484-4937-ae0b-9d6d2d7cb5c5] Loaded 31 ref and 23 gt utterance records
+[99d176ec-e484-4937-ae0b-9d6d2d7cb5c5] Calling LLM for end-to-end normalization/alignment...
+[99d176ec-e484-4937-ae0b-9d6d2d7cb5c5] Found 13 ref and 13 hyp entities
+[99d176ec-e484-4937-ae0b-9d6d2d7cb5c5] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   6. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   7. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   8. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   9. 'H&M regular fit round neck t-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'h&m regular fit round neck t shirt'
+  10. '20 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '20 june'
+  11. '20 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '20 june'
+  12. 'H&M cotton dungaree shorts' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'h&m cotton dungaree shorts'
+  13. '22 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '22 june'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   6. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   7. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   8. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   9. 'एच एंड एम Regular Fit Round-Neck T-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'h&m regular fit round neck t shirt'
+  10. '20 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '20 june'
+  11. '20 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '20 june'
+  12. 'एच एंड एम Cotton Dungaree Shorts' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'h&m cotton dungaree shorts'
+  13. '22 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '22 june'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 2, 'LANGUAGE': 4, 'PRODUCT': 2, 'DATE': 3}
+Hypothesis: {'PERSON': 2, 'ORG': 2, 'LANGUAGE': 4, 'PRODUCT': 2, 'DATE': 3}
+[99d176ec-e484-4937-ae0b-9d6d2d7cb5c5] Found 6 concerned ref and 6 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: 99d176ec-e484-4937-ae0b-9d6d2d7cb5c5
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 13
+Hypothesis entities: 13
+Correct (C): 13
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (0+0+0)/13 = 0.00%
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 13
+Hypothesis concerned entities: 13
+Correct (C): 13
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/13 = 0.00%
+
+================================================================================
+🕒 [99d176ec-e484-4937-ae0b-9d6d2d7cb5c5] Completed in 12.66s
+📊 All Entities EER: 0.00% | Concerned Entities EER: 0.00%
+
+[a26f3d38-ed43-4289-8d34-9ee376fb779d] Processing started at 12:24:37
+[a26f3d38-ed43-4289-8d34-9ee376fb779d] Loaded 41 ref and 71 gt utterance records
+[a26f3d38-ed43-4289-8d34-9ee376fb779d] Calling LLM for end-to-end normalization/alignment...
+[a26f3d38-ed43-4289-8d34-9ee376fb779d] Found 11 ref and 12 hyp entities
+[a26f3d38-ed43-4289-8d34-9ee376fb779d] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   2. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   3. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   4. 'Plum face serum' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'plum face serum'
+   5. 'Jockey gym towel' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'jockey gym towel'
+   6. 'Bigen beard color' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'bigen beard color'
+   7. 'Kalenji running shorts' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'kalenji running shorts'
+   8. 'Sirona period panties' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'sirona period panties'
+   9. 'Plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 15ml'
+  10. 'today' (Type: DATE, Position: N/A-N/A)
+       canonical: 'today'
+  11. 'Myntra app' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'myntra app'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Plum face serum' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'plum face serum'
+   6. 'Jockey gym towel' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'jockey gym towel'
+   7. 'Bigen beard color' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'bigen beard color'
+   8. 'Kalenji running shorts' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'kalenji running shorts'
+   9. 'Sirona period panties' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'sirona period panties'
+  10. 'प्लम 10% Niacinamide Brightening Face Serum With Rice Ferment Extract & Licorice - 50ml' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 50ml'
+  11. 'today' (Type: DATE, Position: N/A-N/A)
+       canonical: 'today'
+  12. 'मिंत्रा app' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'myntra app'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'ORG': 1, 'LANGUAGE': 2, 'PRODUCT': 7, 'DATE': 1}
+Hypothesis: {'PERSON': 1, 'ORG': 1, 'LANGUAGE': 2, 'PRODUCT': 7, 'DATE': 1}
+[a26f3d38-ed43-4289-8d34-9ee376fb779d] Found 8 concerned ref and 9 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: a26f3d38-ed43-4289-8d34-9ee376fb779d
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 12
+Hypothesis entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 1
+EER = (S+I+D)/N = (1+1+1)/12 = 16.67%
+
+📝 SUBSTITUTIONS (1):
+  1. 'प्लम 10% Niacinamide Brightening Face Serum With Rice Ferment Extract & Licorice - 50ml' → 'Plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml'
+      canonical: 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 50ml' → 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 15ml'
+      bucketed: 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 50ml' → 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 15ml'
+
+❌ DELETIONS (1):
+  1. 'Rey' → canonical: 'rey' → normalized: 'rey' - MISSING in hypothesis
+
+➕ INSERTIONS (1):
+  1. 'Myntra' → canonical: 'myntra' → normalized: 'myntra' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 12
+Hypothesis concerned entities: 11
+Correct (C): 10
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 1
+Concerned EER = (S+I+D)/N = (1+1+1)/12 = 16.67%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'प्लम 10% Niacinamide Brightening Face Serum With Rice Ferment Extract & Licorice - 50ml' → 'Plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml'
+      canonical: 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 50ml' → 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 15ml'
+      normalized: 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 50ml' → 'plum 10% niacinamide brightening face serum with rice ferment extract & licorice 15ml'
+
+❌ CONCERNED DELETIONS (1):
+  1. 'Rey' → canonical: 'rey' → normalized: 'rey' - MISSING in hypothesis
+
+➕ CONCERNED INSERTIONS (1):
+  1. 'Myntra' → canonical: 'myntra' → normalized: 'myntra' - EXTRA in hypothesis
+
+================================================================================
+🕒 [a26f3d38-ed43-4289-8d34-9ee376fb779d] Completed in 15.81s
+📊 All Entities EER: 16.67% | Concerned Entities EER: 16.67%
+
+[b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f] Processing started at 12:24:53
+[b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f] Loaded 35 ref and 23 gt utterance records
+[b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f] Calling LLM for end-to-end normalization/alignment...
+[b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f] Found 6 ref and 6 hyp entities
+[b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Nikita' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'nikita'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. '30 to 45 minutes' (Type: TIME, Position: N/A-N/A)
+       canonical: '30 to 45 minutes'
+   6. 'Rs 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Niketa' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'niketa'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'thirty to forty-five minutes' (Type: TIME, Position: N/A-N/A)
+       canonical: '30 to 45 minutes'
+   6. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 1, 'TIME': 1, 'MONEY': 1}
+Hypothesis: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 1, 'TIME': 1, 'MONEY': 1}
+[b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f] Found 4 concerned ref and 4 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 6
+Hypothesis entities: 6
+Correct (C): 5
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 1
+EER = (S+I+D)/N = (1+1+1)/6 = 33.33%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Niketa' → 'Nikita'
+      canonical: 'niketa' → 'nikita'
+      bucketed: 'niketa' → 'nikita'
+
+❌ DELETIONS (1):
+  1. 'ElevateNow' → canonical: 'elevatenow' → normalized: 'elevatenow' - MISSING in hypothesis
+
+➕ INSERTIONS (1):
+  1. 'Elevate Now' → canonical: 'elevate now' → normalized: 'elevate now' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 6
+Hypothesis concerned entities: 6
+Correct (C): 5
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 1
+Concerned EER = (S+I+D)/N = (1+1+1)/6 = 33.33%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Niketa' → 'Nikita'
+      canonical: 'niketa' → 'nikita'
+      normalized: 'niketa' → 'nikita'
+
+❌ CONCERNED DELETIONS (1):
+  1. 'ElevateNow' → canonical: 'elevatenow' → normalized: 'elevatenow' - MISSING in hypothesis
+
+➕ CONCERNED INSERTIONS (1):
+  1. 'Elevate Now' → canonical: 'elevate now' → normalized: 'elevate now' - EXTRA in hypothesis
+
+================================================================================
+🕒 [b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f] Completed in 11.87s
+📊 All Entities EER: 33.33% | Concerned Entities EER: 33.33%
+
+[c5f1aee1-8170-4c1b-93e0-1f8366882689] Processing started at 12:25:04
+[c5f1aee1-8170-4c1b-93e0-1f8366882689] Loaded 24 ref and 75 gt utterance records
+[c5f1aee1-8170-4c1b-93e0-1f8366882689] Calling LLM for end-to-end normalization/alignment...
+[c5f1aee1-8170-4c1b-93e0-1f8366882689] Found 18 ref and 9 hyp entities
+[c5f1aee1-8170-4c1b-93e0-1f8366882689] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Crocs Unisex Navy Blue Bayaband Clogs' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'crocs unisex navy blue bayaband clogs'
+   6. '12th July' (Type: DATE, Position: N/A-N/A)
+       canonical: '12 july'
+   7. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   8. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   9. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  10. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+  11. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  12. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+  13. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+  14. 'Crocs Unisex Navy blue Bioband clogs' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'crocs unisex navy blue bioband clogs'
+  15. '12th July' (Type: DATE, Position: N/A-N/A)
+       canonical: '12 july'
+  16. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  17. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+  18. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'क्रॉक्स Unisex Navy Blue Bayaband Clogs' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'crocs unisex navy blue bayaband clogs'
+   6. '12 July' (Type: DATE, Position: N/A-N/A)
+       canonical: '12 july'
+   7. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   8. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   9. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 8, 'LANGUAGE': 4, 'PRODUCT': 2, 'DATE': 2}
+Hypothesis: {'PERSON': 1, 'ORG': 4, 'LANGUAGE': 2, 'PRODUCT': 1, 'DATE': 1}
+[c5f1aee1-8170-4c1b-93e0-1f8366882689] Found 12 concerned ref and 6 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: c5f1aee1-8170-4c1b-93e0-1f8366882689
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 9
+Hypothesis entities: 18
+Correct (C): 8
+Substitutions (S): 1
+Insertions (I): 9
+Deletions (D): 0
+EER = (S+I+D)/N = (1+9+0)/9 = 111.11%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      bucketed: 'rey' → 'ray'
+
+➕ INSERTIONS (9):
+  1. 'Rey' → canonical: 'rey' → normalized: 'rey' - EXTRA in hypothesis
+  2. 'Myntra' → canonical: 'myntra' → normalized: 'myntra' - EXTRA in hypothesis
+  3. 'Hindi' → canonical: 'hindi' → normalized: 'hindi' - EXTRA in hypothesis
+  4. 'English' → canonical: 'english' → normalized: 'english' - EXTRA in hypothesis
+  5. 'Crocs Unisex Navy blue Bioband clogs' → canonical: 'crocs unisex navy blue bioband clogs' → normalized: 'crocs unisex navy blue bioband clogs' - EXTRA in hypothesis
+  6. '12th July' → canonical: '12 july' → normalized: '12 july' - EXTRA in hypothesis
+  7. 'Myntra' → canonical: 'myntra' → normalized: 'myntra' - EXTRA in hypothesis
+  8. 'Myntra' → canonical: 'myntra' → normalized: 'myntra' - EXTRA in hypothesis
+  9. 'Myntra' → canonical: 'myntra' → normalized: 'myntra' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 9
+Hypothesis concerned entities: 10
+Correct (C): 8
+Substitutions (S): 1
+Insertions (I): 1
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (1+1+0)/9 = 22.22%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      normalized: 'rey' → 'ray'
+
+➕ CONCERNED INSERTIONS (1):
+  1. 'Crocs Unisex Navy blue Bioband clogs' → canonical: 'crocs unisex navy blue bioband clogs' → normalized: 'crocs unisex navy blue bioband clogs' - EXTRA in hypothesis
+
+================================================================================
+🕒 [c5f1aee1-8170-4c1b-93e0-1f8366882689] Completed in 21.94s
+📊 All Entities EER: 111.11% | Concerned Entities EER: 22.22%
+
+[d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c] Processing started at 12:25:26
+[d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c] Loaded 33 ref and 25 gt utterance records
+[d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c] Calling LLM for end-to-end normalization/alignment...
+[d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c] Found 10 ref and 10 hyp entities
+[d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Nupur' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'nupur'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI of 26.81' (Type: MONEY, Position: N/A-N/A)
+       canonical: '26.81'
+   6. 'pre-obesity stage' (Type: EVENT, Position: N/A-N/A)
+       canonical: 'preobesity stage'
+   7. 'iron and vitamin D deficiency' (Type: EVENT, Position: N/A-N/A)
+       canonical: 'iron vitamin d deficiency'
+   8. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   9. 'Rs 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  10. 'Rs 6,000' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Nupur' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'nupur'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI of 26.81' (Type: MONEY, Position: N/A-N/A)
+       canonical: '26.81'
+   6. 'Pre-Obesity Stage' (Type: EVENT, Position: N/A-N/A)
+       canonical: 'preobesity stage'
+   7. 'Iron & Vitamin D Deficiency' (Type: EVENT, Position: N/A-N/A)
+       canonical: 'iron vitamin d deficiency'
+   8. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   9. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  10. 'Rupees six thousand' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 2, 'MONEY': 3, 'EVENT': 2}
+Hypothesis: {'PERSON': 2, 'ORG': 1, 'PRODUCT': 2, 'MONEY': 3, 'EVENT': 2}
+[d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c] Found 5 concerned ref and 5 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 10
+Hypothesis entities: 10
+Correct (C): 10
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (0+0+0)/10 = 0.00%
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 10
+Hypothesis concerned entities: 10
+Correct (C): 10
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/10 = 0.00%
+
+================================================================================
+🕒 [d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c] Completed in 11.13s
+📊 All Entities EER: 0.00% | Concerned Entities EER: 0.00%
+
+[d521ea56-2e7b-4908-8cca-acf4a0f89337] Processing started at 12:25:38
+[d521ea56-2e7b-4908-8cca-acf4a0f89337] Loaded 29 ref and 20 gt utterance records
+[d521ea56-2e7b-4908-8cca-acf4a0f89337] Calling LLM for end-to-end normalization/alignment...
+[d521ea56-2e7b-4908-8cca-acf4a0f89337] Found 18 ref and 18 hyp entities
+[d521ea56-2e7b-4908-8cca-acf4a0f89337] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Sanjana Kumar' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'sanjana kumar'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. '29.0' (Type: MONEY, Position: N/A-N/A)
+       canonical: '29.0'
+   6. 'pre-obesity' (Type: NORP, Position: N/A-N/A)
+       canonical: 'preobesity'
+   7. 'iron' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'iron'
+   8. 'vitamin D' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'vitamin d'
+   9. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  10. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  11. 'rupees 6,000' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+  12. 'India' (Type: GPE, Position: N/A-N/A)
+       canonical: 'india'
+  13. 'Delhi' (Type: GPE, Position: N/A-N/A)
+       canonical: 'delhi'
+  14. 'Redcliffe' (Type: ORG, Position: N/A-N/A)
+       canonical: 'redcliffe'
+  15. 'Tata 1 MG' (Type: ORG, Position: N/A-N/A)
+       canonical: 'tata 1mg'
+  16. '5,000' (Type: MONEY, Position: N/A-N/A)
+       canonical: '5000'
+  17. 'India' (Type: GPE, Position: N/A-N/A)
+       canonical: 'india'
+  18. '200' (Type: MONEY, Position: N/A-N/A)
+       canonical: '200'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Sanjana Kumar' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'sanjana kumar'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'twenty-nine point zero' (Type: MONEY, Position: N/A-N/A)
+       canonical: '29.0'
+   6. 'pre-obesity' (Type: NORP, Position: N/A-N/A)
+       canonical: 'preobesity'
+   7. 'iron' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'iron'
+   8. 'vitamin D' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'vitamin d'
+   9. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+  10. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  11. 'Rupees six thousand' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+  12. 'India' (Type: GPE, Position: N/A-N/A)
+       canonical: 'india'
+  13. 'Delhi' (Type: GPE, Position: N/A-N/A)
+       canonical: 'delhi'
+  14. 'Redcliffe' (Type: ORG, Position: N/A-N/A)
+       canonical: 'redcliffe'
+  15. 'Tata 1MG' (Type: ORG, Position: N/A-N/A)
+       canonical: 'tata 1mg'
+  16. 'five thousand' (Type: MONEY, Position: N/A-N/A)
+       canonical: '5000'
+  17. 'India' (Type: GPE, Position: N/A-N/A)
+       canonical: 'india'
+  18. 'two hundred' (Type: MONEY, Position: N/A-N/A)
+       canonical: '200'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 2, 'ORG': 3, 'PRODUCT': 4, 'MONEY': 5, 'NORP': 1, 'GPE': 3}
+Hypothesis: {'PERSON': 2, 'ORG': 3, 'PRODUCT': 4, 'MONEY': 5, 'NORP': 1, 'GPE': 3}
+[d521ea56-2e7b-4908-8cca-acf4a0f89337] Found 7 concerned ref and 7 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: d521ea56-2e7b-4908-8cca-acf4a0f89337
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 18
+Hypothesis entities: 18
+Correct (C): 18
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (0+0+0)/18 = 0.00%
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 18
+Hypothesis concerned entities: 18
+Correct (C): 18
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (0+0+0)/18 = 0.00%
+
+================================================================================
+🕒 [d521ea56-2e7b-4908-8cca-acf4a0f89337] Completed in 14.75s
+📊 All Entities EER: 0.00% | Concerned Entities EER: 0.00%
+
+[d7c521ce-dbcb-4c23-a776-66b38d8127b4] Processing started at 12:25:52
+[d7c521ce-dbcb-4c23-a776-66b38d8127b4] Loaded 22 ref and 23 gt utterance records
+[d7c521ce-dbcb-4c23-a776-66b38d8127b4] Calling LLM for end-to-end normalization/alignment...
+[d7c521ce-dbcb-4c23-a776-66b38d8127b4] Found 14 ref and 14 hyp entities
+[d7c521ce-dbcb-4c23-a776-66b38d8127b4] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   6. 'Biotique Morning nectar nourish and hydrate skin moisturizer' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'biotique morning nectar nourish and hydrate skin moisturizer'
+   7. 'FABINALIV kids silver toned umbrella' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'fabinaliv kids silver toned umbrella'
+   8. 'FABINALIV kids' silver-toned and brown cartoon character printed automatic threefold umbrella' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'fabinaliv kids' silver-toned and brown cartoon character printed automatic threefold umbrella'
+   9. 'biotech Morning nectar' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'biotech morning nectar'
+  10. 'biotech moisturizer' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'biotech moisturizer'
+  11. 'V Construct' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'v construct'
+  12. 'deconstruct Vitamin C and ferulic acid serum' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'deconstruct vitamin c and ferulic acid serum'
+  13. 'deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml'
+  14. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   6. 'Biotique Morning Nectar Nourish & Hydrate Skin Moisturizer' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'biotique morning nectar nourish & hydrate skin moisturizer'
+   7. 'FABINALIV Kids Silver-Toned Umbrella' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'fabinaliv kids silver-toned umbrella'
+   8. 'FABINALIV Kids Silver-Toned & Brown Cartoon Character Printed Automatic 3 Fold Umbrella' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'fabinaliv kids silver-toned & brown cartoon character printed automatic 3 fold umbrella'
+   9. 'बायोटिक Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml'
+  10. 'Biotique Moisturizer' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'biotique moisturizer'
+  11. 'We Construct' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'we construct'
+  12. 'Deconstruct Vitamin C & Ferulic Acid Serum' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'deconstruct vitamin c & ferulic acid serum'
+  13. 'डीकंस्ट्रक्ट Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml'
+  14. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 3, 'LANGUAGE': 2, 'PRODUCT': 8}
+Hypothesis: {'PERSON': 1, 'ORG': 3, 'LANGUAGE': 2, 'PRODUCT': 8}
+[d7c521ce-dbcb-4c23-a776-66b38d8127b4] Found 11 concerned ref and 12 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: d7c521ce-dbcb-4c23-a776-66b38d8127b4
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 14
+Hypothesis entities: 14
+Correct (C): 10
+Substitutions (S): 4
+Insertions (I): 2
+Deletions (D): 2
+EER = (S+I+D)/N = (4+2+2)/14 = 42.86%
+
+📝 SUBSTITUTIONS (4):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      bucketed: 'rey' → 'ray'
+  2. 'बायोटिक Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml' → 'biotech Morning nectar'
+      canonical: 'biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml' → 'biotech morning nectar'
+      bucketed: 'biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml' → 'biotech morning nectar'
+  3. 'Biotique Moisturizer' → 'biotech moisturizer'
+      canonical: 'biotique moisturizer' → 'biotech moisturizer'
+      bucketed: 'biotique moisturizer' → 'biotech moisturizer'
+  4. 'We Construct' → 'V Construct'
+      canonical: 'we construct' → 'v construct'
+      bucketed: 'we construct' → 'v construct'
+
+❌ DELETIONS (2):
+  1. 'मिंत्रा' → canonical: 'myntra' → normalized: 'myntra' - MISSING in hypothesis
+  2. 'डीकंस्ट्रक्ट Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml' → canonical: 'deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml' → normalized: 'deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml' - MISSING in hypothesis
+
+➕ INSERTIONS (2):
+  1. 'biotech Morning nectar' → canonical: 'biotech morning nectar' → normalized: 'biotech morning nectar' - EXTRA in hypothesis
+  2. 'deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML' → canonical: 'deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml' → normalized: 'deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 14
+Hypothesis concerned entities: 14
+Correct (C): 10
+Substitutions (S): 4
+Insertions (I): 2
+Deletions (D): 2
+Concerned EER = (S+I+D)/N = (4+2+2)/14 = 42.86%
+
+📝 CONCERNED SUBSTITUTIONS (4):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      normalized: 'rey' → 'ray'
+  2. 'बायोटिक Morning Nectar Nourish & Hydrate Visibly Flawless Skin Moisturizer - 120ml' → 'biotech Morning nectar'
+      canonical: 'biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml' → 'biotech morning nectar'
+      normalized: 'biotique morning nectar nourish & hydrate visibly flawless skin moisturizer - 120ml' → 'biotech morning nectar'
+  3. 'Biotique Moisturizer' → 'biotech moisturizer'
+      canonical: 'biotique moisturizer' → 'biotech moisturizer'
+      normalized: 'biotique moisturizer' → 'biotech moisturizer'
+  4. 'We Construct' → 'V Construct'
+      canonical: 'we construct' → 'v construct'
+      normalized: 'we construct' → 'v construct'
+
+❌ CONCERNED DELETIONS (2):
+  1. 'मिंत्रा' → canonical: 'myntra' → normalized: 'myntra' - MISSING in hypothesis
+  2. 'डीकंस्ट्रक्ट Vitamin C & Ferulic Acid Serum For Brighten Skin - 20ml' → canonical: 'deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml' → normalized: 'deconstruct vitamin c & ferulic acid serum for brighten skin - 20ml' - MISSING in hypothesis
+
+➕ CONCERNED INSERTIONS (2):
+  1. 'biotech Morning nectar' → canonical: 'biotech morning nectar' → normalized: 'biotech morning nectar' - EXTRA in hypothesis
+  2. 'deconstruct vitamin C and and ferulic acid serum for Brighton skin, 20 ML' → canonical: 'deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml' → normalized: 'deconstruct vitamin c and and ferulic acid serum for brighton skin, 20 ml' - EXTRA in hypothesis
+
+================================================================================
+🕒 [d7c521ce-dbcb-4c23-a776-66b38d8127b4] Completed in 30.06s
+📊 All Entities EER: 42.86% | Concerned Entities EER: 42.86%
+
+[d9aa182c-b21e-4ad5-8138-18d0e9f69b84] Processing started at 12:26:22
+[d9aa182c-b21e-4ad5-8138-18d0e9f69b84] Loaded 26 ref and 23 gt utterance records
+[d9aa182c-b21e-4ad5-8138-18d0e9f69b84] Calling LLM for end-to-end normalization/alignment...
+[d9aa182c-b21e-4ad5-8138-18d0e9f69b84] Found 17 ref and 17 hyp entities
+[d9aa182c-b21e-4ad5-8138-18d0e9f69b84] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Lakme' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'lakme'
+   6. 'Love Beauty and Planet' (Type: ORG, Position: N/A-N/A)
+       canonical: 'love beauty and planet'
+   7. 'Lakme' (Type: ORG, Position: N/A-N/A)
+       canonical: 'lakme'
+   8. 'Dressberry' (Type: ORG, Position: N/A-N/A)
+       canonical: 'dressberry'
+   9. 'Lakala' (Type: ORG, Position: N/A-N/A)
+       canonical: 'lakala'
+  10. 'Carlton London' (Type: ORG, Position: N/A-N/A)
+       canonical: 'carlton london'
+  11. 'trim hand shampoo' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'trim hand shampoo'
+  12. 'Love Beauty and Planet Argan Oil and Love' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'love beauty and planet argan oil and love'
+  13. 'Lakme Youth Infinity anti-aging night cream with Pro retinol C' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'lakme youth infinity anti aging night cream with pro retinol c'
+  14. '27 July' (Type: DATE, Position: N/A-N/A)
+       canonical: '27 july'
+  15. 'Love Beauty and Planet 10 Argan oil and lavender shampoo' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'love beauty and planet argan oil and lavender shampoo'
+  16. '400 milli' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: '400 milli'
+  17. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'Laamic' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'laamic'
+   6. 'Love Beauty & Planet' (Type: ORG, Position: N/A-N/A)
+       canonical: 'love beauty and planet'
+   7. 'लैक्मे' (Type: ORG, Position: N/A-N/A)
+       canonical: 'lakme'
+   8. 'ड्रेसबेरी' (Type: ORG, Position: N/A-N/A)
+       canonical: 'dressberry'
+   9. 'LeCalla' (Type: ORG, Position: N/A-N/A)
+       canonical: 'lecalla'
+  10. 'Carlton London' (Type: ORG, Position: N/A-N/A)
+       canonical: 'carlton london'
+  11. 'Trim hand shampoo' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'trim hand shampoo'
+  12. 'Love Beauty & Planet Argan Oil and Lavender' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'love beauty and planet argan oil and lavender'
+  13. 'लैक्मे Youth Infinity Anti Aging Night Cream with Pro-Retinol C' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'lakme youth infinity anti aging night cream with pro retinol c'
+  14. '27 July' (Type: DATE, Position: N/A-N/A)
+       canonical: '27 july'
+  15. 'Love Beauty & Planet Argan Oil and Lavender Shampoo' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'love beauty and planet argan oil and lavender shampoo'
+  16. '400ml' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: '400ml'
+  17. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 7, 'LANGUAGE': 2, 'PRODUCT': 6, 'DATE': 1}
+Hypothesis: {'PERSON': 1, 'ORG': 7, 'LANGUAGE': 2, 'PRODUCT': 6, 'DATE': 1}
+[d9aa182c-b21e-4ad5-8138-18d0e9f69b84] Found 12 concerned ref and 13 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: d9aa182c-b21e-4ad5-8138-18d0e9f69b84
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 17
+Hypothesis entities: 17
+Correct (C): 12
+Substitutions (S): 3
+Insertions (I): 2
+Deletions (D): 2
+EER = (S+I+D)/N = (3+2+2)/17 = 29.41%
+
+📝 SUBSTITUTIONS (3):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      bucketed: 'rey' → 'ray'
+  2. 'लैक्मे' → 'Lakme'
+      canonical: 'lakme' → 'lakme'
+      bucketed: 'lakme' → 'lakme'
+  3. 'LeCalla' → 'Lakala'
+      canonical: 'lecalla' → 'lakala'
+      bucketed: 'lecalla' → 'lakala'
+
+❌ DELETIONS (2):
+  1. 'Laamic' → canonical: 'laamic' → normalized: 'laamic' - MISSING in hypothesis
+  2. 'मिंत्रा' → canonical: 'myntra' → normalized: 'myntra' - MISSING in hypothesis
+
+➕ INSERTIONS (2):
+  1. 'Lakme' → canonical: 'lakme' → normalized: 'lakme' - EXTRA in hypothesis
+  2. 'Love Beauty and Planet Argan Oil and Love' → canonical: 'love beauty and planet argan oil and love' → normalized: 'love beauty and planet argan oil and love' - EXTRA in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 17
+Hypothesis concerned entities: 17
+Correct (C): 12
+Substitutions (S): 3
+Insertions (I): 2
+Deletions (D): 2
+Concerned EER = (S+I+D)/N = (3+2+2)/17 = 29.41%
+
+📝 CONCERNED SUBSTITUTIONS (3):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      normalized: 'rey' → 'ray'
+  2. 'लैक्मे' → 'Lakme'
+      canonical: 'lakme' → 'lakme'
+      normalized: 'lakme' → 'lakme'
+  3. 'LeCalla' → 'Lakala'
+      canonical: 'lecalla' → 'lakala'
+      normalized: 'lecalla' → 'lakala'
+
+❌ CONCERNED DELETIONS (2):
+  1. 'Laamic' → canonical: 'laamic' → normalized: 'laamic' - MISSING in hypothesis
+  2. 'मिंत्रा' → canonical: 'myntra' → normalized: 'myntra' - MISSING in hypothesis
+
+➕ CONCERNED INSERTIONS (2):
+  1. 'Lakme' → canonical: 'lakme' → normalized: 'lakme' - EXTRA in hypothesis
+  2. 'Love Beauty and Planet Argan Oil and Love' → canonical: 'love beauty and planet argan oil and love' → normalized: 'love beauty and planet argan oil and love' - EXTRA in hypothesis
+
+================================================================================
+🕒 [d9aa182c-b21e-4ad5-8138-18d0e9f69b84] Completed in 25.35s
+📊 All Entities EER: 29.41% | Concerned Entities EER: 29.41%
+
+[e69e62f6-954a-4d0a-9989-2a2d562f66fe] Processing started at 12:26:48
+[e69e62f6-954a-4d0a-9989-2a2d562f66fe] Loaded 27 ref and 22 gt utterance records
+[e69e62f6-954a-4d0a-9989-2a2d562f66fe] Calling LLM for end-to-end normalization/alignment...
+[e69e62f6-954a-4d0a-9989-2a2d562f66fe] Found 9 ref and 11 hyp entities
+[e69e62f6-954a-4d0a-9989-2a2d562f66fe] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'U.S. Polo Kids' (Type: ORG, Position: N/A-N/A)
+       canonical: 'us polo kids'
+   4. 'U.S. Polo Kids Girls ड्रॉप शोल्डर स्लीव्स प्योर कॉटन एप्लिकेट टी-शर्ट' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'us polo kids girls drop shoulder sleeves pure cotton applique tshirt'
+   5. 'U.S. Polo Kids Girls एम्ब्रॉयडेड प्योर कॉटन स्ट्रेट स्कर्ट' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'us polo kids girls embroidered pure cotton straight skirt'
+   6. '21 जून' (Type: DATE, Position: N/A-N/A)
+       canonical: '21 june'
+   7. 'Myntra ऐप' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'myntra app'
+   8. 'U.S Polo Kids Girls ड्रॉप शोल्डर स्लीव्स प्योर कॉटन एप्लीके T.Shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'us polo kids girls drop shoulder sleeves pure cotton applique tshirt'
+   9. 'पांच से सात कामकाजी दिनों' (Type: DATE, Position: N/A-N/A)
+       canonical: '5 to 7 working days'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'यू.एस. पोलो Kids' (Type: ORG, Position: N/A-N/A)
+       canonical: 'us polo kids'
+   6. 'यू.एस. पोलो Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'us polo kids girls drop shoulder sleeves pure cotton applique tshirt'
+   7. 'यू.एस. पोलो Kids Girls Embroidered Pure Cotton Straight Skirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'us polo kids girls embroidered pure cotton straight skirt'
+   8. '21 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '21 june'
+   9. 'मिंत्रा ऐप' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'myntra app'
+  10. 'यू.एस. पोलो Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'us polo kids girls drop shoulder sleeves pure cotton applique tshirt'
+  11. 'पांच से सात कामकाजी दिनों' (Type: DATE, Position: N/A-N/A)
+       canonical: '5 to 7 working days'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 2, 'PRODUCT': 4, 'DATE': 2}
+Hypothesis: {'PERSON': 1, 'ORG': 2, 'LANGUAGE': 2, 'PRODUCT': 4, 'DATE': 2}
+[e69e62f6-954a-4d0a-9989-2a2d562f66fe] Found 7 concerned ref and 7 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: e69e62f6-954a-4d0a-9989-2a2d562f66fe
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 11
+Hypothesis entities: 9
+Correct (C): 9
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 2
+EER = (S+I+D)/N = (0+0+2)/11 = 18.18%
+
+❌ DELETIONS (2):
+  1. 'Hindi' → canonical: 'hindi' → normalized: 'hindi' - MISSING in hypothesis
+  2. 'English' → canonical: 'english' → normalized: 'english' - MISSING in hypothesis
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 11
+Hypothesis concerned entities: 9
+Correct (C): 9
+Substitutions (S): 0
+Insertions (I): 0
+Deletions (D): 2
+Concerned EER = (S+I+D)/N = (0+0+2)/11 = 18.18%
+
+❌ CONCERNED DELETIONS (2):
+  1. 'Hindi' → canonical: 'hindi' → normalized: 'hindi' - MISSING in hypothesis
+  2. 'English' → canonical: 'english' → normalized: 'english' - MISSING in hypothesis
+
+================================================================================
+🕒 [e69e62f6-954a-4d0a-9989-2a2d562f66fe] Completed in 31.52s
+📊 All Entities EER: 18.18% | Concerned Entities EER: 18.18%
+
+[eacbcb92-6172-41f7-b2a9-0c4df5a3a597] Processing started at 12:27:19
+[eacbcb92-6172-41f7-b2a9-0c4df5a3a597] Loaded 38 ref and 31 gt utterance records
+[eacbcb92-6172-41f7-b2a9-0c4df5a3a597] Calling LLM for end-to-end normalization/alignment...
+[eacbcb92-6172-41f7-b2a9-0c4df5a3a597] Found 12 ref and 12 hyp entities
+[eacbcb92-6172-41f7-b2a9-0c4df5a3a597] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Ray' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'ray'
+   2. 'Myntra' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'gap boys camouflage printed relaxed fit mid rise joggers' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'gap boys camouflage printed relaxed fit mid rise joggers'
+   6. 'yesterday' (Type: DATE, Position: N/A-N/A)
+       canonical: 'yesterday'
+   7. 'Jack and Jones junior' (Type: ORG, Position: N/A-N/A)
+       canonical: 'jack and jones junior'
+   8. 'Jack and Jones junior boys pure cotton relaxed fit joggers' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'jack and jones junior boys pure cotton relaxed fit joggers'
+   9. 'end of day today' (Type: DATE, Position: N/A-N/A)
+       canonical: 'end of day today'
+  10. 'Jack and Jones junior boys relaxed fit mid rise joggers' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'jack and jones junior boys relaxed fit mid rise joggers'
+  11. 'Jack and Jones junior boys jogger mid rice pure cotton stretchable jeans' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'jack and jones junior boys jogger mid rise pure cotton stretchable jeans'
+  12. '25th June' (Type: DATE, Position: N/A-N/A)
+       canonical: '25 june'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Rey' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'rey'
+   2. 'मिंत्रा' (Type: ORG, Position: N/A-N/A)
+       canonical: 'myntra'
+   3. 'Hindi' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'hindi'
+   4. 'English' (Type: LANGUAGE, Position: N/A-N/A)
+       canonical: 'english'
+   5. 'GAP Boys Camouflage Printed Relaxed-Fit Mid-Rise Joggers' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'gap boys camouflage printed relaxed fit mid rise joggers'
+   6. 'yesterday' (Type: DATE, Position: N/A-N/A)
+       canonical: 'yesterday'
+   7. 'Jack & Jones Junior' (Type: ORG, Position: N/A-N/A)
+       canonical: 'jack and jones junior'
+   8. 'जैक एंड जोन्स Junior Boys Pure Cotton Relaxed-Fit Joggers' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'jack and jones junior boys pure cotton relaxed fit joggers'
+   9. 'end of day today' (Type: DATE, Position: N/A-N/A)
+       canonical: 'end of day today'
+  10. 'जैक एंड जोन्स Junior Boys Relaxed-Fit Mid-Rise Joggers' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'jack and jones junior boys relaxed fit mid rise joggers'
+  11. 'Jack & Jones Junior Boys Jogger Mid-Rise Pure Cotton Stretchable Jeans' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'jack and jones junior boys jogger mid rise pure cotton stretchable jeans'
+  12. '25 June' (Type: DATE, Position: N/A-N/A)
+       canonical: '25 june'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 1, 'ORG': 2, 'LANGUAGE': 2, 'PRODUCT': 4, 'DATE': 3}
+Hypothesis: {'PERSON': 1, 'ORG': 2, 'LANGUAGE': 2, 'PRODUCT': 4, 'DATE': 3}
+[eacbcb92-6172-41f7-b2a9-0c4df5a3a597] Found 6 concerned ref and 7 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: eacbcb92-6172-41f7-b2a9-0c4df5a3a597
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 12
+Hypothesis entities: 12
+Correct (C): 11
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/12 = 8.33%
+
+📝 SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      bucketed: 'rey' → 'ray'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 12
+Hypothesis concerned entities: 12
+Correct (C): 11
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (1+0+0)/12 = 8.33%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'Rey' → 'Ray'
+      canonical: 'rey' → 'ray'
+      normalized: 'rey' → 'ray'
+
+================================================================================
+🕒 [eacbcb92-6172-41f7-b2a9-0c4df5a3a597] Completed in 15.68s
+📊 All Entities EER: 8.33% | Concerned Entities EER: 8.33%
+
+[ec85480e-604c-4070-938f-b832e4904e9e] Processing started at 12:27:35
+[ec85480e-604c-4070-938f-b832e4904e9e] Loaded 30 ref and 25 gt utterance records
+[ec85480e-604c-4070-938f-b832e4904e9e] Calling LLM for end-to-end normalization/alignment...
+[ec85480e-604c-4070-938f-b832e4904e9e] Found 16 ref and 16 hyp entities
+[ec85480e-604c-4070-938f-b832e4904e9e] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.
+
+📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'Elevate now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+   3. 'Munira Mandviwala' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'munira mandviwala'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI' (Type: ORG, Position: N/A-N/A)
+       canonical: 'bmi'
+   6. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   8. 'rupees 6,000' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+   9. 'rupees 499' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  10. 'rupees 1,399' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+  11. 'rupees 1,898' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1898'
+  12. 'rupees 1,799' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  13. 'WhatsApp' (Type: ORG, Position: N/A-N/A)
+       canonical: 'whatsapp'
+  14. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+  15. 'Elevate Now' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevate now'
+  16. 'Munira Mandviwala' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'munira mandviwala'
+
+📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:
+────────────────────────────────────────────────────────────
+   1. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+   2. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+   3. 'Munira Mandviwala' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'munira mandviwala'
+   4. 'Nano plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   5. 'BMI' (Type: ORG, Position: N/A-N/A)
+       canonical: 'bmi'
+   6. 'Nano Plan' (Type: PRODUCT, Position: N/A-N/A)
+       canonical: 'nano plan'
+   7. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+   8. 'Rupees six thousand' (Type: MONEY, Position: N/A-N/A)
+       canonical: '6000'
+   9. 'Rupees four hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '499'
+  10. 'Rupees one thousand three hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1399'
+  11. 'Rupees one thousand eight hundred ninety-eight' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1898'
+  12. 'Rupees one thousand seven hundred ninety-nine' (Type: MONEY, Position: N/A-N/A)
+       canonical: '1799'
+  13. 'WhatsApp' (Type: ORG, Position: N/A-N/A)
+       canonical: 'whatsapp'
+  14. 'Priya' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'priya'
+  15. 'ElevateNow' (Type: ORG, Position: N/A-N/A)
+       canonical: 'elevatenow'
+  16. 'Munira Mandviwala' (Type: PERSON, Position: N/A-N/A)
+       canonical: 'munira mandviwala'
+
+📊 ENTITY TYPE DISTRIBUTION:
+────────────────────────────────────────
+Reference: {'PERSON': 4, 'ORG': 4, 'PRODUCT': 2, 'MONEY': 6}
+Hypothesis: {'PERSON': 4, 'ORG': 4, 'PRODUCT': 2, 'MONEY': 6}
+[ec85480e-604c-4070-938f-b832e4904e9e] Found 10 concerned ref and 10 concerned hyp entities
+
+================================================================================
+DETAILED EER ANALYSIS FOR CALL: ec85480e-604c-4070-938f-b832e4904e9e
+================================================================================
+
+🔍 ALL ENTITIES ANALYSIS:
+──────────────────────────────────────────────────
+Reference entities: 16
+Hypothesis entities: 16
+Correct (C): 15
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+EER = (S+I+D)/N = (1+0+0)/16 = 6.25%
+
+📝 SUBSTITUTIONS (1):
+  1. 'ElevateNow' → 'Elevate now'
+      canonical: 'elevatenow' → 'elevate now'
+      bucketed: 'elevatenow' → 'elevate now'
+
+🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):
+──────────────────────────────────────────────────
+Reference concerned entities: 16
+Hypothesis concerned entities: 16
+Correct (C): 15
+Substitutions (S): 1
+Insertions (I): 0
+Deletions (D): 0
+Concerned EER = (S+I+D)/N = (1+0+0)/16 = 6.25%
+
+📝 CONCERNED SUBSTITUTIONS (1):
+  1. 'ElevateNow' → 'Elevate now'
+      canonical: 'elevatenow' → 'elevate now'
+      normalized: 'elevatenow' → 'elevate now'
+
+================================================================================
+🕒 [ec85480e-604c-4070-938f-b832e4904e9e] Completed in 14.63s
+📊 All Entities EER: 6.25% | Concerned Entities EER: 6.25%
+
+========================================================================================================================
+SUMMARY TABLE - ENHANCED EER RESULTS FOR ALL CALLS
+========================================================================================================================
+Call ID         All EER%   C-EER%     All S  All I  All D  C-S   C-I   C-D   Ref   Hyp   C-Ref  C-Hyp  Mispron 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+03261666-7d82-49ec-8d6e-78c2f716ad73 50.00      50.00      0      0      4      0     0     4     8     5     8      5      0       
+03856e6b-6925-4012-8eb8-0a0289019b7e 17.39      17.39      1      1      2      1     1     2     23    17    23     17     0       
+09f69426-e7e6-4f2a-a20a-75416d945306 9.09       0.00       1      0      0      0     0     0     11    11    0      0      0       
+1bf3729b-c0a7-4f65-a846-88c8aa31a473 8.33       8.33       1      0      0      1     0     0     12    12    12     12     0       
+268dbd88-173b-41a1-8363-4a6ba62b9aae 5.26       5.26       1      0      0      1     0     0     19    18    19     18     0       
+332017b6-9f62-444d-a657-7b733bc727fc 9.09       9.09       1      0      0      1     0     0     11    11    11     11     0       
+3502253e-259a-42d3-ab70-7aedabeb81fa 0.00       0.00       0      0      0      0     0     0     16    16    16     16     0       
+429ac8a5-6f19-46b3-97bb-8e55feec389e 8.33       8.33       1      0      0      1     0     0     12    12    12     12     0       
+482181f8-15e2-4ced-8a9a-67facdd9c6fc 16.67      16.67      1      0      1      1     0     1     12    11    12     11     0       
+5cdef144-9d6a-4100-9be6-8489f90fc466 10.00      0.00       1      0      0      0     0     0     10    10    0      0      0       
+5f4d919f-b1bc-4a3d-9d98-1f8279d51215 28.57      0.00       1      1      0      0     0     0     7     7     0      0      0       
+750dfc05-c2c4-4937-a85d-46f597dc9880 0.00       0.00       0      0      0      0     0     0     11    11    11     11     0       
+79e02e46-ea93-4669-9dc1-6c4339dcc6ba 12.50      14.29      2      0      0      1     0     0     16    16    7      7      1       
+7bbd5f06-2ac0-4227-be76-4ce7ef7cb567 16.67      16.67      1      1      1      1     1     1     12    11    12     11     0       
+7fd6b5f9-8b11-4085-b864-a16f92504e53 77.78      33.33      1      4      2      1     0     2     9     10    9      6      0       
+8daee0cc-cbda-4cdf-b8ed-f120e3329138 10.00      0.00       1      0      0      0     0     0     10    9     0      0      0       
+99d176ec-e484-4937-ae0b-9d6d2d7cb5c5 0.00       0.00       0      0      0      0     0     0     13    13    13     13     0       
+a26f3d38-ed43-4289-8d34-9ee376fb779d 16.67      16.67      1      1      1      1     1     1     12    11    12     11     3       
+b94c0a58-b1c3-4bc8-ba02-0848b0a2af8f 33.33      33.33      1      1      1      1     1     1     6     6     6      6      0       
+c5f1aee1-8170-4c1b-93e0-1f8366882689 111.11     22.22      1      9      0      1     1     0     9     18    9      10     0       
+d24a5dc2-ac06-4f13-bbd1-5ec010d8d27c 0.00       0.00       0      0      0      0     0     0     10    10    10     10     0       
+d521ea56-2e7b-4908-8cca-acf4a0f89337 0.00       0.00       0      0      0      0     0     0     18    18    18     18     0       
+d7c521ce-dbcb-4c23-a776-66b38d8127b4 42.86      42.86      4      2      2      4     2     2     14    14    14     14     3       
+d9aa182c-b21e-4ad5-8138-18d0e9f69b84 29.41      29.41      3      2      2      3     2     2     17    17    17     17     0       
+e69e62f6-954a-4d0a-9989-2a2d562f66fe 18.18      18.18      0      0      2      0     0     2     11    9     11     9      0       
+eacbcb92-6172-41f7-b2a9-0c4df5a3a597 8.33       8.33       1      0      0      1     0     0     12    12    12     12     0       
+ec85480e-604c-4070-938f-b832e4904e9e 6.25       6.25       1      0      0      1     0     0     16    16    16     16     0       
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Legend: C-EER% = Concerned Entities EER%, S = Substitutions, I = Insertions, D = Deletions, C-S/I/D = Concerned S/I/D
+        Ref = Reference entities, Hyp = Hypothesis entities, C-Ref/Hyp = Concerned Ref/Hyp entities
+
+================================================================================
+GLOBAL EER ACROSS ALL CALLS (LLM-only normalization/alignment)
+================================================================================
+Global All Entities EER = 9.52%
+  (S=10, I=5, D=5, C=190, N=210)
+Global Concerned Entities EER = 16.28%
+  (S=20, I=10, D=15, C=180, N=215)
+
+🌍 GLOBAL EER SUMMARY ACROSS ALL CALLS:
+────────────────────────────────────────────────────────────
+📊 ALL ENTITIES:
+   Total Reference Entities (N_ref): 210
+   Total Hypothesis Entities: 205
+   Substitutions (S): 10
+   Insertions (I): 5
+   Deletions (D): 5
+   Correct (C): 190
+   Global EER: 9.52%
+
+🎯 CONCERNED ENTITIES (PERSON, ORG):
+   Total Reference Entities (N_ref): 215
+   Total Hypothesis Entities: 210
+   Substitutions (S): 20
+   Insertions (I): 10
+   Deletions (D): 15
+   Correct (C): 180
+   Global Concerned EER: 16.28%
+
+✅ Enhanced Processing Complete!
+📊 Processed 27 calls in 451.82s
+📈 Average Per-Call EER: 20.22%
+🌍 Global EER: 9.52%
+📁 Detailed results: eer_enhanced_comprehensive_results_gpt_lib.json
+📋 CSV summary: eer_enhanced_metrics_summary_gpt_lib.csv
+📋 Individual call summaries saved in each call's output/entity_comparison_gpt_lib_llm.json

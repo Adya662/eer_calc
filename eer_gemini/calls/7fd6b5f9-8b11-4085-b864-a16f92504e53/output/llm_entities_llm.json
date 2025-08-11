@@ -1,0 +1,171 @@
+{
+  "ref_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "canonical": "34.13"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "canonical": "34.13"
+    },
+    {
+      "text": "obesity stage, category Y",
+      "type": "EVENT",
+      "canonical": "obesity stage category y"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "canonical": "34.13"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "rupees 1,799",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "rupees 499",
+      "type": "MONEY",
+      "canonical": "499"
+    },
+    {
+      "text": "rupees 1,399",
+      "type": "MONEY",
+      "canonical": "1399"
+    },
+    {
+      "text": "rupees 1,799",
+      "type": "MONEY",
+      "canonical": "1799"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Priya",
+      "type": "PERSON",
+      "canonical": "priya"
+    },
+    {
+      "text": "ElevateNow",
+      "type": "ORG",
+      "canonical": "elevatenow"
+    },
+    {
+      "text": "Bijal Roliya",
+      "type": "PERSON",
+      "canonical": "bijal roliya"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "canonical": "34.13"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "canonical": "34.13"
+    },
+    {
+      "text": "Obesity Stage - Category I",
+      "type": "EVENT",
+      "canonical": "obesity stage category i"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "canonical": "34.13"
+    },
+    {
+      "text": "34.13",
+      "type": "MONEY",
+      "canonical": "34.13"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Rupees one thousand seven hundred ninety-nine",
+      "type": "MONEY",
+      "canonical": "1799"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    },
+    {
+      "text": "Nano Plan",
+      "type": "PRODUCT",
+      "canonical": "nano plan"
+    }
+  ]
+}

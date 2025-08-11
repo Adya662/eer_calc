@@ -1,0 +1,52 @@
+{
+  "call_id": "d521ea56-2e7b-4908-8cca-acf4a0f89337",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, sanjana kumar, nano plan, 29.0, nano plan, nano plan, 1799, india, delhi, redcliffe, tata 1mg, india, nano plan, 5000, 200, 6000",
+    "reference_entity_string": "priya, elevate now, sanjana kumar, nano plan, 29.0, nano plan, nano plan, 1799, india, delhi, redcliffe, tata 1mg, india, nano plan, 5000, 200, 6000"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 16,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 16,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 16,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 16,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

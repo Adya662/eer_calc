@@ -1,0 +1,319 @@
+{
+  "call_id": "482181f8-15e2-4ced-8a9a-67facdd9c6fc",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 16.84,
+  "all_entities_eer": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 1,
+    "correct": 10,
+    "total_ref": 12,
+    "total_hyp": 11,
+    "eer_percentage": 16.67,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "canonical": "h&m regular fit round neck t shirt"
+      }
+    ]
+  },
+  "concerned_entities_eer": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 1,
+    "correct": 10,
+    "total_ref": 12,
+    "total_hyp": 11,
+    "eer_percentage": 16.67,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "canonical": "h&m regular fit round neck t shirt"
+      }
+    ]
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 2,
+      "LANGUAGE": 2,
+      "PRODUCT": 4,
+      "DATE": 2
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORG": 2,
+      "LANGUAGE": 2,
+      "PRODUCT": 5,
+      "DATE": 2
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "DATE"
+    ],
+    "hypothesis": [
+      "ORG",
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "H&M regular fit round neck t-shirt",
+        "type": "PRODUCT",
+        "canonical": "h&m regular fit round neck t shirt"
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "canonical": "20 june"
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "canonical": "20 june"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "canonical": "mango"
+      },
+      {
+        "text": "Mango plunge neck ruched top with asymmetric hem",
+        "type": "PRODUCT",
+        "canonical": "mango plunge neck ruched top with asymmetric hem"
+      },
+      {
+        "text": "all about you",
+        "type": "PRODUCT",
+        "canonical": "all about you"
+      },
+      {
+        "text": "all about you ethnic printed full puff sleeves casual short",
+        "type": "PRODUCT",
+        "canonical": "all about you ethnic printed full puff sleeves casual shirt"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "H&M Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "canonical": "h&m regular fit round neck t shirt"
+      },
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "canonical": "h&m regular fit round neck t shirt"
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "canonical": "20 june"
+      },
+      {
+        "text": "20 June",
+        "type": "DATE",
+        "canonical": "20 june"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "canonical": "mango"
+      },
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b Plunge Neck Ruched Top with Asymmetric Hem",
+        "type": "PRODUCT",
+        "canonical": "mango plunge neck ruched top with asymmetric hem"
+      },
+      {
+        "text": "all about you",
+        "type": "PRODUCT",
+        "canonical": "all about you"
+      },
+      {
+        "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942 Ethnic Printed Full Puff-Sleeves Casual Shirt",
+        "type": "PRODUCT",
+        "canonical": "all about you ethnic printed full puff sleeves casual shirt"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "H&M regular fit round neck t-shirt",
+        "type": "PRODUCT",
+        "canonical": "h&m regular fit round neck t shirt"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "canonical": "mango"
+      },
+      {
+        "text": "Mango plunge neck ruched top with asymmetric hem",
+        "type": "PRODUCT",
+        "canonical": "mango plunge neck ruched top with asymmetric hem"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "H&M Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "canonical": "h&m regular fit round neck t shirt"
+      },
+      {
+        "text": "\u090f\u091a \u090f\u0902\u0921 \u090f\u092e Regular Fit Round-Neck T-shirt",
+        "type": "PRODUCT",
+        "canonical": "h&m regular fit round neck t shirt"
+      },
+      {
+        "text": "Mango",
+        "type": "ORG",
+        "canonical": "mango"
+      },
+      {
+        "text": "\u092e\u0948\u0902\u0917\u094b Plunge Neck Ruched Top with Asymmetric Hem",
+        "type": "PRODUCT",
+        "canonical": "mango plunge neck ruched top with asymmetric hem"
+      },
+      {
+        "text": "\u0911\u0932 \u0905\u092c\u093e\u0909\u091f \u092f\u0942 Ethnic Printed Full Puff-Sleeves Casual Shirt",
+        "type": "PRODUCT",
+        "canonical": "all about you ethnic printed full puff sleeves casual shirt"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "ray",
+      "myntra",
+      "hindi",
+      "english",
+      "h and m regular fit round neck t shirt",
+      "20 june",
+      "20 june",
+      "mango",
+      "mango plunge neck ruched top with asymmetric hem",
+      "all about you",
+      "all about you ethnic printed full puff sleeves casual shirt"
+    ],
+    "hypothesis_ordered": [
+      "rey",
+      "myntra",
+      "hindi",
+      "english",
+      "h and m regular fit round neck t shirt",
+      "h and m regular fit round neck t shirt",
+      "20 june",
+      "20 june",
+      "mango",
+      "mango plunge neck ruched top with asymmetric hem",
+      "all about you",
+      "all about you ethnic printed full puff sleeves casual shirt"
+    ]
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "call_id": "3502253e-259a-42d3-ab70-7aedabeb81fa",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, taruna yadav, nano plan, 32.03, nano plan, nano plan, nano plan, 1799, 499, 1399, 1898, 1799",
+    "reference_entity_string": "priya, elevate, taruna yadav, nano plan, 32.03, nano plan, blood test, doctor consultation, senior health coach consultation, blood test, senior obesity specialist doctor, health coach, nano plan, 1799, blood test, doctor consultation, health coach consultation, nano plan, 499, 1399, 1898, 1799"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 9,
+    "correct_matches": 12,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a",
+          "type": "PERSON",
+          "start": 812,
+          "end": 822,
+          "word_index": -1,
+          "canonical": "health coach",
+          "bucket_norm": "health coach"
+        },
+        "hyp": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "start": 670,
+          "end": 679,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "start": 563,
+        "end": 572,
+        "word_index": -1,
+        "canonical": "blood test",
+        "bucket_norm": "blood test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "start": 574,
+        "end": 592,
+        "word_index": -1,
+        "canonical": "doctor consultation",
+        "bucket_norm": "doctor consultation"
+      },
+      {
+        "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "start": 596,
+        "end": 626,
+        "word_index": -1,
+        "canonical": "senior health coach consultation",
+        "bucket_norm": "senior health coach consultation"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "start": 707,
+        "end": 716,
+        "word_index": -1,
+        "canonical": "blood test",
+        "bucket_norm": "blood test"
+      },
+      {
+        "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0913\u092c\u0947\u0938\u093f\u091f\u0940 \u0938\u094d\u092a\u0947\u0936\u0932\u093f\u0938\u094d\u091f \u0921\u0949\u0915\u094d\u091f\u0930",
+        "type": "PERSON",
+        "start": 742,
+        "end": 775,
+        "word_index": -1,
+        "canonical": "senior obesity specialist doctor",
+        "bucket_norm": "senior obesity specialist doctor"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "start": 1134,
+        "end": 1143,
+        "word_index": -1,
+        "canonical": "blood test",
+        "bucket_norm": "blood test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "start": 1145,
+        "end": 1163,
+        "word_index": -1,
+        "canonical": "doctor consultation",
+        "bucket_norm": "doctor consultation"
+      },
+      {
+        "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "start": 1167,
+        "end": 1188,
+        "word_index": -1,
+        "canonical": "health coach consultation",
+        "bucket_norm": "health coach consultation"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "start": 1280,
+        "end": 1289,
+        "word_index": -1,
+        "canonical": "nano plan",
+        "bucket_norm": "nano plan"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 9,
+    "correct_matches": 7,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "start": 563,
+        "end": 572,
+        "word_index": -1,
+        "canonical": "blood test",
+        "bucket_norm": "blood test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "start": 574,
+        "end": 592,
+        "word_index": -1,
+        "canonical": "doctor consultation",
+        "bucket_norm": "doctor consultation"
+      },
+      {
+        "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "start": 596,
+        "end": 626,
+        "word_index": -1,
+        "canonical": "senior health coach consultation",
+        "bucket_norm": "senior health coach consultation"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "start": 707,
+        "end": 716,
+        "word_index": -1,
+        "canonical": "blood test",
+        "bucket_norm": "blood test"
+      },
+      {
+        "text": "\u0938\u0940\u0928\u093f\u092f\u0930 \u0913\u092c\u0947\u0938\u093f\u091f\u0940 \u0938\u094d\u092a\u0947\u0936\u0932\u093f\u0938\u094d\u091f \u0921\u0949\u0915\u094d\u091f\u0930",
+        "type": "PERSON",
+        "start": 742,
+        "end": 775,
+        "word_index": -1,
+        "canonical": "senior obesity specialist doctor",
+        "bucket_norm": "senior obesity specialist doctor"
+      },
+      {
+        "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a",
+        "type": "PERSON",
+        "start": 812,
+        "end": 822,
+        "word_index": -1,
+        "canonical": "health coach",
+        "bucket_norm": "health coach"
+      },
+      {
+        "text": "\u092c\u094d\u0932\u0921 \u091f\u0947\u0938\u094d\u091f",
+        "type": "PRODUCT",
+        "start": 1134,
+        "end": 1143,
+        "word_index": -1,
+        "canonical": "blood test",
+        "bucket_norm": "blood test"
+      },
+      {
+        "text": "\u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "start": 1145,
+        "end": 1163,
+        "word_index": -1,
+        "canonical": "doctor consultation",
+        "bucket_norm": "doctor consultation"
+      },
+      {
+        "text": "\u0939\u0947\u0932\u094d\u0925 \u0915\u094b\u091a \u0915\u0902\u0938\u0932\u094d\u091f\u0947\u0936\u0928",
+        "type": "PRODUCT",
+        "start": 1167,
+        "end": 1188,
+        "word_index": -1,
+        "canonical": "health coach consultation",
+        "bucket_norm": "health coach consultation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "call_id": "d521ea56-2e7b-4908-8cca-acf4a0f89337",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, sanjana kumar, nano plan, 29.0, nano plan, nano plan, 1799, 6000, india, delhi, redcliffe, tata 1mg, india, 200 years",
+    "reference_entity_string": "priya, elevate now, sanjana kumar, nano plan, bmi, 29.0, nano plan, 1,799, 6,000, india, delhi, redcliffe, tata 1 mg, india, 5,000, 200 years"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 2,
+    "insertions": 0,
+    "deletions": 1,
+    "correct_matches": 13,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "BMI",
+          "type": "ORG",
+          "start": 282,
+          "end": 285,
+          "word_index": -1,
+          "canonical": "bmi",
+          "bucket_norm": "bmi"
+        },
+        "hyp": {
+          "text": "twenty-nine point zero",
+          "type": "MONEY",
+          "start": 283,
+          "end": 303,
+          "word_index": -1,
+          "canonical": "29.0",
+          "bucket_norm": "29.0"
+        }
+      },
+      {
+        "ref": {
+          "text": "29.0",
+          "type": "MONEY",
+          "start": 289,
+          "end": 293,
+          "word_index": -1,
+          "canonical": "29.0",
+          "bucket_norm": "29.0"
+        },
+        "hyp": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "start": 598,
+          "end": 607,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": [
+      {
+        "text": "5,000",
+        "type": "MONEY",
+        "start": 1719,
+        "end": 1724,
+        "word_index": -1,
+        "canonical": "5,000",
+        "bucket_norm": "5,000"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 7,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "BMI",
+          "type": "ORG",
+          "start": 282,
+          "end": 285,
+          "word_index": -1,
+          "canonical": "bmi",
+          "bucket_norm": "bmi"
+        },
+        "hyp": {
+          "text": "Nano Plan",
+          "type": "PRODUCT",
+          "start": 598,
+          "end": 607,
+          "word_index": -1,
+          "canonical": "nano plan",
+          "bucket_norm": "nano plan"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

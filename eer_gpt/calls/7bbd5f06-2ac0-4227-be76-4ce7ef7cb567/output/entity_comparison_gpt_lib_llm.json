@@ -1,0 +1,76 @@
+{
+  "call_id": "7bbd5f06-2ac0-4227-be76-4ce7ef7cb567",
+  "raw_data": {
+    "ground_truth_entity_string": "priya, elevatenow, nidhi, nano plan, 31.11, nano plan, nano plan, 1799, nano plan, 1799, 499, 1399",
+    "reference_entity_string": "priya, elevate now, nano plan, 31.11, nano plan, nano plan, 1799, nano plan, 1799, 499, 1399"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "correct_matches": 10,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "canonical": "nidhi"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "correct_matches": 10,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "ElevateNow",
+          "type": "ORG",
+          "canonical": "elevatenow"
+        },
+        "hyp": {
+          "text": "Elevate Now",
+          "type": "ORG",
+          "canonical": "elevate now"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "rupees 1,399",
+        "type": "MONEY",
+        "canonical": "1399"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Nidhi",
+        "type": "PERSON",
+        "canonical": "nidhi"
+      }
+    ]
+  }
+}

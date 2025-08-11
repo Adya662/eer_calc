@@ -1,0 +1,121 @@
+{
+  "call_id": "d9aa182c-b21e-4ad5-8138-18d0e9f69b84",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, mintra, hindi, english, laamic, love beauty and planet, lakme, dressberry, lecalla, carlton london, trim hand shampoo, love beauty and planet argan oil and lavender, lakme youth infinity anti aging night cream with pro retinol c, 27 july, lakme youth infinity anti aging night cream with pro retinol c 50g, love beauty and planet argan oil and lavender shampoo, tomorrow, love beauty and planet argan oil and lavender shampoo for frizzy hair 400ml, sms, mintra",
+    "reference_entity_string": "ray, myntra, hindi, english, lakme, love beauty and planet, lakme, dressberry, lakala, carlton london, trim hand shampoo, love beauty and planet argan oil and love, lakme youth infinity anti aging night cream with pro retinol c, lakme youth infinity anti aging night cream with pro retinol c 50 gd, 27 july, love beauty and planet 10 argan oil and lavender shampoo, love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli, tomorrow, sms, myntra"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 15,
+    "insertions": 2,
+    "deletions": 2,
+    "correct_matches": 0,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+          "type": "ORG",
+          "canonical": "mintra"
+        },
+        "hyp": {
+          "text": "Myntra",
+          "type": "ORG",
+          "canonical": "myntra"
+        }
+      },
+      {
+        "ref": {
+          "text": "Love Beauty & Planet Argan Oil and Lavender",
+          "type": "PRODUCT",
+          "canonical": "love beauty and planet argan oil and lavender"
+        },
+        "hyp": {
+          "text": "Love Beauty and Planet Argan Oil and Love",
+          "type": "PRODUCT",
+          "canonical": "love beauty and planet argan oil and love"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u0932\u0948\u0915\u094d\u092e\u0947 Youth Infinity Anti Aging Night Cream with Pro-Retinol C - 50g",
+          "type": "PRODUCT",
+          "canonical": "lakme youth infinity anti aging night cream with pro retinol c 50g"
+        },
+        "hyp": {
+          "text": "Lakme Youth Infinity anti-aging night cream with Pro retinol C 50 GD",
+          "type": "PRODUCT",
+          "canonical": "lakme youth infinity anti aging night cream with pro retinol c 50 gd"
+        }
+      },
+      {
+        "ref": {
+          "text": "Love Beauty & Planet Argan Oil and Lavender Shampoo",
+          "type": "PRODUCT",
+          "canonical": "love beauty and planet argan oil and lavender shampoo"
+        },
+        "hyp": {
+          "text": "Love Beauty and Planet 10 Argan oil and lavender shampoo",
+          "type": "PRODUCT",
+          "canonical": "love beauty and planet 10 argan oil and lavender shampoo"
+        }
+      },
+      {
+        "ref": {
+          "text": "Love Beauty & Planet Argan Oil and Lavender Shampoo for Frizzy Hair - 400ml",
+          "type": "PRODUCT",
+          "canonical": "love beauty and planet argan oil and lavender shampoo for frizzy hair 400ml"
+        },
+        "hyp": {
+          "text": "love beauty and planet 80 D 80 Argan oil and lavender shampoo for frizzy hair 400 milli",
+          "type": "PRODUCT",
+          "canonical": "love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli"
+        }
+      }
+    ],
+    "detailed_insertions": [
+      {
+        "text": "Lakala",
+        "type": "ORG",
+        "canonical": "lakala"
+      },
+      {
+        "text": "Lakme",
+        "type": "ORG",
+        "canonical": "lakme"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "Laamic",
+        "type": "PRODUCT",
+        "canonical": "laamic"
+      },
+      {
+        "text": "LeCalla",
+        "type": "ORG",
+        "canonical": "lecalla"
+      }
+    ]
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 15,
+    "insertions": 2,
+    "deletions": 2,
+    "correct_matches": 0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

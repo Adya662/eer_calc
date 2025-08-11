@@ -1,0 +1,52 @@
+{
+  "call_id": "1bf3729b-c0a7-4f65-a846-88c8aa31a473",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, hindi, english, rey, myntra, english, hindi, myntra, myntra, myntra, myntra",
+    "reference_entity_string": "ray, myntra, hindi, english, ray, myntra, english, hindi, myntra, myntra, myntra, myntra"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 11,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 11,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  }
+}

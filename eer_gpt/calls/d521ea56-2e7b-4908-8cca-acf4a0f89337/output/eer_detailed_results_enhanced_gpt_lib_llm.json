@@ -1,0 +1,373 @@
+{
+  "call_id": "d521ea56-2e7b-4908-8cca-acf4a0f89337",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 14.74,
+  "all_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 18,
+    "total_ref": 18,
+    "total_hyp": 18,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 0,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 18,
+    "total_ref": 18,
+    "total_hyp": 18,
+    "eer_percentage": 0.0,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 2,
+      "ORG": 3,
+      "PRODUCT": 4,
+      "MONEY": 5,
+      "NORP": 1,
+      "GPE": 3
+    },
+    "hypothesis": {
+      "PERSON": 2,
+      "ORG": 3,
+      "PRODUCT": 4,
+      "MONEY": 5,
+      "NORP": 1,
+      "GPE": 3
+    }
+  },
+  "mispronunciation": {
+    "count": 0,
+    "pronunciation_ids": ""
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "PERSON",
+      "GPE",
+      "PRODUCT",
+      "MONEY",
+      "NORP"
+    ],
+    "hypothesis": [
+      "ORG",
+      "PERSON",
+      "GPE",
+      "PRODUCT",
+      "MONEY",
+      "NORP"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Sanjana Kumar",
+        "type": "PERSON",
+        "canonical": "sanjana kumar"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "29.0",
+        "type": "MONEY",
+        "canonical": "29.0"
+      },
+      {
+        "text": "pre-obesity",
+        "type": "NORP",
+        "canonical": "preobesity"
+      },
+      {
+        "text": "iron",
+        "type": "PRODUCT",
+        "canonical": "iron"
+      },
+      {
+        "text": "vitamin D",
+        "type": "PRODUCT",
+        "canonical": "vitamin d"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "rupees 1,799",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "rupees 6,000",
+        "type": "MONEY",
+        "canonical": "6000"
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "Delhi",
+        "type": "GPE",
+        "canonical": "delhi"
+      },
+      {
+        "text": "Redcliffe",
+        "type": "ORG",
+        "canonical": "redcliffe"
+      },
+      {
+        "text": "Tata 1 MG",
+        "type": "ORG",
+        "canonical": "tata 1mg"
+      },
+      {
+        "text": "5,000",
+        "type": "MONEY",
+        "canonical": "5000"
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "200",
+        "type": "MONEY",
+        "canonical": "200"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Sanjana Kumar",
+        "type": "PERSON",
+        "canonical": "sanjana kumar"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "twenty-nine point zero",
+        "type": "MONEY",
+        "canonical": "29.0"
+      },
+      {
+        "text": "pre-obesity",
+        "type": "NORP",
+        "canonical": "preobesity"
+      },
+      {
+        "text": "iron",
+        "type": "PRODUCT",
+        "canonical": "iron"
+      },
+      {
+        "text": "vitamin D",
+        "type": "PRODUCT",
+        "canonical": "vitamin d"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Rupees one thousand seven hundred ninety-nine",
+        "type": "MONEY",
+        "canonical": "1799"
+      },
+      {
+        "text": "Rupees six thousand",
+        "type": "MONEY",
+        "canonical": "6000"
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "Delhi",
+        "type": "GPE",
+        "canonical": "delhi"
+      },
+      {
+        "text": "Redcliffe",
+        "type": "ORG",
+        "canonical": "redcliffe"
+      },
+      {
+        "text": "Tata 1MG",
+        "type": "ORG",
+        "canonical": "tata 1mg"
+      },
+      {
+        "text": "five thousand",
+        "type": "MONEY",
+        "canonical": "5000"
+      },
+      {
+        "text": "India",
+        "type": "GPE",
+        "canonical": "india"
+      },
+      {
+        "text": "two hundred",
+        "type": "MONEY",
+        "canonical": "200"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
+      },
+      {
+        "text": "Sanjana Kumar",
+        "type": "PERSON",
+        "canonical": "sanjana kumar"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Redcliffe",
+        "type": "ORG",
+        "canonical": "redcliffe"
+      },
+      {
+        "text": "Tata 1 MG",
+        "type": "ORG",
+        "canonical": "tata 1mg"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      },
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      },
+      {
+        "text": "Sanjana Kumar",
+        "type": "PERSON",
+        "canonical": "sanjana kumar"
+      },
+      {
+        "text": "Nano plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Nano Plan",
+        "type": "PRODUCT",
+        "canonical": "nano plan"
+      },
+      {
+        "text": "Redcliffe",
+        "type": "ORG",
+        "canonical": "redcliffe"
+      },
+      {
+        "text": "Tata 1MG",
+        "type": "ORG",
+        "canonical": "tata 1mg"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "priya",
+      "elevate now",
+      "sanjana kumar",
+      "nano plan",
+      "29.0",
+      "preobesity",
+      "iron",
+      "vitamin d",
+      "nano plan",
+      "1799",
+      "6000",
+      "india",
+      "delhi",
+      "redcliffe",
+      "tata 1mg",
+      "5000",
+      "india",
+      "200"
+    ],
+    "hypothesis_ordered": [
+      "priya",
+      "elevatenow",
+      "sanjana kumar",
+      "nano plan",
+      "29.0",
+      "preobesity",
+      "iron",
+      "vitamin d",
+      "nano plan",
+      "1799",
+      "6000",
+      "india",
+      "delhi",
+      "redcliffe",
+      "tata 1mg",
+      "5000",
+      "india",
+      "200"
+    ]
+  }
+}

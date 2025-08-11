@@ -1,0 +1,46 @@
+{
+  "call_id": "03261666-7d82-49ec-8d6e-78c2f716ad73",
+  "raw_data": {
+    "ground_truth_entity_string": "rey, myntra, tun, black net dress, tun, black net dress, 8 july",
+    "reference_entity_string": "rey, atun, black net dress, atun, black net dress, 8 july"
+  },
+  "normalized_data": {},
+  "all_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 1,
+    "deletions": 0,
+    "correct_matches": 6,
+    "detailed_substitutions": [],
+    "detailed_insertions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "start": 17,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      }
+    ],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 0,
+    "insertions": 1,
+    "deletions": 0,
+    "correct_matches": 5,
+    "detailed_substitutions": [],
+    "detailed_insertions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "start": 17,
+        "end": 23,
+        "word_index": -1,
+        "canonical": "myntra",
+        "bucket_norm": "myntra"
+      }
+    ],
+    "detailed_deletions": []
+  }
+}

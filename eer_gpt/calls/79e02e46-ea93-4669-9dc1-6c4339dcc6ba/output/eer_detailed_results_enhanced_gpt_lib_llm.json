@@ -1,0 +1,417 @@
+{
+  "call_id": "79e02e46-ea93-4669-9dc1-6c4339dcc6ba",
+  "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "processing_time": 17.52,
+  "all_entities_eer": {
+    "substitutions": 2,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 14,
+    "total_ref": 16,
+    "total_hyp": 16,
+    "eer_percentage": 12.5,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "Masculincaline \u0938\u093e\u0938\u093e \u092b\u093c\u0930\u0938",
+          "type": "PRODUCT",
+          "canonical": "masculincaline sasafers"
+        },
+        "hyp": {
+          "text": "masculine Sasafers",
+          "type": "PRODUCT",
+          "canonical": "masculincaline sasafers"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_eer": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "correct": 6,
+    "total_ref": 7,
+    "total_hyp": 7,
+    "eer_percentage": 14.29,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "entity_type_distribution": {
+    "reference": {
+      "PERSON": 1,
+      "ORG": 1,
+      "LANGUAGE": 2,
+      "PRODUCT": 9,
+      "DATE": 2,
+      "TIME": 1
+    },
+    "hypothesis": {
+      "PERSON": 1,
+      "ORG": 1,
+      "LANGUAGE": 2,
+      "PRODUCT": 9,
+      "DATE": 2,
+      "TIME": 1
+    }
+  },
+  "mispronunciation": {
+    "count": 1,
+    "pronunciation_ids": "KVEpQ"
+  },
+  "entity_types_found": {
+    "reference": [
+      "ORG",
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "TIME",
+      "DATE"
+    ],
+    "hypothesis": [
+      "ORG",
+      "PERSON",
+      "LANGUAGE",
+      "PRODUCT",
+      "TIME",
+      "DATE"
+    ]
+  },
+  "raw_entities": {
+    "reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "Kook N Keech urban edge printed relaxed t-shirt",
+        "type": "PRODUCT",
+        "canonical": "kook n keech urban edge printed relaxed t shirt"
+      },
+      {
+        "text": "June 18th",
+        "type": "DATE",
+        "canonical": "june 18"
+      },
+      {
+        "text": "5:05 p.m.",
+        "type": "TIME",
+        "canonical": "5:05 pm"
+      },
+      {
+        "text": "Kook N Keech urban edge printed relaxed t-shirt",
+        "type": "PRODUCT",
+        "canonical": "kook n keech urban edge printed relaxed t shirt"
+      },
+      {
+        "text": "21 June",
+        "type": "DATE",
+        "canonical": "21 june"
+      },
+      {
+        "text": "Freakins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "carkins",
+        "type": "PRODUCT",
+        "canonical": "crkins"
+      },
+      {
+        "text": "Freakins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "carkins",
+        "type": "PRODUCT",
+        "canonical": "crkins"
+      },
+      {
+        "text": "masculine Sasafers",
+        "type": "PRODUCT",
+        "canonical": "masculincaline sasafers"
+      },
+      {
+        "text": "Freakins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "UNRL",
+        "type": "PRODUCT",
+        "canonical": "unrl"
+      }
+    ],
+    "hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Hindi",
+        "type": "LANGUAGE",
+        "canonical": "hindi"
+      },
+      {
+        "text": "English",
+        "type": "LANGUAGE",
+        "canonical": "english"
+      },
+      {
+        "text": "Kook N Keech Urban Edge Printed Relaxed T-Shirt",
+        "type": "PRODUCT",
+        "canonical": "kook n keech urban edge printed relaxed t shirt"
+      },
+      {
+        "text": "June eighteenth",
+        "type": "DATE",
+        "canonical": "june 18"
+      },
+      {
+        "text": "five five PM",
+        "type": "TIME",
+        "canonical": "5:05 pm"
+      },
+      {
+        "text": "\u0915\u0941\u0915 \u090f\u0902\u0921 \u0915\u0940\u091a Urban Edge Printed Relaxed T-Shirt",
+        "type": "PRODUCT",
+        "canonical": "kook n keech urban edge printed relaxed t shirt"
+      },
+      {
+        "text": "21 June",
+        "type": "DATE",
+        "canonical": "21 june"
+      },
+      {
+        "text": "Freekins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "Crkins",
+        "type": "PRODUCT",
+        "canonical": "crkins"
+      },
+      {
+        "text": "Freekins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "Crkins",
+        "type": "PRODUCT",
+        "canonical": "crkins"
+      },
+      {
+        "text": "Masculincaline \u0938\u093e\u0938\u093e \u092b\u093c\u0930\u0938",
+        "type": "PRODUCT",
+        "canonical": "masculincaline sasafers"
+      },
+      {
+        "text": "Freekins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "UN RL",
+        "type": "PRODUCT",
+        "canonical": "unrl"
+      }
+    ],
+    "concerned_reference": [
+      {
+        "text": "Ray",
+        "type": "PERSON",
+        "canonical": "ray"
+      },
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Kook N Keech urban edge printed relaxed t-shirt",
+        "type": "PRODUCT",
+        "canonical": "kook n keech urban edge printed relaxed t shirt"
+      },
+      {
+        "text": "Kook N Keech urban edge printed relaxed t-shirt",
+        "type": "PRODUCT",
+        "canonical": "kook n keech urban edge printed relaxed t shirt"
+      },
+      {
+        "text": "Freakins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "Freakins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "masculine Sasafers",
+        "type": "PRODUCT",
+        "canonical": "masculincaline sasafers"
+      },
+      {
+        "text": "Freakins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "UNRL",
+        "type": "PRODUCT",
+        "canonical": "unrl"
+      }
+    ],
+    "concerned_hypothesis": [
+      {
+        "text": "Rey",
+        "type": "PERSON",
+        "canonical": "rey"
+      },
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      },
+      {
+        "text": "Kook N Keech Urban Edge Printed Relaxed T-Shirt",
+        "type": "PRODUCT",
+        "canonical": "kook n keech urban edge printed relaxed t shirt"
+      },
+      {
+        "text": "\u0915\u0941\u0915 \u090f\u0902\u0921 \u0915\u0940\u091a Urban Edge Printed Relaxed T-Shirt",
+        "type": "PRODUCT",
+        "canonical": "kook n keech urban edge printed relaxed t shirt"
+      },
+      {
+        "text": "Freekins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "Crkins",
+        "type": "PRODUCT",
+        "canonical": "crkins"
+      },
+      {
+        "text": "Freekins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "Crkins",
+        "type": "PRODUCT",
+        "canonical": "crkins"
+      },
+      {
+        "text": "Masculincaline \u0938\u093e\u0938\u093e \u092b\u093c\u0930\u0938",
+        "type": "PRODUCT",
+        "canonical": "masculincaline sasafers"
+      },
+      {
+        "text": "Freekins",
+        "type": "PRODUCT",
+        "canonical": "freekins"
+      },
+      {
+        "text": "UN RL",
+        "type": "PRODUCT",
+        "canonical": "unrl"
+      }
+    ]
+  },
+  "entity_lists": {
+    "reference_ordered": [
+      "ray",
+      "myntra",
+      "hindi",
+      "english",
+      "kook n keech urban edge printed relaxed t shirt",
+      "june 18",
+      "5:05 pm",
+      "kook n keech urban edge printed relaxed t shirt",
+      "21 june",
+      "freekins",
+      "crkins",
+      "freekins",
+      "crkins",
+      "masculincaline sasafers",
+      "freekins",
+      "unrl"
+    ],
+    "hypothesis_ordered": [
+      "rey",
+      "myntra",
+      "hindi",
+      "english",
+      "kook n keech urban edge printed relaxed t shirt",
+      "june 18",
+      "5:05 pm",
+      "kook n keech urban edge printed relaxed t shirt",
+      "21 june",
+      "freekins",
+      "crkins",
+      "freekins",
+      "crkins",
+      "masculincaline sasafers",
+      "freekins",
+      "unrl"
+    ]
+  }
+}

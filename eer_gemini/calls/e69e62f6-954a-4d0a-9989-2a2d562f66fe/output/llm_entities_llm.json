@@ -1,0 +1,121 @@
+{
+  "ref_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "hinglish",
+      "type": "LANGUAGE",
+      "canonical": "hinglish"
+    },
+    {
+      "text": "U.S. Polo Kids",
+      "type": "ORG",
+      "canonical": "us polo kids"
+    },
+    {
+      "text": "U.S. Polo Kids Girls ड्रॉप शोल्डर स्लीव्स प्योर कॉटन एप्लिकेट टी-शर्ट",
+      "type": "PRODUCT",
+      "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+    },
+    {
+      "text": "U.S. Polo Kids Girls एम्ब्रॉयडेड प्योर कॉटन स्ट्रेट स्कर्ट",
+      "type": "PRODUCT",
+      "canonical": "us polo kids girls embroidered pure cotton straight skirt"
+    },
+    {
+      "text": "U.S. Polo Kids Girls ड्रॉप शोल्डर स्लीव्स प्योर कॉटन एप्लिकेट टी-शर्ट",
+      "type": "PRODUCT",
+      "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+    },
+    {
+      "text": "21 जून",
+      "type": "DATE",
+      "canonical": "21 jun"
+    },
+    {
+      "text": "Myntra ऐप",
+      "type": "PRODUCT",
+      "canonical": "myntra app"
+    },
+    {
+      "text": "Myntra",
+      "type": "ORG",
+      "canonical": "myntra"
+    },
+    {
+      "text": "U.S Polo Kids Girls ड्रॉप शोल्डर स्लीव्स प्योर कॉटन एप्लीके T.Shirt",
+      "type": "PRODUCT",
+      "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+    }
+  ],
+  "hyp_entities": [
+    {
+      "text": "Rey",
+      "type": "PERSON",
+      "canonical": "rey"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "mintra"
+    },
+    {
+      "text": "Hindi",
+      "type": "LANGUAGE",
+      "canonical": "hindi"
+    },
+    {
+      "text": "English",
+      "type": "LANGUAGE",
+      "canonical": "english"
+    },
+    {
+      "text": "यू.एस. पोलो Kids",
+      "type": "ORG",
+      "canonical": "us polo kids"
+    },
+    {
+      "text": "यू.एस. पोलो Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+      "type": "PRODUCT",
+      "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+    },
+    {
+      "text": "यू.एस. पोलो Kids Girls Embroidered Pure Cotton Straight Skirt",
+      "type": "PRODUCT",
+      "canonical": "us polo kids girls embroidered pure cotton straight skirt"
+    },
+    {
+      "text": "यू.एस. पोलो Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+      "type": "PRODUCT",
+      "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+    },
+    {
+      "text": "21 June",
+      "type": "DATE",
+      "canonical": "21 june"
+    },
+    {
+      "text": "मिंत्रा ऐप",
+      "type": "PRODUCT",
+      "canonical": "mintra app"
+    },
+    {
+      "text": "मिंत्रा",
+      "type": "ORG",
+      "canonical": "mintra"
+    },
+    {
+      "text": "यू.एस. पोलो Kids Girls Drop-Shoulder Sleeves Pure Cotton Applique T-shirt",
+      "type": "PRODUCT",
+      "canonical": "us polo kids girls drop shoulder sleeves pure cotton applique tshirt"
+    }
+  ]
+}
