@@ -1,46 +1,51 @@
 {
   "call_id": "a26f3d38-ed43-4289-8d34-9ee376fb779d",
   "raw_data": {
-    "ground_truth_entity_string": "rey, myntra, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum 10% niacinamide brightening face serum with rice ferment extract and licorice - 50ml, myntra, myntra, myntra",
-    "reference_entity_string": "myntra, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15 ml, myntra, myntra, myntra"
+    "ground_truth_entity_string": "rey, myntra, hindi, english, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum 10% niacinamide brightening face serum with rice ferment extract and licorice 50ml, myntra, myntra, myntra",
+    "reference_entity_string": "myntra, hindi, english, plum face serum, jockey gym towel, bigen beard color, kalenji running shorts, sirona period panties, plum 10% niacinamide brightening face serum with rice ferment extract and licorice 15ml, myntra, myntra, myntra"
   },
   "normalized_data": {},
   "all_entities_comparison": {
-    "substitutions": 0,
+    "substitutions": 1,
     "insertions": 1,
-    "deletions": 0,
-    "correct_matches": 20,
-    "detailed_substitutions": [],
-    "detailed_insertions": [
+    "deletions": 1,
+    "correct_matches": 11,
+    "detailed_substitutions": [
       {
-        "text": "Rey",
-        "type": "PERSON",
-        "start": 8,
-        "end": 11,
-        "word_index": -1,
-        "canonical": "rey",
-        "bucket_norm": "rey"
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Myntra",
+          "type": "ORG",
+          "canonical": "myntra"
+        }
       }
     ],
-    "detailed_deletions": []
+    "detailed_insertions": [
+      {
+        "text": "Myntra",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ],
+    "detailed_deletions": [
+      {
+        "text": "\u092e\u093f\u0902\u0924\u094d\u0930\u093e",
+        "type": "ORG",
+        "canonical": "myntra"
+      }
+    ]
   },
   "concerned_entities_comparison": {
     "substitutions": 0,
-    "insertions": 1,
+    "insertions": 0,
     "deletions": 0,
-    "correct_matches": 20,
+    "correct_matches": 0,
     "detailed_substitutions": [],
-    "detailed_insertions": [
-      {
-        "text": "Rey",
-        "type": "PERSON",
-        "start": 8,
-        "end": 11,
-        "word_index": -1,
-        "canonical": "rey",
-        "bucket_norm": "rey"
-      }
-    ],
+    "detailed_insertions": [],
     "detailed_deletions": []
   }
 }

@@ -1,125 +1,99 @@
 {
   "call_id": "d9aa182c-b21e-4ad5-8138-18d0e9f69b84",
   "raw_data": {
-    "ground_truth_entity_string": "rey, myntra, laamic, love beauty and planet, lakme, dressberry, lecalla, carlton london, trim hand shampoo, love beauty and planet argan oil and lavender, lakme youth infinity anti aging night cream with pro-retinol c, 27 july, love beauty and planet argan oil and lavender shampoo, myntra",
-    "reference_entity_string": "ray, myntra, hindi, english, lakme, love beauty and planet, lakme, dressberry, lakala, carlton london, love beauty and planet argan oil and love, lakme youth infinity anti-aging night cream with pro retinol c, 27 july, love beauty and planet 10 argan oil and lavender shampoo, love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli, myntra"
+    "ground_truth_entity_string": "rey, myntra, hindi, english, laamic, love beauty and planet, lakme, dressberry, lecalla, carlton london, trim hand shampoo, love beauty and planet argan oil and lavender, lakme youth infinity anti aging night cream with pro retinol c, 27 july, love beauty and planet argan oil and lavender shampoo, 400ml, tomorrow, myntra",
+    "reference_entity_string": "ray, myntra, hindi, english, lakme, love beauty and planet, lakme, dressberry, lakala, carlton london, trim hand shampoo, love beauty and planet argan oil and love, lakme youth infinity anti aging night cream with pro retinol c, 27 july, love beauty and planet argan oil and lavender shampoo, 400ml, tomorrow, myntra"
   },
   "normalized_data": {},
   "all_entities_comparison": {
-    "substitutions": 1,
+    "substitutions": 2,
     "insertions": 1,
-    "deletions": 3,
-    "correct_matches": 12,
+    "deletions": 1,
+    "correct_matches": 16,
     "detailed_substitutions": [
       {
         "ref": {
-          "text": "Lakme",
-          "type": "ORG",
-          "start": 366,
-          "end": 371,
-          "word_index": -1,
-          "canonical": "lakme",
-          "bucket_norm": "lakme"
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
         },
         "hyp": {
-          "text": "Laamic",
-          "type": "PRODUCT",
-          "start": 366,
-          "end": 372,
-          "word_index": -1,
-          "canonical": "laamic",
-          "bucket_norm": "laamic"
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u0932\u0948\u0915\u094d\u092e\u0947",
+          "type": "ORG",
+          "canonical": "lakme"
+        },
+        "hyp": {
+          "text": "Lakme",
+          "type": "ORG",
+          "canonical": "lakme"
         }
       }
     ],
     "detailed_insertions": [
       {
-        "text": "Trim hand shampoo",
-        "type": "PRODUCT",
-        "start": 594,
-        "end": 611,
-        "word_index": -1,
-        "canonical": "trim hand shampoo",
-        "bucket_norm": "trim hand shampoo"
+        "text": "Lakme",
+        "type": "ORG",
+        "canonical": "lakme"
       }
     ],
     "detailed_deletions": [
       {
-        "text": "Hindi",
-        "type": "LANGUAGE",
-        "start": 66,
-        "end": 71,
-        "word_index": -1,
-        "canonical": "hindi",
-        "bucket_norm": "hindi"
-      },
-      {
-        "text": "English",
-        "type": "LANGUAGE",
-        "start": 75,
-        "end": 82,
-        "word_index": -1,
-        "canonical": "english",
-        "bucket_norm": "english"
-      },
-      {
-        "text": "love beauty and planet 80 D 80 Argan oil and lavender shampoo for frizzy hair 400 milli",
+        "text": "Laamic",
         "type": "PRODUCT",
-        "start": 1010,
-        "end": 1085,
-        "word_index": -1,
-        "canonical": "love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli",
-        "bucket_norm": "love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli"
+        "canonical": "laamic"
       }
     ]
   },
   "concerned_entities_comparison": {
-    "substitutions": 1,
+    "substitutions": 2,
     "insertions": 1,
     "deletions": 1,
-    "correct_matches": 11,
+    "correct_matches": 16,
     "detailed_substitutions": [
       {
         "ref": {
-          "text": "Lakme",
-          "type": "ORG",
-          "start": 366,
-          "end": 371,
-          "word_index": -1,
-          "canonical": "lakme",
-          "bucket_norm": "lakme"
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
         },
         "hyp": {
-          "text": "Laamic",
-          "type": "PRODUCT",
-          "start": 366,
-          "end": 372,
-          "word_index": -1,
-          "canonical": "laamic",
-          "bucket_norm": "laamic"
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
+      },
+      {
+        "ref": {
+          "text": "\u0932\u0948\u0915\u094d\u092e\u0947",
+          "type": "ORG",
+          "canonical": "lakme"
+        },
+        "hyp": {
+          "text": "Lakme",
+          "type": "ORG",
+          "canonical": "lakme"
         }
       }
     ],
     "detailed_insertions": [
       {
-        "text": "Trim hand shampoo",
-        "type": "PRODUCT",
-        "start": 594,
-        "end": 611,
-        "word_index": -1,
-        "canonical": "trim hand shampoo",
-        "bucket_norm": "trim hand shampoo"
+        "text": "Lakme",
+        "type": "ORG",
+        "canonical": "lakme"
       }
     ],
     "detailed_deletions": [
       {
-        "text": "love beauty and planet 80 D 80 Argan oil and lavender shampoo for frizzy hair 400 milli",
+        "text": "Laamic",
         "type": "PRODUCT",
-        "start": 1010,
-        "end": 1085,
-        "word_index": -1,
-        "canonical": "love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli",
-        "bucket_norm": "love beauty and planet 80 d 80 argan oil and lavender shampoo for frizzy hair 400 milli"
+        "canonical": "laamic"
       }
     ]
   }

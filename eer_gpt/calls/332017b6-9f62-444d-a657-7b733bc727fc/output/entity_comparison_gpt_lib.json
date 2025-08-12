@@ -1,44 +1,51 @@
 {
   "call_id": "332017b6-9f62-444d-a657-7b733bc727fc",
   "raw_data": {
-    "ground_truth_entity_string": "rey, myntra, july 17, 10:24 am, mango extended sleeves high neck top, forever new women top, forever new women top, 28 july, myntra",
-    "reference_entity_string": "ray, myntra, hindi, english, july 17, 10:24 am, mango extended sleeves high neck top, forever new women top, forever new women top, 28 july, myntra"
+    "ground_truth_entity_string": "rey, myntra, hindi, english, july 17, 10:24 am, mango extended sleeves high neck top, forever new women top, 28 july, exide to lipid, myntra",
+    "reference_entity_string": "ray, myntra, hindi, english, july 17, 10:24 am, mango extended sleeves high neck top, forever new women top, 28 july, excite to lipid, myntra"
   },
   "normalized_data": {},
   "all_entities_comparison": {
-    "substitutions": 0,
-    "insertions": 0,
-    "deletions": 2,
-    "correct_matches": 9,
-    "detailed_substitutions": [],
-    "detailed_insertions": [],
-    "detailed_deletions": [
-      {
-        "text": "Hindi",
-        "type": "LANGUAGE",
-        "start": 66,
-        "end": 71,
-        "word_index": -1,
-        "canonical": "hindi",
-        "bucket_norm": "hindi"
-      },
-      {
-        "text": "English",
-        "type": "LANGUAGE",
-        "start": 75,
-        "end": 82,
-        "word_index": -1,
-        "canonical": "english",
-        "bucket_norm": "english"
-      }
-    ]
-  },
-  "concerned_entities_comparison": {
-    "substitutions": 0,
+    "substitutions": 1,
     "insertions": 0,
     "deletions": 0,
-    "correct_matches": 6,
-    "detailed_substitutions": [],
+    "correct_matches": 10,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Exide to lipid",
+          "type": "PRODUCT",
+          "canonical": "exide to lipid"
+        },
+        "hyp": {
+          "text": "excite to lipid",
+          "type": "PRODUCT",
+          "canonical": "excite to lipid"
+        }
+      }
+    ],
+    "detailed_insertions": [],
+    "detailed_deletions": []
+  },
+  "concerned_entities_comparison": {
+    "substitutions": 1,
+    "insertions": 0,
+    "deletions": 0,
+    "correct_matches": 10,
+    "detailed_substitutions": [
+      {
+        "ref": {
+          "text": "Exide to lipid",
+          "type": "PRODUCT",
+          "canonical": "exide to lipid"
+        },
+        "hyp": {
+          "text": "excite to lipid",
+          "type": "PRODUCT",
+          "canonical": "excite to lipid"
+        }
+      }
+    ],
     "detailed_insertions": [],
     "detailed_deletions": []
   }

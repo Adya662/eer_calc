@@ -1,67 +1,26 @@
 {
   "call_id": "09f69426-e7e6-4f2a-a20a-75416d945306",
   "raw_data": {
-    "ground_truth_entity_string": "priya, elevatenow, purba sahu, nano plan, nano plan, 1799, nano plan, nano plan, 1799, 6000, nano plan, nano plan, nano plan",
-    "reference_entity_string": "priya, elevate now, purba sahu, nano plan, nano plan, 1799, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan"
+    "ground_truth_entity_string": "priya, elevatenow, purba sahu, nano plan, 1799, blood test, doctor consultation, health coach consultation, 6000, nano plan, 3 6 or 12 month subscription plans, 3 months",
+    "reference_entity_string": "priya, elevate now, purba sahu, nano plan, 1799, blood test, doctor consultation, health coach consultation, 6000, nano plan, 3 6 or 12 month subscription plans, 3 months"
   },
   "normalized_data": {},
   "all_entities_comparison": {
-    "substitutions": 1,
-    "insertions": 1,
+    "substitutions": 0,
+    "insertions": 0,
     "deletions": 0,
-    "correct_matches": 11,
-    "detailed_substitutions": [
-      {
-        "ref": {
-          "text": "Nano plan",
-          "type": "PRODUCT",
-          "start": 1225,
-          "end": 1234,
-          "word_index": -1,
-          "canonical": "nano plan",
-          "bucket_norm": "nano plan"
-        },
-        "hyp": {
-          "text": "Rupees six thousand",
-          "type": "MONEY",
-          "start": 1360,
-          "end": 1379,
-          "word_index": -1,
-          "canonical": "6000",
-          "bucket_norm": "6000"
-        }
-      }
-    ],
-    "detailed_insertions": [
-      {
-        "text": "Rupees one thousand seven hundred ninety-nine",
-        "type": "MONEY",
-        "start": 1224,
-        "end": 1268,
-        "word_index": -1,
-        "canonical": "1799",
-        "bucket_norm": "1799"
-      }
-    ],
+    "correct_matches": 12,
+    "detailed_substitutions": [],
+    "detailed_insertions": [],
     "detailed_deletions": []
   },
   "concerned_entities_comparison": {
     "substitutions": 0,
     "insertions": 0,
-    "deletions": 1,
-    "correct_matches": 10,
+    "deletions": 0,
+    "correct_matches": 12,
     "detailed_substitutions": [],
     "detailed_insertions": [],
-    "detailed_deletions": [
-      {
-        "text": "Nano plan",
-        "type": "PRODUCT",
-        "start": 104,
-        "end": 113,
-        "word_index": -1,
-        "canonical": "nano plan",
-        "bucket_norm": "nano plan"
-      }
-    ]
+    "detailed_deletions": []
   }
 }

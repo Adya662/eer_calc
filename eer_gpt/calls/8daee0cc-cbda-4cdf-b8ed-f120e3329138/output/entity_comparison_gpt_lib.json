@@ -1,55 +1,52 @@
 {
   "call_id": "8daee0cc-cbda-4cdf-b8ed-f120e3329138",
   "raw_data": {
-    "ground_truth_entity_string": "rey, myntra, hindi, english, stylecast ex revolt men opaque casual shirt, 21 august, stylecast ex revolt men opaque casual shirt, 21 august, myntra, myntra, myntra",
-    "reference_entity_string": "ray, myntra, hindi, english, style cast x revolt men opaque casual shirt, 21 august, myntra, myntra, myntra"
+    "ground_truth_entity_string": "rey, myntra, hindi, english, stylecast x revolt men opaque casual shirt, 21 august, 21 august, myntra, myntra, myntra",
+    "reference_entity_string": "ray, myntra, hindi, english, stylecast x revolt men opaque casual shirt, 21 august, myntra, myntra, myntra"
   },
   "normalized_data": {},
   "all_entities_comparison": {
-    "substitutions": 0,
-    "insertions": 2,
+    "substitutions": 1,
+    "insertions": 0,
     "deletions": 0,
     "correct_matches": 9,
-    "detailed_substitutions": [],
-    "detailed_insertions": [
+    "detailed_substitutions": [
       {
-        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
-        "type": "PRODUCT",
-        "start": 204,
-        "end": 247,
-        "word_index": -1,
-        "canonical": "stylecast ex revolt men opaque casual shirt",
-        "bucket_norm": "stylecast ex revolt men opaque casual shirt"
-      },
-      {
-        "text": "21 August",
-        "type": "DATE",
-        "start": 283,
-        "end": 292,
-        "word_index": -1,
-        "canonical": "21 august",
-        "bucket_norm": "21 august"
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
       }
     ],
+    "detailed_insertions": [],
     "detailed_deletions": []
   },
   "concerned_entities_comparison": {
-    "substitutions": 0,
-    "insertions": 1,
+    "substitutions": 1,
+    "insertions": 0,
     "deletions": 0,
-    "correct_matches": 6,
-    "detailed_substitutions": [],
-    "detailed_insertions": [
+    "correct_matches": 9,
+    "detailed_substitutions": [
       {
-        "text": "\u0938\u094d\u091f\u093e\u0907\u0932\u0915\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938 \u0930\u093f\u0935\u0949\u0932\u094d\u091f Men Opaque Casual Shirt",
-        "type": "PRODUCT",
-        "start": 204,
-        "end": 247,
-        "word_index": -1,
-        "canonical": "stylecast ex revolt men opaque casual shirt",
-        "bucket_norm": "stylecast ex revolt men opaque casual shirt"
+        "ref": {
+          "text": "Rey",
+          "type": "PERSON",
+          "canonical": "rey"
+        },
+        "hyp": {
+          "text": "Ray",
+          "type": "PERSON",
+          "canonical": "ray"
+        }
       }
     ],
+    "detailed_insertions": [],
     "detailed_deletions": []
   }
 }

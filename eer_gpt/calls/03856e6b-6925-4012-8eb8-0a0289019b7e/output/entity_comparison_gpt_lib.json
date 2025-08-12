@@ -1,173 +1,76 @@
 {
   "call_id": "03856e6b-6925-4012-8eb8-0a0289019b7e",
   "raw_data": {
-    "ground_truth_entity_string": "priya, elevatenow, atul sinha, priya, elevatenow, priya, elevatenow, atul sinha, priya, elevatenow, atul sinha, nano plan, india, patna, nano plan, nano plan, bmi, 35.56, obesity stage - category i, healthifi, nano plan, mbbs, md, elevate-now",
-    "reference_entity_string": "priya, priya, priya, elevate now, priya, elevate now, atul sinha, priya, elevate now, atul sinha, nano plan, nano plan, bmi, 35.56, category y, healthify, nano plan, mbbs, md, elevate now"
+    "ground_truth_entity_string": "priya, elevatenow, atul sinha, priya, elevatenow, atul sinha, priya, elevatenow, atul sinha, priya, elevatenow, atul sinha, nano plan, india, patna, nano plan, 35.56, obesity stage category i, healthifi, nano plan, mbbs, md, elevate now",
+    "reference_entity_string": "priya, priya, elevate now, priya, elevate now, atul sinha, priya, elevate now, atul sinha, nano plan, nano plan, 35.56, obesity stage category y, healthify, nano plan, mbbs, md, elevate now"
   },
   "normalized_data": {},
   "all_entities_comparison": {
-    "substitutions": 2,
-    "insertions": 4,
-    "deletions": 0,
-    "correct_matches": 18,
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "correct_matches": 21,
     "detailed_substitutions": [
       {
         "ref": {
-          "text": "Priya",
-          "type": "PERSON",
-          "start": 36,
-          "end": 41,
-          "word_index": -1,
-          "canonical": "priya",
-          "bucket_norm": "priya"
-        },
-        "hyp": {
-          "text": "ATUL SINHA",
-          "type": "PERSON",
-          "start": 58,
-          "end": 68,
-          "word_index": -1,
-          "canonical": "atul sinha",
-          "bucket_norm": "atul sinha"
-        }
-      },
-      {
-        "ref": {
-          "text": "category Y",
-          "type": "PRODUCT",
-          "start": 707,
-          "end": 717,
-          "word_index": -1,
-          "canonical": "category y",
-          "bucket_norm": "category y"
-        },
-        "hyp": {
           "text": "Obesity Stage - Category I",
           "type": "EVENT",
-          "start": 926,
-          "end": 953,
-          "word_index": -1,
-          "canonical": "obesity stage - category i",
-          "bucket_norm": "obesity stage - category i"
+          "canonical": "obesity stage category i"
+        },
+        "hyp": {
+          "text": "obesity stage category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
         }
       }
     ],
     "detailed_insertions": [
       {
-        "text": "ElevateNow",
-        "type": "ORG",
-        "start": 29,
-        "end": 39,
-        "word_index": -1,
-        "canonical": "elevatenow",
-        "bucket_norm": "elevatenow"
-      },
-      {
-        "text": "India",
-        "type": "GPE",
-        "start": 396,
-        "end": 401,
-        "word_index": -1,
-        "canonical": "india",
-        "bucket_norm": "india"
-      },
+        "text": "priya",
+        "type": "PERSON",
+        "canonical": "priya"
+      }
+    ],
+    "detailed_deletions": [
       {
         "text": "\u092a\u091f\u0928\u093e",
         "type": "GPE",
-        "start": 412,
-        "end": 417,
-        "word_index": -1,
-        "canonical": "patna",
-        "bucket_norm": "patna"
-      },
-      {
-        "text": "Nano plan",
-        "type": "PRODUCT",
-        "start": 222,
-        "end": 231,
-        "word_index": -1,
-        "canonical": "nano plan",
-        "bucket_norm": "nano plan"
+        "canonical": "patna"
       }
-    ],
-    "detailed_deletions": []
+    ]
   },
   "concerned_entities_comparison": {
-    "substitutions": 2,
-    "insertions": 3,
-    "deletions": 0,
-    "correct_matches": 15,
+    "substitutions": 1,
+    "insertions": 1,
+    "deletions": 1,
+    "correct_matches": 21,
     "detailed_substitutions": [
       {
         "ref": {
-          "text": "category Y",
-          "type": "PRODUCT",
-          "start": 707,
-          "end": 717,
-          "word_index": -1,
-          "canonical": "category y",
-          "bucket_norm": "category y"
+          "text": "Obesity Stage - Category I",
+          "type": "EVENT",
+          "canonical": "obesity stage category i"
         },
         "hyp": {
-          "text": "Healthifi",
-          "type": "ORG",
-          "start": 1225,
-          "end": 1234,
-          "word_index": -1,
-          "canonical": "healthifi",
-          "bucket_norm": "healthifi"
-        }
-      },
-      {
-        "ref": {
-          "text": "Healthify",
-          "type": "ORG",
-          "start": 1014,
-          "end": 1023,
-          "word_index": -1,
-          "canonical": "healthify",
-          "bucket_norm": "healthify"
-        },
-        "hyp": {
-          "text": "Nano Plan",
-          "type": "PRODUCT",
-          "start": 1243,
-          "end": 1252,
-          "word_index": -1,
-          "canonical": "nano plan",
-          "bucket_norm": "nano plan"
+          "text": "obesity stage category Y",
+          "type": "EVENT",
+          "canonical": "obesity stage category y"
         }
       }
     ],
     "detailed_insertions": [
       {
-        "text": "ElevateNow",
-        "type": "ORG",
-        "start": 29,
-        "end": 39,
-        "word_index": -1,
-        "canonical": "elevatenow",
-        "bucket_norm": "elevatenow"
-      },
-      {
-        "text": "ATUL SINHA",
+        "text": "priya",
         "type": "PERSON",
-        "start": 58,
-        "end": 68,
-        "word_index": -1,
-        "canonical": "atul sinha",
-        "bucket_norm": "atul sinha"
-      },
-      {
-        "text": "Nano plan",
-        "type": "PRODUCT",
-        "start": 222,
-        "end": 231,
-        "word_index": -1,
-        "canonical": "nano plan",
-        "bucket_norm": "nano plan"
+        "canonical": "priya"
       }
     ],
-    "detailed_deletions": []
+    "detailed_deletions": [
+      {
+        "text": "\u092a\u091f\u0928\u093e",
+        "type": "GPE",
+        "canonical": "patna"
+      }
+    ]
   }
 }

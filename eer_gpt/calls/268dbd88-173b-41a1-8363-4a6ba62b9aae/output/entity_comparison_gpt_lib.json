@@ -1,88 +1,76 @@
 {
   "call_id": "268dbd88-173b-41a1-8363-4a6ba62b9aae",
   "raw_data": {
-    "ground_truth_entity_string": "priya, elevatenow, rupesh kondawar, priya, elevatenow, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan",
-    "reference_entity_string": "priya, elevate now, rupesh kovar, priya, elevate now, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan"
+    "ground_truth_entity_string": "priya, elevatenow, rupesh kondawar, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan",
+    "reference_entity_string": "priya, elevate now, rupesh kovar, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan, nano plan"
   },
   "normalized_data": {},
   "all_entities_comparison": {
     "substitutions": 1,
     "insertions": 1,
-    "deletions": 0,
-    "correct_matches": 10,
+    "deletions": 1,
+    "correct_matches": 13,
     "detailed_substitutions": [
       {
         "ref": {
-          "text": "Rupesh Kovar",
-          "type": "PERSON",
-          "start": 61,
-          "end": 73,
-          "word_index": -1,
-          "canonical": "rupesh kovar",
-          "bucket_norm": "rupesh kovar"
-        },
-        "hyp": {
           "text": "Rupesh Kondawar",
           "type": "PERSON",
-          "start": 58,
-          "end": 73,
-          "word_index": -1,
-          "canonical": "rupesh kondawar",
-          "bucket_norm": "rupesh kondawar"
+          "canonical": "rupesh kondawar"
+        },
+        "hyp": {
+          "text": "Rupesh Kovar",
+          "type": "PERSON",
+          "canonical": "rupesh kovar"
         }
       }
     ],
     "detailed_insertions": [
       {
-        "text": "Nano plan",
-        "type": "PRODUCT",
-        "start": 160,
-        "end": 169,
-        "word_index": -1,
-        "canonical": "nano plan",
-        "bucket_norm": "nano plan"
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
       }
     ],
-    "detailed_deletions": []
+    "detailed_deletions": [
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      }
+    ]
   },
   "concerned_entities_comparison": {
     "substitutions": 1,
     "insertions": 1,
-    "deletions": 0,
-    "correct_matches": 10,
+    "deletions": 1,
+    "correct_matches": 13,
     "detailed_substitutions": [
       {
         "ref": {
-          "text": "Rupesh Kovar",
-          "type": "PERSON",
-          "start": 61,
-          "end": 73,
-          "word_index": -1,
-          "canonical": "rupesh kovar",
-          "bucket_norm": "rupesh kovar"
-        },
-        "hyp": {
           "text": "Rupesh Kondawar",
           "type": "PERSON",
-          "start": 58,
-          "end": 73,
-          "word_index": -1,
-          "canonical": "rupesh kondawar",
-          "bucket_norm": "rupesh kondawar"
+          "canonical": "rupesh kondawar"
+        },
+        "hyp": {
+          "text": "Rupesh Kovar",
+          "type": "PERSON",
+          "canonical": "rupesh kovar"
         }
       }
     ],
     "detailed_insertions": [
       {
-        "text": "Nano plan",
-        "type": "PRODUCT",
-        "start": 160,
-        "end": 169,
-        "word_index": -1,
-        "canonical": "nano plan",
-        "bucket_norm": "nano plan"
+        "text": "Elevate Now",
+        "type": "ORG",
+        "canonical": "elevate now"
       }
     ],
-    "detailed_deletions": []
+    "detailed_deletions": [
+      {
+        "text": "ElevateNow",
+        "type": "ORG",
+        "canonical": "elevatenow"
+      }
+    ]
   }
 }

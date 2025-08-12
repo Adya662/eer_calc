@@ -32,9 +32,36 @@ import re
 import unicodedata
 from pathlib import Path
 from typing import List, Dict, Tuple, Set, Optional
+from functools import lru_cache
 from collections import defaultdict
 import google.generativeai as genai
 # LLM analysis is performed locally in this module to avoid cross-module imports
+
+def _setup_stdout_capture(log_path: Path):
+    """Mirror stdout/stderr to a log file (append mode) without suppressing console output."""
+    try:
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        logfile = open(log_path, 'a', encoding='utf-8')
+        class _Tee:
+            def __init__(self, *streams):
+                self.streams = streams
+            def write(self, data):
+                for s in self.streams:
+                    try:
+                        s.write(data)
+                    except Exception:
+                        pass
+            def flush(self):
+                for s in self.streams:
+                    try:
+                        s.flush()
+                    except Exception:
+                        pass
+        sys.stdout = _Tee(sys.stdout, logfile)
+        sys.stderr = _Tee(sys.stderr, logfile)
+    except Exception:
+        # Logging is best-effort; ignore failures
+        pass
 
 def ensure_latin(text: str) -> str:
     """
@@ -113,6 +140,149 @@ def _phonetic_match(a: str, b: str) -> bool:
     import difflib
     return difflib.SequenceMatcher(None, a, b).ratio() >= 0.96
 
+# ================== Phonetic equality (fast, deterministic, cached) ==================
+# Optional dependencies (graceful fallback)
+try:
+    from metaphone import doublemetaphone  # pip install Metaphone
+except Exception:
+    doublemetaphone = None
+
+try:
+    from g2p_en import G2p  # pip install g2p_en
+except Exception:
+    G2p = None
+
+@lru_cache(maxsize=4096)
+def _jw_sim(a: str, b: str) -> float:
+    """Deterministic Jaro-Winkler similarity (0..1) for short codes."""
+    return _jaro_winkler(a or "", b or "")
+
+def _jaro_winkler(s1: str, s2: str, p: float = 0.1) -> float:
+    if s1 == s2:
+        return 1.0
+    len1, len2 = len(s1), len(s2)
+    if len1 == 0 or len2 == 0:
+        return 0.0
+    match_distance = max(len1, len2)//2 - 1
+    s1_matches = [False]*len1
+    s2_matches = [False]*len2
+    matches = 0
+    transpositions = 0
+    for i in range(len1):
+        start = max(0, i - match_distance)
+        end = min(i + match_distance + 1, len2)
+        for j in range(start, end):
+            if s2_matches[j]:
+                continue
+            if s1[i] != s2[j]:
+                continue
+            s1_matches[i] = s2_matches[j] = True
+            matches += 1
+            break
+    if matches == 0:
+        return 0.0
+    k = 0
+    for i in range(len1):
+        if not s1_matches[i]:
+            continue
+        while not s2_matches[k]:
+            k += 1
+        if s1[i] != s2[k]:
+            transpositions += 1
+        k += 1
+    transpositions //= 2
+    jaro = (matches/len1 + matches/len2 + (matches - transpositions)/matches)/3.0
+    prefix = 0
+    for i in range(min(4, len1, len2)):
+        if s1[i] == s2[i]:
+            prefix += 1
+        else:
+            break
+    return jaro + prefix * p * (1 - jaro)
+
+def _levenshtein(a: List[str], b: List[str]) -> int:
+    m, n = len(a), len(b)
+    if m == 0:
+        return n
+    if n == 0:
+        return m
+    prev = list(range(n+1))
+    curr = [0]*(n+1)
+    for i in range(1, m+1):
+        curr[0] = i
+        ai = a[i-1]
+        for j in range(1, n+1):
+            cost = 0 if ai == b[j-1] else 1
+            curr[j] = min(prev[j] + 1, curr[j-1] + 1, prev[j-1] + cost)
+        prev, curr = curr, prev
+    return prev[n]
+
+@lru_cache(maxsize=4096)
+def metaphone_codes(token: str) -> Tuple[str, str]:
+    """Return (primary, alternate) Double Metaphone codes; empty strings if unavailable."""
+    t = (token or "").strip().lower()
+    if not t:
+        return ("", "")
+    if doublemetaphone is None:
+        import re
+        s = re.sub(r'[^a-z0-9]', '', t)
+        s = s.replace('ph', 'f').replace('gh', 'g').replace('kn','n').replace('wr','r')
+        s = re.sub(r'[aeiou]+', '', s)
+        return (s[:8], "")
+    p, a = doublemetaphone(t)
+    return (p or "", a or "")
+
+def metaphone_similar(a: str, b: str, jw_threshold: float = 0.92) -> bool:
+    pa, aa = metaphone_codes(a)
+    pb, ab = metaphone_codes(b)
+    if not (pa or aa or pb or ab):
+        return False
+    if pa and (pa == pb or pa == ab):
+        return True
+    if aa and (aa == pb or aa == ab):
+        return True
+    codes_a = [c for c in (pa, aa) if c]
+    codes_b = [c for c in (pb, ab) if c]
+    return any(_jw_sim(x, y) >= jw_threshold for x in codes_a for y in codes_b)
+
+_g2p = G2p() if 'G2p' in globals() and G2p is not None else None
+
+@lru_cache(maxsize=4096)
+def g2p_arpabet(token: str) -> List[str]:
+    """Convert token to ARPABET phoneme list via g2p_en when available."""
+    t = (token or "").strip()
+    if not t or _g2p is None:
+        return []
+    seq = _g2p(t)
+    phones = [p for p in seq if p and p[0].isalpha() and p[0].isupper()]
+    return [p.rstrip("012") for p in phones]
+
+def phoneme_similarity(a: str, b: str) -> float:
+    pa = g2p_arpabet(a)
+    pb = g2p_arpabet(b)
+    if not pa or not pb:
+        return 0.0
+    dist = _levenshtein(pa, pb)
+    denom = max(len(pa), len(pb))
+    return 1.0 - (dist / denom) if denom else 0.0
+
+def sounds_alike(a: str, b: str, meta_jw: float = 0.92, g2p_thresh: float = 0.80) -> bool:
+    """
+    Decide if two tokens sound alike.
+    1) Double Metaphone (codes equal or JW >= meta_jw) ⇒ True
+    2) Else G2P ARPABET similarity >= g2p_thresh ⇒ True
+    Else False. All results are cached by inner functions.
+    """
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if metaphone_similar(a, b, jw_threshold=meta_jw):
+        return True
+    if phoneme_similarity(a, b) >= g2p_thresh:
+        return True
+    return False
+
 def _split_type_and_value_token(t: str) -> Tuple[str, str]:
     if '::' in t:
         ttype, tval = t.split('::', 1)
@@ -132,7 +302,10 @@ def _tokens_equal(a: str, b: str) -> bool:
     vbc = _collapse_spacing_hyphen(vb)
     if vac == vbc:
         return True
-    # phonetic forgiveness on collapsed forms (healthifi ≈ healthify, ray ≈ rey)
+    # Fast phonetic equality: Double Metaphone → JW guard; else G2P ARPABET similarity
+    if sounds_alike(vac, vbc):
+        return True
+    # Fallback to previous phonetic forgiveness if optional deps unavailable
     return _phonetic_match(vac, vbc)
 
 # --- Helpers: digits/brand extraction
@@ -285,14 +458,14 @@ if not GOOGLE_API_KEY:
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Default Gemini model
-GEMINI_MODEL = "gemini-1.5-pro"
+GEMINI_MODEL = "gemini-2.5-flash"
 
 # Default temperature
 GEMINI_TEMPERATURE = 0
 
 # Labels to consider for concerned entity counts
 CONCERNED_LABELS = {"PERSON", "ORG", "ORGANIZATION", "PRODUCT"}
-OUTPUT_SUFFIX_DEFAULT = "_llm"
+OUTPUT_SUFFIX_DEFAULT = "_llm"  # retained for compatibility but not used in output filenames
 
 
 # LLM EER analysis prompt - LLM handles ALL normalization and EER
@@ -814,30 +987,23 @@ def merge_contiguous_entities(entities: List[Dict]) -> List[Dict]:
 
 def filter_concerned_entities(entities: List[Dict]) -> List[Dict]:
     """
-    Filter entities to only concerned types (PERSON, ORG/ORGANIZATION),
-    and select proper nouns (at least one token starting with uppercase or any non-ASCII).
+    Filter entities to only concerned types (PERSON, ORG/ORGANIZATION, PRODUCT),
+    while dropping acknowledgements and medical conditions. No capitalization requirement.
     """
-    filtered = []
+    filtered: List[Dict] = []
     ack_stopwords = {
         'ok','okay','hmm','uh huh','uhhuh','haan','hanji','haanji','theek hai','thik hai','acha','achha'
     }
-    for e in entities:
-        if e['type'] in CONCERNED_LABELS:
-            text = e.get('text', '').strip()
+    for e in entities or []:
+        if e.get('type') in CONCERNED_LABELS:
+            text = (e.get('text') or '').strip()
             if not text:
                 continue
-            # Drop obvious acknowledgements/non-entities after transliteration
             if normalize_entity(text) in ack_stopwords:
                 continue
-            # Exclude medical conditions from concerned set
             if is_medical_condition(text):
                 continue
-            tokens = text.split()
-            def _looks_proper(word: str) -> bool:
-                # Accept if starts with uppercase OR contains any uppercase letter (all-caps) OR contains any non-ASCII letter (e.g., Devanagari, Tamil, etc.)
-                return (word and (word[0].isupper() or any(ch.isupper() for ch in word))) or any(ord(ch) > 127 for ch in word)
-            if any(_looks_proper(tok) for tok in tokens if tok):
-                filtered.append(e)
+            filtered.append(e)
     return filtered
 
 def get_mispronunciation_data(call_dir: Path) -> Tuple[int, str]:
@@ -873,7 +1039,7 @@ def print_detailed_eer_results(call_id: str, all_eer: Dict, concerned_eer: Dict)
     print(f"{'='*80}")
     
     # All Entities Results
-    print(f"\n🔍 ALL ENTITIES ANALYSIS:")
+    print(f"\nALL ENTITIES ANALYSIS:")
     print(f"{'─'*50}")
     print(f"Reference entities: {all_eer['total_ref']}")
     print(f"Hypothesis entities: {all_eer['total_hyp']}")
@@ -885,7 +1051,7 @@ def print_detailed_eer_results(call_id: str, all_eer: Dict, concerned_eer: Dict)
     
     # Detailed breakdown for all entities with normalization
     if all_eer['detailed_substitutions']:
-        print(f"\n📝 SUBSTITUTIONS ({len(all_eer['detailed_substitutions'])}):")
+        print(f"\nSUBSTITUTIONS ({len(all_eer['detailed_substitutions'])}):")
         for i, sub in enumerate(all_eer['detailed_substitutions'][:10]):  # Limit to 10
             ref_ent = sub['ref']
             hyp_ent = sub['hyp']
@@ -903,7 +1069,7 @@ def print_detailed_eer_results(call_id: str, all_eer: Dict, concerned_eer: Dict)
             print(f"  ... and {len(all_eer['detailed_substitutions']) - 10} more")
     
     if all_eer['detailed_deletions']:
-        print(f"\n❌ DELETIONS ({len(all_eer['detailed_deletions'])}):")
+        print(f"\nDELETIONS ({len(all_eer['detailed_deletions'])}):")
         for i, deletion in enumerate(all_eer['detailed_deletions'][:10]):
             ref_orig = deletion.get('text', deletion)
             ref_canon = deletion.get('canonical', ref_orig) if isinstance(deletion, dict) else ref_orig
@@ -913,7 +1079,7 @@ def print_detailed_eer_results(call_id: str, all_eer: Dict, concerned_eer: Dict)
             print(f"  ... and {len(all_eer['detailed_deletions']) - 10} more")
     
     if all_eer['detailed_insertions']:
-        print(f"\n➕ INSERTIONS ({len(all_eer['detailed_insertions'])}):")
+        print(f"\nINSERTIONS ({len(all_eer['detailed_insertions'])}):")
         for i, insertion in enumerate(all_eer['detailed_insertions'][:10]):
             hyp_orig = insertion.get('text', insertion)
             hyp_canon = insertion.get('canonical', hyp_orig) if isinstance(insertion, dict) else hyp_orig
@@ -923,7 +1089,7 @@ def print_detailed_eer_results(call_id: str, all_eer: Dict, concerned_eer: Dict)
             print(f"  ... and {len(all_eer['detailed_insertions']) - 10} more")
     
     # Concerned Entities Results
-    print(f"\n🎯 CONCERNED ENTITIES ANALYSIS (PERSON, ORG):")
+    print(f"\nCONCERNED ENTITIES ANALYSIS (PERSON, ORG):")
     print(f"{'─'*50}")
     print(f"Reference concerned entities: {concerned_eer['total_ref']}")
     print(f"Hypothesis concerned entities: {concerned_eer['total_hyp']}")
@@ -936,7 +1102,7 @@ def print_detailed_eer_results(call_id: str, all_eer: Dict, concerned_eer: Dict)
     # Detailed concerned substitutions (raw, canonical, normalized)
     if concerned_eer.get('substitutions', 0) > 0:
         subs_list = concerned_eer.get('detailed_substitutions', [])
-        print(f"\n📝 CONCERNED SUBSTITUTIONS ({concerned_eer['substitutions']}):")
+        print(f"\nCONCERNED SUBSTITUTIONS ({concerned_eer['substitutions']}):")
         if subs_list:
             for idx, sub in enumerate(subs_list, start=1):
                 ref_ent = sub['ref']
@@ -955,7 +1121,7 @@ def print_detailed_eer_results(call_id: str, all_eer: Dict, concerned_eer: Dict)
             print("  (No detailed substitutions captured)")
     
     if concerned_eer['detailed_deletions']:
-        print(f"\n❌ CONCERNED DELETIONS ({len(concerned_eer['detailed_deletions'])}):")
+        print(f"\nCONCERNED DELETIONS ({len(concerned_eer['detailed_deletions'])}):")
         for i, deletion in enumerate(concerned_eer['detailed_deletions']):
             ref_orig = deletion.get('text', deletion)
             ref_canon = deletion.get('canonical', ref_orig) if isinstance(deletion, dict) else ref_orig
@@ -963,7 +1129,7 @@ def print_detailed_eer_results(call_id: str, all_eer: Dict, concerned_eer: Dict)
             print(f"  {i+1}. '{ref_orig}' → canonical: '{ref_canon}' → normalized: '{ref_norm}' - MISSING in hypothesis")
     
     if concerned_eer['detailed_insertions']:
-        print(f"\n➕ CONCERNED INSERTIONS ({len(concerned_eer['detailed_insertions'])}):")
+        print(f"\nCONCERNED INSERTIONS ({len(concerned_eer['detailed_insertions'])}):")
         for i, insertion in enumerate(concerned_eer['detailed_insertions']):
             hyp_orig = insertion.get('text', insertion)
             hyp_canon = insertion.get('canonical', hyp_orig) if isinstance(insertion, dict) else hyp_orig
@@ -1005,7 +1171,8 @@ def save_per_call_comparison_summary(call_dir: Path, call_id: str, ref_entities:
         }
     }
     
-    summary_file = output_dir / f"entity_comparison_gpt_lib{output_suffix}.json"
+    # New fixed filename for per-call summary
+    summary_file = output_dir / "entity_comparison_gemini_lib.json"
     with open(summary_file, 'w', encoding='utf-8') as f:
         json.dump(summary, f, indent=2)
 
@@ -1053,7 +1220,7 @@ def process_single_call(call_dir: Path, output_suffix: str = OUTPUT_SUFFIX_DEFAU
     print(f"[{call_dir.name}] Note: entity offsets [start,end] refer to the minimally pre-normalized text sent to the LLM.")
     
     # Print all entities found with their locations and types
-    print(f"\n📋 ALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:")
+    print(f"\nALL ENTITIES FOUND IN GT (Reference) TRANSCRIPT:")
     print(f"{'─'*60}")
     for i, ent in enumerate(ref_entities):
         text = ent['text']
@@ -1064,7 +1231,7 @@ def process_single_call(call_dir: Path, output_suffix: str = OUTPUT_SUFFIX_DEFAU
         print(f"  {i+1:2d}. '{text}' (Type: {entity_type}, Position: {start}-{end})")
         print(f"       canonical: '{canonical}'")
     
-    print(f"\n📋 ALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:")
+    print(f"\nALL ENTITIES FOUND IN ASSISTANT (Hypothesis) TRANSCRIPT:")
     print(f"{'─'*60}")
     for i, ent in enumerate(hyp_entities):
         text = ent['text']
@@ -1083,7 +1250,7 @@ def process_single_call(call_dir: Path, output_suffix: str = OUTPUT_SUFFIX_DEFAU
     for ent in hyp_entities:
         hyp_type_dist[ent['type']] = hyp_type_dist.get(ent['type'], 0) + 1
     
-    print(f"\n📊 ENTITY TYPE DISTRIBUTION:")
+    print(f"\nENTITY TYPE DISTRIBUTION:")
     print(f"{'─'*40}")
     print(f"Reference: {ref_type_dist}")
     print(f"Hypothesis: {hyp_type_dist}")
@@ -1108,8 +1275,8 @@ def process_single_call(call_dir: Path, output_suffix: str = OUTPUT_SUFFIX_DEFAU
     save_per_call_comparison_summary(call_dir, call_dir.name, ref_entity_list, 
                                    hyp_entity_list, all_eer, concerned_eer)
 
-    # Persist LLM entity lists for global EER
-    llm_entities_file = output_dir / f"llm_entities{output_suffix}.json"
+    # Persist LLM entity lists for global EER (renamed)
+    llm_entities_file = output_dir / "entities_gemini_lib.json"
     with open(llm_entities_file, 'w', encoding='utf-8') as f:
         json.dump({
             "ref_entities": ref_entities,
@@ -1128,14 +1295,13 @@ def process_single_call(call_dir: Path, output_suffix: str = OUTPUT_SUFFIX_DEFAU
     # Get mispronunciation data
     mispronunciation_count, pronunciation_ids = get_mispronunciation_data(call_dir)
     
-    # Print detailed results
-    print_detailed_eer_results(call_dir.name, all_eer, concerned_eer)
+    # Suppressed verbose per-call enhanced printout
     
     # Create comprehensive results
     results = {
         "call_id": call_dir.name,
-        "method": "Enhanced GPT LLM as NER with Precise Normalization and Bucketing",
-        "model": GPT_MODEL,
+        "method": "Enhanced Gemini LLM as NER with Precise Normalization and Bucketing",
+        "model": GEMINI_MODEL,
         "temperature": 0,
         "processing_time": round(time.time() - start_time, 2),
         "all_entities_eer": all_eer,
@@ -1164,14 +1330,11 @@ def process_single_call(call_dir: Path, output_suffix: str = OUTPUT_SUFFIX_DEFAU
         }
     }
     
-    # Save detailed results for this call
-    output_file = output_dir / f"eer_detailed_results_enhanced_gpt_lib{output_suffix}.json"
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2)
+    # Removed writing per-call detailed results file (eer_detailed_results_enhanced_gemini_lib.json)
     
     elapsed = time.time() - start_time
-    print(f"🕒 [{call_dir.name}] Completed in {elapsed:.2f}s")
-    print(f"📊 All Entities EER: {all_eer['eer_percentage']:.2f}% | Concerned Entities EER: {concerned_eer['eer_percentage']:.2f}%")
+    print(f"[{call_dir.name}] Completed in {elapsed:.2f}s")
+    print(f"All Entities EER: {all_eer['eer_percentage']:.2f}% | Concerned Entities EER: {concerned_eer['eer_percentage']:.2f}%")
     
     return results
 
@@ -1226,9 +1389,9 @@ def main():
         description="Enhanced EER Calculator with precise entity extraction and normalization - processes all calls"
     )
     parser.add_argument("calls_dir", help="Path to calls directory containing subdirectories")
-    parser.add_argument("--output", default="eer_enhanced_comprehensive_results_gpt_lib.json", 
+    parser.add_argument("--output", default="global_eer_gemini_lib.json", 
                        help="Output JSON file for detailed results")
-    parser.add_argument("--csv-output", default="eer_enhanced_metrics_summary_gpt_lib.csv",
+    parser.add_argument("--csv-output", default="eer_summary_gemini_lib.csv",
                        help="Output CSV file for metrics summary")
 
     args = parser.parse_args()
@@ -1325,7 +1488,8 @@ def main():
     global_gt_entities: List[Dict] = []
     for cdir in call_dirs:
         try:
-            with open(cdir / "output" / f"llm_entities{OUTPUT_SUFFIX_DEFAULT}.json", 'r', encoding='utf-8') as f:
+            # Updated filename for persisted entities
+            with open(cdir / "output" / "entities_gemini_lib.json", 'r', encoding='utf-8') as f:
                 data = json.load(f)
             global_ref_entities.extend(data.get('ref_entities', []))
             global_gt_entities.extend(data.get('hyp_entities', []))
@@ -1348,9 +1512,9 @@ def main():
     print(f"  (S={global_concerned_eer_internal['substitutions']}, I={global_concerned_eer_internal['insertions']}, D={global_concerned_eer_internal['deletions']}, C={global_concerned_eer_internal['correct']}, N={global_concerned_eer_internal['total_ref']})")
     
     # Print comprehensive global EER summary
-    print(f"\n🌍 GLOBAL EER SUMMARY ACROSS ALL CALLS:")
+    print(f"\nGLOBAL EER SUMMARY ACROSS ALL CALLS:")
     print(f"{'─'*60}")
-    print(f"📊 ALL ENTITIES:")
+    print(f"ALL ENTITIES:")
     print(f"   Total Reference Entities (N_ref): {global_all_eer_internal['total_ref']}")
     print(f"   Total Hypothesis Entities: {global_all_eer_internal['total_hyp']}")
     print(f"   Substitutions (S): {global_all_eer_internal['substitutions']}")
@@ -1359,7 +1523,7 @@ def main():
     print(f"   Correct (C): {global_all_eer_internal['correct']}")
     print(f"   Global EER: {global_all_eer_internal['eer_percentage']:.2f}%")
     
-    print(f"\n🎯 CONCERNED ENTITIES (PERSON, ORG):")
+    print(f"\nCONCERNED ENTITIES (PERSON, ORG):")
     print(f"   Total Reference Entities (N_ref): {global_concerned_eer_internal['total_ref']}")
     print(f"   Total Hypothesis Entities: {global_concerned_eer_internal['total_hyp']}")
     print(f"   Substitutions (S): {global_concerned_eer_internal['substitutions']}")
@@ -1429,13 +1593,18 @@ def main():
         writer.writerows(metrics_summary)
 
     # Print final summary
-    print(f"\n✅ Enhanced Processing Complete!")
-    print(f"📊 Processed {len(call_dirs)} calls in {total_time:.2f}s")
-    print(f"📈 Average Per-Call EER: {comprehensive_results['aggregate_metrics']['average_all_entities_eer']:.2f}%")
-    print(f"🌍 Global EER: {global_all_eer_internal['eer_percentage']:.2f}%")
-    print(f"📁 Detailed results: {args.output}")
-    print(f"📋 CSV summary: {args.csv_output}")
-    print(f"📋 Individual call summaries saved in each call's output/entity_comparison_gpt_lib{OUTPUT_SUFFIX_DEFAULT}.json")
+    print(f"\nEnhanced Processing Complete!")
+    print(f"Processed {len(call_dirs)} calls in {total_time:.2f}s")
+    print(f"Average Per-Call EER: {comprehensive_results['aggregate_metrics']['average_all_entities_eer']:.2f}%")
+    print(f"Global EER: {global_all_eer_internal['eer_percentage']:.2f}%")
+    print(f"Detailed results: {args.output}")
+    print(f"CSV summary: {args.csv_output}")
+    print(f"Individual call summaries saved in each call's output/entity_comparison_gemini_lib.json")
 
 if __name__ == "__main__":
+    # Also mirror console output to eer_gemini/output_lib.txt
+    try:
+        _setup_stdout_capture(Path(__file__).parent / "output_lib.txt")
+    except Exception:
+        pass
     main()

@@ -2,3 +2,6 @@
 .env
 venv
 .DS_Store
+# Ignore generated outputs
+eer_*/calls/*/output/
+eer_*/output_*.txt
